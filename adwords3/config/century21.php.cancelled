@@ -1,0 +1,11 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["century21"] = array(
+    //'max_cost'      => 1200,
+   // "customer_id"   => "219-179-1088",
+   'password'      => 'century21',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

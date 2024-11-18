@@ -1,0 +1,256 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["mercedes_benz"] = array(
+    'tag_debug' => true,
+    'password' => 'mercedes_benz',
+    "email" => "regan@smedia.ca",  'snapchat_image_index'  => 2,
+    'log' => true,
+    "banner" => array(
+        "template" => "mercedes_benz",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    // 'form_live' => false,
+    // 'buttons_live' => false,
+    // 'adf_to' => array(
+    //     'Salesleads@mbcountryhills.com',
+    //     'webleads@mbcountryhills.com',
+    //     'masterkeyy@gmail.com',
+    // ),
+    // 'buttons' => [
+    //     'test-drive' => [
+    //         'url-match' => '/\\/inventory\\/[0-9]{4}-/i',
+    //         'target' => null,
+    //         //Don't move button
+    //         'locations' => [
+    //             'default' => null,
+    //         ],
+    //         'action-target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-7]',
+    //         'css-class' => 'div.maincta-row.ctabox-row a[href*=gravity-form-7]',
+    //         'css-hover' => 'div.maincta-row.ctabox-row a[href*=gravity-form-7]:hover',
+    //         'button_action' => [
+    //             'form',
+    //             'test-drive',
+    //         ],
+    //         'sizes' => [
+    //             '100' => [],
+    //         ],
+    //         'texts' => [
+    //             'test-drive' => [
+    //                 'target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-7]',
+    //                 'values' => array(
+    //                     'Test Drive Today',
+    //                     'Test Drive Now',
+    //                     'Test Ride',
+    //                     'Book My Test Drive',
+    //                     'Schedule My Test Drive',
+    //                 ),
+    //             ],
+    //         ],
+    //         'styles' => array(
+    //             'orange' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FF9611,#FF9611)',
+    //                     'border-color' => '#FF9611',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#D17500,#D17500)',
+    //                     'border-color' => '#D17500',
+    //                 ),
+    //             ),
+    //             'red' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FD111C,#FD111C)',
+    //                     'border-color' => '#FD111C',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#CE000A,#CE000A)',
+    //                     'border-color' => '#CE000A',
+    //                 ),
+    //             ),
+    //             'green' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+    //                     'border-color' => '#24EB0F',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#10AB00,#10AB00)',
+    //                     'border-color' => '#10AB00',
+    //                 ),
+    //             ),
+    //             'blue' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+    //                     'border-color' => '#1A8CD8',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#0478C3,#0478C3)',
+    //                     'border-color' => '#0478C3',
+    //                 ),
+    //             ),
+    //         ),
+    //     ],
+    //     'financing' => [
+    //         'url-match' => '/\\/inventory\\/[0-9]{4}-/i',
+    //         'target' => null,
+    //         //Don't move button
+    //         'locations' => [
+    //             'default' => null,
+    //         ],
+    //         'action-target' => 'a.smedia-ai-request-a-financing',
+    //         'css-class' => 'a.smedia-ai-request-a-financing',
+    //         'css-hover' => 'a.smedia-ai-request-a-financing:hover',
+    //         'button_action' => [
+    //             'form',
+    //             'finance',
+    //         ],
+    //         'sizes' => [
+    //             '100' => [],
+    //         ],
+    //         'texts' => [
+    //             'financing' => [
+    //                 'target' => 'a.smedia-ai-request-a-financing',
+    //                 'values' => array(
+    //                     'Special Finance Offers',
+    //                     'No Hassle Financing',
+    //                     'Financing Available',
+    //                     'Explore Payments',
+    //                     'Special Finance Offers!',
+    //                     'Special Finance Offers',
+    //                     'Today\'s Market Price',
+    //                 ),
+    //             ],
+    //         ],
+    //         'styles' => array(
+    //             'orange' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FF9611,#FF9611)',
+    //                     'border-color' => '#FF9611',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#D17500,#D17500)',
+    //                     'border-color' => '#D17500',
+    //                 ),
+    //             ),
+    //             'red' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FD111C,#FD111C)',
+    //                     'border-color' => '#FD111C',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#CE000A,#CE000A)',
+    //                     'border-color' => '#CE000A',
+    //                 ),
+    //             ),
+    //             'green' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+    //                     'border-color' => '#24EB0F',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#10AB00,#10AB00)',
+    //                     'border-color' => '#10AB00',
+    //                 ),
+    //             ),
+    //             'blue' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+    //                     'border-color' => '#1A8CD8',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#0478C3,#0478C3)',
+    //                     'border-color' => '#0478C3',
+    //                 ),
+    //             ),
+    //         ),
+    //     ],
+    //     'request-information' => [
+    //         'url-match' => '/\\/inventory\\/[0-9]{4}-/i',
+    //         'target' => null,
+    //         //Don't move button
+    //         'locations' => [
+    //             'default' => null,
+    //         ],
+    //         'action-target' => 'div.ctabox-inner p:nth-of-type(1) a',
+    //         'css-class' => 'div.ctabox-inner p:nth-of-type(1) a',
+    //         'css-hover' => 'div.ctabox-inner p:nth-of-type(1) a:hover',
+    //         'button_action' => [
+    //             'form',
+    //             'e-price',
+    //         ],
+    //         'sizes' => [
+    //             '100' => [],
+    //         ],
+    //         'texts' => [
+    //             'request-information' => [
+    //                 'target' => 'div.ctabox-inner p:nth-of-type(1) a',
+    //                 'values' => array(
+    //                     'Market Price',
+    //                     'Live market price',
+    //                     'Get More Info',
+    //                     'Learn More Info',
+    //                     'Check Availability',
+    //                     'Get Special Price!',
+    //                     'SPECIAL PRICING!',
+    //                 ),
+    //             ],
+    //         ],
+    //         'styles' => array(
+    //             'orange' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FF9611,#FF9611)',
+    //                     'border-color' => '#FF9611',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#D17500,#D17500)',
+    //                     'border-color' => '#D17500',
+    //                 ),
+    //             ),
+    //             'red' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#FD111C,#FD111C)',
+    //                     'border-color' => '#FD111C',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#CE000A,#CE000A)',
+    //                     'border-color' => '#CE000A',
+    //                 ),
+    //             ),
+    //             'green' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+    //                     'border-color' => '#24EB0F',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#10AB00,#10AB00)',
+    //                     'border-color' => '#10AB00',
+    //                 ),
+    //             ),
+    //             'blue' => array(
+    //                 'normal' => array(
+    //                     'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+    //                     'border-color' => '#1A8CD8',
+    //                     'text-align' => 'center',
+    //                 ),
+    //                 'hover' => array(
+    //                     'background' => 'linear-gradient(#0478C3,#0478C3)',
+    //                     'border-color' => '#0478C3',
+    //                 ),
+    //             ),
+    //         ),
+    //     ],
+    // ],
+);

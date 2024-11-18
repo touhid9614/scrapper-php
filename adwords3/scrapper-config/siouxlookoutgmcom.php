@@ -1,0 +1,41 @@
+<?php
+global $scrapper_configs;
+$scrapper_configs["siouxlookoutgmcom"] = array( 
+	'entry_points'           => array(
+        'new'  => 'https://www.siouxlookoutgm.com/inventory/New/',
+        'used' => 'https://www.siouxlookoutgm.com/inventory/Used/',
+    ),
+    'use-proxy'              => false,
+    //'proxy-area'			 => 'CA',
+    'refine'                 => false,
+    'vdp_url_regex'          => '/\/inventory\//i',
+    'srp_page_regex'          => '/\/inventory\/(?:New|certified|Used)\//i',
+    'picture_selectors'      => ['.slick-slide img'],
+    'picture_nexts'          => ['.slick-next'],
+    'picture_prevs'          => ['.slick-prev'],
+    'details_start_tag'      => 'class="srpVehicles__wrap">',
+    'details_end_tag'        => 'class="disclaimer__wrap">',
+    'details_spliter'        => 'id="carbox',
+    'data_capture_regx'      => array(
+        'url'          => '/data-permalink="(?<url>[^"]+)/', 
+    ),
+    'data_capture_regx_full' => array(
+		'year'           => '/vehicle-title--year">\s*(?<year>[^<]+)/i',
+		'make'           => '/class="notranslate vehicle-title--make\s*">\s*(?<make>[^<]+)/i',
+		'model'          => '/class="notranslate vehicle-title--model\s*">\s*(?<model>[^<]+)/i',
+		'trim'           => '/class="notranslate vehicle-title--trim\s*">\s*(?<trim>[^<]+)/i',
+		'price'          => '/name="description" content="[^\$]+\$(?<price>[^.]+)/i',
+		'msrp'           => '/",msrp:"(?<msrp>[^"]+)",/i',
+		'engine'         => '/data-vehicle="engdescription" >\s*(?<engine>[^<]+)/i',
+		'transmission'   => '/data-vehicle="transdescription" >\s*(?<transmission>[^<]+)/i',
+		'exterior_color' => '/data-vehicle="extcolor" >\s*(?<exterior_color>[^<]+)/i',
+		'interior_color' => '/data-vehicle="intcolor" >(?<interior_color>[^<]+)/i',
+		'stock_number'   => '/"sku":"(?<stock_number>[^"]+)/i',
+		'vin'            => '/data-vehicle="vin" >\s*(?<vin>[^<]+)/i',
+		'kilometres'     => '/data-vehicle="miles"\s*[^>]+>(?<kilometres>[^<]+)/',
+		'body_style'     => '/data-vehicle="standardbody" >\s*(?<body_style>[^<]+)/',
+    ),
+    'next_page_regx'         => '/rel="next"\shref="(?<next>[^"]+)"/',
+    'images_regx'            => '/class="img-fluid[^"]+"\s*alt="[^"]+"\s*src="[^"]+"\s*data-src="(?<img_url>[^"]+)"/',
+    'images_fallback_regx'   => '/property="og:image" content="(?<img_url>[^"]+)"/',
+);

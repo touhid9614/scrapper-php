@@ -1,0 +1,98 @@
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	padding: 20px;
+}
+
+.clearfix:after {
+	content: " ";
+	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.container h3 {
+	margin: 10px;
+	padding: 4px 10px;
+	background-color: #505050;
+	color: #fff;
+}
+
+.container table {
+	border-spacing: 0px;
+	border-style: none;
+	width: 100%;
+}
+
+.container table th {
+	background-color: #505050;
+	padding: 5px 10px;
+	text-align: left;
+	color: #fff;
+}
+
+.container table tr td {
+	padding: 5px 10px;
+}
+
+.container table .odd {
+	background-color: #fff;
+}
+
+.container table .even {
+	background-color: #dbeaf9;
+}
+
+.yesclass,
+.noclass,
+.unclass {
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/yes.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0px 40px;
+}
+
+.noclass {
+	background-image: url('../img/no.png');
+}
+
+.unclass {
+	background-image: url('../img/un.png');
+}
+
+/* construct the overlay */
+.overlay {
+    padding: 0;
+}
+
+.overlay .loading-section {
+	margin: 10px auto;
+	width: 210px;
+	height: 30px;
+	border: 1px solid #505050;
+	padding: 20px;
+}
+
+.overlay .loading-section .loading-anim {
+	background: url('../img/loading.gif');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.overlay .loading-section .loading-text {
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	overflow: hidden;
+	float: left;
+}

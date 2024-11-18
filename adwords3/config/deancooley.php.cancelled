@@ -1,0 +1,73 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["deancooley"] = array(
+  //'budget'    => 2.0,
+   'bid'           => 3.0,
+   'log'           => false,
+    'max_cost'      => 850.0,
+	 'cost_distribution' => array(
+        'new'       => 375,
+        'used'      => 375,
+	
+             ),
+    'post_code'     => 'R7N 3B3',
+    
+
+    
+    "email"         => "regan@smedia.ca",
+   
+ "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => no,
+        "used_display"      => no,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+		 "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"  => yes,
+        "used_combined" => yes
+    ),
+    "host_url"      => "http://www.deancooleygm.ca/",		//must start with http or https and end without /
+    "display_url"   => "www.deancooleygm.ca/",				//Max lenght 35 char
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "customer_id"   => "596-223-7983",
+    "banner"        => array(
+        "template"          => "deancooley",
+			"flash_style"       => "default",
+			"border_color"    => "#0060af",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner",
+            ),
+        "font_color"        => "#ffffff"
+        ),
+      
+    );
+
+?>

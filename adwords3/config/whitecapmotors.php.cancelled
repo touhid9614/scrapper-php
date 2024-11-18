@@ -1,0 +1,185 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["whitecapmotors"] = array(
+    'name' => 'Whitecap Chevrolet Buick GMC',
+    'password' => 'whitecapmotors',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'max_cost' => 650.0,
+    'cost_distribution' => array(
+        'adwords' => 600,
+        'youtube' => 50,
+),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "customer_id" => "722-757-6286",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "whitecapmotors",
+        "fb_description_new" => "Are you still interested in the [year] [make] [model]? Click for more info. MSRP [msrp]. Sale price is [price]. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_lookalike_description_new" => "Test drive the [year] [make] [model] today! MSRP [msrp]. Sale price is [price]. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today! Stock: [stock_number]. Amvic Licensed Dealership",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+),
+        "font_color" => "#ffffff",
+),
+    'buttons_live' => true,
+    'form_live' => false,
+    'lead_to' => [
+        'JGongos@whitecapmotors.ca',
+        'jdewald@whitecapmotors.ca',
+],
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => '[name="f6059346-53e2-4d97-a897-9feb1e3d5934"]',
+            'css-class' => '[name="f6059346-53e2-4d97-a897-9feb1e3d5934"]',
+            'css-hover' => '[name="f6059346-53e2-4d97-a897-9feb1e3d5934"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [
+                    'font-size' => '1.4rem',
+],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => '[name="f6059346-53e2-4d97-a897-9feb1e3d5934"]',
+                    'values' => array(
+                        'More Information',
+                        'More Info',
+                        'Get Price Updates',
+                        'Price Updates',
+                        'Get Details',
+                        'More Details',
+                        'Check Availability',
+                        'See Availability',
+                        'Is this available?',
+                        'Click for Availability',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+),
+),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '188BB7',
+),
+),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '188BB7',
+),
+),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+);

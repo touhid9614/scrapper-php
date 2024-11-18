@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["keyeslexus"] = array(
+  'password'  => 'keyeslexus',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "keyeslexus",
+		'fb_description'	=> 'Are you still interested in the [year] [make] [model]? Click for more information or give us a call to take it for a test drive.',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

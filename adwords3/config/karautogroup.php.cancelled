@@ -1,0 +1,32 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["karautogroup"] = array(
+    'password' => 'karautogroup',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'fb_title' => '[year] [make] [model] [price]',
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "karautogroup",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        //"fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "fb_lookalike_description" => "[Year] [Make] [Model] - click for info or more great deals on over 600+ vehicles in stock!",
+        "fb_dynamiclead_description" => "Are you still interested in [Year] [Make] [Model]? Click below and fill in your information to get \$200 OFF. *Conditions apply - see dealer for details.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+        'fb_style' => 'facebook_new_ad',
+        'fb_banner_title' => '[year] [make] [model] - [price]',
+    ),
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17592',
+        'promotion_text' => 'VISIT US TODAY!',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#233E81',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#C72035',
+        'coupon_validity' => '30',
+    ),
+);

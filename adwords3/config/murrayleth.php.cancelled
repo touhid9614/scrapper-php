@@ -1,0 +1,188 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["murrayleth"] = array(
+    'name' => 'Murray Leth',
+    //'budget'    => 2.0,
+    'log' => true,
+    'password' => 'murrayleth',
+    'bid' => 3.0,
+    'bid_modifier' => array(
+        'after' => 45,
+        //days
+        'bid' => 1.5,
+    ),
+    'max_cost' => 0,
+    'cost_distribution' => array(
+        'adwords' => 0,
+        'youtube' => 0,
+    ),
+    'post_code' => 'T1K 7K7',
+    "email" => "regan@smedia.ca",
+    "smart_ad_url" => "http://www.murraychev.com/all-inventory/index.htm?model=[model]&year=[year]&make=[make]",
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "host_url" => "http://www.murraychev.com",
+    //must start with http or https and end without /
+    "display_url" => "http://www.murraychev.com",
+    //Max lenght 35 char
+    "new_descs" => array(
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] ",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]",
+        ),
+    ),
+    "ymmcount_descs" => array(
+        array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id" => "735-372-0802",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "email" => "regan@smedia.ca",
+    "banner" => array(
+        "template" => "murrayleth",
+        'fb_description_new' => 'Serving Western Canada since 1926 as one of the top GM dealers in Sales Customer Satisfaction. Our reputation is your guarantee! Contact us today about the [year] [make] [model].',
+        'fb_description_used' => 'Serving Western Canada since 1926 as Best of the Best dealership in Used Cars, THREE YEARS in a row! Contact us today about the [year] [make] [model].',
+        'fb_description_certified' => 'Serving Western Canada since 1926 as Best of the Best dealership in Used Cars, THREE YEARS in a row! Contact us today about the [year] [make] [model].',
+        'fb_lookalike_description_new' => 'Still looking for a vehicle? #MurrayChevLeth has the only brand to earn J.D. Power dependability awards for cars, trucks and SUVs. Two years in a row.',
+        'fb_lookalike_description_used' => 'Test drive the [year] [make] [model] today at #MurrayChevLeth.',
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info to get \$200 OFF, and a product specialist will be in touch to aid in any questions.",
+        "flash_style" => "default",
+        "border_color" => "#dfdfdf",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+        'min_images' => 2,
+    ),
+    'adf_to' => array(
+        'webleads@murraychev.com',
+        'leads@murraychev.info',
+    ),
+    'form_live' => false,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div span.ePrice a[data-href*="eprice-form"]',
+            'css-class' => 'div span.ePrice a[data-href*="eprice-form"]',
+            'css-hover' => 'div span.ePrice a[data-href*="eprice-form"]',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div span.ePrice a[data-href*="eprice-form"]',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Our Best Price',
+                        'Get Special Price',
+                        'Inquire Now',
+                        'Get Special Price!',
+                        'Check Availability',
+                        'Check Availability!',
+                        'Is it available?',
+                        'Get Internet Price!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FDC915,#FDC915)',
+                        'border-color' => '#fdc915',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#EEB902,#EEB902)',
+                        'border-color' => '#eeb902',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C92118,#C92118)',
+                        'border-color' => '#c92118',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB1C14,#AB1C14)',
+                        'border-color' => '#ab1c14',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3CD81E,#3CD81E)',
+                        'border-color' => '#3cd81e',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#34BA1A,#34BA1A)',
+                        'border-color' => '#34ba1a',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#006FC8,#006FC8)',
+                        'border-color' => '#006fc8',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005CA6,#005CA6)',
+                        'border-color' => '#005ca6',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#006fc8',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#005ca6',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

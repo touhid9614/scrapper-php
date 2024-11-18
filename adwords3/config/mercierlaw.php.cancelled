@@ -1,0 +1,13 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["mercierlaw"] = array( 
+	"name"  =>" mercierlaw",
+	"email" => "regan@smedia.ca",
+	"password" =>" mercierlaw",     
+        'customer_id'   => '706-801-2956',
+        'max_cost'      => 0,
+        'cost_distribution' => array(
+            'adwords'      => 0,
+        ),     
+	"no_adv" => true ,
+);

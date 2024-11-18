@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["audi_markmotorsofottawa"] = array( 
+	"name"  =>" audi_markmotorsofottawa",
+	"email" => "regan@smedia.ca",
+	"password" =>" audi_markmotorsofottawa",
+	"no_adv" => true ,
+);

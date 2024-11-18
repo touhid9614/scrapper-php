@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["brazosvalleyimports"] = array(
+  'password'  => 'brazosvalleyimports',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "brazosvalleyimports",
+        'fb_description'    => 'Click here to test drive [year] [make] [model] today !',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

@@ -1,0 +1,204 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["sherwoodbuickgmcdealer"] = array(
+    'password' => 'sherwoodbuickgmcdealer',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "sherwoodbuickgmcdealer",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below and fill in your information. A product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+        'snapchat_image_index' => 2,
+),
+    'form_live' => false,
+    'button_algorithm' => 'thompson_sampling|softmax|ucb-1|default',
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => '[href *=eprice-form]',
+            'css-class' => '[href *=eprice-form]',
+            'css-hover' => '[href *=eprice-form]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => '[href *=eprice-form]',
+                    'values' => array(
+                        'Request A Quote',
+                        'Get E Price Now!',
+                        'Internet Price',
+                        'Get your Price!',
+                        'E- Price',
+                        'Get Internet Price Now!',
+                        'Contact Us.',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Contact Us',
+                        'Contact Store',
+                        'Local Pricing',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Ask a Question',
+                        'Inquire Now',
+                        'Get Active Market Price',
+                        'Get Market Price',
+                        'Market Pricing',
+),
+],
+],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => 'E01212',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => 'F06B20',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '54B740',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => '[href *="testdrive/form"]',
+            'css-class' => '[href *="testdrive/form"]',
+            'css-hover' => '[href *="testdrive/form"]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'test-drive' => [
+                    'target' => '[href *="testdrive/form"]',
+                    'values' => array(
+                        'Book My Test Drive',
+                        'Schedule Test Drive',
+                        'Test Drive Now',
+                        'Test Drive Today',
+),
+],
+],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '54B740',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => 'F06B20',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => 'E01212',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+                        'padding' => '15px 0px',
+),
+),
+),
+],
+],
+);

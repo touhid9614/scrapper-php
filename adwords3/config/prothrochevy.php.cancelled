@@ -1,0 +1,305 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["prothrochevy"] = array(
+    'password' => 'prothrochevy',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "prothrochevy",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'ileads@prothrochevy.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.primary[title*="Request a quote on this vehicle today"]',
+            'css-class' => 'a.primary[title*="Request a quote on this vehicle today"]',
+            'css-hover' => 'a.primary[title*="Request a quote on this vehicle today"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.primary[title*="Request a quote on this vehicle today"]',
+                    'values' => array(
+                        'Get a Quote',
+                        'Get More Info',
+                        'Ask a Question',
+                        'Contact Us Today',
+                        'Inquire Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'price-watch' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.primary[title*="Price Watch"]',
+            'css-class' => 'a.primary[title*="Price Watch"]',
+            'css-hover' => 'a.primary[title*="Price Watch"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'price-watch' => [
+                    'target' => 'a.primary[title*="Price Watch"]',
+                    'values' => array(
+                        'Watch This Price',
+                        'Follow Price',
+                        'Track Price',
+                        'Track This Price',
+                        'Price Alert',
+                        'Price Update',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'create-deal' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.link a:nth-of-type(3).primary',
+            'css-class' => 'div.link a:nth-of-type(3).primary',
+            'css-hover' => 'div.link a:nth-of-type(3).primary:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'price-watch' => [
+                    'target' => 'div.link a:nth-of-type(3).primary',
+                    'values' => array(
+                        'Make Your Deal',
+                        'Virtual Deal',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'get-e-price' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name="7aa7056a-a135-467c-88cf-1135db9883eb"]',
+            'css-class' => 'a[name="7aa7056a-a135-467c-88cf-1135db9883eb"]',
+            'css-hover' => 'a[name="7aa7056a-a135-467c-88cf-1135db9883eb"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name="7aa7056a-a135-467c-88cf-1135db9883eb"]',
+                    'values' => array(
+                        'Get E Price Now!',
+                        'Internet Price',
+                        'Get Internet Price Now!',
+                        'Get Our Best Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

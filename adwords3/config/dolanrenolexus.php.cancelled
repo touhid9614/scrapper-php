@@ -1,0 +1,301 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["dolanrenolexus"] = array(
+    "name" => " dolanrenolexus",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "email" => "regan@smedia.ca",
+    "password" => " dolanrenolexus",
+    "log" => true,
+    "banner" => array(
+        "template" => "dolanrenolexus",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'n1x01@renolexus.dsmessage.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        ///USED Get Credit Approval///
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.purchase-inquiry-button-li a',
+            'css-class' => '.purchase-inquiry-button-li a',
+            'css-hover' => '.purchase-inquiry-button-li a:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => '.purchase-inquiry-button-li a',
+                    'values' => array(
+                        'Request a Test Drive',
+                        'Book a Test Drive',
+                        'Book Test Drive',
+                        'Want to Test Drive?',
+                        'Test Drive Today',
+                        'Test Drive Now',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#c33320',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#a92c1c',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+            ),
+        ],
+        'finance' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.pricing.multiple-prices li:nth-of-type(6)',
+            'css-class' => 'ul.pricing.multiple-prices li:nth-of-type(6)',
+            'css-hover' => 'ul.pricing.multiple-prices li:nth-of-type(6):hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'finance' => [
+                    'target' => 'ul.pricing.multiple-prices li:nth-of-type(6)',
+                    'values' => array(
+                        'Special Finance Offers!',
+                        'Explore Payments',
+                        'Calculate Your Payments',
+                        'Estimate Payments',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#c33320',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#a92c1c',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+            ),
+        ],
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.pricing.multiple-prices li:nth-of-type(7)',
+            'css-class' => 'ul.pricing.multiple-prices li:nth-of-type(7)',
+            'css-hover' => 'ul.pricing.multiple-prices li:nth-of-type(7):hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'ul.pricing.multiple-prices li:nth-of-type(7)',
+                    'values' => array(
+                        'Buy Now',
+                        'Buy It Now',
+                        'I\'m Ready To Buy!',
+                        'Click Here To Buy Now!',
+                        'Ready To Buy',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#c33320',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#a92c1c',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+                'Brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#1f4581',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#193767',
+                        'color' => '#fff',
+                        'text-align' => 'center',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17575',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

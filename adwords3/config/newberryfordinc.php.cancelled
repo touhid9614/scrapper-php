@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["newberryfordinc"] = array(
+  'password'  => 'newberryfordinc',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "newberryfordinc",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

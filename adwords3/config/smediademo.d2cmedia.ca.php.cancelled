@@ -1,0 +1,9 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["smediademo.d2cmedia.ca"] = array( 
+	"name"  =>" smediademo.d2cmedia.ca",
+	"email" => "regan@smedia.ca",
+	"password" =>" smediademo.d2cmedia.ca",
+	"log" => true ,
+);
+

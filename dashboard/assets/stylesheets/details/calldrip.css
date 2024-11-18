@@ -1,0 +1,58 @@
+.calldrip
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.calldrip_hide
+{
+    visibility: hidden;   
+}
+
+.calldrip_show
+{
+    visibility: visible;
+}
+
+.cs-popover
+{
+    font-family: "Montserrat", sans-serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cs-popover-bottom 
+{
+    margin-top: 8px;
+    animation: 0.4s cs-popover-slide-bottom;
+}
+
+.cs-popover-bottom::before, .cs-popover-bottom::after 
+{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-bottom-color: red;
+}
+
+.cs-popover-bottom::before 
+{
+    margin-bottom: 1px;
+    border-bottom-color: orange;
+}
+
+.disable-submit-btn
+{
+    opacity: 0.3;
+    cursor: not-allowed !important;
+}

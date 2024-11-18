@@ -1,0 +1,12 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["artworksinred"] = array( 
+    'password'      => 'artworksinred',
+    'customer_id'   => '626-161-4141',
+    'email'         => 'regan@smedia.ca',
+    'max_cost'      => 75,
+    'cost_distribution' => array(
+        'adwords'      => 75,
+    ),
+    'no_adv'        => true
+);

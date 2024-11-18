@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["knighthasit"] = array(
+  'password'  => 'knighthasit',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "knighthasit",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

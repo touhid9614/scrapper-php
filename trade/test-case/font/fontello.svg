@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="model" unicode="&#xe800;" d="M429 279v-215q0-29-22-50t-50-21h-286q-29 0-50 21t-21 50v215q0 29 21 50t50 21h286q29 0 50-21t22-50z m0 428v-214q0-29-22-50t-50-22h-286q-29 0-50 22t-21 50v214q0 29 21 50t50 22h286q29 0 50-22t22-50z m500-428v-215q0-29-22-50t-50-21h-286q-29 0-50 21t-21 50v215q0 29 21 50t50 21h286q29 0 50-21t22-50z m0 428v-214q0-29-22-50t-50-22h-286q-29 0-50 22t-21 50v214q0 29 21 50t50 22h286q29 0 50-22t22-50z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="trim" unicode="&#xf0ca;" d="M214 64q0-44-31-76t-76-31-76 31-31 76 31 76 76 31 76-31 31-76z m0 286q0-45-31-76t-76-31-76 31-31 76 31 76 76 31 76-31 31-76z m786-232v-107q0-7-5-13t-13-5h-678q-8 0-13 5t-5 13v107q0 7 5 12t13 6h678q7 0 13-6t5-12z m-786 518q0-45-31-76t-76-31-76 31-31 76 31 76 76 31 76-31 31-76z m786-232v-108q0-7-5-12t-13-5h-678q-8 0-13 5t-5 12v108q0 7 5 12t13 5h678q7 0 13-5t5-12z m0 285v-107q0-7-5-12t-13-6h-678q-8 0-13 6t-5 12v107q0 8 5 13t13 5h678q7 0 13-5t5-13z" horiz-adv-x="1000" />
+
+<glyph glyph-name="year" unicode="&#xf133;" d="M71-79h786v572h-786v-572z m215 679v161q0 8-5 13t-13 5h-36q-8 0-13-5t-5-13v-161q0-8 5-13t13-5h36q8 0 13 5t5 13z m428 0v161q0 8-5 13t-13 5h-35q-8 0-13-5t-5-13v-161q0-8 5-13t13-5h35q8 0 13 5t5 13z m215 36v-715q0-29-22-50t-50-21h-786q-29 0-50 21t-21 50v715q0 29 21 50t50 21h72v54q0 37 26 63t63 26h36q37 0 63-26t26-63v-54h214v54q0 37 27 63t63 26h35q37 0 64-26t26-63v-54h71q29 0 50-21t22-50z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="make" unicode="&#xf1b9;" d="M268 243q0 37-26 63t-63 26-63-26-27-63 27-63 63-26 63 26 26 63z m20 178h567l-50 200q-1 4-8 9t-11 6h-429q-5 0-12-6t-7-9z m766-178q0 37-27 63t-63 26-63-26-26-63 26-63 63-26 63 26 27 63z m89 53v-214q0-8-5-13t-13-5h-54v-71q0-45-31-76t-76-31-76 31-31 76v71h-571v-71q0-45-31-76t-76-31-76 31-32 76v71h-53q-8 0-13 5t-5 13v214q0 52 37 89t88 36h16l58 234q13 53 58 88t100 36h429q54 0 100-36t58-88l58-234h16q52 0 88-36t37-89z" horiz-adv-x="1142.9" />
+</font>
+</defs>
+</svg>

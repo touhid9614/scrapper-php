@@ -1,0 +1,13 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["moosejaw_tjspizza"] = array( 
+	"name"  =>" moosejaw_tjspizza",
+	"email" => "regan@smedia.ca",
+	"password" =>" moosejaw_tjspizza",
+	"no_adv" => true ,
+        'max_cost' => 400,
+        'cost_distribution' => array(
+            'adwords' => 400
+        ),
+	"customer_id" => "608-538-5695",
+);

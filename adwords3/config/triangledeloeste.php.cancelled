@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["triangledeloeste"] = array(
+  'password'  => 'triangledeloeste',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "triangledeloeste",
+		'fb_description'	=> 'Prueba de conduccion de la [year] [make] [model] hoy.',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

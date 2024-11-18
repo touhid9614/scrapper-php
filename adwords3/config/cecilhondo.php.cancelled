@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["cecilhondo"] = array(
+  'password'  => 'cecilhondo',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "cecilhondo",
+        'fb_description'    => 'Click here to test drive [year] [make] [model] today !',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

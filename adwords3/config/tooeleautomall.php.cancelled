@@ -1,0 +1,431 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["tooeleautomall"] = array(
+    'password' => 'tooeleautomall',
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'log' => true,
+    'max_cost' => 600,
+    'cost_distribution' => array(
+        'adwords' => 600,
+    ),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id' => '992-815-9270',
+    "banner" => array(
+        "template" => "tooeleautomall",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your information to get \$100 OFF, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    'fb_config' => [
+        'monthly_budget' => 200,
+        'account_id' => '1280784378626189',
+        'page_id' => '101949764237',
+        'pixel_id' => '418091408531406',
+        'dataset' => '529340174124108',
+        'form_id' => '',
+        'action_types' => [
+            'click',
+        ],
+        'plain' => false,
+        'include_stock' => false,
+        'polk_data' => true,
+        'targeting' => [
+            'desktop' => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key" => 3887,
+                            "name" => 'Utah',
+                            "country" => 'US',
+                        ],
+                    ],
+                    "location_types" => [
+                        'home',
+                    ],
+                ],
+                "publisher_platforms" => [
+                    'facebook',
+                ],
+                "facebook_positions" => [
+                    'feed',
+                ],
+                "device_platforms" => [
+                    'desktop',
+                ],
+            ],
+            'mobile' => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key" => 3887,
+                            "name" => 'Utah',
+                            "country" => 'US',
+                        ],
+                    ],
+                    "location_types" => [
+                        'home',
+                    ],
+                ],
+                "publisher_platforms" => [
+                    'facebook',
+                ],
+                "facebook_positions" => [
+                    'feed',
+                ],
+                "device_platforms" => [
+                    'mobile',
+                ],
+            ],
+        ],
+    ],
+	"lead"  => array(
+		'live'                  => true,
+		'lead_type_'            => true,
+		'lead_type_new'         => true,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#E70911", "#E70911"),
+		'button_color_hover'    => array("#000000", "#000000"),
+		'button_color_active'   => array("#000000", "#000000"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "$250 off coupon from Tooele Auto Mall",
+		'response_email'        => "Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Tooele Auto Mall Team",
+		'forward_to'            => array("marshal@smedia.ca"),
+		'special_to'            => array('leads@tooeleautomall.net'),
+		'special_email'         =>  '<?xml version="1.0"?>
+		<?adf version="1.0"?>
+		<adf>
+			<prospect>
+				<id sequence="[total_count]" source="Tooele Auto Mall"></id>
+				<requestdate>[fdt]</requestdate>
+				<vehicle interest="buy" status="[stock_type]">
+					<year>[year]</year>
+					<make>[make]</make>
+					<model>[model]</model>
+					<stock>[stock_number]</stock>
+				</vehicle>
+				<customer>
+				   <contact>
+						<name part="full">[name]</name>
+						<email>[email]</email>
+						<phone>[phone]</phone>
+					</contact>
+				</customer>
+				<vendor>
+					<contact>
+						<name part="full">Tooele Auto Mall</name>
+						<email>[dealer_email]</email>
+					</contact>
+				</vendor>
+				<provider>
+					<name part="full">sMedia</name>
+					<url>http://smedia.ca</url>
+					<email>offers@mail.smedia.ca</email>
+					<phone>855-775-0062</phone>
+				</provider>
+			</prospect>
+		</adf>',
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),
+    'adf_to' => array(
+        'leads@tooeleautomall.net',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.eprice.dialog.button',
+            'css-class' => 'a.btn.eprice.dialog.button',
+            'css-hover' => 'a.btn.eprice.dialog.button:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.eprice.dialog.button',
+                    'values' => array(
+                        'Request A Quote',
+                        'Best Price',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Inquire Now',
+                        'Get Active Market Price',
+                        'Get Market Price',
+                        'Get Price Updates',
+                        'Local Pricing',
+                        'GET CURRENT MARKET PRICE',
+                        'GET DETAILS',
+                        'Get Internet Price Now',
+                        'GET E-PRICE',
+                        'Get your Price!',
+                        'Confirm Availability',
+                        'Get Your Exclusive Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=schedule-form]',
+            'css-class' => 'a[href*="schedule-form"]',
+            'css-hover' => 'a[href*="schedule-form"]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a[href*="schedule-form"]',
+                    'values' => array(
+                        'Schedule a Test Drive',
+                        'Financing Options',
+                        'Calculate Your Payments',
+                        'Estimate Payments',
+                        'Get Your Loan Online',
+                        'Payment options',
+                        'Special Finance Offers',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=trade-in-form].btn-primary',
+            'css-class' => 'a[href*=trade-in-form].btn-primary',
+            'css-hover' => 'a[href*=trade-in-form].btn-primary:hover',
+            'button_action' => [
+                'form',
+                'trade-in-v2',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'a[href*=trade-in-form].btn-primary',
+                    'values' => array(
+                        'Value your trade',
+                        'What\'s Your Trade Worth?',
+                        'We\'ll Buy Your Car',
+                        'TRADE-IN OFFER',
+                        'Trade In Your Ride',
+                        'Trade Offer',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17557',
+        'promotion_text' => 'Visit Us Today!',
+        'promotion_color' => '#EE3032',
+        'overlay_color' => '#4C4D4F',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#EE3032',
+        'coupon_validity' => '30',
+    ),
+);

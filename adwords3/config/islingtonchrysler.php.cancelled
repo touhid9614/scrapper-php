@@ -1,0 +1,295 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["islingtonchrysler"] = array(
+    'password' => 'islingtonchrysler',
+    "email" => "regan@smedia.ca",
+    'max_cost' => 0,
+    'cost_distribution' => array(
+        'adwords' => 0,
+    ),
+    'log' => true,
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "title2" => "See Inventory, Prices & Offers",
+            "desc" => "1st Year No Charge Maintenance on Your New Vehicle Purchase. Book a Test Drive!",
+        ),
+        array(
+            "title2" => "View Prices, Deals & Offers",
+            "desc" => "1st Year No Charge Maintenance on Your New Vehicle Purchase. Test Drive Today!",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id' => '959-317-7062',
+/*
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#DC0021',
+            '#DC0021',
+        ),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get $200 off coupon from Islington Chrysler',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Islington Chrysler Team',
+        'forward_to' => array(
+            'webleads@islingtonchrysler.ca',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+*/
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "islingtonchrysler",
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click for more information.',
+        'fb_lookalike_description' => 'Test drive the [year] [make] [model] today!',
+        'fb_polk_description' => 'Test drive the [year] [make] [model] today!',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'webleads@islingtonchrysler.ca',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.ddc-content.links-list ul li:first-child a.btn.btn-default.dialog',
+            'css-class' => 'div.ddc-content.links-list ul li:first-child a.btn.btn-default.dialog',
+            'css-hover' => 'div.ddc-content.links-list ul li:first-child a.btn.btn-default.dialog:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.ddc-content.links-list ul li:first-child a.btn.btn-default.dialog',
+                    'values' => array(
+                        'Get E Price Now!',
+                        'E- Price',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Local Pricing',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Get Market Price',
+                        'Market Pricing',
+                        'SPECIAL PRICING!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=tradein].btn',
+            'css-class' => 'a[href*=tradein].btn',
+            'css-hover' => 'a[href*=tradein].btn:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'a[href*=tradein].btn',
+                    'values' => array(
+                        'Value your trade',
+                        'What\'s your trade worth?',
+                        'WHAT\'S YOUR TRADE WORTH?',
+                        'What is Your Trade Worth?',
+                        'Trade Appraisal',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=testdrive].btn',
+            'css-class' => 'a[href*=testdrive].btn',
+            'css-hover' => 'a[href*=testdrive].btn:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a[href*=testdrive].btn',
+                    'values' => array(
+                        'Test drive',
+                        'Book Test Drive',
+                        'Schedule Test Drive',
+                        'Test Drive today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

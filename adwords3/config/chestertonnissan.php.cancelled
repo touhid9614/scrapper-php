@@ -1,0 +1,179 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["chestertonnissan"] = array(
+  'password'  => 'chestertonnissan',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    'fb_brand'          => '[year] [make] [model] - [body_style]',
+    "banner"        => array(
+        "template"          => "chestertonnissan",
+		"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+		"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+		//"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+    ),
+    "lead"  => array(
+		'live'                  => false,
+		'lead_type_'            => true,
+		'lead_type_new'         => true,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#90001d", "#90001d"),
+		'button_color_hover'    => array("#000000", "#000000"),
+		'button_color_active'   => array("#000000", "#000000"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "$200 OFF coupon from Chesterton Nissan",
+		'response_email'        => "Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Chesterton Nissan Team",
+		'forward_to'            => array("leads@nissanofchesterton.com","marshal@smedia.ca"),
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),
+  /*  'lead_to'       => ['chestertonnissansales@rohrman.com'],
+    'form_live'     => false,
+    'buttons_live'  => true,
+    'buttons' => [
+        'financing' => [
+            'url-match' => '/\/vehicle-details\/[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'a#inventoryFinanceApplication',
+            'css-class' => 'a#inventoryFinanceApplication',
+            'css-hover' => 'a#inventoryFinanceApplication:hover',
+            'button_action' => ['form','finance'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.inventory-get-approved  .link-content',
+                    'values' => [
+                        '<span class=\"link-label\"></span>No Hassle Financing',
+                        '<span class=\"link-label\"></span>Get Financed Today',
+                        '<span class=\"link-label\"></span>Financing Available',
+                        '<span class=\"link-label\"></span>Explore Payments',
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#db8519',
+                        'border-color' => '#db8519'
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#d71921',
+                        'border-color' => '#d71921'
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#24b315',
+                        'border-color' => '#24b315'
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '185e8c',
+                        'border-color' => '#185e8c'
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+        'test-drive' => [
+            'url-match' => '/\/vehicle-details\/[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'a#scheduleTestdrive',
+            'css-class' => 'a#scheduleTestdrive',
+            'css-hover' => 'a#scheduleTestdrive:hover',
+           'button_action' => ['form','test-drive'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.schedule-testdrive  .link-content',
+                    'values' => [
+                        '<span class=\"link-label\"></span>Book A Test Drive',
+                        '<span class=\"link-label\"></span>Schedule A Test Drive',
+                        '<span class=\"link-label\"></span>Test Drive Today',
+                        '<span class=\"link-label\"></span>Schedule My Visit',
+                    ]
+                ]
+            ],
+           'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#db8519',
+                        'border-color' => '#db8519'
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#d71921',
+                        'border-color' => '#d71921'
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#24b315',
+                        'border-color' => '#24b315'
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '185e8c',
+                        'border-color' => '#185e8c'
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]*/
+    );

@@ -1,0 +1,104 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["apachemotorcycles"] = array(
+  'password'  => 'bigwestdodge',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "banner"        => array(
+        "template"          => "apachemotorcycles",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "fb_title"        => "[year] [make] [model]",
+        'fb_description'    => 'Why wait? Ride off in the [year] [make] [model] today.',
+        "font_color"        => "#e8d30f"
+    ) ,
+    
+    'buttons_live'  => false,
+    'buttons'       => [
+        'request-a-quote'  => [
+            'url-match' => '/\/default.asp\?page=x(?:New|PreOwned)InventoryDetail/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'li.invGetQuote',
+            'css-class' => 'li.invGetQuote.button',
+            'css-hover' => 'li.invGetQuote:hover',
+            'sizes'     => [
+                '100'   => [
+                    //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'request-a-quote'  => [
+                    'target'    => 'li.invGetQuote a > span.textbuttonContent',
+                    'values'    => [
+                        'Request A Quote',
+                        'Get E Price Now!',
+                        'Internet Price',
+                        'Get your Price!',
+                        'E- Price',
+                        'Get Internet Price Now!',
+                        'Contact Us.',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Contact Us',
+                        'Contact Store',
+                        'Local Pricing',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Ask a Question',
+                        'Inquire Now',
+                        'Get Active Market Price',
+                        'Get Market Price',
+                        'Market Pricing'
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background' => '#f06b20',
+                        'border-color'     => '#f06b20'
+                    ],
+                    'hover'     => [
+                        'background' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#e01212',
+                        'border-color'     => '#e01212'
+                    ],
+                    'hover'     => [
+                        'background' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => '#54b740',
+                        'border-color'     => '#54b740'
+                    ],
+                    'hover'     => [
+                        'background' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => '#1ca0d1',
+                        'border-color'     => '#1ca0d1'
+                    ],
+                    'hover'     => [
+                        'background' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]
+);

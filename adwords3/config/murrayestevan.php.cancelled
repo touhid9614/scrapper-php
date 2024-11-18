@@ -1,0 +1,123 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["murrayestevan"] = array(
+    //'budget'    => 2.0,
+    'password' => 'murrayestevan',
+    'bid' => 3.0,
+    'bid_modifier' => array(
+        'after' => 45,
+        //days
+        'bid' => 1.5,
+),
+    'log' => true,
+    'max_cost' => 900.0,
+    'post_code' => 'S4A 2L9',
+    "email" => "regan@smedia.ca",
+    //smart offer =============
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#006FC8',
+            '#006FC8',
+),
+        'button_color_hover' => array(
+            '#FDC915',
+            '#FDC915',
+),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 offer from Murray Estevan',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Murray Estevan Team',
+        'forward_to' => array(
+            'assistance@murrayestevan.com',
+            'marshal@smedia.ca',
+),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+),
+    //tracker
+    "trackers" => array(
+        "new_search" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_search" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_display" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_display" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_retargeting" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_retargeting" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_combined" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_combined" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+),
+    "smart_ad_url" => "http://www.murrayestevan.com/all-inventory/index.htm?model=[model]&year=[year]&make=[make]",
+    "host_url" => "http://www.murrayestevan.com",
+    //must start with http or https and end without /
+    "display_url" => "www.murrayestevan.com",
+    //Max lenght 35 char
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+),
+),
+    "customer_id" => "194-216-5351",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "murrayestevan",
+        "fb_retargeting_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "fb_clearancesale_description" => "Are you still interested in this [year] [make] [model]? Get special deals and offers on our clearance inventory. Shop now!",
+        "flash_style" => "default",
+        "border_color" => "#0e024d",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+),
+        "font_color" => "#ffffff",
+),
+    "phone_regex" => "/\\([0-9]{3}\\)\\s[0-9]{3}\\-[0-9]{4}/",
+    "phone_domelement" => 'document.getElementsByClassName("tel phone1")[0].getElementsByClassName("value")[0]',
+);

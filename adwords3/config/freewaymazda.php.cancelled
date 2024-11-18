@@ -1,0 +1,367 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["freewaymazda"] = array(
+    'name' => 'freewaymazda',
+    'password' => 'freewaymazda',
+    'max_cost' => 0.0,
+    "email" => "regan@smedia.ca",
+    'retargetting_delay' => 30000,
+    'log' => true,
+    //'weekly'        => array(),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]",
+        ),
+    ),
+    "ymmcount_descs" => array(
+        array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id" => "576-499-2788",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "freewaymazda",
+        'fb_description' => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        'fb_lookalike_description' => 'Test drive the [year] [make] [model] today!',
+        'fb_dynamiclead_description' => "Are you still interested in the [year] [make] [model]? Click below, fill in your info to get \$200 OFF and a product specialist will be in touch to answer any questions.",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#1A93D7',
+            '#1A93D7',
+        ),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_color_active' => array(
+            '#333333',
+            '#333333',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get $200 OFF coupon from Freeway Mazda',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Freeway Mazda Team',
+        'forward_to' => array(
+            'marshal@smedia.ca',
+        ),
+        'special_to' => array(
+            'smedia@freewaymazda.net',
+        ),
+        'special_email' => '<?xml version="1.0"?>
+			<?adf version="1.0"?>
+			<adf>
+				<prospect>
+					<id sequence="[total_count]" source="Freeway Mazda"></id>
+					<requestdate>[fdt]</requestdate>
+					<vehicle interest="buy" status="[stock_type]">
+						<year>[year]</year>
+						<make>[make]</make>
+						<model>[model]</model>
+						<stock>[stock_number]</stock>
+					</vehicle>
+					<customer>
+						<contact>
+							<name part="full">[name]</name>
+							<email>[email]</email>
+							<phone>[phone]</phone>
+						</contact>
+					</customer>
+					<vendor>
+						<contact>
+							<name part="full">Freeway Mazda</name>
+							<email>[dealer_email]</email>
+						</contact>
+					</vendor>
+					<provider>
+						<name part="full">sMedia</name>
+						<url>http://smedia.ca</url>
+						<email>offers@mail.smedia.ca</email>
+						<phone>855-775-0062</phone>
+					</provider>
+				</prospect>
+			</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    // 'adf_to' => ['smedia@freewaymazda.net'],
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'financing' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.clearfix a[data-digital-retail-link*=payment].btn',
+            'css-class' => '.clearfix a[data-digital-retail-link*=payment].btn',
+            'css-hover' => '.clearfix a[data-digital-retail-link*=payment].btn:hover',
+            // 'button_action' => ['form', 'finance'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.clearfix a[data-digital-retail-link*=payment].btn',
+                    'values' => array(
+                        'Explore Payments',
+                        'Financing Available',
+                        'Special Finance Offers',
+                        'Special Finance Offers!',
+                        'TODAY\'S MARKET PRICE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF8500,#FF8500)',
+                        'border-color' => '#ff8500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF2C00,#FF2C00)',
+                        'border-color' => '#ff2c00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00E555,#00E555)',
+                        'border-color' => '#00e555',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#009DDC,#009DDC)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[data-href*=schedule]',
+            'css-class' => 'a[data-href*=schedule]',
+            'css-hover' => 'a[data-href*=schedule]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a[data-href*=schedule]',
+                    'values' => array(
+                        'Test Drive Today',
+                        'Want to Test Drive?',
+                        'Schedule My Visit',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF8500,#FF8500)',
+                        'border-color' => '#ff8500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF2C00,#FF2C00)',
+                        'border-color' => '#ff2c00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00E555,#00E555)',
+                        'border-color' => '#00e555',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#009DDC,#009DDC)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#009ddc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => null,
+        'client_id' => '',
+        'promotion_text' => 'Show this at purchase!',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

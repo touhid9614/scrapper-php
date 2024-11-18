@@ -1,0 +1,58 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["orrmotors"] = array(
+    'password' => 'orrmotors',
+    'post_code' => 'k2s 1b9',
+    'log' => true,
+    "email" => "regan@smedia.ca",
+    /*smart offer*/
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#25A737',
+            '#25A737',
+        ),
+        'button_color_hover' => array(
+            '#0A691F',
+            '#0A691F',
+        ),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get $200 OFF offer from Orr Motors',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Orr Motors Team',
+        'forward_to' => array(
+            'sales@orrmotors.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'retargetting_delay' => 30000,
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "orrmotors",
+        "flash_style" => "default",
+        "hst" => yes,
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+);

@@ -1,0 +1,206 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["certifiedluxuryauto"] = array(
+    "name" => " certifiedluxuryauto",
+    "email" => "regan@smedia.ca",
+    "password" => " certifiedluxuryauto",
+    "no_adv" => true,
+    'adf_to' => array(
+        'jt.certifiedluxuryauto@gmail.com',
+        'sales@certifiedluxuryauto.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/inventory\\/view\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=ask-qts].btn.btn-block.btn-danger',
+            'css-class' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=ask-qts].btn.btn-block.btn-danger',
+            'css-hover' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=ask-qts].btn.btn-block.btn-danger:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=ask-qts].btn.btn-block.btn-danger',
+                    'values' => array(
+                        'Buy Now',
+                        'Buy It Now',
+                        'I\'m Ready To Buy!',
+                        'Click Here To Buy Now!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E77703,#E77703)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D46E04,#D46E04)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#990000,#990000)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#880101,#880101)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#325387,#325387)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2A4877,#2A4877)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/inventory\\/view\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.main_photo_sidebar_wrapper div.col a[href*=credit-application].btn.btn-block.btn-danger',
+            'css-class' => 'div.main_photo_sidebar_wrapper div.col a[href*=credit-application].btn.btn-block.btn-danger',
+            'css-hover' => 'div.main_photo_sidebar_wrapper div.col a[href*=credit-application].btn.btn-block.btn-danger:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.main_photo_sidebar_wrapper div.col a[href*=credit-application].btn.btn-block.btn-danger',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Get Pre-Approved',
+                        'Financing Available',
+                        'Special Finance Offers',
+                        'Apply For Financing',
+                        'Explore Payments',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E77703,#E77703)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D46E04,#D46E04)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#990000,#990000)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#880101,#880101)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#325387,#325387)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2A4877,#2A4877)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/inventory\\/view\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=make-an-offer].btn.btn-block.btn-danger',
+            'css-class' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=make-an-offer].btn.btn-block.btn-danger',
+            'css-hover' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=make-an-offer].btn.btn-block.btn-danger:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.main_photo_sidebar_wrapper div.col a[data-target*=make-an-offer].btn.btn-block.btn-danger',
+                    'values' => array(
+                        'Get Trade-In Value',
+                        'Trade Offer',
+                        'What\'s Your Trade Worth?',
+                        'Trade-In Appraisal',
+                        'Appraise Your Trade',
+                        'We Want Your Car',
+                        'We\'ll Buy Your Car',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E77703,#E77703)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D46E04,#D46E04)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#990000,#990000)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#880101,#880101)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#325387,#325387)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2A4877,#2A4877)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

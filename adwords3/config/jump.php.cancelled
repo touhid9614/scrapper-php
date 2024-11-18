@@ -1,0 +1,236 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jump"] = array(
+    'name' => 'Jump',
+    'log' => true,
+    'tag_debug' => false,
+    'bid' => 3.0,
+    'password' => 'jump',
+    'bid_modifier' => array(
+        'after' => 45,
+        //days
+        'bid' => 1.5,
+    ),
+    'max_cost' => 0,
+    'cost_distribution' => array(
+        'device' => 0,
+        'accessory' => 0,
+    ),
+    'realtime' => true,
+    "email" => "regan@smedia.ca",
+    'post_code' => 'S4H 0N8',
+    "create" => array(
+        "device_search" => yes,
+        "accessory_search" => yes,
+        "device_display" => yes,
+        "accessory_display" => yes,
+        "device_retargeting" => yes,
+        "accessory_retargeting" => yes,
+        "device_marketbuyers" => no,
+        "accessory_marketbuyers" => no,
+        "device_combined" => yes,
+        "accessory_combined" => yes,
+    ),
+    "host_url" => "http://jump.ca",
+    //must start with http or https and end without /
+    "display_url" => "www.jump.ca",
+    //Max lenght 35 char
+    'title2' => 'Buy Now & Save',
+    "device_descs" => array(
+        array(
+            "desc1" => "[make] [model]",
+            "desc2" => "On The SaskTel Network",
+        ),
+    ),
+    "accessory_descs" => array(
+        array(
+            "desc1" => "Reserve online &",
+            "desc2" => "Pick up in store at Jump.ca",
+        ),
+    ),
+    "customer_id" => "210-068-4209",
+    "email" => "regan@smedia.ca",
+    //    'fb_title' => '[make] [model] [trim] [price]',
+    'fb_title' => '[make] [model] [price]',
+    "banner" => array(
+        'fb_banner_title' => '[make] [model]',
+        //'fb_description' => 'Check out the [make] [model]! It\'s available at Jump.ca.',
+        //'fb_lookalike_description' => 'Check out the [make] [model]! It\'s available at Jump.ca.',
+        'fb_description' => 'The [make] [model] is ON SALE! Check it out online or in-store today at Jump.ca.',
+		'fb_special_description' => 'Jump.ca\'s phone sale is on now! Don’t miss out on these savings available for a limited time only! Shop the sale below.',
+		'fb_abandoncart_description' => "We noticed you left your cart full. Lucky for you, there's a SALE ON NOW so the price has dropped! We've also suggested some other items you might like. Shop below. Hurry, the sale ends soon!",
+		'fb_termination_description' => "For a limited time only, switch to SaskTel at Jump.ca and get $150 credit AND $250 trade-in value for your old phone when you sign up for a 2-year plan! Conditions apply.",
+		'fb_dynamiclead_description' => 'Are you still interested in the [make] [model]? Click below, fill in your information and a product specialist will be in touch to set an in-store appointment. ',
+        'marketting_lines' => function ($car_data) {
+            $retval = [
+                'marketing_line1' => "Starting at",
+                'marketing_line2' => "",
+                'marketing_line3' => "",
+            ];
+            if (startsWith($car_data['model'], 'iPhone 7')) {
+                $retval['marketing_line1'] = 'Get iPhone 7';
+                $retval['marketing_line2'] = trim($car_data['trim'] . ' Starting at');
+                $retval['marketing_line3'] = "Starting at";
+            }
+            if (startsWith($car_data['model'], 'iPhone 7 Plus')) {
+                $retval['marketing_line1'] = 'Get iPhone 7 Plus';
+                $retval['marketing_line2'] = trim($car_data['trim'] . ' Starting at');
+                $retval['marketing_line3'] = "Starting at";
+            }
+            if (startsWith($car_data['model'], 'iPhone 8') || startsWith($car_data['model'], 'iPhone 8 Plus')) {
+                $retval['marketing_line1'] = 'Get iPhone 8';
+                $retval['marketing_line2'] = trim($car_data['trim'] . ' Starting at');
+                $retval['marketing_line3'] = 'Starting at';
+            }
+            if (startsWith($car_data['model'], 'iPhone X')) {
+                $retval['marketing_line1'] = 'Starting at';
+            }
+            if (startsWith($car_data['make'], 'Samsung ') || startsWith($car_data['model'], 'Galaxy ')) {
+                $retval['marketing_line1'] = 'Starting at';
+            }
+            /*else
+                        {
+            
+                             $retval['marketing_line1'] = 'Starting at';
+                        }
+            */
+            $json_file = dirname(__DIR__) . "/client-data/jump/jump.json";
+            $data = (array) json_decode(file_get_contents($json_file));
+            if (array_key_exists($car_data['url'], $data) && $data[$car_data['url']]->reg) {
+                $retval['marketing_line2'] = "Reg. " . $data[$car_data['url']]->reg;
+            }
+            return $retval;
+        },
+        "template" => "jump",
+        "flash_style" => "default",
+        "border_color" => "#101010",
+        'fb_style' => 'jump_other_a',
+        "styels" => array(
+            "device_display" => "jump",
+            "accessory_display" => "jump",
+            "device_retargeting" => "jump",
+            "accessory_retargeting" => "jump",
+            "device_marketbuyers" => "jump",
+            "accessory_marketbuyers" => "jump",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    'form_live' => false,
+    'buttons_live' => true,
+    'buttons' => [
+        'buy-online' => [
+            'url-match' => '/\\/[^\\/]+\\/m[0-9]+\\//i',
+            'target' => '.contract-button',
+            'locations' => [
+                'top' => 'hr.col-xs-10',
+                'middle' => '.product-detail-color-wrap',
+                'bottom' => '.product-detail-contracts',
+            ],
+            'action-target' => '#btnBuyOnline,#btnReserveInStore',
+            'css-class' => '#btnBuyOnline,#btnReserveInStore',
+            'css-hover' => '#btnBuyOnline:hover,#btnReserveInStore:hover',
+            'sizes' => [
+                '80' => [
+                    'font-size' => '14.4px',
+                    'padding' => '8px 12.8px',
+                ],
+                '90' => [
+                    'font-size' => '16.2px',
+                    'padding' => '9px 14.4px',
+                ],
+                '100' => [
+                    'font-size' => '18px',
+                    'padding' => '10px 16px',
+                ],
+                '110' => [
+                    'font-size' => '19.8px',
+                    'padding' => '11px 17.6px',
+                ],
+                '120' => [
+                    'font-size' => '21.6px',
+                    'padding' => '12px 19.2px',
+                ],
+            ],
+            'texts' => [
+                'buy-online' => [
+                    'target' => '#btnBuyOnline',
+                    'values' => array(
+                        'Buy Online',
+                        'Buy Now',
+                        'Add to Cart',
+                        'Purchase Now',
+                        'Purchase',
+                        'I want it!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'teal' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#19A790,#19A790)',
+                        'margin-top' => '15px',
+                        'border-color' => '#158f7c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#148673,#148673)',
+                        'margin-top' => '15px',
+                        'border-color' => '#117363',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EFC159,#EFC159)',
+                        'margin-top' => '15px',
+                        'color' => '#000',
+                        'border-color' => '#cda64c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BF9A47,#BF9A47)',
+                        'margin-top' => '15px',
+                        'color' => '#000',
+                        'border-color' => '#a4843d',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D75453,#D75453)',
+                        'margin-top' => '15px',
+                        'border-color' => '#b94847',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AC4342,#AC4342)',
+                        'margin-top' => '15px',
+                        'border-color' => '#943a39',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#60C0DC,#60C0DC)',
+                        'margin-top' => '15px',
+                        'color' => '#000',
+                        'border-color' => '#52a5bd',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4D9AB0,#4D9AB0)',
+                        'margin-top' => '15px',
+                        'color' => '#000',
+                        'border-color' => '#428497',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#60B660,#60B660)',
+                        'margin-top' => '15px',
+                        'border-color' => '#529c52',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4D924D,#4D924D)',
+                        'margin-top' => '15px',
+                        'border-color' => '#427d42',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

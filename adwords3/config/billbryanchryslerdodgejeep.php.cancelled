@@ -1,0 +1,269 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["billbryanchryslerdodgejeep"] = array(
+    "name" => " billbryanchryslerdodgejeep",
+    "email" => "regan@smedia.ca",
+    "password" => " billbryanchryslerdodgejeep",
+    'log' => true,
+    /*'fb_brand' => '[year] [make] [model] - [body_style]',
+      "banner" => array(
+          "template" => "acuracentre",
+          'fb_description' => "Are you still interested in the [year] [make] [model]? Click for more info.",
+          'fb_lookalike_description' => "Test drive the [year] [make] [model] today.",
+          "flash_style" => "default",
+          "border_color" => "#282828",
+          "font_color" => "#ffffff",
+      ),*/
+    'adf_to' => array(
+        'sales@billbryancdjr.edealerhub.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(:?new|used)-[^\\+]+\\+[^\\-]+\\-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.hidden-xs li.priceBlockItem a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-class' => 'div.hidden-xs li.priceBlockItem a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-hover' => 'div.hidden-xs li.priceBlockItem a.btn.btn-cta.btn-lg.btn-block.ePriceBtn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.hidden-xs li.priceBlockItem a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+                    'values' => array(
+                        'Test Drive Now',
+                        'Schedule A Test Drive',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D26606,#D26606)',
+                        'border-color' => '#D26606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B85A05,#B85A05)',
+                        'border-color' => '#B85A05',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D20F06,#D20F06)',
+                        'border-color' => '#D20F06',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B80D05,#B80D05)',
+                        'border-color' => '#B80D05',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#28A745,#28A745)',
+                        'border-color' => '#28A745',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228D3A,#228D3A)',
+                        'border-color' => '#228D3A',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/(:?new|used)-[^\\+]+\\+[^\\-]+\\-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.hidden-xs li.priceBlockItem a.btn.btn-success.btn-lg.btn-block.ePriceBtn',
+            'css-class' => 'div.hidden-xs li.priceBlockItem a.btn.btn-success.btn-lg.btn-block.ePriceBtn',
+            'css-hover' => 'div.hidden-xs li.priceBlockItem a.btn.btn-success.btn-lg.btn-block.ePriceBtn:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.hidden-xs li.priceBlockItem a.btn.btn-success.btn-lg.btn-block.ePriceBtn',
+                    'values' => array(
+                        'More Information',
+                        'Ask a Question',
+                        'Contact Us Now',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D26606,#D26606)',
+                        'border-color' => '#D26606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B85A05,#B85A05)',
+                        'border-color' => '#B85A05',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D20F06,#D20F06)',
+                        'border-color' => '#D20F06',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B80D05,#B80D05)',
+                        'border-color' => '#B80D05',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#28A745,#28A745)',
+                        'border-color' => '#28A745',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228D3A,#228D3A)',
+                        'border-color' => '#228D3A',
+                    ),
+                ),
+            ),
+        ],
+        'get-sale-price' => [
+            'url-match' => '/\\/(:?new|used)-[^\\+]+\\+[^\\-]+\\-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.hidden-xs #getSalePriceEntryFormButton',
+            'css-class' => 'div.hidden-xs #getSalePriceEntryFormButton',
+            'css-hover' => 'div.hidden-xs #getSalePriceEntryFormButton:hover',
+            /* date 5-07-2018--->button changed in new vdp  */
+            /*         'action-target' => 'a#appraise-my-trade-in',      
+                       'css-class' => 'a#appraise-my-trade-in',
+                       'css-hover' => 'a#appraise-my-trade-in:hover', */
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'div.hidden-xs #getSalePriceEntryFormButton',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Get Today\'s Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D26606,#D26606)',
+                        'border-color' => '#D26606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B85A05,#B85A05)',
+                        'border-color' => '#B85A05',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D20F06,#D20F06)',
+                        'border-color' => '#D20F06',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B80D05,#B80D05)',
+                        'border-color' => '#B80D05',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#28A745,#28A745)',
+                        'border-color' => '#28A745',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228D3A,#228D3A)',
+                        'border-color' => '#228D3A',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/(:?new|used)-[^\\+]+\\+[^\\-]+\\-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.hidden-xs li.priceBlockItem a[href*=pre-qualified]',
+            'css-class' => 'div.hidden-xs li.priceBlockItem a[href*=pre-qualified]',
+            'css-hover' => 'div.hidden-xs li.priceBlockItem a[href*=pre-qualified]:hover',
+            //            'action-target' => 'a#discount,button#apply-for-finance',
+            //            'css-class' => 'a#discount,button#apply-for-finance',
+            //            'css-hover' => 'a#discount:hover,button#apply-for-finance:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'div.hidden-xs li.priceBlockItem a[href*=pre-qualified]',
+                    //                    'target' => 'a#discount,button#apply-for-finance',
+                    'values' => array(
+                        'Financing Available',
+                        'Explore Payments',
+                        'Get Approved Today',
+                        'Get Pre-Approved',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D26606,#D26606)',
+                        'border-color' => '#D26606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B85A05,#B85A05)',
+                        'border-color' => '#B85A05',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D20F06,#D20F06)',
+                        'border-color' => '#D20F06',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B80D05,#B80D05)',
+                        'border-color' => '#B80D05',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#28A745,#28A745)',
+                        'border-color' => '#28A745',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228D3A,#228D3A)',
+                        'border-color' => '#228D3A',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

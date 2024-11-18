@@ -1,0 +1,101 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["miamiimports"] = array(
+  'password'  => 'miamiimports',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    
+    
+    "banner"        => array(
+        "template"          => "miamiimports",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+/*    
+   // 'lead_to'       => ['albertson_auto@yahoo.com'],
+    'form_live'     => false,
+    'buttons_live'  => true,
+    'buttons'       => [
+        'financing'  => [
+            'url-match' => '/\/[0-9]{4}-.*\/Details/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a#ctl02_ctl02_ctl00_linkBtnApplyForCreditResponsive',
+            'css-class' => 'a#ctl02_ctl02_ctl00_linkBtnApplyForCreditResponsive',
+            'css-hover' => 'a#ctl02_ctl02_ctl00_linkBtnApplyForCreditResponsive:hover',
+            'button_action' => ['form','finance'],
+            'sizes'     => [
+                '100'   => [
+                    
+                ]
+            ],
+            'texts'     => [
+                'financing'  => [
+                    'target'    => 'a#ctl02_ctl02_ctl00_linkBtnApplyForCreditResponsive',
+                    'values'    => [
+                        'Get Financed Today',
+                        'Financing Available',
+                        'Explore Payments',
+                        'No Hassle Financing',
+                        'Special Finance Offers!'
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background' => '#f29326',
+                        'border-color'     => '#f29326',
+                        'color'         => '#ffffff',
+                    ],
+                    'hover'     => [
+                        'background' => '#cf540e',
+                        'border-color'     => '#cf540e',
+                        'color'         => '#ffffff',
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#f22626',
+                        'border-color'     => '#f22626',
+                        'color'         => '#ffffff',
+                    ],
+                    'hover'     => [
+                        'background' => '#c60c0d',
+                        'border-color'     => '#c60c0d',
+                        'color'         => '#ffffff',
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => '#1ec21e',
+                        'border-color'     => '#1ec21e',
+                        'color'         => '#ffffff',
+                    ],
+                    'hover'     => [
+                        'background' => '#359d22',
+                        'border-color'     => '#359d22',
+                        'color'         => '#ffffff',
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => '#1e7199',
+                        'border-color'     => '#1e7199',
+                        'color'         => '#ffffff',
+                    ],
+                    'hover'     => [
+                        'background' => '#188bb7',
+                        'border-color'     => '#188bb7',
+                        'color'         => '#ffffff',
+                    ]
+                ]
+            ]
+        ],
+    ]   */
+    );

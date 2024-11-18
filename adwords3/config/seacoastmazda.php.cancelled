@@ -1,0 +1,425 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["seacoastmazda"] = array(
+    'password' => 'seacoastmazda',
+    "email" => "regan@smedia.ca",
+    'log' => false,
+    "banner" => array(
+        "template" => "seacoastmazda",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff"
+    ),
+
+
+    /*'form_live'     => false,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\/vehicle-details\/[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => '.priceHTML .mod-action-buttons.mod-action-buttons-responsive1',
+            'css-class' => '.priceHTML .mod-action-buttons.mod-action-buttons-responsive1',
+            'css-hover' => '.priceHTML .mod-action-buttons.mod-action-buttons-responsive1:hover',
+            'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [
+                //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => '.priceHTML .mod-action-buttons.mod-action-buttons-responsive1',
+                    'values' => [
+                        'GET E-PRICE',
+                        'GET INTERNET PRICE',
+                        'GET SPECIAL PRICING',
+                        'GET OUR BEST PRICE'
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => 'none',
+                        'background-color' => '#f06b20',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => 'none',
+                        'background-color' => '#cf540e',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => 'none',
+                        'background-color' => '#e01212',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => 'none',
+                        'background-color' => '#c60c0d',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => 'none',
+                        'background-color' => '#54b740',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => 'none',
+                        'background-color' => '#359d22',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => 'none',
+                        'background-color' => '#1ca0d1',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => 'none',
+                        'background-color' => '#188bb7',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '30px 0 0',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ]
+            ]
+        ],
+        'financing' => [
+            'url-match' => '/\/vehicle-details\/[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => ' .mod-html-content.mod-html-content-default div',
+            'css-class' => ' .mod-html-content.mod-html-content-default div',
+            'css-hover' => ' .mod-html-content.mod-html-content-default div:hover',
+         // 'button_action' => ['form','finance'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => ' .mod-html-content.mod-html-content-default div',
+                    'values' => [
+                        'No Hassle Financing',
+                        'Financing Available',
+                        'Get Financed Today',
+                        'Explore Payments'
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#f06b20',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#e01212',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#54b740',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '#1ca0d1',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                        'display' => 'block',
+                        'float' => 'none',
+                        'font-family' => 'Raleway, arial, sans-serif',
+                        'font-size' => '14px',
+                        'font-weight' => '700',
+                        'line-height' => '17px',
+                        'margin' => '10px 0 15px',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                        'text-align' => 'center',
+                        'text-decoration' => 'none',
+                    ]
+                ]
+            ]
+        ],
+        'request-information' => [
+            'url-match' => '/\/vehicle-details\/[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => '.vehicle-action-btn button[data-url*=get-info]',
+            'css-class' => '.vehicle-action-btn button[data-url*=get-info]',
+            'css-hover' => '.vehicle-action-btn button[data-url*=get-info]:hover',
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => '.vehicle-action-btn button[data-url*=get-info]',
+                    'values' => [
+                        'Contact Us',
+                        'Get More Info',
+                        'Ask a Question',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background' => '#f06b20',
+                        'border-color'     => '#f06b20'
+                    ],
+                    'hover'     => [
+                        'background' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#e01212',
+                        'border-color'     => '#e01212'
+                    ],
+                    'hover'     => [
+                        'background' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => '#54b740',
+                        'border-color'     => '#54b740'
+                    ],
+                    'hover'     => [
+                        'background' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => '#1ca0d1',
+                        'border-color'     => '#1ca0d1'
+                    ],
+                    'hover'     => [
+                        'background' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]*/
+);
+

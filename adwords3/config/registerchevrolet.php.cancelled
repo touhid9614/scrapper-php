@@ -1,0 +1,243 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["registerchevrolet"] = array(
+    "name" => " registerchevrolet",
+    "email" => "regan@smedia.ca",
+    "password" => " registerchevrolet",
+    'log' => true,
+    "banner" => array(
+        "template" => "registerchevrolet",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#0433C6',
+            '#0433C6',
+        ),
+        'button_color_hover' => array(
+            '#032694',
+            '#032694',
+        ),
+        'button_color_active' => array(
+            '#333333',
+            '#333333',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 OFF coupon from Register Chevrolet',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Register Chevrolet Team',
+        'forward_to' => array(
+            'marshal@smedia.ca',
+        ),
+        'special_to' => array(
+            'registerchevrolet@crm.eautodealerhub.com',
+        ),
+        'special_email' => '<?xml version="1.0"?>
+			<?adf version="1.0"?>
+			<adf>
+				<prospect>
+					<id sequence="[total_count]" source="Register Chevrolet"></id>
+					<requestdate>[fdt]</requestdate>
+					<vehicle interest="buy" status="[stock_type]">
+						<year>[year]</year>
+						<make>[make]</make>
+						<model>[model]</model>
+						<stock>[stock_number]</stock>
+					</vehicle>
+					<customer>
+						<contact>
+							<name part="full">[name]</name>
+							<email>[email]</email>
+							<phone>[phone]</phone>
+						</contact>
+					</customer>
+					<vendor>
+						<contact>
+							<name part="full">Register Chevrolet</name>
+							<email>[dealer_email]</email>
+						</contact>
+					</vendor>
+					<provider>
+						<name part="full">sMedia</name>
+						<url>http://smedia.ca</url>
+						<email>offers@mail.smedia.ca</email>
+						<phone>855-775-0062</phone>
+					</provider>
+				</prospect>
+			</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'adf_to' => array(
+        'registerchevrolet@crm.eautodealerhub.com',
+        'purviseddie007@gmail.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]',
+            'css-class' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]',
+            'css-hover' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]',
+                    'values' => array(
+                        'Get a Quote',
+                        'Get e-Price',
+                        'Get Internet Price',
+                        'Get Current Price',
+                        'Get Special Price',
+                        'Get Sale Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFAE00,#FFAE00)',
+                        'border-color' => '#FFAE00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E59D00,#E59D00)',
+                        'border-color' => '#E59D00',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FD0006,#FD0006)',
+                        'border-color' => '#FD0006',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E30005,#E30005)',
+                        'border-color' => '#E30005',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0BDE00,#0BDE00)',
+                        'border-color' => '#0BDE00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0AC400,#0AC400)',
+                        'border-color' => '#0AC400',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0433C6,#0433C6)',
+                        'border-color' => '#0433C6',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#032CAC,#032CAC)',
+                        'border-color' => '#032CAC',
+                    ),
+                ),
+            ),
+        ],
+        'price-watch' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]',
+            'css-class' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]',
+            'css-hover' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'price-watch' => [
+                    'target' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]',
+                    'values' => array(
+                        'Price Alert',
+                        'Price Update',
+                        'Follow Price',
+                        'Follow This Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFAE00,#FFAE00)',
+                        'border-color' => '#FFAE00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E59D00,#E59D00)',
+                        'border-color' => '#E59D00',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FD0006,#FD0006)',
+                        'border-color' => '#FD0006',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E30005,#E30005)',
+                        'border-color' => '#E30005',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0BDE00,#0BDE00)',
+                        'border-color' => '#0BDE00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0AC400,#0AC400)',
+                        'border-color' => '#0AC400',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0433C6,#0433C6)',
+                        'border-color' => '#0433C6',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#032CAC,#032CAC)',
+                        'border-color' => '#032CAC',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17603',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

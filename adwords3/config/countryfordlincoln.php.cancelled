@@ -1,0 +1,303 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["countryfordlincoln"] = array(
+    'password' => 'countryfordlincoln',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "countryfordlincoln",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    //  'lead_to'=>[],
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[onclick*=price-watch] span',
+            //used- div[data-ga-event*="used_vdp_cta_custom"]
+            'css-class' => 'a[onclick*=price-watch] span',
+            'css-hover' => 'a[onclick*=price-watch] span:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[onclick*=price-watch] span',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Track Price',
+                        'Track This Price',
+                        'Check Availability',
+                        'Get Special Price!',
+                        'SPECIAL PRICING!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'Used request-a-quote' => [
+            'url-match' => '/\\/(?:used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'button[onclick*=price-watch] span',
+            //used- div[data-ga-event*="used_vdp_cta_custom"]
+            'css-class' => 'button[onclick*=price-watch] span',
+            'css-hover' => 'button[onclick*=price-watch] span:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'button[onclick*=price-watch] span',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Track Price',
+                        'Track This Price',
+                        'Check Availability',
+                        'Get Special Price!',
+                        'SPECIAL PRICING!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/(?:new)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=vehicle-deposit].btn-build-price-new',
+            'css-class' => 'a[href*=vehicle-deposit].btn-build-price-new',
+            'css-hover' => 'a[href*=vehicle-deposit].btn-build-price-new:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a[href*=vehicle-deposit].btn-build-price-new',
+                    'values' => array(
+                        'Purchase Now',
+                        'Purchase Today',
+                        'Purchase It Now',
+                        'Buy This Vehicle',
+                        'Special Finance Offers!',
+                        'Special Finance Offers',
+                        'TODAY\'S MARKET PRICE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'Used financing' => [
+            'url-match' => '/\\/(?:used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a button.btn-orange-vehicles1.icon-coin-dollar span',
+            'css-class' => 'a button.btn-orange-vehicles1.icon-coin-dollar span',
+            'css-hover' => 'a button.btn-orange-vehicles1.icon-coin-dollar span:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a button.btn-orange-vehicles1.icon-coin-dollar span',
+                    'values' => array(
+                        'Purchase Now',
+                        'Purchase Today',
+                        'Purchase It Now',
+                        'Buy This Vehicle',
+                        'Special Finance Offers!',
+                        'Special Finance Offers',
+                        'TODAY\'S MARKET PRICE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'button#link_contact_seller',
+            'css-class' => 'button#link_contact_seller',
+            'css-hover' => 'button#link_contact_seller:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'button#link_contact_seller',
+                    'values' => array(
+                        'Get More Info',
+                        'Request Info',
+                        'Request More Info',
+                        'Send Request',
+                        'Learn More',
+                        'Let our Experts Help',
+                        'Ask an Expert',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

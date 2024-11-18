@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["sargentgmc"] = array(
+  'password'  => 'sargentgmc',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "sargentgmc",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

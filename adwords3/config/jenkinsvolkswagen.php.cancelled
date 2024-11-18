@@ -1,0 +1,252 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jenkinsvolkswagen"] = array(
+    'password' => 'jenkinsvolkswagen',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "jenkinsvolkswagen",
+        'fb_description' => 'Are you still interested in the [Year] [Make] [Model]? Click here to see our new price!',
+        'fb_description_new' => "Lease the [year] [make] [model] today! Click here for more info or give us a call for a test drive.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    //active ai 9-27-2018
+/*    'adf_to' => array(
+        'jenkinsvwleesburg@eleadtrack.net',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/Volkswagen\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.eprice',
+            'css-class' => 'a.btn.btn-default.eprice',
+            'css-hover' => 'a.btn.btn-default.eprice:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.eprice',
+                    'values' => array(
+                        'Get E-Price',
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Sale Price',
+                        'Get Our Best Price',
+                        'Get Current Price',
+                        'Get Today\'s Price',
+                        'Request a Quote',
+                        'Get a Quote',
+                        'Inquire Now',
+                        'Inquire Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9611,#FF9611)',
+                        'border-color' => '#FF9611',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D17500,#D17500)',
+                        'border-color' => '#D17500',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FD111C,#FD111C)',
+                        'border-color' => '#FD111C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CE000A,#CE000A)',
+                        'border-color' => '#CE000A',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+                        'border-color' => '#24EB0F',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#10AB00,#10AB00)',
+                        'border-color' => '#10AB00',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+                        'border-color' => '#1A8CD8',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0478C3,#0478C3)',
+                        'border-color' => '#0478C3',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/Volkswagen\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-primary.btn-block.calculate-dealertrack',
+            'css-class' => 'a.btn.btn-primary.btn-block.calculate-dealertrack',
+            'css-hover' => 'a.btn.btn-primary.btn-block.calculate-dealertrack:hover',
+            //            'action-target' => 'a#discount,button#apply-for-finance',
+            //            'css-class' => 'a#discount,button#apply-for-finance',
+            //            'css-hover' => 'a#discount:hover,button#apply-for-finance:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.btn.btn-primary.btn-block.calculate-dealertrack',
+                    //                    'target' => 'a#discount,button#apply-for-finance',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Get Approved Today',
+                        'Financing Available',
+                        'Special Finance Offers',
+                        'Explore Payments',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9611,#FF9611)',
+                        'border-color' => '#FF9611',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D17500,#D17500)',
+                        'border-color' => '#D17500',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FD111C,#FD111C)',
+                        'border-color' => '#FD111C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CE000A,#CE000A)',
+                        'border-color' => '#CE000A',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+                        'border-color' => '#24EB0F',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#10AB00,#10AB00)',
+                        'border-color' => '#10AB00',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+                        'border-color' => '#1A8CD8',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0478C3,#0478C3)',
+                        'border-color' => '#0478C3',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/Volkswagen\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-primary.btn-lg',
+            'css-class' => 'a.btn.btn-primary.btn-lg',
+            'css-hover' => 'a.btn.btn-primary.btn-lg:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a.btn.btn-primary.btn-lg',
+                    'values' => array(
+                        'Book a Test Drive',
+                        'Request a Test Drive',
+                        'Want To Test Drive?',
+                        'Test Drive Today',
+                        'Test Drive Now',
+                        'Schedule My Visit',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9611,#FF9611)',
+                        'border-color' => '#FF9611',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D17500,#D17500)',
+                        'border-color' => '#D17500',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FD111C,#FD111C)',
+                        'border-color' => '#FD111C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CE000A,#CE000A)',
+                        'border-color' => '#CE000A',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#24EB0F,#24EB0F)',
+                        'border-color' => '#24EB0F',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#10AB00,#10AB00)',
+                        'border-color' => '#10AB00',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8CD8,#1A8CD8)',
+                        'border-color' => '#1A8CD8',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0478C3,#0478C3)',
+                        'border-color' => '#0478C3',
+                    ),
+                ),
+            ),
+        ],
+    ],  */
+);

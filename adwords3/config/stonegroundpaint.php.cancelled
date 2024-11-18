@@ -1,0 +1,17 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["stonegroundpaint"] = array( 
+	"name"      =>"stonegroundpaint",
+	"email"     => "regan@smedia.ca",
+	"password"  =>"stonegroundpaint",
+	"log"       => true,
+        /*
+	"banner"    => array(
+        "template"  => "stonegroundpaint",
+        "fb_retargeting_description"    => "Are you still interested in the [year] [make] [model]? Shop now!",
+        "fb_lookalike_description"	=> "Looking for new watercolor paints? Our watercolour paints are made by hand without any fillers or extenders. They are made from the finest pigments available.",
+        "flash_style"   => "default",
+        "border_color"  => "#282828",
+        "font_color"    => "#ffffff",
+    ),  */
+);

@@ -1,0 +1,166 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["decorahchevrolet"] = array(
+  'password'  => 'decorahchevrolet',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+ 'fb_brand'          => '[year] [make] [model] - [body_style]',   
+    
+    "banner"        => array(
+        "template"          => "decorahchevrolet",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+    'adf_to'       => ['webleads@decorahchevrolet.com'],
+    'form_live'     => false,
+    'buttons_live'  => true,
+    'buttons'       => [
+        'request-a-quote'  => [
+            'url-match' => '/\/VehicleDetails\/(?:new|used|certified)-/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a[name=5654f19e-6aa5-467a-b08d-86846947a10e]',
+            'css-class' => 'a[name="5654f19e-6aa5-467a-b08d-86846947a10e"]',
+            'css-hover' => 'a[name="5654f19e-6aa5-467a-b08d-86846947a10e"]:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes'     => [
+                '100'   => [
+                    'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'request-a-quote'  => [
+                    'target'    => 'a[name=5654f19e-6aa5-467a-b08d-86846947a10e]',
+                    'values'    => [
+                        'Get More Information',
+                        'Book Test Drive',
+                        'Ask a Question',
+                        'Inquire Now',
+                        'I\'m interested',
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Get Your Price',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background-color' => '#f06b20',
+                        'border-color'     => '#f06b20'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background-color' => '#e01212',
+                        'border-color'     => '#e01212'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background-color' => '#54b740',
+                        'border-color'     => '#54b740'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background-color' => '#1ca0d1',
+                        'border-color'     => '#1ca0d1'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+       'financing'  => [
+            'url-match' => '/\/VehicleDetails\/(?:new|used|certified)-/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a[name=91858344-58d3-4d49-ac4b-b52f374c95d5]',
+            'css-class' => 'a[name="91858344-58d3-4d49-ac4b-b52f374c95d5"]',
+            'css-hover' => 'a[name="91858344-58d3-4d49-ac4b-b52f374c95d5"]:hover',
+            //'button_action' => ['form','finance'],
+            'sizes'     => [
+                '100'   => [
+                    'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'financing'  => [
+                    'target'    => 'a[name=91858344-58d3-4d49-ac4b-b52f374c95d5]',
+                    'values'    => [
+                        'No Hassle Financing',
+                        'Financing Available',
+                        'Get Financed Today',
+                        'Explore Payments',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background-color' => '#f06b20',
+                        'border-color'     => '#f06b20'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background-color' => '#e01212',
+                        'border-color'     => '#e01212'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background-color' => '#54b740',
+                        'border-color'     => '#54b740'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background-color' => '#1ca0d1',
+                        'border-color'     => '#1ca0d1'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    
+    ]
+   
+    );

@@ -1,0 +1,347 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["kiaofsaskatoon"] = array(
+    'password' => 'kiaofsaskatoon',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "kiaofsaskatoon",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    //  'lead_to'=>[],
+    'form_live' => false,
+    'buttons_live' => true,
+    'form_disclaimer' => "By submitting your email address or phone number, you allow us, Kia of Saskatoon, to include you on our contact lists to send you information about our sales promotions, product offers, special events, and other information relating to our products and services. You may revoke consent at any time by clicking on the \"Unsubscribe\" link in your email. Please read our Privacy Policy or contact us for more details.",
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'button#request-info, .btn-red-0.btn-build-price-new.btn-lg.btn-build-price-big.cta-padding-alignment',
+            'css-class' => 'button#request-info, .btn-red-0.btn-build-price-new.btn-lg.btn-build-price-big.cta-padding-alignment',
+            'css-hover' => 'button#request-info:hover, .btn-red-0.btn-build-price-new.btn-lg.btn-build-price-big.cta-padding-alignment:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'button[data-target*="e-Price"], .btn-red-0.btn-build-price-new.btn-lg.btn-build-price-big.cta-padding-alignment',
+                    'values' => array(
+                        'Get E Price Now!',
+                        'Internet Price',
+                        'Get your Price!',
+                        'E- Price',
+                        'Get Internet Price Now!',
+                        'Contact Us.',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Contact Us',
+                        'Contact Store',
+                        'Dealership Name Pricing',
+                        'Local Pricing',
+                        'You are Eligible for Special Pricing',
+                        'Book Test Drive',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Ask a Question',
+                        'Inquire Now',
+                        'Let our Experts Help',
+                        'Ask an Expert',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC7500,#CC7500)',
+                        'border-color' => '#cc7500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC0000,#CC0000)',
+                        'border-color' => '#cc0000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A300,#00A300)',
+                        'border-color' => '#00a300',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#094E83,#094E83)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/(?:new|used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.maincontent #apply-for-finance,a#discount, a#view-incentives-button',
+            'css-class' => '.maincontent #apply-for-finance,a#discount, a#view-incentives-button',
+            'css-hover' => '.maincontent #apply-for-finance:hover,a#discount:hover, a#view-incentives-button:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.maincontent #apply-for-finance,a#discount, a#view-incentives-button',
+                    'values' => array(
+                        'No hassle financing',
+                        'Financing Available.',
+                        'Get Financed Today',
+                        'Special Finance Offers!',
+                        'Explore Payments',
+                        'Special Finance Offers!',
+                        'Special Finance Offers',
+                        'TODAY\'S MARKET PRICE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC7500,#CC7500)',
+                        'border-color' => '#cc7500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC0000,#CC0000)',
+                        'border-color' => '#cc0000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A300,#00A300)',
+                        'border-color' => '#00a300',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#094E83,#094E83)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used)\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'button[onclick*=TRADE]',
+            'css-class' => 'button[onclick*=TRADE]',
+            'css-hover' => 'button[onclick*=TRADE]:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'button[onclick*=TRADE]',
+                    'values' => array(
+                        'We\'ll Buy your Car',
+                        'Value your Trade',
+                        'What is your Trade worth',
+                        'We want your Car',
+                        'Trade Offer',
+                        'WHAT\'S YOUR TRADE WORTH?',
+                        'What is Your Trade Worth?',
+                        'Trade Appraisal',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC7500,#CC7500)',
+                        'border-color' => '#cc7500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC0000,#CC0000)',
+                        'border-color' => '#cc0000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A300,#00A300)',
+                        'border-color' => '#00a300',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#094E83,#094E83)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#094e83',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tjspizza_moosomin"] = array(
+    'max_cost'      => 125.00,
+    'log'           => false,
+    "customer_id"   => "777-221-2770",
+    'password'      => 'tjspizza_moosomin',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    'cost_distribution' => array(
+        'adwords'   => 125,        //Defines all adwords ads
+        
+    ),
+);

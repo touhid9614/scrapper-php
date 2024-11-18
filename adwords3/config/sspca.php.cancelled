@@ -1,0 +1,7 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["sspca"] = array( 
+	"name"=>"sspca",
+	"password"=>"sspca",
+	"no_adv"=>true
+);

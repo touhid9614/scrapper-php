@@ -1,0 +1,86 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["lincolnheights"] = array(
+  //'budget'    => 2.0,
+  'bid'           => 3.0,
+  'log'          =>true,
+  'password'  => '.lincolnheights',
+    'bid_modifier'  => array(
+        'after'     => 45, //days
+        'bid'       => 1.5
+    ),
+     'max_cost'      => 0,
+	'cost_distribution' => array(
+		'youtube'      => 0,
+    ),
+
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'N8M 2C8',
+  
+    "create"     => array(
+          "new_search"        => no,
+        "used_search"       => no,
+        "new_display"       => no,
+        "used_display"      => no,
+        "new_retargeting"   => no,
+        "used_retargeting"  => no,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+		 "new_combined"    => no,
+        "used_combined"   => no
+    ),
+   
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+
+    "email"         => "regan@smedia.ca",
+    "banner"        => array(
+        "template"          => "lincolnheights",
+        "flash_style"       => "default",
+        "hst" => yes,
+        "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+        ),
+        "font_color"        => "#ffffff",
+        "fb_title"          => "Test Drive [year] [make] [model] today! Stock #[stock_number]",
+        'fb_description'    => 'Stock #[stock_number]'
+    )
+);

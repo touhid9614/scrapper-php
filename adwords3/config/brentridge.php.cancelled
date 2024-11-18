@@ -1,0 +1,30 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["brentridge"] = array(
+  //'budget'    => 2.0,
+  'bid'           => 3.0,
+  'password'  => 'brentridge',
+
+  
+
+    "email"         => "regan@smedia.ca",
+    "banner"        => array(
+        "template"          => "brentridge",
+	 'fb_description_new'    => 'Get the Ford that\'s right for you!',
+	 'fb_description_used'    => 'Test drive [year] [make] [model] today.',
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+       
+    );

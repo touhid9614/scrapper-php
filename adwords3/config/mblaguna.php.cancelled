@@ -1,0 +1,396 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["mblaguna"] = array(
+    'password' => 'mblaguna',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'tag_debug' => false,
+    "banner" => array(
+        "template" => "mblaguna",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+//    'adf_to' => array(
+//        'webleads@mblagunaniguel.dsmessage.com',
+//    ),
+//    'form_live' => false,
+//    'buttons_live' => false,
+//    'buttons' => [
+//        'request-a-quote' => [
+//            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a.button.cta-button.block.button-form.fancybox',
+//            'css-class' => 'a.button.cta-button.block.button-form.fancybox',
+//            'css-hover' => 'a.button.cta-button.block.button-form.fancybox:hover',
+//            'button_action' => [
+//                'form',
+//                'e-price',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'request-a-quote' => [
+//                    'target' => 'a.button.cta-button.block.button-form.fancybox',
+//                    'values' => array(
+//                        'GET INTERNET PRICE',
+//                        'GET E-PRICE',
+//                        'GET YOUR PRICE',
+//                        'GET OUR BEST PRICE',
+//                        'GET SPECIAL PRICING',
+//                        'Request A Quote',
+//                        'Market Pricing',
+//                        'Local Pricing',
+//                        'Inquire Now',
+//                        'More Information',
+//                        'Get Market Price',
+//                        'Get Internet Price Now!',
+//                        'Get Special Price!',
+//                        'SPECIAL PRICING!',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F80F26,#F80F26)',
+//                        'border-color' => '#f80f26',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#32DD0E,#32DD0E)',
+//                        'border-color' => '#32dd0e',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#176EB7,#176EB7)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//        'financing' => [
+//            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a[data-modal-title*=Financing]',
+//            'css-class' => 'a[data-modal-title*=Financing]',
+//            'css-hover' => 'a[data-modal-title*=Financing]:hover',
+//            'button_action' => [
+//                'form',
+//                'finance',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'financing' => [
+//                    'target' => 'a[data-modal-title*=Financing]',
+//                    'values' => array(
+//                        'EXPLORE PAYMENTS',
+//                        'FINANCING AVAILABLE',
+//                        'Special Finance Offers!',
+//                        'Special Finance Offers',
+//                        'TODAY\'S MARKET PRICE',
+//                        'TODAY\'S MARKET PRICE',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F80F26,#F80F26)',
+//                        'border-color' => '#f80f26',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#32DD0E,#32DD0E)',
+//                        'border-color' => '#32dd0e',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#176EB7,#176EB7)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//        'trade-in' => [
+//            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a.value-trade[href*="trade"]',
+//            'css-class' => 'a.value-trade[href*="trade"]',
+//            'css-hover' => 'a.value-trade[href*="trade"]:hover',
+//            'button_action' => [
+//                'form',
+//                'trade-in',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'trade-in' => [
+//                    'target' => 'a.value-trade[href*="trade"]',
+//                    'values' => array(
+//                        'WHAT\'S  YOUR TRADE WORTH?',
+//                        'WE WANT YOUR CAR',
+//                        'WE\'LL BUY YOUR CAR',
+//                        'GET TRADE-IN VALUE',
+//                        'Trade Appraisal',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F80F26,#F80F26)',
+//                        'border-color' => '#f80f26',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#32DD0E,#32DD0E)',
+//                        'border-color' => '#32dd0e',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#176EB7,#176EB7)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//        'request-information' => [
+//            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => '#vehicleDetails a.cta-button.block[href*=tel]',
+//            'css-class' => '#vehicleDetails a.cta-button.block[href*="tel"]',
+//            'css-hover' => '#vehicleDetails a.cta-button.block[href*="tel"]:hover',
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'request-information' => [
+//                    'target' => '#vehicleDetails a.cta-button.block[href*=tel]',
+//                    'values' => array(
+//                        'Call for Price',
+//                        'Phone us',
+//                        'Call an expert',
+//                        'Call today',
+//                        'Click to call',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F80F26,#F80F26)',
+//                        'border-color' => '#f80f26',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#32DD0E,#32DD0E)',
+//                        'border-color' => '#32dd0e',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#176EB7,#176EB7)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#176eb7',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//    ],
+);

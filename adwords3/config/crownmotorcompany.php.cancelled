@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["crownmotorcompany"] = array(
+  'password'  => 'crownmotorcompany',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "crownmotorcompany",
+        'fb_description'    => 'Click here to digitally test drive the [year] [make] [model]!',
+        "flash_style"       => "default",
+        "border_color"      => "#282828",
+        'fb_style'          => 'northwestmini',
+        "font_color"        => "#ffffff"
+    )
+);

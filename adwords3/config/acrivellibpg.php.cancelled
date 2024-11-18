@@ -1,0 +1,342 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["acrivellibpg"] = array(
+    "name" => " acrivellibpg",
+    "email" => "regan@smedia.ca",
+    "password" => " acrivellibpg",
+    "log" => true,
+    'lead_to' => array(
+        'rmilford@theautogiant.net',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name=826ed42f-1e2d-4e5f-8663-2a25ab94bbd4]',
+            'css-class' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]',
+            'css-hover' => 'a[name="826ed42f-1e2d-4e5f-8663-2a25ab94bbd4"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name=826ed42f-1e2d-4e5f-8663-2a25ab94bbd4]',
+                    'values' => array(
+                        'GET A QUOTE',
+                        'INQUIRE NOW',
+                        'INQUIRE TODAY',
+                        'ASK A QUESTION',
+                        'GET MORE INFO',
+                        'REQUEST MORE INFO',
+                        'CONTACT US NOW',
+                        'CONTACT US TODAY',
+                        'CONTACT US',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'Listing request-a-quote' => [
+            'url-match' => '/\\/VehicleSearchResults\\?search=(?:new|preowned)/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name=3532db19-f959-49ca-ba00-9a518823acb2]',
+            'css-class' => 'a[name="3532db19-f959-49ca-ba00-9a518823acb2"]',
+            'css-hover' => 'a[name="3532db19-f959-49ca-ba00-9a518823acb2"]:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name=3532db19-f959-49ca-ba00-9a518823acb2]',
+                    'values' => array(
+                        'GET A QUOTE',
+                        'INQUIRE NOW',
+                        'INQUIRE TODAY',
+                        'ASK A QUESTION',
+                        'GET MORE INFO',
+                        'REQUEST MORE INFO',
+                        'CONTACT US NOW',
+                        'CONTACT US TODAY',
+                        'CONTACT US',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'price-watch' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name=b3dc64a6-f84e-4046-8dec-adaa957a198d]',
+            'css-class' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]',
+            'css-hover' => 'a[name="b3dc64a6-f84e-4046-8dec-adaa957a198d"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'price-watch' => [
+                    'target' => 'a[name=b3dc64a6-f84e-4046-8dec-adaa957a198d]',
+                    'values' => array(
+                        'WATCH PRICE',
+                        'WATCH THIS PRICE',
+                        'FOLLOW PRICE',
+                        'FOLLOW THIS PRICE',
+                        'TRACK PRICE',
+                        'TRACK THIS PRICE',
+                        'GET PRICE ALERTS',
+                        'GET PRICE UPDATES',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'Listing price-watch' => [
+            'url-match' => '/\\/VehicleSearchResults\\?search=(?:new|preowned)/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name=c9df01b0-c773-4e70-826f-dd9d348dcb39]',
+            'css-class' => 'a[name="c9df01b0-c773-4e70-826f-dd9d348dcb39"]',
+            'css-hover' => 'a[name="c9df01b0-c773-4e70-826f-dd9d348dcb39"]:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'price-watch' => [
+                    'target' => 'a[name=c9df01b0-c773-4e70-826f-dd9d348dcb39]',
+                    'values' => array(
+                        'WATCH PRICE',
+                        'WATCH THIS PRICE',
+                        'FOLLOW PRICE',
+                        'FOLLOW THIS PRICE',
+                        'TRACK PRICE',
+                        'TRACK THIS PRICE',
+                        'GET PRICE ALERTS',
+                        'GET PRICE UPDATES',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

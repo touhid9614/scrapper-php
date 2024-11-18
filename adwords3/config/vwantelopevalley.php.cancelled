@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["vwantelopevalley"] = array(
+  'password'  => 'vwantelopevalley',
+    "email"         => "regan@smedia.ca",
+    'log'         => true,
+    "banner"        => array(
+        "template"          => "vwantelopevalley",
+		'fb_description_new'	=> 'Test drive the [year] [make] [model] today!',
+		'fb_description_used'	=> 'Test drive the [year] [make] [model] today!',
+		'fb_description_certified'	=> 'Test drive the [year] [make] [model] today! Save up to $1,791 on select certified pre-owned models.',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

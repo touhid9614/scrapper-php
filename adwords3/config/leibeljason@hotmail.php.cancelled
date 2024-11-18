@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["leibeljason@hotmail"] = array( 
+	"name"  =>" leibeljason@hotmail",
+	"email" => "regan@smedia.ca",
+	"password" =>" leibeljason@hotmail",
+	"no_adv" => true ,
+);

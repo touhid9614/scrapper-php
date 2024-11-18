@@ -1,0 +1,96 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["karzplus"] = array(
+  'password'  => 'karzplus',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "karzplus",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+    'adf_to'       => ['KARZPLUSESCONDIDO1774@ADFLEADS.COM'],
+    'form_live'    => false,
+    'buttons_live' => false,
+    'buttons' => [
+    	'request-a-quote' => [
+            'url-match' => '/\/inventory\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+            'css-class' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+            'css-hover' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+                    'values' => array(
+                        'GET INTERNET PRICE',
+                        'GET YOUR PRICE',
+                        'GET OUR BEST PRICE',
+                        'GET CURRENT PRICE',
+                        'GET TODAY\'S PRICE',
+                        'ASK A QUESTION',
+                        'GET MORE INFO',
+                        'REQUEST MORE INFO',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#008000,#008000)',
+                        'border-color' => '#008000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#006400,#006400)',
+                        'border-color' => '#006400',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#054665,#054665)',
+                        'border-color' => '#054665',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03364F,#03364F)',
+                        'border-color' => '#03364F',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#A00000,#A00000)',
+                        'border-color' => '#A00000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#7C0000,#7C0000)',
+                        'border-color' => '#7C0000',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#A05600,#A05600)',
+                        'border-color' => '#A05600',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#7C4300,#7C4300)',
+                        'border-color' => '#7C4300',
+                    ),
+                ),
+            ),
+        ],       
+    ],
+);

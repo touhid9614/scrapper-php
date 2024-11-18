@@ -1,0 +1,29 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["warechev"] = array(
+    //'budget'    => 2.0,
+    'bid'           => 3.0,
+    'password'  => 'warechev',
+    'tag_debug'     => false,
+    'log'           => true,
+    "email"         => "regan@smedia.ca",
+    'retargetting_delay' => 30000,
+    'fb_brand'          => '[year] [make] [model] - [body_style]',
+    "banner"        => array(
+        "template"          => "warechev",
+		"fb_description"	=> "Are you still interested in the [year] [make] [model]? Cick below for more info!",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+        ),
+        "font_color"        => "#ffffff"
+    )
+);

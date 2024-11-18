@@ -1,0 +1,11 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["authenticstone"] = array(
+    'max_cost'      => 1000,
+    "customer_id"   => "693-735-0276",
+    'password'      => 'authenticstone',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

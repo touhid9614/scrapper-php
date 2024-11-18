@@ -1,0 +1,192 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jerryscarsales"] = array(
+    "name" => " jerryscarsales",
+    "email" => "regan@smedia.ca",
+    "password" => " jerryscarsales",
+ 'fb_brand'          => '[year] [make] [model] - [body_style]',    "log" => true,
+	
+    'lead_to' => array(
+        'zane.tucker@jerryscarsales.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'trade-in' => [
+            'url-match' => '/\/cars\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.nav.nav-tabs li:nth-of-type(2) a',
+            'css-class' => 'ul.nav.nav-tabs li:nth-of-type(2) a',
+            'css-hover' => 'ul.nav.nav-tabs li:nth-of-type(2) a:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'ul.nav.nav-tabs li:nth-of-type(2) a',
+                    'values' => array(
+                        'What\'s Your Trade Worth?',
+                        'Value Your Trade',
+                        'We\'ll Buy Your Car',
+                        'TRADE-IN OFFER',
+                        'Trade In Your Ride',
+                        'We Want Your Car',
+                        'Trade Offer',
+                        'Trade-In Your Ride',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC803D,#CC803D)',
+                        'border-color' => '#f06b20',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#cf540e',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#93272A,#93272A)',
+                        'border-color' => '#e01212',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#36B842,#36B842)',
+                        'border-color' => '#54b740',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#359d22',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6AA3D9,#6AA3D9)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#188bb7',
+                        'color' => '#ffffff',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\/cars\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.col-sm-12.padding-none input',
+            'css-class' => 'div.col-sm-12.padding-none input',
+            'css-hover' => 'div.col-sm-12.padding-none input:hover',
+//            'button_action' => [
+//                'form',
+//                'e-price',
+//            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.col-sm-12.padding-none input',
+                    'values' => array(
+                        'Request More Info',
+                        'Check Availability',
+                        'Talk to an Expert',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC803D,#CC803D)',
+                        'border-color' => '#f06b20',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#cf540e',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#93272A,#93272A)',
+                        'border-color' => '#e01212',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#36B842,#36B842)',
+                        'border-color' => '#54b740',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#359d22',
+                        'color' => '#ffffff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6AA3D9,#6AA3D9)',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#ffffff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#151515,#151515)',
+                        'border-color' => '#188bb7',
+                        'color' => '#ffffff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+	
+	
+	"fb_title" => "[year] [make] [model] [price]",
+    //=====dynamic social ads=====
+    "banner" => array(
+        "template" => "jerryscarsales",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+			"fb_lookalike_description"	=> "Check out this [year] [make] [model]! Click for more information.",
+			//"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "fb_marketplace_description"	=> "[description]",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+);

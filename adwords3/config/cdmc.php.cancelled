@@ -1,0 +1,230 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["cdmc"] = array(
+    //'budget'    => 2.0,
+    'bid' => 3.0,
+    'log' => true,
+    'password' => 'cdmc',
+    'post_code' => 'N8M 2C8',
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'retargetting_delay' => 30000,
+    "banner" => array(
+        "template" => "cdmc",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click below for more information.",
+        /* "fb_description_2019_chevrolet" => "Are you still interested in the [year] [make] [model]? Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.",
+           "fb_description_2019_gmc" => "Are you still interested in the [year] [make] [model]? Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.",
+           "fb_description_2019_buick" => "Are you still interested in the [year] [make] [model]? Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.", */
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        /* "fb_lookalike_description_2019_chevrolet" => "Check out this [year] [make] [model] today! Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.",
+           "fb_lookalike_description_2019_gmc" => "Check out this [year] [make] [model] today! Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.",
+           "fb_lookalike_description_2019_buick" => "Check out this [year] [make] [model] today! Save up to 31% off MSRP during Canada Wide Clearance – only at Craig Dunn Motor City for a limited time.  Ask us about our Minor Hockey Promo.", */
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below and fill in your information to claim a \$500 gas card! A product specialist will be in touch to help.",
+        "flash_style" => "default",
+        "hst" => yes,
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+),
+        "font_color" => "#ffffff",
+),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'shown_cap' => false,
+        'fillup_cap' => false,
+        'session_close' => false,
+        'device_type' => array(
+            'mobile' => true,
+            'desktop' => true,
+            'tablet' => true,
+),
+        'offer_minimum_price' => 0,
+        'offer_maximum_price' => 10000000,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#3A589C',
+            '#3A589C',
+),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+),
+        'button_color_active' => array(
+            '#000000',
+            '#000000',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$500 more towards your trade from Craig Dunn Motor City',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>CDMC Team',
+        'forward_to' => array(
+            'mel@cdmc.ca',
+            'marshal@smedia.ca',
+),
+        'special_to' => array(
+            'webleads@cdmc.dsmessage.com',
+            'craig.dunn.gm.leads@gmail.com',
+),
+        'special_email' => '<?xml version="1.0"?>
+		<?adf version="1.0"?>
+		<adf>
+			<prospect>
+				<id sequence="[total_count]" source="Craig Dunn Motor City"></id>
+				<requestdate>[fdt]</requestdate>
+				<vehicle interest="buy" status="[stock_type]">
+					<year>[year]</year>
+					<make>[make]</make>
+					<model>[model]</model>
+					<stock>[stock_number]</stock>
+				</vehicle>
+
+			   <customer>
+				   <contact>
+						<name part="full">[name]</name>
+						<email>[email]</email>
+						<phone>[phone]</phone>
+					</contact>
+			   </customer>
+
+				<vendor>
+					<contact>
+						<name part="full">Craig Dunn Motor City</name>
+						<email>[dealer_email]</email>
+					</contact>
+				</vendor>
+				<provider>
+					<name part="full">sMedia</name>
+					<url>http://smedia.ca</url>
+					<email>offers@mail.smedia.ca</email>
+					<phone>855-775-0062</phone>
+				</provider>
+			</prospect>
+		</adf>',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+),
+    'adf_to' => array(
+        'webleads@cdmc.dsmessage.com',
+        'craig.dunn.gm.leads@gmail.com',
+),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-information' => [
+            'url-match' => '/\\/inventory\\/(?:New|Used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => '.btn.btn-hollow.btn-leadForm-toggle.btn-full',
+            'css-class' => '.btn.btn-hollow.btn-leadForm-toggle.btn-full',
+            'css-hover' => '.btn.btn-hollow.btn-leadForm-toggle.btn-full:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-information' => [
+                    'target' => '.btn.btn-hollow.btn-leadForm-toggle.btn-full',
+                    'values' => array(
+                        'Get More Information',
+                        'Get More Info',
+                        'Request Information',
+                        'Request More Info',
+                        'More Information',
+                        'Ask A Question',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#CF540E)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#873609)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#C60C0D)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#8A0909)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#359D22)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#205C14)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#188BB7)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#0E5570)',
+                        'border-color' => '188BB7',
+),
+),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#ABA085)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#5C5648)',
+                        'border-color' => '188BB7',
+),
+),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#000000)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '188BB7',
+),
+),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#0093CF)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#005B80)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+);

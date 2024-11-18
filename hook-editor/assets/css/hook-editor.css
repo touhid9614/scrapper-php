@@ -1,0 +1,50 @@
+.address-bar {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.data-row {
+    margin: 10px 0px;
+}
+label {
+    width: 120px;
+    display: inline-block;
+}
+input[type="text"] {
+    line-height: 2em;
+    padding: 0px 8px;
+    color: rgb(85, 85, 85);
+    border: 1px solid rgb(200, 200, 200);
+    width: 600px;
+}
+.address-bar input[type="text"] {
+    width: 100%;
+}
+.address-bar button {
+    line-height: 1.7em;
+    width: 100%;
+}
+.inline-block {
+    display: inline-block;
+}
+.address-bar .address-container {
+    width: 90%;
+}
+.address-bar .button-container {
+    width: 9.6%;
+}
+.main-content iframe {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid #ddd;
+}
+.hook-editor {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.data-row button {
+    width: 150px;
+    line-height: 2em;
+    margin-left: 122px;
+}

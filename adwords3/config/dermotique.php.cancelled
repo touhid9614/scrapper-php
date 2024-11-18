@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["dermotique"] = array( 
+	"name"  =>" dermotique",
+	"email" => "regan@smedia.ca",
+	"password" =>" dermotique",
+	"no_adv" => true ,
+);

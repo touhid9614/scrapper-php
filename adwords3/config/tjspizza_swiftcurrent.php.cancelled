@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tjspizza_swiftcurrent"] = array(
+    'max_cost'      => 125.00,
+    'log'           => false,
+    "customer_id"   => "981-579-3066",
+    'password'      => 'tjspizza_swiftcurrent',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    'cost_distribution' => array(
+        'adwords'   => 125,        //Defines all adwords ads
+        
+    ),
+);

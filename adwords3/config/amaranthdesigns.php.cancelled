@@ -1,0 +1,31 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["amaranthdesigns"] = array(
+    "name" => " amaranthdesigns",
+    "email" => "regan@smedia.ca",
+    "password" => " amaranthdesigns",
+    "customer_id"   => "428-536-3025",
+    "log" => true,
+    'max_cost' => 300,
+    'cost_distribution' => array(
+        'new' => 300,
+    ),
+    "banner" => array(
+        "template" => "amaranthdesigns",
+			'fb_description' => "Are you still interested in the [year] [make] [model]? Click for more info.",
+			"fb_lookalike_description" => "Check out this [year] [make] [model] today!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+//          "styels" => array(
+//            "new_display" => "custom_banner",
+//            "used_display" => "custom_banner",
+//            "new_retargeting" => "custom_banner",
+//            "used_retargeting" => "custom_banner",
+//            "new_combined" => "custom_banner",
+//            "used_combined" => "custom_banner"
+//        ),
+		"fb_style" => "facebook_new_ad",
+        "font_color" => "#ffffff",
+    ),
+);

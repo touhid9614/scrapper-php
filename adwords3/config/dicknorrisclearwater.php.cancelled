@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["dicknorrisclearwater"] = array(
+  'password'  => 'dicknorrisclearwater',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "dicknorrisclearwater",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+

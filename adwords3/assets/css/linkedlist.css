@@ -1,0 +1,24 @@
+ul.LinkedList {
+	display: block;
+}
+
+ul.LinkedList li {
+	list-style: none;
+}
+
+ul.LinkedList li:before {
+	content: "\00BB \0020";
+}
+
+ul.LinkedList li.expandable {
+	color: green;
+}
+
+ul.LinkedList ul.nestedGroup {
+	color: black;
+}
+
+.HandCursorStyle {
+	cursor: pointer;
+	cursor: hand;
+}

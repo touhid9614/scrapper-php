@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["bigwestdodge"] = array(
+  'password'  => 'bigwestdodge',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "bigwestdodge",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#000000"
+        ),
+       
+    );

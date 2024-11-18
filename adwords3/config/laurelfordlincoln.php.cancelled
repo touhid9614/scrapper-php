@@ -1,0 +1,19 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["laurelfordlincoln"] = array(
+  'password'  => 'laurelfordlincoln',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "laurelfordlincoln",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["foreignexchangeofclearwater"] = array( 
+	"name"=>"foreignexchangeofclearwater",
+	"password"=>"foreignexchangeofclearwater",
+        'log'           => true,
+	//"no_adv"=>true
+);

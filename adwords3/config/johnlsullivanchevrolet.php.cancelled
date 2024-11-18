@@ -1,0 +1,173 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["johnlsullivanchevrolet"] = array(
+    "name" => " johnlsullivanchevrolet",
+    "email" => "regan@smedia.ca",
+    "password" => " johnlsullivanchevrolet",
+    "log" => true,
+    "banner" => array(
+        "template" => "johnlsullivanchevrolet",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+	"banner" => array(
+        "template" => "johnlsullivanchevrolet",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+			"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+			//"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'JOHNLSULLIVANCHEVROLET2148@ADFLEADS.COM',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\/(?:new|used)\/.*\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn-window-opener.btn.btn-block.btn-danger',
+            'css-class' => 'a.btn-window-opener.btn.btn-block.btn-danger',
+            'css-hover' => 'a.btn-window-opener.btn.btn-block.btn-danger:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn-window-opener.btn.btn-block.btn-danger',
+                    'values' => array(
+                        'Confirm Availability',
+                        'Ask Availability',
+                        'Get Availability',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#ff6633,#ff6633)',
+                        'border-color' => '#ff6633',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#f13d01,#f13d01)',
+                        'border-color' => '#f13d01',
+                    ),
+                ),
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#e1ad01,#e1ad01)',
+                        'border-color' => '#e1ad01',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#bc9104,#bc9104)',
+                        'border-color' => '#bc9104',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31a413,#31a413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#23810b,#23810b)',
+                        'border-color' => '#23810b',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#5298d5,#5298d5)',
+                        'border-color' => '#5298d5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#3c77aa,#3c77aa)',
+                        'border-color' => '#3c77aa',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\/(?:new|used)\/.*\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-block.btn-success',
+            'css-class' => 'a.btn.btn-block.btn-success',
+            'css-hover' => 'a.btn.btn-block.btn-success:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.btn.btn-block.btn-success',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Financing Available',
+                        'Special FInance Offers',
+                        'Apply for Financing',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#ff6633,#ff6633)',
+                        'border-color' => '#ff6633',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#f13d01,#f13d01)',
+                        'border-color' => '#f13d01',
+                    ),
+                ),
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#e1ad01,#e1ad01)',
+                        'border-color' => '#e1ad01',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#bc9104,#bc9104)',
+                        'border-color' => '#bc9104',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31a413,#31a413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#23810b,#23810b)',
+                        'border-color' => '#23810b',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#5298d5,#5298d5)',
+                        'border-color' => '#5298d5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#3c77aa,#3c77aa)',
+                        'border-color' => '#3c77aa',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

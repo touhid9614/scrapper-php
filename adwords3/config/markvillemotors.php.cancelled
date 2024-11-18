@@ -1,0 +1,264 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["markvillemotors"] = array(
+    "name" => "markvillemotors",
+    "email" => "regan@smedia.ca",
+    "password" => "markvillemotors",
+    "log" => true,
+    'adf_to' => array(
+        'markvillechev_edealer@edrive-valet.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+       
+       
+        'Used request-information' => [
+            'url-match' => '/\\/used\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => '#request-info',
+                    'values' => array(
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Get More Information</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Ask for More Info</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Learn More</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">More Info</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Ask a Question</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Let Our Experts Help</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Ask an Expert</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background-color' => '#F06B20',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#CF540E',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background-color' => '#E01212',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#C60C0D',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background-color' => '#54B740',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#359D22',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background-color' => '#00ABF1',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#0093CF',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        
+        'Used trade-in' => [
+            'url-match' => '/\\/used\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-grey-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-grey-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-grey-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-grey-vehicles1',
+                    'values' => array(
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Get Trade-In Value</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Trade Offer</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">What\'s Your Trade Worth?</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Trade-In Appraisal</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Appraise Your Trade</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">We Want Your Car</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">We\'ll Buy Your Car</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Value Your Trade</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background-color' => '#F06B20',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#CF540E',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background-color' => '#E01212',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#C60C0D',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background-color' => '#54B740',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#359D22',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background-color' => '#00ABF1',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#0093CF',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'Used financing' => [
+            'url-match' => '/\\/used\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing-color' => [
+                    'target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+                    'values' => array(
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">No Hassle Financing</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Get Financed Today</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Financing Available</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Apply for Financing</span>',
+                        '<span style="font-family: roboto;margin-bottom: 10px;vertical-align: bottom;">Special Finance Offers</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background-color' => '#F06B20',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#CF540E',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background-color' => '#E01212',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#C60C0D',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background-color' => '#54B740',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#359D22',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background-color' => '#00ABF1',
+                        'border-color' => '#1ca0d1',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background-color' => '#0093CF',
+                        'border-color' => '#188bb7',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,299 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["menzieschryslerdealer"] = array(
+    "name" => " menzieschryslerdealer",
+    "email" => "regan@smedia.ca",
+    "password" => " menzieschryslerdealer",
+    'log' => true,
+    "banner" => array(
+        "template" => "menzieschryslerdealer",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#1B7CC2',
+            '#1B7CC2',
+        ),
+        'button_color_hover' => array(
+            '#155F95',
+            '#155F95',
+        ),
+        'button_color_active' => array(
+            '#155F95',
+            '#155F95',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 OFF coupon from Menzies Chrysler Dodge',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Menzies Chrysler Dodge Team',
+        'forward_to' => array(
+            'marshal@smedia.ca',
+        ),
+        'special_to' => array(
+            'smedia@menzies-chrysler.net',
+        ),
+        'special_email' => '<?xml version="1.0"?>
+			<?adf version="1.0"?>
+			<adf>
+				<prospect>
+					<id sequence="[total_count]" source="Menzies Chrysler Dodge"></id>
+					<requestdate>[fdt]</requestdate>
+					<vehicle interest="buy" status="[stock_type]">
+						<year>[year]</year>
+						<make>[make]</make>
+						<model>[model]</model>
+						<stock>[stock_number]</stock>
+					</vehicle>
+					<customer>
+						<contact>
+							<name part="full">[name]</name>
+							<email>[email]</email>
+							<phone>[phone]</phone>
+						</contact>
+					</customer>
+					<vendor>
+						<contact>
+							<name part="full">Menzies Chrysler Dodge</name>
+							<email>[dealer_email]</email>
+						</contact>
+					</vendor>
+					<provider>
+						<name part="full">sMedia</name>
+						<url>http://smedia.ca</url>
+						<email>offers@mail.smedia.ca</email>
+						<phone>855-775-0062</phone>
+					</provider>
+				</prospect>
+			</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'adf_to' => array(
+        'smedia@menzies-chrysler.net',
+    ),
+    //    'adf_to' => [
+    //        'menzieschrysler_corp@edrive-valet.com',
+    //    ],
+    'form_live' => true,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[data-href*=eprice]',
+            'css-class' => 'a[data-href*=eprice]',
+            'css-hover' => 'a[data-href*=eprice]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[data-href*=eprice]',
+                    'values' => array(
+                        'Get More Information',
+                        'Request More Info',
+                        'Let Our Experts Help',
+                        'Contact Us Today',
+                        'Contact Us Now',
+                        'Request a Quote',
+                        'Get a Quote',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F4890A,#F4890A)',
+                        'border-color' => '#F4890A',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#DA7B09,#DA7B09)',
+                        'border-color' => '#DA7B09',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E21F26,#E21F26)',
+                        'border-color' => '#E21F26',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C81C22,#C81C22)',
+                        'border-color' => '#C81C22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#57B947,#57B947)',
+                        'border-color' => '#57B947',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#489F46,#489F46)',
+                        'border-color' => '#489F46',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#007EBF,#007EBF)',
+                        'border-color' => '#007EBF',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#006DA5,#006DA5)',
+                        'border-color' => '#006DA5',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.mycars-vdp a:nth-of-type(3)',
+            'css-class' => 'div.mycars-vdp a:nth-of-type(3)',
+            'css-hover' => 'div.mycars-vdp a:nth-of-type(3):hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.mycars-vdp a:nth-of-type(3)',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Follow This Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F4890A,#F4890A)',
+                        'border-color' => '#F4890A',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#DA7B09,#DA7B09)',
+                        'border-color' => '#DA7B09',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E21F26,#E21F26)',
+                        'border-color' => '#E21F26',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C81C22,#C81C22)',
+                        'border-color' => '#C81C22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#57B947,#57B947)',
+                        'border-color' => '#57B947',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#489F46,#489F46)',
+                        'border-color' => '#489F46',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#007EBF,#007EBF)',
+                        'border-color' => '#007EBF',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#006DA5,#006DA5)',
+                        'border-color' => '#006DA5',
+                    ),
+                ),
+            ),
+        ],
+        'Used Listing request-information' => [
+            'url-match' => '/\\/(?:new|used)-inventory\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+            'css-class' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+            'css-hover' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Follow This Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F4890A,#F4890A)',
+                        'border-color' => '#F4890A',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#DA7B09,#DA7B09)',
+                        'border-color' => '#DA7B09',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E21F26,#E21F26)',
+                        'border-color' => '#E21F26',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C81C22,#C81C22)',
+                        'border-color' => '#C81C22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#57B947,#57B947)',
+                        'border-color' => '#57B947',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#489F46,#489F46)',
+                        'border-color' => '#489F46',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#007EBF,#007EBF)',
+                        'border-color' => '#007EBF',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#006DA5,#006DA5)',
+                        'border-color' => '#006DA5',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

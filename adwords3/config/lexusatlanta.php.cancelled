@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["lexusatlanta"] = array(
+  'password'  => 'lexusatlanta',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+    	 'fb_description'    => '[year] [make] [model] - Contact us today!',
+        "template"          => "lexusatlanta",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );

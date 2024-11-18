@@ -1,0 +1,335 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["acuraofseattle"] = array(
+  'password'  => 'acuraofseattle',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+   // 'max_cost'      => 1050,
+    "create"     => array(
+       // "new_search"        => yes,
+        "used_search"       => yes,
+      //  "new_placement"     => yes,
+        "used_placement"    => yes,
+      //  "new_display"       => yes,
+        "used_display"      => yes,
+       // "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+       // "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+       // "new_combined"      => yes,
+        "used_combined"     => yes
+    ),
+  /*  "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),*/
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    //'customer_id'   => '893-139-3829',
+    "banner"        => array(
+        "template"          => "acuraofseattle",
+        'fb_description'    => 'Are you still interested in the [year] [make] [model] ?',
+                "flash_style"       => "default",
+                "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+//     'buttons_live'  => true,
+//    'buttons' => [
+//        'request-a-quote' => [
+//            'url-match' => '/\/vehicle-details\/(?:new|used)-[0-9]{4}-/i',
+//            'target' => null, //Don't move button
+//            'locations' => [
+//                'default' => null, //Don't need to change location
+//            ],
+//            'action-target' => 'a#makeAnOffer.link.hash-st_make_an_offer',
+//            'css-class' => 'a#makeAnOffer.link.hash-st_make_an_offer',
+//            'css-hover' => 'a#makeAnOffer.link.hash-st_make_an_offer:hover',
+//         // 'button_action' => ['form','e-price'],
+//            'sizes' => [    
+//                '100' => [
+//                //'font-size' => '1.4rem'
+//                ]
+//            ],
+//            'texts' => [
+//                'request-a-quote' => [
+//                    'target' => 'a#makeAnOffer.link.hash-st_make_an_offer',
+//                    'values' => [
+//                        'Get Your Price',
+//                        'Get Our Best Price',
+//                        'Get Internet Price',
+//                        'Get Special Pricing',
+//                        'Request a Quote'
+//                    ]
+//                ]
+//            ],
+//            'styles' => [
+//                'orange' => [
+//                    'normal' => [
+//                        'border-color' => '#f06b20',
+//                        'color' => '#f06b20'
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#cf540e',
+//                        'color' => '#cf540e',
+//                    ]
+//                ],
+//                'red' => [
+//                    'normal' => [
+//                        'border-color' => '#e01212',
+//                        'color' => '#e01212',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#c60c0d',
+//                        'color' => '#c60c0d',
+//                    ]
+//                ],
+//                'green' => [
+//                    'normal' => [
+//                        'border-color' => '#54b740',
+//                        'color' => '#54b740',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#359d22',
+//                        'color' => '#359d22',
+//                    ]
+//                ],
+//                'blue' => [
+//                    'normal' => [
+//                        'border-color' => '#1ca0d1',
+//                        'color' => '#1ca0d1',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#188bb7',
+//                        'color' => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ],
+//        'test-drive' => [
+//            'url-match' => '/\/vehicle-details\/(?:new|used)-[0-9]{4}-/i',
+//            'target' => null, //Don't move button
+//            'locations' => [
+//                'default' => null, //Don't need to change location
+//            ],
+//            'action-target' => 'a#scheduleTestDrive.link.hash-st_schedule_testdrive',
+//            'css-class' => 'a#scheduleTestDrive.link.hash-st_schedule_testdrive',
+//            'css-hover' => 'a#scheduleTestDrive.link.hash-st_schedule_testdrive:hover',
+//         // 'button_action' => ['form','test-drive'],
+//            'sizes' => [
+//                '100' => [
+//                    'font-size' => '1.4rem'
+//                ]
+//            ],
+//            'texts' => [
+//                'test-drive' => [
+//                    'target' => 'a#scheduleTestDrive.link.hash-st_schedule_testdrive',
+//                    'values' => [
+//                        'Book Test Drive',
+//                        'TEST DRIVE TODAY',
+//                        'TEST DRIVE NOW',
+//                        'SCHEDULE MY VISIT'
+//                    ]
+//                ]
+//            ],
+//             'styles' => [
+//                'orange' => [
+//                    'normal' => [
+//                        'border-color' => '#f06b20',
+//                        'color' => '#f06b20'
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#cf540e',
+//                        'color' => '#cf540e',
+//                    ]
+//                ],
+//                'red' => [
+//                    'normal' => [
+//                        'border-color' => '#e01212',
+//                        'color' => '#e01212',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#c60c0d',
+//                        'color' => '#c60c0d',
+//                    ]
+//                ],
+//                'green' => [
+//                    'normal' => [
+//                        'border-color' => '#54b740',
+//                        'color' => '#54b740',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#359d22',
+//                        'color' => '#359d22',
+//                    ]
+//                ],
+//                'blue' => [
+//                    'normal' => [
+//                        'border-color' => '#1ca0d1',
+//                        'color' => '#1ca0d1',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#188bb7',
+//                        'color' => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ],
+//        'financing' => [
+//            'url-match' => '/\/vehicle-details\/(?:new|used)-[0-9]{4}-/i',
+//            'target' => null, //Don't move button
+//            'locations' => [
+//                'default' => null, //Don't need to change location
+//            ],
+//            'action-target' => 'a#getApproved.link',
+//            'css-class' => 'a#getApproved.link',
+//            'css-hover' => 'a#getApproved.link:hover',
+//         // 'button_action' => ['form','finance'],
+//            'sizes' => [
+//                '100' => [
+//                ]
+//            ],
+//            'texts' => [
+//                'financing' => [
+//                    'target' => 'a#getApproved.link',
+//                    'values' => [
+//                        'Get Financed Today',
+//                        'Explore Payments'
+//                    ]
+//                ]
+//            ],
+//            'styles' => [
+//                'orange' => [
+//                    'normal' => [
+//                        'border-color' => '#f06b20',
+//                        'color' => '#f06b20'
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#cf540e',
+//                        'color' => '#cf540e',
+//                    ]
+//                ],
+//                'red' => [
+//                    'normal' => [
+//                        'border-color' => '#e01212',
+//                        'color' => '#e01212',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#c60c0d',
+//                        'color' => '#c60c0d',
+//                    ]
+//                ],
+//                'green' => [
+//                    'normal' => [
+//                        'border-color' => '#54b740',
+//                        'color' => '#54b740',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#359d22',
+//                        'color' => '#359d22',
+//                    ]
+//                ],
+//                'blue' => [
+//                    'normal' => [
+//                        'border-color' => '#1ca0d1',
+//                        'color' => '#1ca0d1',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#188bb7',
+//                        'color' => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ],
+//        'trade-in' => [
+//            'url-match' => '/\/vehicle-details\/(?:new|used)-[0-9]{4}-/i',
+//            'target' => null, //Don't move button
+//            'locations' => [
+//                'default' => null, //Don't need to change location
+//            ],
+//            'action-target' => 'a#tradeIn.link',
+//            'css-class' => 'a#tradeIn.link',
+//            'css-hover' => 'a#tradeIn.link:hover',
+//         // 'button_action' => ['form','trade-in'],
+//            'sizes' => [
+//                '100' => [
+//                ]
+//            ],
+//            'texts' => [
+//                'financing' => [
+//                    'target' => 'a#tradeIn.link',
+//                    'values' => [
+//                         'Value Your Trade',
+//                        'Get Your Trade-In Value',
+//                        'WHAT\'S YOUR TRADE WORTH',
+//                    ]
+//                ]
+//            ],
+//            'styles' => [
+//                'orange' => [
+//                    'normal' => [
+//                        'border-color' => '#f06b20',
+//                        'color' => '#f06b20'
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#cf540e',
+//                        'color' => '#cf540e',
+//                    ]
+//                ],
+//                'red' => [
+//                    'normal' => [
+//                        'border-color' => '#e01212',
+//                        'color' => '#e01212',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#c60c0d',
+//                        'color' => '#c60c0d',
+//                    ]
+//                ],
+//                'green' => [
+//                    'normal' => [
+//                        'border-color' => '#54b740',
+//                        'color' => '#54b740',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#359d22',
+//                        'color' => '#359d22',
+//                    ]
+//                ],
+//                'blue' => [
+//                    'normal' => [
+//                        'border-color' => '#1ca0d1',
+//                        'color' => '#1ca0d1',
+//                    ],
+//                    'hover' => [
+//                        'border-color' => '#188bb7',
+//                        'color' => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ]
+//    ]
+    );

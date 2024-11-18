@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["westcoast_autogroup"] = array(
+  'password'  => 'westcoast_autogroup',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "westcoast_autogroup",
+        'fb_description'	=> 'Are you still interested in the [year] [make] [model] [trim]? Click for more info.',
+        "flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

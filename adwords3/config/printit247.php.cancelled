@@ -1,0 +1,14 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["printit247"] = array(
+    'max_cost'      => 180,
+    'cost_distribution' => array(
+        'adwords'      => 180,
+    ),
+    "customer_id"   => "895-920-6864",
+    'password'      => 'printit247',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

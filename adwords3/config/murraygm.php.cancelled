@@ -1,0 +1,72 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["murraygm"] = array(
+    'name'      => 'murraygm',
+    'password'  => 'murraygm',
+    'max_cost'      => 0,
+
+    'log'           => false,
+    "email"         => "regan@smedia.ca",
+    "create"     => array(
+           "new_search"        => yes,
+           "used_search"       => yes,
+           "new_display"       => no,
+           "used_display"      => no,
+           "new_retargeting"   => yes,
+           "used_retargeting"  => yes,
+           "new_marketbuyers"  => no,
+           "used_marketbuyers" => no,
+           "new_combined"  => yes,
+           "used_combined" => yes
+       ),
+	
+
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id"   => "616-288-3984",
+    "banner"        => array(
+        "template"          => "murraygm",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+    )
+);

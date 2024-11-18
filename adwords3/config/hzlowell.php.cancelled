@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["hzlowell"] = array(
+  'password'  => 'hzlowell',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    "banner"        => array(
+        "template"          => "hzlowell",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

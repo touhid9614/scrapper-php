@@ -1,0 +1,93 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["sharpmotor"] = array(
+    'password' => 'sharpmotor',
+    "email" => "regan@smedia.ca",
+    'log' => false,
+    'max_cost' => 0,
+    'cost_distribution' => [
+        'adwords' => 0,
+    ],
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#15D982',
+            '#0C804B',
+        ),
+        'button_color_hover' => array(
+            '#0C804B',
+            '#15D982',
+        ),
+        'button_color_active' => array(
+            '#11AD67',
+            '#11AD67',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get $200 OFF from Sharp Motor Company',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Sharp Motor Team',
+        'forward_to' => array(
+            'kenny@sharpmotorco.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'customer_id' => '454-977-0452',
+    "banner" => array(
+        "template" => "sharpmotor",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click below for more info!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+);

@@ -1,0 +1,524 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["horizonford"] = array(
+    'password' => 'horizonford',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'customer_id' => '659-105-4594',
+    'max_cost' => 1600,
+    'cost_distribution' => array(
+        'new' => 0,
+        'used' => 1600,
+    ),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "horizonford",
+		"old_price" => true,
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your information to get \$200 off purchase, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#2C9CEB',
+            '#0C7AC8',
+        ),
+        'button_color_hover' => array(
+            '#0C7AC8',
+            '#0C7AC8',
+        ),
+        'button_color_active' => array(
+            '#0C7AC8',
+            '#0C7AC8',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$300 in store credit from Horizon Ford',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Horizon Ford Team',
+        'forward_to' => array(
+            'marshal@smedia.ca',
+        ),
+        'special_to' => array(
+            'horizonford@forddirectcrm.com',
+        ),
+        'special_email' => '<?xml version="1.0"?>
+			<?adf version="1.0"?>
+			<adf>
+				<prospect>
+					<id sequence="[total_count]" source="Horizon Ford"></id>
+					<requestdate>[fdt]</requestdate>
+					<vehicle interest="buy" status="[stock_type]">
+						<year>[year]</year>
+						<make>[make]</make>
+						<model>[model]</model>
+						<stock>[stock_number]</stock>
+					</vehicle>
+					<customer>
+						<contact>
+							<name part="full">[name]</name>
+							<email>[email]</email>
+							<phone>[phone]</phone>
+						</contact>
+					</customer>
+					<vendor>
+						<contact>
+							<name part="full">Horizon Ford</name>
+							<email>[dealer_email]</email>
+						</contact>
+					</vendor>
+					<provider>
+						<name part="full">sMedia</name>
+						<url>http://smedia.ca</url>
+						<email>offers@mail.smedia.ca</email>
+						<phone>855-775-0062</phone>
+					</provider>
+				</prospect>
+			</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'lead_to' => array(
+        'horizonford@forddirectcrm.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'financing' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.multi_cta_wrapper div:nth-of-type(1) div.multi_cta_inner a',
+            'css-class' => 'div.multi_cta_wrapper div:nth-of-type(1) div.multi_cta_inner a',
+            'css-hover' => 'div.multi_cta_wrapper div:nth-of-type(1) div.multi_cta_inner a:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'div.multi_cta_wrapper div:nth-of-type(1) div.multi_cta_inner a',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Explore Payments',
+                        'Financing Available',
+                        'Calculate My Payments',
+                        'Estimate Payments',
+                        'Calculate Your Payments',
+                        'Financing Options',
+                        'Special Finance Offers',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5771B,#CD211A)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFCC00,#A76009)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#12885C,#0B476A)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2E9186,#078816)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.multi_cta_wrapper div:nth-of-type(2) div.multi_cta_inner a',
+            'css-class' => 'div.multi_cta_wrapper div:nth-of-type(2) div.multi_cta_inner a',
+            'css-hover' => 'div.multi_cta_wrapper div:nth-of-type(2) div.multi_cta_inner a:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'div.multi_cta_wrapper div:nth-of-type(2) div.multi_cta_inner a',
+                    'values' => array(
+                        'What\'s Your Trade Worth',
+                        'Trade-in Offer',
+                        'What is Your Trade Worth?',
+                        'Trade-In Your Ride',
+                        'Trade-In Appraisal',
+                        'Trade-in Offer',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5771B,#CD211A)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFCC00,#A76009)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#12885C,#0B476A)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2E9186,#078816)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+            'css-class' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+            'css-hover' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+                    'values' => array(
+                        'Ask A Question',
+                        'Send Request',
+                        'Request More Info',
+                        'Get More Information',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5771B,#CD211A)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFCC00,#A76009)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#12885C,#0B476A)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2E9186,#078816)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-a-quote' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div#region_4 div:nth-of-type(2).multi_widget_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-class' => 'div#region_4 div:nth-of-type(2).multi_widget_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-hover' => 'div#region_4 div:nth-of-type(2).multi_widget_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div#region_4 div:nth-of-type(2).multi_widget_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+                    'values' => array(
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get E-Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Our Best Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Your Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Special Pricing',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Request Pricing Updates',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Current Market Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Best Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Special Price',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>SPECIAL PRICING!',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Internet Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5771B,#CD211A)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFCC00,#A76009)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#12885C,#0B476A)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2E9186,#078816)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'lease-payment' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.get-e-price.thm-hglight_border.thm-hglight-bg_color-hover.get_lease_payment_btn',
+            'css-class' => '.get-e-price.thm-hglight_border.thm-hglight-bg_color-hover.get_lease_payment_btn',
+            'css-hover' => '.get-e-price.thm-hglight_border.thm-hglight-bg_color-hover.get_lease_payment_btn:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.get-e-price.thm-hglight_border.thm-hglight-bg_color-hover.get_lease_payment_btn',
+                    'values' => array(
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Financed/Leased Today',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Lease Payments',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Lease or Finance Quote',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Calculate Lease Payment',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Finance or Lease Quote',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Lease Options',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Explore Lease Payments',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Financing/Leasing Available',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Get Best Lease Deal',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Lease Offer',
+                        '<span class="eprice_icon"><img src="//cdn.dealereprocess.org/cdn/img/details/dollar_icon.png" alt=""></span>Lease Quote',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5771B,#CD211A)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FFCC00,#A76009)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#12885C,#0B476A)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2E9186,#078816)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#F9F9F9,#E0E0E0)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17501',
+        'promotion_text' => 'Show this at purchase!',
+        'promotion_color' => '#3486C3',
+        'overlay_color' => '#3486C3',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#3486C3',
+        'coupon_validity' => '30',
+    ),
+);

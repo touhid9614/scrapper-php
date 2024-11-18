@@ -1,0 +1,19 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["broadwayautomotive"] = array(
+    "name" => " broadwayautomotive",
+    "email" => "regan@smedia.ca",
+    "password" => " broadwayautomotive",
+    "log" => true,
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17568',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

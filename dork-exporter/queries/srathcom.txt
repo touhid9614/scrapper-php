@@ -1,0 +1,14 @@
+inurl:"search?stock_type=USED" BC
+inurl:"search?stock_type=USED" AB
+inurl:"search?stock_type=USED" SK
+inurl:"search?stock_type=USED" MB
+inurl:"search?stock_type=USED" NB
+inurl:"search?stock_type=USED" NL
+inurl:"search?stock_type=USED" NT
+inurl:"search?stock_type=USED" NS
+inurl:"search?stock_type=USED" NU
+inurl:"search?stock_type=USED" ON
+inurl:"search?stock_type=USED" PE
+inurl:"search?stock_type=USED" QC
+inurl:"search?stock_type=USED" SK
+inurl:"search?stock_type=USED" YT

@@ -1,0 +1,88 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["murraypen"] = array(
+    'name'      => 'Murray Pen',
+  //'budget'    => 2.0,
+    'bid'           => 3.0,
+    'bid_modifier'  => array(
+        'after'     => 45, //days
+        'bid'       => 1.5
+    ),
+  	'password'  => 'murraypen',
+    'post_code'     => 'V2A 1L6',
+    "email"         => "regan@smedia.ca",
+    //tracker
+   'log'            => true,
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => no,
+        "used_display"      => no,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+		 "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"  => yes,
+        "used_combined" => yes
+    ),
+    "smart_ad_url" => "http://www.murraygmpenticton.ca/all-inventory/index.htm?model=[model]&year=[year]&make=[make]",
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        )
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model].",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [price]. Only [kilometers]km ",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [biweekly] b/w",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [biweekly] b/w. Only [kilometers]km ",
+        ),
+    ),
+    "customer_id"   => "200-009-6012",
+    "banner"        => array(
+        "template"          => "murraypen",
+        "flash_style"       => "default",
+		"border_color"    => "#202020",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner",
+			 "new_combined"   => "custom_banner",
+            "used_combined"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+   );

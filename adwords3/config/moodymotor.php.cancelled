@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["moodymotor"] = array(
+  'password'  => 'moodymotor',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "banner"        => array(
+        "template"          => "moodymotor",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

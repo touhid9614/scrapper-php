@@ -1,0 +1,10 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["trinosmenswear"] = array(
+    'password'      => 'trinosmenswear',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'S4V 2X8',
+    'no_adv'        => true,
+);

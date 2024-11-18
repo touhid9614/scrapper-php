@@ -1,0 +1,167 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["dickbrookshonda"] = array(
+    "name" => " dickbrookshonda",
+    "email" => "regan@smedia.ca",
+    "password" => "dickbrookshonda",
+    "log" => true,
+    'adf_to' => array(
+        'leads@greerhonda.com',
+        'thamina.ahamed@gmail.com'
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\/(?:new|used|certified)-[^\/]+-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.btn.btn-cta.ePriceBtn.ctaWithEmail',
+            'css-class' => '.btn.btn-cta.ePriceBtn.ctaWithEmail',
+            'css-hover' => '.btn.btn-cta.ePriceBtn.ctaWithEmail:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => '.btn.btn-cta.ePriceBtn.ctaWithEmail',
+                    'values' => array(
+                        'Get A Quote',
+                        'Request A Quote',
+                        'Get Internet Price',
+                        'Get EPrice',
+                        'Get Our Best Price',
+                        'Get Your Price',
+                        'Get Special Price',
+                        'Request Sale Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1f4581 ,#1f4581 )',
+                        'border-color' => '#1f4581 ',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#193767,#193767)',
+                        'border-color' => '#193767',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c33320,#c33320)',
+                        'border-color' => '#c33320',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#a92c1c,#a92c1c)',
+                        'border-color' => '#a92c1c',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c38820,#c38820)',
+                        'border-color' => '#c38820',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#a9761c,#a9761c)',
+                        'border-color' => '#a9761c',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#189138,#189138)',
+                        'border-color' => '#189138',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#14782e,#14782e)',
+                        'border-color' => '#14782e',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\/(?:new|used|certified)-[^\/]+-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-class' => '.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-hover' => '.btn.btn-cta.btn-lg.btn-block.ePriceBtn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => '.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+                    'values' => array(
+                        'Get A Quote',
+                        'Request A Quote',
+                        'Get Internet Price',
+                        'Get EPrice',
+                        'Get Our Best Price',
+                        'Get Your Price',
+                        'Get Special Price',
+                        'Request Sale Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1f4581 ,#1f4581 )',
+                        'border-color' => '#1f4581 ',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#193767,#193767)',
+                        'border-color' => '#193767',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c33320,#c33320)',
+                        'border-color' => '#c33320',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#a92c1c,#a92c1c)',
+                        'border-color' => '#a92c1c',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c38820,#c38820)',
+                        'border-color' => '#c38820',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#a9761c,#a9761c)',
+                        'border-color' => '#a9761c',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#189138,#189138)',
+                        'border-color' => '#189138',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#14782e,#14782e)',
+                        'border-color' => '#14782e',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

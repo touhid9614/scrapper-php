@@ -1,0 +1,337 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["freedomfordsales"] = array(
+    'password' => 'freedomfordsales',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'tag_debug' => true,
+    "banner" => array(
+        "template" => "freedomfordsales",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "fb_title" => "[year] [make] [model] [price]",
+),
+    "lead" => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#0F2B6B',
+            '#0F2B6B',
+),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+),
+        'button_color_active' => array(
+            '#000000',
+            '#000000',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$250 off coupon from Freedom Ford Sales',
+        'forward_email_subject' => '$250 Coupon Offer',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Freedom Ford Sales Team',
+        'forward_to' => array(
+            'vnikravan@maclinford.com',
+            'Internet@freedomfordsales.com',
+            'marshal@smedia.ca',
+),
+        'special_to' => array(
+            'leads@FreedomFord.motosnap.com',
+),
+        'special_email' => '<?xml version="1.0"?>
+			<?adf version="1.0"?>
+			<adf>
+				<prospect>
+					<id sequence="[total_count]" source="sMedia Coupon"></id>
+					<requestdate>[fdt]</requestdate>
+					<vehicle interest="buy" status="[stock_type]">
+						<year>[year]</year>
+						<make>[make]</make>
+						<model>[model]</model>
+						<stock>[stock_number]</stock>
+					</vehicle>
+					<customer>
+					   <contact>
+							<name part="full">[name]</name>
+							<email>[email]</email>
+							<phone>[phone]</phone>
+						</contact>
+					</customer>
+					<vendor>
+						<contact>
+							<name part="full">Freedom Ford Sales</name>
+							<email>[dealer_email]</email>
+						</contact>
+					</vendor>
+					<provider>
+						<name part="full">sMedia Coupon</name>
+						<url>http://smedia.ca</url>
+						<email>offers@mail.smedia.ca</email>
+						<phone>855-775-0062</phone>
+					</provider>
+				</prospect>
+			</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+),
+    'adf_to' => array(
+        'leads@FreedomFord.motosnap.com',
+),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a.btn.btn-primary.btn-lg.dialog[href *=lead-form]',
+            'css-class' => 'a.btn.btn-primary.btn-lg.dialog[href *=lead-form]',
+            'css-hover' => 'a.btn.btn-primary.btn-lg.dialog[href *=lead-form]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-primary.btn-lg.dialog[href *=lead-form]',
+                    'values' => array(
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Local Pricing',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get Current Market Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get E-Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get Your Price!',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get Your Exclusive Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Request a Quote',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Request Information',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get My Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Get Your Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Exclusive Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Request Information',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Have a question?',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Contact Us',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Local Pricing',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Exclusive Price',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Explore Payments',
+                        '<i class=\\"fa fa-tags fa-lg\\"></i>Calculate Payments',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EE8100,#EE8100)',
+                        'border-color' => 'EE8100',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+                        'color' => '#fff',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EE3000,#EE3000)',
+                        'border-color' => 'EE3000',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A84E,#00A84E)',
+                        'border-color' => '00A84E',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a.btn.btn-primary.btn-lg.dialog[href *="testdrive/form"]',
+            'css-class' => 'a.btn.btn-primary.btn-lg.dialog[href *="testdrive/form"]',
+            'css-hover' => 'a.btn.btn-primary.btn-lg.dialog[href *="testdrive/form"]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a.btn.btn-primary.btn-lg.dialog[href *="testdrive/form"]',
+                    'values' => array(
+                        'Schedule A Test Drive',
+                        'Schedule Your Test Drive',
+                        'Request A Test Drive',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EE8100,#EE8100)',
+                        'border-color' => 'EE8100',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+                        'color' => '#fff',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EE3000,#EE3000)',
+                        'border-color' => 'EE3000',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A84E,#00A84E)',
+                        'border-color' => '00A84E',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '086597',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+],
+);

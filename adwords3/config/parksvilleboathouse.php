@@ -1,0 +1,110 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["parksvilleboathouse"] = array(
+    "name" => " parksvilleboathouse",
+    "email" => "regan@smedia.ca",
+    "password" => " parksvilleboathouse",
+    "log" => true,
+    'max_cost' => 0,
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    'customer_id' => '507-835-9284',
+    "banner" => array(
+        "template" => "parksvilleboathouse",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        "flash_style" => "default",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+),
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => false,
+        'shown_cap' => false,
+        'fillup_cap' => false,
+        'session_close' => false,
+        'device_type' => array(
+            'mobile' => true,
+            'desktop' => true,
+            'tablet' => true,
+),
+        'offer_minimum_price' => 0,
+        'offer_maximum_price' => 10000000,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#0A3E9C',
+            '#0A3E9C',
+),
+        'button_color_hover' => array(
+            '#041534',
+            '#041534',
+),
+        'button_color_active' => array(
+            '#041534',
+            '#041534',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$750 off coupon from Parksville Boathouse LTD',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Parksville Boathouse LTD Team',
+        'forward_to' => array(
+            'office@parksvilleboathouse.com',
+            'marshal@smedia.ca',
+            'jes@parksvilleboathouse.com',
+            'jay@parksvilleboathouse.com',
+),
+        'special_to' => array(
+            '',
+),
+        'special_email' => '',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+),
+);

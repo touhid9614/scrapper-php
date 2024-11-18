@@ -1,0 +1,235 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["billbryansubaru"] = array(
+    "name" => " billbryansubaru",
+    "email" => "regan@smedia.ca",
+    "password" => " billbryansubaru",
+    "log" => true,
+    'form_live' => true,
+    'buttons_live' => true,
+    'adf_to' => array(
+        'Sales@billbryansubaru.edealerhub.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-class' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-hover' => 'a.btn.btn-default.eprice.dialog.button:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.eprice.dialog.button',
+                    'values' => array(
+                        'GET E-PRICE',
+                        'GET INTERNET PRICE',
+                        'GET YOUR PRICE',
+                        'GET OUR BEST PRICE',
+                        'REQUEST A QUOTE',
+                        'GET A QUOTE',
+                        'INQUIRE TODAY',
+                        'INQUIRE NOW',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D27606,#D27606)',
+                        'border-color' => '#D27606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB5E00,#AB5E00)',
+                        'border-color' => '#AB5E00',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D21006,#D21006)',
+                        'border-color' => '#D21006',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB0900,#AB0900)',
+                        'border-color' => '#AB0900',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#05A318,#05A318)',
+                        'border-color' => '#05A318',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008510,#008510)',
+                        'border-color' => '#008510',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0B5886,#0B5886)',
+                        'border-color' => '#0B5886',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#05476D,#05476D)',
+                        'border-color' => '#05476D',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.ui-tabs-nav li:nth-of-type(1) a[href*=tabs-inventory-lead1]',
+            'css-class' => 'ul.ui-tabs-nav li:nth-of-type(1) a[href*=tabs-inventory-lead1]',
+            'css-hover' => 'ul.ui-tabs-nav li:nth-of-type(1) a[href*=tabs-inventory-lead1]:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'ul.ui-tabs-nav li:nth-of-type(1) a[href*=tabs-inventory-lead1]',
+                    'values' => array(
+                        'GET MORE INFO',
+                        'MORE INFORMATION',
+                        'REQUEST MORE INFO',
+                        'LEARN MORE',
+                        'ASK A QUESTION',
+                        'CONTACT US NOW',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D27606,#D27606)',
+                        'border-color' => '#D27606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB5E00,#AB5E00)',
+                        'border-color' => '#AB5E00',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D21006,#D21006)',
+                        'border-color' => '#D21006',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB0900,#AB0900)',
+                        'border-color' => '#AB0900',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#05A318,#05A318)',
+                        'border-color' => '#05A318',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008510,#008510)',
+                        'border-color' => '#008510',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0B5886,#0B5886)',
+                        'border-color' => '#0B5886',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#05476D,#05476D)',
+                        'border-color' => '#05476D',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'li.price-btn.cst-btn-0 a',
+            'css-class' => 'li.price-btn.cst-btn-0 a',
+            'css-hover' => 'li.price-btn.cst-btn-0 a:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'li.price-btn.cst-btn-0 a',
+                    'values' => array(
+                        'NO HASSLE FINANCING',
+                        'GET FINANCED TODAY',
+                        'GET APPROVED NOW',
+                        'FINANCING AVAILABLE',
+                        'SPECIAL FINANCE OFFERS',
+                        'EXPLORE PAYMENTS',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D27606,#D27606)',
+                        'border-color' => '#D27606',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB5E00,#AB5E00)',
+                        'border-color' => '#AB5E00',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D21006,#D21006)',
+                        'border-color' => '#D21006',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#AB0900,#AB0900)',
+                        'border-color' => '#AB0900',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#05A318,#05A318)',
+                        'border-color' => '#05A318',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008510,#008510)',
+                        'border-color' => '#008510',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0B5886,#0B5886)',
+                        'border-color' => '#0B5886',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#05476D,#05476D)',
+                        'border-color' => '#05476D',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

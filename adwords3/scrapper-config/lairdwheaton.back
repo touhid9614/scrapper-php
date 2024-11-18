@@ -1,0 +1,128 @@
+<?php
+    global $scrapper_configs;
+
+    $scrapper_configs['lairdwheaton'] = array(
+       'entry_points' => array(
+            'new'       => 'http://www.lairdwheaton.com/VehicleSearchResults?search=new',
+            'used'      => 'http://www.lairdwheaton.com/VehicleSearchResults?search=preowned',
+            
+            'special'   => 'http://www.lairdwheaton.com/'
+        ),
+       'no_scrap' => true,
+        'vdp_url_regex'     => '/\/en\/new-inventory\//i',
+        'ty_url_regex'      => '/\/thankYou.do/i',
+        'ajax_url_match'    => 'callback=secureLeadSubmission',
+        'vdp_page_regex'        => '/http:\/\/www.lairdwheaton.com\/VehicleDetails\//',
+        'required_params'       => array(),
+        'use-proxy'             => true,
+        'picture_selectors' => ['.carousel li'],
+        'picture_nexts'     => ['.flex-next'],
+        'picture_prevs'     => ['.flex-prev'],
+        'details_start_tag'     => '<section class="vehicleListWrapper">',
+        'details_end_tag'       => '<footer >',
+        'details_spliter'       => '<article class="itemscope',
+        
+        'data_capture_regx'     => array(
+            'stock_number'      => '/<a data-window-pixel="vsr_title"\s*href="VehicleDetails\/[^\/]+\/(?<stock_number>[^"]+)"/',
+            'year'              => '/<span class="year" itemprop="releaseDate" value="(?<year>[^"]+)"/',
+            'make'              => '/<span class="make"\s*itemprop="manufacturer" value="(?<make>[^"]+)"/',
+            'model'             => '/<span class="model" itemprop="model" value="(?<model>[^"]+)"/',
+            'price'             => '/<span class="price" itemprop="price"\s*title="(?<price>[^"]+)"/',
+            'engine'            => '/Engine<\/span>\s[^<]+<span title="(?<engine>[^"]+)">/',
+            'transmission'      => '/Transmission<\/span>\s[^<]+<span title="(?<transmission>[^"]+)">/',
+            'kilometres'        => '/Kilometers<\/span>\s[^<]+<span title="(?<kilometres>[^"]+)">/',
+            'url'               => '/<a data-window-pixel="vsr_title"\s*href="(?<url>[^"]+)"/'
+        ),
+        
+        'data_capture_regx_full' => array(
+            'exterior_color'    => '/title="EXTERIOR COLOR"[\s\S]+?class="vehicleInfoValue">(?<exterior_color>[^<]+)/',
+            'interior_color'    => '/title="Interior Color"[\s\S]+?class="vehicleInfoValue">(?<interior_color>[^<]+)/',
+            'body_style'        => '/highlight">Body Style: </span>(?<body_style>[^<]+)/',
+            'trim'              => '/itemprop="trim" class="trim\s*">(?<trim>[^<]+)/'
+        ),
+        
+        'next_page_regx'        => '/<a href="(?<next>[^"]+)" alt="Next Page">Next Page<\/a>/',
+        'images_regx'           => '/media.push\({ src: \'(?<img_url>[^\']+)\'/',
+        
+        'special'               => array(
+            'details_start_tag'     => 'class="special-container slides"',
+            'details_end_tag'       => '</ul>',
+            'details_spliter'       => '</li>',
+            'data_capture_regx'     => array(
+                'stock_number'      => '/Stock Number: <\/a>\s*<span[^>]+>(?<stock_number>[^<]+)/',
+                'url'               => '/class="cblt-button" title="" href="(?<url>VehicleDetails\/[^"]+)/',
+            ),
+            'data_capture_regx_full' => array(
+                'price'             => '/Market Best Price<\/span><span.*span>\s*<span class=".*" itemprop="price">(?<price>[^<]+)/',
+                'engine'            => '/title="ENGINE DATA"[\s\S]+?class="vehicleInfoValue">(?<engine>[^<]+)/',
+                'transmission'      => '/title="TRANSMISSION"[\s\S]+?class="vehicleInfoValue">(?<transmission>[^<]+)/',
+                'kilometres'        => '/title="MILEAGE"[\s\S]+?class="vehicleInfoValue">(?<kilometres>[^ <]+)/',
+                'exterior_color'    => '/title="EXTERIOR COLOR"[\s\S]+?class="vehicleInfoValue">(?<exterior_color>[^<]+)/',
+                'interior_color'    => '/title="Interior Color"[\s\S]+?class="vehicleInfoValue">(?<interior_color>[^<]+)/',
+                'year'              => '/itemprop="releaseDate">(?<year>[^<]+)/',
+                'make'              => '/itemprop="manufacturer">(?<make>[^<]+)/',
+                'model'             => '/itemprop="model">(?<model>[^<]+)/',
+                'body_style'        => '/highlight">Body Style: </span>(?<body_style>[^<]+)/',
+                'trim'              => '/itemprop="trim" class="trim\s*">(?<trim>[^<]+)/'
+            ),
+            'images_regx'           => '/media.push\({ src: \'(?<img_url>[^\']+)\'/',
+        )
+    );
+
+    add_filter("filter_lairdwheaton_field_price", "filter_lairdwheaton_field_price", 10, 3);
+
+    function filter_lairdwheaton_field_price($price,$car_data, $spltd_data)
+    {
+        $prices = [];
+
+        slecho('');
+
+        if($price && numarifyPrice($price) > 0) {
+            $prices[] = numarifyPrice($price);
+            slecho("Regex msrp or market best price: $price");
+        }
+
+        $selling_regex =  '/Selling Price\s*<\/span>\s*<span[^>]+>\s*(?<price>\$[0-9,]+)/';
+//            $msrp_regex    =  '/MSRP\s*<\/span>\s*<span[^>]+>\s*(?<price>\$[0-9,]+)/';
+        
+
+        $matches = [];
+
+        if(preg_match($selling_regex, $spltd_data, $matches) && numarifyPrice($matches['price']) > 0) {
+            $prices[] = numarifyPrice($matches['price']);
+            slecho("Regex Selling Price: {$matches['price']}");
+        }
+
+//            if(preg_match($msrp_regex, $spltd_data, $matches) && numarifyPrice($matches['price']) > 0) {
+//                $prices[] = numarifyPrice($matches['price']);
+//                slecho("Regex MSRP: {$matches['price']}");
+//            }
+
+        if(count($prices) > 0) {
+            $price = butifyPrice(min($prices));
+        }
+
+        slecho("Sale Price: {$price}".'<br>');
+        return $price;
+    }
+
+    add_filter('filter_for_fb_lairdwheaton', 'filter_for_fb_lairdwheaton', 10, 1);
+
+    function filter_for_fb_lairdwheaton($car) 
+    {
+        $images = $car['images'];
+
+        $invaild_images = ['https://img.sm360.ca/ir/w117/images/manufacturer/carproof/carproof-color-128.png', 'https://img.sm360.ca/images/web/laird-wheaton-chev-buick-gmc/2843/no-photo-1000x500-en1570732257417.jpg'];
+
+        foreach ($images as $key => $value) 
+        {
+            if (in_array($value, $invaild_images))
+            {
+                unset($images[$key]);
+            }
+        }
+
+        $car['images'] = $images;
+
+        return $car;
+    }

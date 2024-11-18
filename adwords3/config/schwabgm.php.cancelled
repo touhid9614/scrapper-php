@@ -1,0 +1,163 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["schwabgm"] = array(
+  'password'  => 'schwabgm',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "banner"        => array(
+        "template"          => "schwabgm",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+    ),
+
+    /*
+    'form_live'     => true,
+    'buttons_live'  => true,
+    'lead_to'       => ['amanda@schwabs.ca'],
+    'adf_to'        => ['amanda@schwabs.ca'],
+    'buttons'       => [
+        'request-a-quote'  => [
+            'url-match' => '/\/VehicleDetails\/(?:new|used|certified)-/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+            'css-class' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]',
+            'css-hover' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]:hover',
+          'button_action' => ['form','e-price'],
+            'sizes'     => [
+                '100'   => [
+                    
+                ]
+            ],
+            'texts'     => [
+                'request-a-quote'  => [
+                    'target'    => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+                    'values'    => [
+                        'REQUEST A QUOTE',
+                        'GET E-PRICE',
+                        'GET INTERNET PRICE',
+                        'GET YOUR PRICE',
+                        'GET OUR BEST PRICE'
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background'    => 'linear-gradient(to bottom, #ecb971, #d19034)',
+                        'border-color'  => '#d19034'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #d19034, #ecb971)',
+                        'border-color'     => '#d19034'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #e36d7a, #c93243)',
+                        'border-color'     => '#c93243'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #c93243, #e36d7a)',
+                        'border-color'     => '#c93243'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #75c75f, #47b02c)',
+                        'border-color'     => '#47b02c'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #47b02c, #75c75f)',
+                        'border-color'     => '#47b02c'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #4de57f, #18a948)',
+                        'border-color'     => '#18a948'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #18a948, #4de57f)',
+                        'border-color'     => '#18a948'
+                    ]
+                ]
+            ]
+        ],
+        'test-drive'  => [
+            'url-match' => '/\/VehicleDetails\/(?:new|used|certified)-/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a[name=4969ed15-0c26-4ba1-8a8d-81cdc4ec014a]',
+            'css-class' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]',
+            'css-hover' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]:hover',
+          'button_action' => ['form','test-drive'],
+            'sizes'     => [
+                '100'   => [
+                    
+                ]
+            ],
+            'texts'     => [
+                'financing'  => [
+                    'target'    => 'a[name=4969ed15-0c26-4ba1-8a8d-81cdc4ec014a]',
+                    'values'    => [
+                        'BOOK MY TEST DRIVE',
+                        'TEST DRIVE TODAY',
+                        'TEST DRIVE NOW',
+                        'SCHEDULE MY TEST DRIVE'
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background'    => 'linear-gradient(to bottom, #ecb971, #d19034)',
+                        'border-color'  => '#d19034'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #d19034, #ecb971)',
+                        'border-color'     => '#d19034'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #e36d7a, #c93243)',
+                        'border-color'     => '#c93243'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #c93243, #e36d7a)',
+                        'border-color'     => '#c93243'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #75c75f, #47b02c)',
+                        'border-color'     => '#47b02c'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #47b02c, #75c75f)',
+                        'border-color'     => '#47b02c'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => 'linear-gradient(to bottom, #4de57f, #18a948)',
+                        'border-color'     => '#18a948'
+                    ],
+                    'hover'     => [
+                        'background' => 'linear-gradient(to bottom, #18a948, #4de57f)',
+                        'border-color'     => '#18a948'
+                    ]
+                ]
+            ]
+        ]
+    ] */
+    
+);

@@ -1,0 +1,12 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["saskecosolutions"] = array(
+    'password'      => 'saskecosolutions',
+    "customer_id"   => "701-624-0611",
+    'max_cost'      => 600,
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'S4T 1H4 ',
+    'no_adv'        => true,
+);

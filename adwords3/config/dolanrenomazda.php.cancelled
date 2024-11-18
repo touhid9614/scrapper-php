@@ -1,0 +1,191 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["dolanrenomazda"] = array(
+    "name" => "dolanrenomazda",
+    "email" => "regan@smedia.ca",
+    "password" => "dolanrenomazda", 'fb_brand'          => '[year] [make] [model] - [body_style]',
+    "log" => true,
+	"banner" => array(
+        "template" => "dolanrenomazda",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+			"fb_lookalike_description"	=> "Check out this [year] [make] [model] today! Click for more information.",
+			//"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "ffffff",
+    ),
+    'adf_to' => array(
+        'leads@renomazdakia.dsmessage.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        //   Get Your ePrice    //
+        'request-a-quote' => [
+            'url-match' => '/\/(?:new|used)\/[^\/]+\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[data-href*="eprice-form"]',
+            'css-class' => 'a[data-href*="eprice-form"]',
+            'css-hover' => 'a[data-href*="eprice-form"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[data-href*="eprice-form"]',
+                    'values' => array(
+                        'Get ePrice',
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Get Sale Price',
+                        'Get Special Price',
+                        'Get Your Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1F4581,#1F4581)',
+                        'border-color' => '#1f4581',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#193767,#193767)',
+                        'border-color' => '#193767',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C33320,#C33320)',
+                        'border-color' => '#c33320',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A92C1C,#A92C1C)',
+                        'border-color' => '#a92c1c',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C38820,#C38820)',
+                        'border-color' => '#c38820',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A9761C,#A9761C)',
+                        'border-color' => '#a9761c',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#189138,#189138)',
+                        'border-color' => '#189138',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#14782E,#14782E)',
+                        'border-color' => '#14782e',
+                    ),
+                ),
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BE29EC,#BE29EC)',
+                        'border-color' => '#be29ec',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#951DBA,#951DBA)',
+                        'border-color' => '#951dba',
+                    ),
+                ),
+            ),
+        ],
+        // Ask//
+        'request-information' => [
+            'url-match' => '/\/(?:new|used)\/[^\/]+\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.dialog.px-0.btn-no-decoration[href*="vehiclelead-form"]',
+            'css-class' => 'a.btn.btn-default.dialog.px-0.btn-no-decoration[href*="vehiclelead-form"]',
+            'css-hover' => 'a.btn.btn-default.dialog.px-0.btn-no-decoration[href*="vehiclelead-form"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a.btn.btn-default.dialog.px-0.btn-no-decoration[href*="vehiclelead-form"]',
+                    'values' => array(
+                        '<i class="ddc-icon-help-circle ddc-icon  d-block pb-1"></i> Inquiry',
+                        '<i></i> Inquire Now',
+                        '<i></i>Make An Inquiry',
+                        '<i></i>Submit An Inquiry',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1F4581,#1F4581)',
+                        'border-color' => '#1f4581',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#193767,#193767)',
+                        'border-color' => '#193767',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C33320,#C33320)',
+                        'border-color' => '#c33320',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A92C1C,#A92C1C)',
+                        'border-color' => '#a92c1c',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C38820,#C38820)',
+                        'border-color' => '#c38820',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A9761C,#A9761C)',
+                        'border-color' => '#a9761c',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#189138,#189138)',
+                        'border-color' => '#189138',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#14782E,#14782E)',
+                        'border-color' => '#14782e',
+                    ),
+                ),
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BE29EC,#BE29EC)',
+                        'border-color' => '#be29ec',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#951DBA,#951DBA)',
+                        'border-color' => '#951dba',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,174 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs['cityhonda'] = array(
+    //'budget'        => 2.0,
+	'password'  => 'cityhonda',
+ 'bid'           => 3.0,
+    'bid_modifier'  => array(
+        'after'     => 45, //days
+        'bid'       => 1.5
+    ),
+    'on15'          => true,
+	 "email"         => "regan@smedia.ca",
+	
+	'max_cost'      => 1250.0,
+'cost_distribution' => array(
+        'new'       => 525,
+        'used'      => 725,
+    ),
+    'log'           => true,
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => yes,
+        "used_display"      => yes,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+		 "new_marketbuyers"  => yes,
+        "used_marketbuyers" => yes,
+        "new_combined"  => yes,
+        "used_combined" => yes
+    ),
+    "post_code"     => "A1B 3P9",
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id"   => "266-120-7740",
+    "banner"        => array(
+        "template"          => "cityhonda",
+		"fb_description"	=> "Are you still interested in the [year] [make] [model]? Click below for more info!",
+		"flash_style"       => "default",
+		"border_color"    => "#7e7e7e",
+        "styels"            => array(
+            "new_display"       => "custom_banner",
+            "used_display"      => "custom_banner",
+            "new_retargeting"   => "custom_banner",
+            "used_retargeting"  => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+//    'form_live'     => false,
+//    'buttons_live'  => false,
+//    'buttons'       => [
+//        'request-a-quote'  => [
+//            'url-match' => '/\/vehicle-details\/(?:new|used|certified)-[0-9]{4}-/i',
+//            'target'    => null,        //Don't move button
+//            'locations' => [
+//                'default'   => null,    //Don't need to change location
+//            ],
+//            'action-target' => 'button.btn.btn-default.hash-st_request_a_quote',
+//            'css-class' => 'button.btn.btn-default.hash-st_request_a_quote',
+//            'css-hover' => 'button.btn.btn-default.hash-st_request_a_quote:hover',
+//         // 'button_action' => ['form','e-price'],
+//            'sizes'     => [
+//                '100'   => [
+//                    
+//                ]
+//            ],
+//            'texts'     => [
+//                'request-a-quote'  => [
+//                    'target'    => 'button.btn.btn-default.hash-st_request_a_quote',
+//                    'values'    => [
+//                        'Request A Quote',
+//                        'Get E Price Now!',
+//                        'Internet Price',
+//                        'Get your Price!',
+//                        'E- Price',
+//                        'Get Internet Price Now!',
+//                        'Contact Us.',
+//                        'Get Our Best Price',
+//                        'Best Price',
+//                        'Contact Us',
+//                        'Contact Store',
+//                        'Local Pricing',
+//                        'You are Eligible  for Special Pricing',
+//                        'Book Test Drive',
+//                        'Special Pricing!',
+//                        'Get More Information',
+//                        'Ask a Question',
+//                        'Inquire Now',
+//                        'Get Active Market Price',
+//                        'Get Market Price',
+//                        'Market Pricing',
+//                        'Drive-Away Price'
+//                    ]
+//                ]
+//            ],
+//            'styles'    => [
+//                'orange'  => [
+//                    'normal'    => [
+//                        'background-color' => '#f06b20',
+//                        'border-color'     => '#f06b20'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#cf540e',
+//                        'border-color'     => '#cf540e'
+//                    ]
+//                ],
+//                'red'  => [
+//                    'normal'    => [
+//                        'background-color' => '#e01212',
+//                        'border-color'     => '#e01212'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#c60c0d',
+//                        'border-color'     => '#c60c0d'
+//                    ]
+//                ],
+//                'green'  => [
+//                    'normal'    => [
+//                        'background-color' => '#54b740',
+//                        'border-color'     => '#54b740'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#359d22',
+//                        'border-color'     => '#359d22'
+//                    ]
+//                ],
+//                'blue'  => [
+//                    'normal'    => [
+//                        'background-color' => '#1ca0d1',
+//                        'border-color'     => '#1ca0d1'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#188bb7',
+//                        'border-color'     => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ]
+//    ]
+);

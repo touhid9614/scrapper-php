@@ -1,0 +1,43 @@
+<?php
+
+global $scrapper_configs;
+
+$scrapper_configs['enterprisechevy'] = array(
+    'entry_points' => array(
+        'new' => 'https://www.enterprisechevy.com/VehicleSearchResults?search=new',
+        'used' => 'https://www.enterprisechevy.com/VehicleSearchResults?search=used'
+    ),
+    'vdp_url_regex' => '/\/VehicleDetails\/(?:new|used)-[0-9]{4}/i',
+    'use-proxy' => true,
+    'picture_selectors' => ['.deck-gallery[smartgallery] > .deck > section'],
+    'picture_nexts' => ['.arrow.single.next'],
+    'picture_prevs' => ['.arrow.single.prev'],
+    'details_start_tag' => '<ul each="cards">',
+    'details_end_tag' => '<div class="content" id="pageDisclaimer">',
+    'details_spliter' => '<div class="deck" each="cards">',
+    'data_capture_regx' => array(
+        'stock_number' => '/stockNumber:(?<stock_number>[^;]+)/',
+        'year' => '/itemprop="vehicleModelDate">(?<year>[0-9]{4})/',
+        'make' => '/itemprop="manufacturer">(?<make>[^<]+)/',
+        'model' => '/itemprop="model">(?<model>[^<]+)/',
+        'url' => '/template="vehicle-name"><a itemprop="url" href="(?<url>[^"]+)/',
+        'price' => '/data-action="priceSpecification" [^>]+>(?<price>[^<]+)/',
+    ),
+    'data_capture_regx_full' => array(
+        'engine' => '/itemprop="vehicleEngine"[^>]+>\s*<[^>]+>\s*<[^>]+>(?<engine>[^<]+)/',
+        'transmission' => '/itemprop="vehicleTransmission">(?<transmission>[^<]+)/',
+        'kilometres' => '/itemprop="mileageFromOdometer">\s*<span>(?<kilometeres>[^<]+)/',
+        'exterior_color' => '/itemprop="color">(?<exterior_color>[^<]+)/',
+        'interior_color' => '/itemprop="vehicleInteriorColor">(?<interior_color>[^<]+)/',
+    ),
+    'next_page_regx' => '/data-action="next" href="(?<next>[^"]+)"/',
+    'images_regx' => '/itemprop="associatedMedia".*data-src="(?<img_url>[^"]+)/',
+    'images_fallback_regx' => '/<meta if="[^"]+"\sproperty="og:image" content="(?<img_url>[^"]+)"/'
+);
+add_filter("filter_enterprisechevy_next_page", "filter_enterprisechevy_next_page", 10, 2);
+
+function filter_enterprisechevy_next_page($next, $current_page) {
+    slecho("Filtering Next url");
+    $car_type = explode('=', $current_page);
+    return urlCombine($next, "?search={$car_type[count($car_type) - 1]}");
+}

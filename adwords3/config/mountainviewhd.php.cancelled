@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["mountainviewhd"] = array( 
+	"name"  =>" mountainviewhd",
+	"email" => "regan@smedia.ca",
+	"password" =>" mountainviewhd",
+	"log" => true ,
+);

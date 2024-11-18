@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["conexusmoneytalk"] = array(
+    //'name'          => 'Cressmans Holdings',
+    //'max_cost'      => 400,
+//    'cost_distribution' => array(
+//        'adwords'      => 400,
+//    ),
+//    "customer_id"   => "245-541-1719",
+    'password'      => 'conexusmoneytalk',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

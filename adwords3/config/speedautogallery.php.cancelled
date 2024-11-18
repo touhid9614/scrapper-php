@@ -1,0 +1,301 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["speedautogallery"] = array(
+    "name" => "speedautogallery",
+    "email" => "regan@smedia.ca",
+    "password" => "speedautogallery",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    "banner" => array(
+        "template" => "speedautogallery",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model]! Click for more information.",
+        //			"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to aid in any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+	"lead"  => array(
+		'live'                  => false,
+		'lead_type_'            => true,
+		'lead_type_new'         => false,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#b44846", "#b44846"),
+		'button_color_hover'    => array("#7d3231", "#7d3231"),
+		'button_color_active'   => array("#7d3231", "#7d3231"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "$200 off coupon from Speed Auto Gallery",
+		'response_email'        => "Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Speed Auto Gallery Team",
+		'forward_to'            => array("speedautogalleryinc@gmail.com","marshal@smedia.ca"),
+		/*'special_to'            => array('speedautogalleryinc@gmail.com'),
+		'special_email'         =>  '<?xml version="1.0"?>
+		<?adf version="1.0"?>
+		<adf>
+			<prospect>
+				<id sequence="[total_count]" source="Speed Auto Gallery"></id>
+				<requestdate>[fdt]</requestdate>
+				<vehicle interest="buy" status="[stock_type]">
+					<year>[year]</year>
+					<make>[make]</make>
+					<model>[model]</model>
+					<stock>[stock_number]</stock>
+				</vehicle>
+				<customer>
+				   <contact>
+						<name part="full">[name]</name>
+						<email>[email]</email>
+						<phone>[phone]</phone>
+					</contact>
+				</customer>
+				<vendor>
+					<contact>
+						<name part="full">Speed Auto Gallery</name>
+						<email>[dealer_email]</email>
+					</contact>
+				</vendor>
+				<provider>
+					<name part="full">sMedia</name>
+					<url>http://smedia.ca</url>
+					<email>offers@mail.smedia.ca</email>
+					<phone>855-775-0062</phone>
+				</provider>
+			</prospect>
+		</adf>',*/
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),
+    'adf_to' => array(
+        'speedautogalleryinc@gmail.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/details\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.check-available-vdp div',
+            'css-class' => 'div.check-available-vdp div',
+            'css-hover' => 'div.check-available-vdp div:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.check-available-vdp div',
+                    'values' => array(
+                        '<i class="fa fa-check"></i>Confirm Availability',
+                        '<i class="fa fa-check"></i>Get Availability',
+                        '<i class="fa fa-check"></i>Ask A Question',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'padding' => '9px 10px',
+                        'position' => 'relative',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#184d7f',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123E65,#123E65)',
+                        'border-color' => '#123e65',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#c47c18',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#a96b14',
+                        'line-height' => '1.2em',
+                        'font-weight' => '400',
+                        'color' => '#fff',
+                        'border-radius' => '4px',
+                        'display' => 'block',
+                        'font-size' => '14px',
+                        'text-align' => 'center',
+                        'position' => 'relative',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/details\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.btn-block.btn-xlg.font-primary',
+            'css-class' => 'a.btn.btn-default.btn-block.btn-xlg.font-primary',
+            'css-hover' => 'a.btn.btn-default.btn-block.btn-xlg.font-primary:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.btn.btn-default.btn-block.btn-xlg.font-primary',
+                    'values' => array(
+                        'Get Your Loan Online',
+                        'Start Your Loan Application',
+                        'Apply for Financing',
+                        'Special Finance Offers',
+                        'Apply For A Loan',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#184d7f',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123E65,#123E65)',
+                        'border-color' => '#123e65',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                        'color' => '#fff',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#c47c18',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#a96b14',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17608',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

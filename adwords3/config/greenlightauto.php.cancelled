@@ -1,0 +1,327 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["greenlightauto"] = array(
+    "name" => " greenlightauto",
+    "email" => "regan@smedia.ca",
+    "password" => " greenlightauto",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    'max_cost' => 400.0,
+    'cost_distribution' => array(
+        'adwords' => 400,
+),
+    "customer_id" => "195-574-0706",
+    "create" => array(
+        "used_search" => yes,
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "[year] [make] [model] ",
+            "desc2" => "only [Price]! Call Today",
+),
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+),
+        array(
+            "desc1" => "[year] [make] [model] ",
+            "desc2" => "starting at *[biweekly] b/w",
+),
+),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]",
+),
+),
+    "ymmcount_descs" => array(
+        array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+),
+),
+    "banner" => array(
+        "template" => "greenlightauto",
+        'fb_retargeting_description' => 'Still interested in the [year] [make] [model]? Click for more information.',
+        'fb_lookalike_description' => 'Test drive [year] [make] [model] today.',
+        "flash_style" => "default",
+        "border_color" => "#000",
+        "styels" => array(
+            "new_display" => "quick_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "quick_banner",
+            "used_retargeting" => "custom_banner",
+            "new_combined" => "quick_banner",
+            "used_combined" => "custom_banner",
+),
+        "font_color" => "#1a2127",
+),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#009A00',
+            '#009A00',
+),
+        'button_color_hover' => array(
+            '#008100',
+            '#008100',
+),
+        'button_color_active' => array(
+            '#008100',
+            '#008100',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'the New Year Cash Back and No payments for 90 Days on Financing',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Dealership Team',
+        'forward_to' => array(
+            'toontownsales@sasktel.net',
+            'marshal@smedia.ca',
+            'tania102028@gmail.com',
+),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+),
+    'lead_to' => array(
+        'toontownsales@sasktel.net',
+),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'test-drive' => [
+            'url-match' => '/\\/details\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'div.listing-right button:nth-of-type(3).btn-bridge-green.btn.col-md-12',
+            'css-class' => 'div.listing-right button:nth-of-type(3).btn-bridge-green.btn.col-md-12',
+            'css-hover' => 'div.listing-right button:nth-of-type(3).btn-bridge-green.btn.col-md-12:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'div.listing-right button:nth-of-type(3).btn-bridge-green.btn.col-md-12',
+                    'values' => array(
+                        'Request a Test Drive',
+                        'Schedule a Test Drive',
+                        'Book Test Drive',
+                        'Want to Test Drive?',
+                        'Test Drive Today',
+                        'Test Drive Now',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123E65,#123E65)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+        'request-information' => [
+            'url-match' => '/\\/details\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'div.listing-right button:nth-of-type(1).btn-bridge-green.btn.col-md-12',
+            'css-class' => 'div.listing-right button:nth-of-type(1).btn-bridge-green.btn.col-md-12',
+            'css-hover' => 'div.listing-right button:nth-of-type(1).btn-bridge-green.btn.col-md-12:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.listing-right button:nth-of-type(1).btn-bridge-green.btn.col-md-12',
+                    'values' => array(
+                        'Request More Info',
+                        'Ask an Expert',
+                        'Let Our Experts Help',
+                        'Ask a Question',
+                        'Learn More',
+                        'More Info',
+                        'Contact Us Now',
+                        'Contact Us Today',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123E65,#123E65)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+        'make-offer' => [
+            'url-match' => '/\\/details\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'div.listing-right button:nth-of-type(2).btn-bridge-green.btn.col-md-12',
+            'css-class' => 'div.listing-right button:nth-of-type(2).btn-bridge-green.btn.col-md-12',
+            'css-hover' => 'div.listing-right button:nth-of-type(2).btn-bridge-green.btn.col-md-12:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'make-offer' => [
+                    'target' => 'div.listing-right button:nth-of-type(2).btn-bridge-green.btn.col-md-12',
+                    'values' => array(
+                        'Make Your Deal',
+                        'Send an Offer',
+                        'Ask Reduced Price',
+                        'Get Your Price',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123E65,#123E65)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+);

@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["primointlcorp"] = array(
+    'password'      => 'primointlcorp',
+    //'customer_id'   => '868-332-5763',
+    'email'         => 'regan@smedia.ca',
+//    'max_cost'      => 1500.0,
+//    'cost_distribution' => array(
+//        'adwords'      => 1175,
+//        'youtube'      => 325,
+//    ),
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

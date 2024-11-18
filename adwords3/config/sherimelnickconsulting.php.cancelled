@@ -1,0 +1,14 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["sherimelnickconsulting"] = array(
+    'max_cost'      => 200,
+    'cost_distribution' => [
+      'adwords' => 200.00,  
+    ],
+    "customer_id"   => "340-335-0690",
+    'password'      => 'sherimelnickconsulting',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

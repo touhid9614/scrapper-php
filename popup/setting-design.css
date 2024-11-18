@@ -1,0 +1,58 @@
+.container{
+    margin-top: 15px;
+}
+
+.card{
+    margin: 5px 20px;
+}
+
+.img-popup{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+footer{
+    background-color: #0a0a0a;
+}
+
+.header-popup{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+@media screen and (min-width: 1000px) {
+    .header-popup{
+        margin-left: 30px;
+        margin-right: 150px;
+    }
+}
+
+.fs12{
+    font-size: 12px;
+    text-align: justify;
+    font-style: italic;
+}
+.remaining{
+    margin-top: 4px;
+    display: block;
+}
+
+.messageSmedia{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 80px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.anim{
+    animation-name: exampleAnim;
+    animation-duration: 5s;
+}
+
+@keyframes exampleAnim {
+    0%   {top:0px;}
+    100% {top:80px;}
+}

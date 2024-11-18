@@ -1,0 +1,237 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["inlandautocentre"] = array(
+    'password' => 'inlandautoinlandautocentre',
+    'log' => true,
+    'bid' => 3.0,
+    'host_url' => 'http://www.inlandautoinlandautocentre.com/',
+    //'max_cost'      => 600.0,
+    'cost_distribution' => array(
+        'facebook' => 100,
+        'adwords' => 500,
+    ),
+    'tag_settings' => [
+        'event_tracking' => false
+    ],
+    'on15' => true,
+    'post_code' => 'V1G 4R7',
+    "email" => "regan@smedia.ca",
+    "create" => array(
+        "new_search" => no,
+        "used_search" => yes,
+        "new_display" => no,
+        "used_display" => yes,
+        "new_retargeting" => no,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => no,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[color] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model].",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [price]. Only [kilometers]km ",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [biweekly] b/w",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [biweekly] b/w. Only [kilometers]km ",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]",
+        ),
+    ),
+    "ymmcount_descs" => array(
+        array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    //"customer_id"   => "744-234-9836",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "inlandautocentre",
+        'fb_retargeting_description' => 'Are you still interested in the [year] [make] [model]? Click for more information.',
+		"fb_lookalike_description"	=> "Check out this [year] [make] [model]! Click for more information.",
+        "flash_style" => "default",
+        "hst" => yes,
+        "border_color" => "#dfdfdf",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+//    'lead_to' => array(
+//        'alexandra@inlandautocentre.com',
+//        'ericfaucher@inlandautocentre.com',
+//        'davem@inlandautocentre.com',
+//        'dion@inlandautocentre.com',
+//    ),
+//    'form_live' => true,
+//    'buttons_live' => true,
+//    'buttons' => [
+//        'request-a-quote' => [
+//            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a.btn.eprice.dialog.button',
+//            'css-class' => 'a.btn.eprice.dialog.button',
+//            'css-hover' => 'a.btn.eprice.dialog.button:hover',
+//            'button_action' => [
+//                'form',
+//                'e-price',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'request-a-quote' => [
+//                    'target' => 'a.btn.btn-default.eprice.dialog.button',
+//                    'values' => array(
+//                        'Get Our Best Price',
+//                        'Get Special Pricing',
+//                        'Get Special Price!',
+//                        'SPECIAL PRICING!',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'orange' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+//                        'border-color' => '#f06b20',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+//                        'border-color' => '#cf540e',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#54B740,#54B740)',
+//                        'border-color' => '#54b740',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//        'test-drive' => [
+//            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+//            'css-class' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+//            'css-hover' => 'a.btn.btn-primary.btn-lg.dialog.btn-block:hover',
+//            'button_action' => [
+//                'form',
+//                'test-drive',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'test-drive' => [
+//                    'target' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+//                    'values' => array(
+//                        'Book Test Drive',
+//                        'Test Drive Now',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'orange' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+//                        'border-color' => '#f06b20',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+//                        'border-color' => '#cf540e',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#54B740,#54B740)',
+//                        'border-color' => '#54b740',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+   // ],
+);

@@ -1,0 +1,171 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["lakeviewchrysler"] = array(
+    "name" => "lakeviewchrysler",
+    "email" => "regan@smedia.ca",
+    "password" => "lakeviewchrysler",
+    "log" => true,
+    'adf_to' => array(
+        'jabbott@lakeviewchysler.com',
+        'kdickey@lakeviewchrysler.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => false,
+    'buttons' => [
+        'financing' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.customLink.btn.btn-default[href*="financing"]',
+            'css-class' => '.customLink.btn.btn-default[href*="financing"]',
+            'css-hover' => '.customLink.btn.btn-default[href*="financing"]:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => '.customLink.btn.btn-default[href*="financing"] ',
+                    'values' => array(
+                        'Apply For Financing',
+                        'No Hassle Financing',
+                        'Financing Available',
+                        'Get Approved Today',
+                        'Special Finance Offers',
+                        'Explore Payments',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#004582,#004582)',
+                        'border-color' => '#004582',
+                        'color' => '#fff ',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#003A71,#003A71)',
+                        'border-color' => '#003A71',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C91700,#C91700)',
+                        'border-color' => '#C91700',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B51500,#B51500)',
+                        'border-color' => '#B51500',
+                        'color' => '#fff',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C97600,#C97600)',
+                        'border-color' => '#C97600',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B56A00,#B56A00)',
+                        'border-color' => '#B56A00',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#009628,#009628)',
+                        'border-color' => '#009628',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008223,#008223)',
+                        'border-color' => '#008223',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*="schedule-form"].btn',
+            'css-class' => 'a[href*="schedule-form"].btn',
+            'css-hover' => 'a[href*="schedule-form"].btn:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a[href*="schedule-form"].btn',
+                    'values' => array(
+                        'Test Drive Today',
+                        'Test Drive Now',
+                        'Want To Test Drive?',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#004582,#004582)',
+                        'border-color' => '#004582',
+                        'color' => '#fff ',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#003A71,#003A71)',
+                        'border-color' => '#003A71',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C91700,#C91700)',
+                        'border-color' => '#C91700',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B51500,#B51500)',
+                        'border-color' => '#B51500',
+                        'color' => '#fff',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C97600,#C97600)',
+                        'border-color' => '#C97600',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B56A00,#B56A00)',
+                        'border-color' => '#B56A00',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#009628,#009628)',
+                        'border-color' => '#009628',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008223,#008223)',
+                        'border-color' => '#008223',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

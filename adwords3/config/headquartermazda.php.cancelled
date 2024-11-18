@@ -1,0 +1,502 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["headquartermazda"] = array(
+    'password' => 'headquartermazda',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "headquartermazda",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+/*    //'adf_to'        => ['txcordod_leads@lithia.com'],
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.button.cta-button.block.button-form',
+            'css-class' => 'a.button.cta-button.block.button-form',
+            'css-hover' => 'a.button.cta-button.block.button-form:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.button.cta-button.block.button-form',
+                    'values' => array(
+                        'Buy Now',
+                        'Start purchase',
+                        'Start Purchase Process',
+                        'Start purchase now',
+                        'Begin Purchase Process',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'p a.button.cta-button.block',
+            'css-class' => 'p a.button.cta-button.block',
+            'css-hover' => 'p a.button.cta-button.block:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'p a.button.cta-button.block',
+                    'values' => array(
+                        'Explore payments',
+                        'Payment options',
+                        'Explore Financing',
+                        'Calculate Financing',
+                        'Calculate my Payments',
+                        'Lease Options',
+                        'Financing Options',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/inventory\\/(certified-)?(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.button-form.fancy.button.primary-button.block.button-form.fancybox',
+            'css-class' => 'a.button-form.fancy.button.primary-button.block.button-form.fancybox',
+            'css-hover' => 'a.button-form.fancy.button.primary-button.block.button-form.fancybox:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a.button-form.fancy.button.primary-button.block.button-form.fancybox',
+                    'values' => array(
+                        'Reserve this deal',
+                        'Reserve Price',
+                        'Lock in this Price',
+                        'Get More Information',
+                        'Ask A Question',
+                        'More Info',
+                        'Get More Info',
+                        'Contact Us',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'Listing request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)-vehicles/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=express].button-form.block',
+            'css-class' => 'a[href*=express].button-form.block',
+            'css-hover' => 'a[href*=express].button-form.block:hover',
+            // 'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[href*=express].button-form.block',
+                    'values' => array(
+                        'Buy Now',
+                        'Start purchase',
+                        'Start Purchase Process',
+                        'Start purchase now',
+                        'Begin Purchase Process',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'Listing financing' => [
+            'url-match' => '/\\/(?:new|used)-vehicles/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.block.cta-button.button',
+            'css-class' => 'a.block.cta-button.button',
+            'css-hover' => 'a.block.cta-button.button:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.block.cta-button.button',
+                    'values' => array(
+                        'Explore payments',
+                        'Payment options',
+                        'Explore Financing',
+                        'Calculate Financing',
+                        'Calculate my Payments',
+                        'Lease Options',
+                        'Financing Options',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'Listing request-information' => [
+            'url-match' => '/\\/(?:new|used)-vehicles/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '.button-form.fancy.primary-button.button.block',
+            'css-class' => '.button-form.fancy.primary-button.button.block',
+            'css-hover' => '.button-form.fancy.primary-button.button.block:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => '.button-form.fancy.primary-button.button.block',
+                    'values' => array(
+                        'Reserve this deal',
+                        'Reserve Price',
+                        'Lock in this Price',
+                        'Get More Information',
+                        'Ask A Question',
+                        'More Info',
+                        'Get More Info',
+                        'Contact Us',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0A9E0A,#0A9E0A)',
+                        'border-color' => '#0a9e0a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1A8C8C,#1A8C8C)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1a8c8c',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ], 
+    ], */
+);

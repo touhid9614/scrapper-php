@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["decorahcadillac"] = array(
+  'password'  => 'decorahcadillac',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+ 'fb_brand'          => '[year] [make] [model] - [body_style]',   
+    
+    "banner"        => array(
+        "template"          => "decorahcadillac",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["clearlineconstruction"] = array(
+    "customer_id"   => "345-218-6670",
+    'password'      => 'clearlineconstruction',
+    "email"         => "regan@smedia.ca",
+    'max_cost'      => 100,
+    'cost_distribution' => array(
+        'adwords'      => 100,
+    ),
+        "banner"        => array(
+        "template"          => "clearlineconstruction",
+        "flash_style"       => "default",  
+        "font_color"        => "#ffffff"
+        ),
+);

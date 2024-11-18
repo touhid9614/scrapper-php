@@ -1,0 +1,165 @@
+<html>
+    
+    <head>
+        <!-- Important Note: All HTML resources must be hosted on an always avaiable CDN such as Amazon S3. -->
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <style>
+            *,
+            *:before,
+            *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 6.5in;
+                height: 4.5in;
+                min-height: 4.5in;
+                padding: 0in;
+                margin: 0in;
+                font-family: 'Roboto', sans-serif;
+                /* border: 2px solid red; */
+            }
+
+            #saftey-cover {
+                position: absolute;
+                
+                width: 2in;
+                height: 4in;
+                min-height: 4in;
+                /*width: 2.25in;
+                height: 4.5in;
+                min-height: 4.5in;*/
+                padding: 0in;
+                margin: 0in;
+                /* background-image: url('https://s3.amazonaws.com/rd-dmcc/creative-samples/sample-background.png'); */
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+
+            #saftey-zone {
+                position: absolute;
+                width: 2in;
+                height: 4in;
+                min-height: 4in;
+                /*left: 0.25in;
+                top: 0.25in;*/
+                padding: 0in;
+                margin: 0in;
+            }
+
+            #header {
+                position: relative;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: .15in;
+                text-transform: uppercase;
+                letter-spacing: .03in;
+                color: black;
+                padding: .075in;
+                text-align: left;
+                margin: 0in;
+            }
+
+            .sub-text {
+                position: relative;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: .125in;
+                letter-spacing: .01in;
+                color: black;
+                text-align: left;
+                padding: .075in;
+                margin: 0in;
+            }
+
+            #mid {
+                position: absolute;
+                margin: 0in;
+                top: .5in;
+                left: 2in;
+                width: 4in;
+                height: 1in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: .5in;
+            }
+
+            #mid2 {
+                position: absolute;
+                margin: 0in;
+                top: 1.7in;
+                left: 2.24in;
+                width: 4in;
+                height: 1.8in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: .5in;
+            }
+
+            .midDown {
+                position: absolute;
+                margin: 0in;
+                top: 3.5in;
+                left: 2.24in;
+                width: 4in;
+                height: .75in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: .5in;
+            }
+
+            .midText {
+                top: .6in;
+                left: 0.6in;
+                position: absolute;
+                font-size: .15in;
+            }
+
+            .logo {
+                position: absolute;
+                width: 1.7in;
+            }
+        </style>
+        <title>Reach Dynamics Template - Back</title>
+    </head>
+
+    <body>
+
+
+        <!-- all content must be within the safety zone -->
+        <div id="saftey-cover" style="background-image:url('{{back_banner}}'); background-size: cover;">
+            <div id="saftey-zone">
+
+            </div>
+        </div>
+        <!-- return address should be placed in this zone.  may include text and images -->
+        <div id="mid">
+            <img class="logo" src="{{logo}}" alt="sMedia" />
+            <div class="midText">
+
+
+                <div>PO Box 15111</div>
+                <div>St. Louis, MO 63110</div>
+
+            </div>
+
+        </div>
+        <div id="mid2">
+
+
+
+        </div>
+        <div class="midDown">
+
+        </div>
+
+    </body>
+
+</html>

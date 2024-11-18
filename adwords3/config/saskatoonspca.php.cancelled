@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["saskatoonspca"] = array(
+   // 'max_cost'      => 400,
+   //  'cost_distribution' => array(
+//        'adwords'      => 1175,
+//        'youtube'      => 325,
+//    ),
+  //  "customer_id"   => "746-226-8900",
+    'password'      => 'saskatoonspca',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

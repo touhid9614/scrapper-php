@@ -1,0 +1,60 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["landroveroftacoma"] = array(
+  'password'  => 'landroveroftacoma',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+   // 'max_cost'      => 1050,
+    "create"     => array(
+       // "new_search"        => yes,
+        "used_search"       => yes,
+      //  "new_placement"     => yes,
+        "used_placement"    => yes,
+      //  "new_display"       => yes,
+        "used_display"      => yes,
+       // "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+       // "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+       // "new_combined"      => yes,
+        "used_combined"     => yes
+    ),
+  /*  "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),*/
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    //'customer_id'   => '893-139-3829',
+    "banner"        => array(
+        "template"          => "landroveroftacoma",
+        'fb_description'    => 'Are you still interested in the [year] [make] [model] ?',
+                "flash_style"       => "default",
+                "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        )
+    );

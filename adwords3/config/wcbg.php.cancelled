@@ -1,0 +1,12 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["wcbg"] = array(
+//    'max_cost'      => 200,
+    "customer_id"   => "",
+    'password'      => 'wcbg',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);
+

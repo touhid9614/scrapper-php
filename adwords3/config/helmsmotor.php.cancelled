@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["helmsmotor"] = array(
+  'password'  => 'helmsmotor',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    "banner"        => array(
+        "template"          => "helmsmotor",
+        'fb_description'    => 'Test drive the [year][make][model] today or see them all at HelmsMotor.com!',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+);

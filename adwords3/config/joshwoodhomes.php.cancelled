@@ -1,0 +1,23 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["joshwoodhomes"] = array( 
+	"name"  =>" joshwoodhomes",
+	"email" => "regan@smedia.ca",
+	"password" =>" joshwoodhomes",
+        'log' => true,
+	//"no_adv" => true ,
+	"banner"        => array(
+        "template"          => "joshwoodhomes",
+		"fb_title"        => "[make], [model]",
+        'fb_description'  => 'Are you still interested in this beautiful home? Click for more info.',
+        "styels"            => array(
+            "new_display"       => "custom_banner",
+            "used_display"      => "custom_banner",
+            "new_retargeting"   => "custom_banner",
+            "used_retargeting"  => "custom_banner",
+            "new_marketbuyers"  => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),        
+        "font_color"      => "#ffffff"
+    )
+);

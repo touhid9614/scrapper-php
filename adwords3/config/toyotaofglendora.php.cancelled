@@ -1,0 +1,328 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["toyotaofglendora"] = array(
+    "name" => " toyotaofglendora",
+    'password' => 'toyotaofglendora',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'adf_to' => array(
+        'toyotaofglendora@eleadtrack.net',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/auto\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div#region_4 >div:nth-of-type(2).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-class' => 'div#region_4 >div:nth-of-type(2).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-hover' => 'div#region_4 >div:nth-of-type(2).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div#region_4 >div:nth-of-type(2).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Our Best Price',
+                        'Get Sale Price',
+                        'Get Today\'s Price',
+                        'Get Current Price',
+                        'Inquire Today',
+                        'Inquire Now',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D86E05,#D86E05)',
+                        'border-color' => '#D86E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B05700,#B05700)',
+                        'border-color' => '#B05700',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81E05,#D81E05)',
+                        'border-color' => '#D81E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B01400,#B01400)',
+                        'border-color' => '#B01400',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#04A12D,#04A12D)',
+                        'border-color' => '#04A12D',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008323,#008323)',
+                        'border-color' => '#008323',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#16CAF7,#16CAF7)',
+                        'border-color' => '#076E86',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03596D,#03596D)',
+                        'border-color' => '#03596D',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/[^\\/]+\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div#region_4 >div:nth-of-type(3).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-class' => 'div#region_4 >div:nth-of-type(3).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+            'css-hover' => 'div#region_4 >div:nth-of-type(3).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'div#region_4 >div:nth-of-type(3).multi_widget_247_3123_sub_section_1 div.preview_eprice_btn_container div.get-e-price',
+                    'values' => array(
+                        'Lease Payments',
+                        'Lease Quote',
+                        'Calculate Lease Payment',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D86E05,#D86E05)',
+                        'border-color' => '#D86E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B05700,#B05700)',
+                        'border-color' => '#B05700',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81E05,#D81E05)',
+                        'border-color' => '#D81E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B01400,#B01400)',
+                        'border-color' => '#B01400',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#04A12D,#04A12D)',
+                        'border-color' => '#04A12D',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008323,#008323)',
+                        'border-color' => '#008323',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#16CAF7,#16CAF7)',
+                        'border-color' => '#076E86',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03596D,#03596D)',
+                        'border-color' => '#03596D',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/[^\\/]+\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+            'css-class' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+            'css-hover' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.multi_cta_wrapper div:nth-of-type(4) div.multi_cta_inner a',
+                    'values' => array(
+                        'Get More Info',
+                        'More Information',
+                        'Learn More',
+                        'Ask a Question',
+                        'Contact Us Now',
+                        'Contact Us Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D86E05,#D86E05)',
+                        'border-color' => '#D86E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B05700,#B05700)',
+                        'border-color' => '#B05700',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81E05,#D81E05)',
+                        'border-color' => '#D81E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B01400,#B01400)',
+                        'border-color' => '#B01400',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#04A12D,#04A12D)',
+                        'border-color' => '#04A12D',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008323,#008323)',
+                        'border-color' => '#008323',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#16CAF7,#16CAF7)',
+                        'border-color' => '#076E86',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03596D,#03596D)',
+                        'border-color' => '#03596D',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'check-confirmation' => [
+            'url-match' => '/\\/[^\\/]+\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.multi_cta_wrapper div:nth-of-type(3) div.multi_cta_inner a',
+            'css-class' => 'div.multi_cta_wrapper div:nth-of-type(3) div.multi_cta_inner a',
+            'css-hover' => 'div.multi_cta_wrapper div:nth-of-type(3) div.multi_cta_inner a:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.multi_cta_wrapper div:nth-of-type(3) div.multi_cta_inner a',
+                    'values' => array(
+                        'Check Availability',
+                        'Get Availability',
+                        'Ask for Availability',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D86E05,#D86E05)',
+                        'border-color' => '#D86E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B05700,#B05700)',
+                        'border-color' => '#B05700',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81E05,#D81E05)',
+                        'border-color' => '#D81E05',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B01400,#B01400)',
+                        'border-color' => '#B01400',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#04A12D,#04A12D)',
+                        'border-color' => '#04A12D',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008323,#008323)',
+                        'border-color' => '#008323',
+                        'color' => '#fff',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#16CAF7,#16CAF7)',
+                        'border-color' => '#076E86',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03596D,#03596D)',
+                        'border-color' => '#03596D',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

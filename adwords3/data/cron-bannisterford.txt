@@ -1,0 +1,2031 @@
+
+1
+ Continue
+2
+ Continue
+3
+ Continue
+4
+ Continue
+5
+ Continue
+6
+ Continue
+7
+ Continue
+8
+ Continue
+9
+ Continue
+10
+ Continue
+11
+ Continue
+12
+ Continue
+13
+ Continue
+14
+ Continue
+15
+ Continue
+16
+ Continue
+17
+ Continue
+18
+ Continue
+19
+ Continue
+20
+ Continue
+21
+ Continue
+22
+ Continue
+23
+ Continue
+24
+ Continue
+25
+ Continue
+26
+ Continue
+27
+ Continue
+28
+ Continue
+29
+ Continue
+30
+ Continue
+31
+ Continue
+32
+ Continue
+33
+ Continue
+34
+ Continue
+35
+ Continue
+36
+ Continue
+37
+ Continue
+38
+ Continue
+39
+ Continue
+40
+ Continue
+41
+ Continue
+42
+ Continue
+43
+ Continue
+44
+ Continue
+45
+ Continue
+46
+ Continue
+47
+ Continue
+48
+ Continue
+49
+ Continue
+50
+ Continue
+51
+ Continue
+52
+ Continue
+53
+ Continue
+54
+ Continue
+55
+ Continue
+56
+ Continue
+57
+ Continue
+58
+ Continue
+59
+ Continue
+60
+ Continue
+61
+ Continue
+62
+ Continue
+63
+ Continue
+64
+ Continue
+65
+ Continue
+66
+ Continue
+67
+ Continue
+68
+ Continue
+69
+ Continue
+70
+ Continue
+71
+ Continue
+72
+ Continue
+73
+ Continue
+74
+ Continue
+75
+ Continue
+76
+ Continue
+77
+ Continue
+78
+ Continue
+79
+ Continue
+80
+ Continue
+81
+ Continue
+82
+ Continue
+83
+ Continue
+84
+ Continue
+85
+ Continue
+86
+ Continue
+87
+ Continue
+88
+ Continue
+89
+ Continue
+90
+ Continue
+91
+ Continue
+92
+ Continue
+93
+ Continue
+94
+ Continue
+95
+ Continue
+96
+ Continue
+97
+ Continue
+98
+ Continue
+99
+ Continue
+100
+ Continue
+101
+ Continue
+102
+ Continue
+103
+ Continue
+104
+ Continue
+105
+ Continue
+106
+ Continue
+107
+ Continue
+108
+ Continue
+109
+ Continue
+110
+ Continue
+111
+ Continue
+112
+ Continue
+113
+ Continue
+114
+ Continue
+115
+ Continue
+116
+ Continue
+117
+ Continue
+118
+ Continue
+119
+ Continue
+120
+ Continue
+121
+ Continue
+122
+ Continue
+123
+ Continue
+124
+ Continue
+125
+ Continue
+126
+ Continue
+127
+ Continue
+128
+ Continue
+129
+ Continue
+130
+ Continue
+131
+ Continue
+132
+ Continue
+133
+ Continue
+134
+ Continue
+135
+ Continue
+136
+ Continue
+137
+ Continue
+138
+ Continue
+139
+ Continue
+140
+ Continue
+141
+ Continue
+142
+ Continue
+143
+ Continue
+144
+ Continue
+145
+ Continue
+146
+ Continue
+147
+ Continue
+148
+ Continue
+149
+ Continue
+150
+ Continue
+151
+ Continue
+152
+ Continue
+153
+ Continue
+154
+ Continue
+155
+ Continue
+156
+ Continue
+157
+ Continue
+158
+ Continue
+159
+ Continue
+160
+ Continue
+161
+ Continue
+162
+ Continue
+163
+ Continue
+164
+ Continue
+165
+ Continue
+166
+ Continue
+167
+ Continue
+168
+ Continue
+169
+ Continue
+170
+ Continue
+171
+ Continue
+172
+ Continue
+173
+ Continue
+174
+ Continue
+175
+ Continue
+176
+ Continue
+177
+ Continue
+178
+ Continue
+179
+ Continue
+180
+ Continue
+181
+ Continue
+182
+ Continue
+183
+ Continue
+184
+ Continue
+185
+ Continue
+186
+ Continue
+187
+ Continue
+188
+ Continue
+189
+ Continue
+190
+ Continue
+191
+ Continue
+192
+ Continue
+193
+ Continue
+194
+ Continue
+195
+ Continue
+196
+ Continue
+197
+ Continue
+198
+ Continue
+199
+ Continue
+200
+ Continue
+201
+ Continue
+202
+ Continue
+203
+ Continue
+204
+ Continue
+205
+ Continue
+206
+ Continue
+207
+ Continue
+208
+ Continue
+209
+ Continue
+210
+ Continue
+211
+ Continue
+212
+ Continue
+213
+ Continue
+214
+ Continue
+215
+ Continue
+216
+ Continue
+217
+ Continue
+218
+ Continue
+219
+ Continue
+220
+ Continue
+221
+ Continue
+222
+ Continue
+223
+ Continue
+224
+ Continue
+225
+ Continue
+226
+ Continue
+227
+ Continue
+228
+ Continue
+229
+ Continue
+230
+ Continue
+231
+ Continue
+232
+ Continue
+233
+ Continue
+234
+ Continue
+235
+ Continue
+236
+ Continue
+237
+ Continue
+238
+ Continue
+239
+ Continue
+240
+ Continue
+241
+ Continue
+242
+ Continue
+243
+ Continue
+244
+ Continue
+245
+ Continue
+246
+ Continue
+247
+ Continue
+248
+ Continue
+249
+ Continue
+250
+ Continue
+251
+ Continue
+252
+ Continue
+253
+ Continue
+254
+ Continue
+255
+ Continue
+256
+ Continue
+257
+ Continue
+258
+ Continue
+259
+ Continue
+260
+ Continue
+261
+ Continue
+262
+ Continue
+263
+ Continue
+264
+ Continue
+265
+ Continue
+266
+ Continue
+267
+ Continue
+268
+ Continue
+269
+ Continue
+270
+ Continue
+271
+ Continue
+272
+ Continue
+273
+ Continue
+274
+ Continue
+275
+ Continue
+276
+ Continue
+277
+ Continue
+278
+ Continue
+279
+ Continue
+280
+ Continue
+281
+ Continue
+282
+ Continue
+283
+ Continue
+284
+ Continue
+285
+ Continue
+286
+ Continue
+287
+ Continue
+288
+ Continue
+289
+ Continue
+290
+ Continue
+291
+ Continue
+292
+ Continue
+293
+ Continue
+294
+ Continue
+295
+ Continue
+296
+ Continue
+297
+ Continue
+298
+ Continue
+299
+ Continue
+300
+ Continue
+301
+ Continue
+302
+ Continue
+303
+ Continue
+304
+ Continue
+305
+ Continue
+306
+ Continue
+307
+ Continue
+308
+ Continue
+309
+ Continue
+310
+ Continue
+311
+ Continue
+312
+ Continue
+313
+ Continue
+314
+ Continue
+315
+ Continue
+316
+ Continue
+317
+ Continue
+318
+ Continue
+319
+ Continue
+320
+ Continue
+321
+ Continue
+322
+ Continue
+323
+ Continue
+324
+ Continue
+325
+ Continue
+326
+ Continue
+327
+ Continue
+328
+ Continue
+329
+ Continue
+330
+ Continue
+331
+ Continue
+332
+ Continue
+333
+ Continue
+334
+ Continue
+335
+ Continue
+336
+ Continue
+337
+ Continue
+338
+ Continue
+339
+ Continue
+340
+ Continue
+341
+ Continue
+342
+ Continue
+343
+ Continue
+344
+ Continue
+345
+ Continue
+346
+ Continue
+347
+ Continue
+348
+ Continue
+349
+ Continue
+350
+ Continue
+351
+ Continue
+352
+ Continue
+353
+ Continue
+354
+ Continue
+355
+ Continue
+356
+ Continue
+357
+ Continue
+358
+ Continue
+359
+ Continue
+360
+ Continue
+361
+ Continue
+362
+ Continue
+363
+ Continue
+364
+ Continue
+365
+ Continue
+366
+ Continue
+367
+ Continue
+368
+ Continue
+369
+ Continue
+370
+ Continue
+371
+ Continue
+372
+ Continue
+373
+ Continue
+374
+ Continue
+375
+ Continue
+376
+ Continue
+377
+ Continue
+378
+ Continue
+379
+ Continue
+380
+ Continue
+381
+ Continue
+382
+ Continue
+383
+ Continue
+384
+ Continue
+385
+ Continue
+386
+ Continue
+387
+ Continue
+388
+ Continue
+389
+ Continue
+390
+ Continue
+391
+ Continue
+392
+ Continue
+393
+ Continue
+394
+ Continue
+395
+ Continue
+396
+ Continue
+397
+ Continue
+398
+ Continue
+399
+ Continue
+400
+ Continue
+401
+ Continue
+402
+ Continue
+403
+ Continue
+404
+ Continue
+405
+ Continue
+406
+ Continue
+407
+ Continue
+408
+ Continue
+409
+ Continue
+410
+ Continue
+411
+ Continue
+412
+ Continue
+413
+ Continue
+414
+ Continue
+415
+ Continue
+416
+ Continue
+417
+ Continue
+418
+ Continue
+419
+ Continue
+420
+ Continue
+421
+ Continue
+422
+ Continue
+423
+ Continue
+424
+ Continue
+425
+ Continue
+426
+ Continue
+427
+ Continue
+428
+ Continue
+429
+ Continue
+430
+ Continue
+431
+ Continue
+432
+ Continue
+433
+ Continue
+434
+ Continue
+435
+ Continue
+436
+ Continue
+437
+ Continue
+438
+ Continue
+439
+ Continue
+440
+ Continue
+441
+ Continue
+442
+ Continue
+443
+ Continue
+444
+ Continue
+445
+ Continue
+446
+ Continue
+447
+ Continue
+448
+ Continue
+449
+ Continue
+450
+ Continue
+451
+ Continue
+452
+ Continue
+453
+ Continue
+454
+ Continue
+455
+ Continue
+456
+ Continue
+457
+ Continue
+458
+ Continue
+459
+ Continue
+460
+ Continue
+461
+ Continue
+462
+ Continue
+463
+ Continue
+464
+ Continue
+465
+ Continue
+466
+ Continue
+467
+ Continue
+468
+ Continue
+469
+ Continue
+470
+ Continue
+471
+ Continue
+472
+ Continue
+473
+ Continue
+474
+ Continue
+475
+ Continue
+476
+ Continue
+477
+ Continue
+478
+ Continue
+479
+ Continue
+480
+ Continue
+481
+ Continue
+482
+ Continue
+483
+ Continue
+484
+ Continue
+485
+ Continue
+486
+ Continue
+487
+ Continue
+488
+ Continue
+489
+ Continue
+490
+ Continue
+491
+ Continue
+492
+ Continue
+493
+ Continue
+494
+ Continue
+495
+ Continue
+496
+ Continue
+497
+ Continue
+498
+ Continue
+499
+ Continue
+500
+ Continue
+501
+ Continue
+502
+ Continue
+503
+ Continue
+504
+ Continue
+505
+ Continue
+506
+ Continue
+507
+ Continue
+508
+ Continue
+509
+ Continue
+510
+ Continue
+511
+ Continue
+512
+ Continue
+513
+ Continue
+514
+ Continue
+515
+ Continue
+516
+ Continue
+517
+ Continue
+518
+ Continue
+519
+ Continue
+520
+ Continue
+521
+ Continue
+522
+ Continue
+523
+ Continue
+524
+ Continue
+525
+ Continue
+526
+ Continue
+527
+ Continue
+528
+ Continue
+529
+ Continue
+530
+ Continue
+531
+ Continue
+532
+ Continue
+533
+ Continue
+534
+ Continue
+535
+ Continue
+536
+ Continue
+537
+ Continue
+538
+ Continue
+539
+ Continue
+540
+ Continue
+541
+ Continue
+542
+ Continue
+543
+ Continue
+544
+ Continue
+545
+ Continue
+546
+ Continue
+547
+ Continue
+548
+ Continue
+549
+ Continue
+550
+ Continue
+551
+ Continue
+552
+ Continue
+553
+ Continue
+554
+ Continue
+555
+ Continue
+556
+ Continue
+557
+ Continue
+558
+Could not connect to host
+ Re auth
+ Continue
+559
+ Continue
+560
+ Continue
+561
+ Continue
+562
+ Continue
+563
+ Continue
+564
+ Continue
+565
+ Continue
+566
+ Continue
+567
+ Continue
+568
+ Continue
+569
+ Continue
+570
+ Continue
+571
+ Continue
+572
+ Continue
+573
+ Continue
+574
+ Continue
+575
+ Continue
+576
+ Continue
+577
+ Continue
+578
+ Continue
+579
+ Continue
+580
+ Continue
+581
+ Continue
+582
+ Continue
+583
+ Continue
+584
+ Continue
+585
+ Continue
+586
+ Continue
+587
+ Continue
+588
+ Continue
+589
+ Continue
+590
+ Continue
+591
+ Continue
+592
+ Continue
+593
+ Continue
+594
+ Continue
+595
+ Continue
+596
+ Continue
+597
+ Continue
+598
+ Continue
+599
+ Continue
+600
+ Continue
+601
+ Continue
+602
+ Continue
+603
+ Continue
+604
+ Continue
+605
+ Continue
+606
+ Continue
+607
+ Continue
+608
+ Continue
+609
+ Continue
+610
+ Continue
+611
+ Continue
+612
+ Continue
+613
+ Continue
+614
+ Continue
+615
+ Continue
+616
+ Continue
+617
+ Continue
+618
+ Continue
+619
+ Continue
+620
+ Continue
+621
+ Continue
+622
+ Continue
+623
+ Continue
+624
+ Continue
+625
+ Continue
+626
+ Continue
+627
+ Continue
+628
+ Continue
+629
+ Continue
+630
+ Continue
+631
+ Continue
+632
+ Continue
+633
+ Continue
+634
+ Continue
+635
+ Continue
+636
+ Continue
+637
+ Continue
+638
+ Continue
+639
+ Continue
+640
+ Continue
+641
+ Continue
+642
+ Continue
+643
+ Continue
+644
+ Continue
+645
+ Continue
+646
+ Continue
+647
+ Continue
+648
+ Continue
+649
+ Continue
+650
+ Continue
+651
+ Continue
+652
+ Continue
+653
+ Continue
+654
+ Continue
+655
+ Continue
+656
+ Continue
+657
+ Continue
+658
+ Continue
+659
+ Continue
+660
+ Continue
+661
+ Continue
+662
+ Continue
+663
+ Continue
+664
+ Continue
+665
+ Continue
+666
+ Continue
+667
+ Continue
+668
+ Continue
+669
+ Continue
+670
+ Continue
+671
+ Continue
+672
+ Continue
+673
+ Continue
+674
+ Continue
+675
+ Continue
+676
+ Continue
+677
+ Continue
+678
+ Continue
+679
+ Continue
+680
+ Continue
+681
+ Continue
+682
+ Continue
+683
+ Continue
+684
+ Continue
+685
+ Continue
+686
+ Continue
+687
+ Continue
+688
+ Continue
+689
+ Continue
+690
+ Continue
+691
+ Continue
+692
+ Continue
+693
+ Continue
+694
+ Continue
+695
+ Continue
+696
+ Continue
+697
+ Continue
+698
+ Continue
+699
+ Continue
+700
+ Continue
+701
+ Continue
+702
+ Continue
+703
+ Continue
+704
+ Continue
+705
+ Continue
+706
+ Continue
+707
+ Continue
+708
+ Continue
+709
+ Continue
+710
+ Continue
+711
+ Continue
+712
+ Continue
+713
+ Continue
+714
+ Continue
+715
+ Continue
+716
+ Continue
+717
+ Continue
+718
+ Continue
+719
+ Continue
+720
+ Continue
+721
+ Continue
+722
+ Continue
+723
+ Continue
+724
+ Continue
+725
+ Continue
+726
+ Continue
+727
+ Continue
+728
+ Continue
+729
+ Continue
+730
+ Continue
+731
+ Continue
+732
+ Continue
+733
+ Continue
+734
+ Continue
+735
+ Continue
+736
+ Continue
+737
+ Continue
+738
+ Continue
+739
+ Continue
+740
+ Continue
+741
+ Continue
+742
+ Continue
+743
+ Continue
+744
+ Continue
+745
+ Continue
+746
+ Continue
+747
+ Continue
+748
+ Continue
+749
+ Continue
+750
+ Continue
+751
+ Continue
+752
+ Continue
+753
+ Continue
+754
+ Continue
+755
+ Continue
+756
+ Continue
+757
+ Continue
+758
+ Continue
+759
+ Continue
+760
+ Continue
+761
+ Continue
+762
+ Continue
+763
+ Continue
+764
+ Continue
+765
+ Continue
+766
+ Continue
+767
+ Continue
+768
+ Continue
+769
+ Continue
+770
+ Continue
+771
+ Continue
+772
+ Continue
+773
+ Continue
+774
+ Continue
+775
+ Continue
+776
+ Continue
+777
+ Continue
+778
+ Continue
+779
+ Continue
+780
+ Continue
+781
+ Continue
+782
+ Continue
+783
+ Continue
+784
+ Continue
+785
+ Continue
+786
+ Continue
+787
+ Continue
+788
+ Continue
+789
+ Continue
+790
+ Continue
+791
+ Continue
+792
+ Continue
+793
+ Continue
+794
+ Continue
+795
+ Continue
+796
+ Continue
+797
+ Continue
+798
+ Continue
+799
+ Continue
+800
+ Continue
+801
+ Continue
+802
+ Continue
+803
+ Continue
+804
+ Continue
+805
+ Continue
+806
+ Continue
+807
+ Continue
+808
+ Continue
+809
+ Continue
+810
+ Continue
+811
+ Continue
+812
+ Continue
+813
+ Continue
+814
+ Continue
+815
+ Continue
+816
+ Continue
+817
+ Continue
+818
+ Continue
+819
+ Continue
+820
+ Continue
+821
+ Continue
+822
+ Continue
+823
+ Continue
+824
+ Continue
+825
+ Continue
+826
+ Continue
+827
+ Continue
+828
+ Continue
+829
+ Continue
+830
+ Continue
+831
+ Continue
+832
+Could not connect to host
+ Re auth
+ Continue
+833
+ Continue
+834
+ Continue
+835
+ Continue
+836
+ Continue
+837
+ Continue
+838
+ Continue
+839
+ Continue
+840
+ Continue
+841
+ Continue
+842
+ Continue
+843
+ Continue
+844
+ Continue
+845
+ Continue
+846
+ Continue
+847
+ Continue
+848
+ Continue
+849
+ Continue
+850
+ Continue
+851
+ Continue
+852
+ Continue
+853
+ Continue
+854
+ Continue
+855
+ Continue
+856
+ Continue
+857
+ Continue
+858
+ Continue
+859
+ Continue
+860
+ Continue
+861
+ Continue
+862
+ Continue
+863
+ Continue
+864
+ Continue
+865
+ Continue
+866
+ Continue
+867
+ Continue
+868
+ Continue
+869
+ Continue
+870
+ Continue
+871
+ Continue
+872
+ Continue
+873
+ Continue
+874
+ Continue
+875
+ Continue
+876
+ Continue
+877
+ Continue
+878
+ Continue
+879
+ Continue
+880
+ Continue
+881
+ Continue
+882
+ Continue
+883
+ Continue
+884
+ Continue
+885
+ Continue
+886
+ Continue
+887
+ Continue
+888
+ Continue
+889
+ Continue
+890
+ Continue
+891
+ Continue
+892
+ Continue
+893
+ Continue
+894
+ Continue
+895
+ Continue
+896
+ Continue
+897
+ Continue
+898
+ Continue
+899
+ Continue
+900
+ Continue
+901
+ Continue
+902
+ Continue
+903
+ Continue
+904
+ Continue
+905
+ Continue
+906
+ Continue
+907
+ Continue
+908
+ Continue
+909
+ Continue
+910
+ Continue
+911
+ Continue
+912
+ Continue
+913
+ Continue
+914
+ Continue
+915
+ Continue
+916
+ Continue
+917
+ Continue
+918
+ Continue
+919
+ Continue
+920
+ Continue
+921
+ Continue
+922
+ Continue
+923
+ Continue
+924
+ Continue
+925
+ Continue
+926
+ Continue
+927
+ Continue
+928
+ Continue
+929
+ Continue
+930
+ Continue
+931
+ Continue
+932
+ Continue
+933
+ Continue
+934
+ Continue
+935
+ Continue
+936
+ Continue
+937
+ Continue
+938
+ Continue
+939
+ Continue
+940
+ Continue
+941
+ Continue
+942
+ Continue
+943
+ Continue
+944
+ Continue
+945
+ Continue
+946
+ Continue
+947
+ Continue
+948
+ Continue
+949
+ Continue
+950
+ Continue
+951
+ Continue
+952
+ Continue
+953
+ Continue
+954
+ Continue
+955
+ Continue
+956
+ Continue
+957
+ Continue
+958
+ Continue
+959
+ Continue
+960
+ Continue
+961
+ Continue
+962
+ Continue
+963
+ Continue
+964
+ Continue
+965
+ Continue
+966
+ Continue
+967
+ Continue
+968
+ Continue
+969
+ Continue
+970
+ Continue
+971
+ Continue
+972
+ Continue
+973
+ Continue
+974
+ Continue
+975
+ Continue
+976
+ Continue
+977
+ Continue
+978
+ Continue
+979
+ Continue
+980
+ Continue
+981
+ Continue
+982
+ Continue
+983
+ Continue
+984
+ Continue
+985
+ Continue
+986
+ Continue
+987
+ Continue
+988
+ Continue
+989
+ Continue
+990
+ Continue
+991
+ Continue
+992
+ Continue
+993
+ Continue
+994
+ Continue
+995
+ Continue
+996
+ Continue
+997
+ Continue
+998
+ Continue
+999
+ Continue
+1000
+ Continue
+1001
+ Continue
+1002
+ Continue
+1003
+ Continue
+1004
+ Continue
+1005
+ Continue
+1006
+ Continue
+1007
+ Continue
+1008
+ Continue
+1009
+ Continue
+1010
+ Continue
+1011
+ Continue
+1012
+ Continue
+1013
+SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl' : failed to load external entity "https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl"

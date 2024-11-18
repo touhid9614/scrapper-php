@@ -1,0 +1,231 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["lynchtoyota"] = array(
+    'password' => 'lynchtoyota',
+    "email" => "regan@smedia.ca",
+    //'tag_debug' => true,
+    'log' => true,
+    'adf_to' => array(
+        'lynchtoyota@newsales.leads.cmdlr.com',
+        'sbergin@lynchtoyota.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => false,
+    'buttons' => [
+        'Listing request-a-quote' => [
+            'url-match' => '/\\/new-vehicles/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.button-bar div:nth-of-type(7) a.button',
+            'css-class' => 'div.button-bar div:nth-of-type(7) a.button',
+            'css-hover' => 'div.button-bar div:nth-of-type(7) a.button:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.button-bar div:nth-of-type(7) a.button',
+                    'values' => array(
+                        'Get Today\'s Price',
+                        'Inquire Now',
+                        'Get Our Best Price',
+                        'Get Special Price',
+                        'Inquire Today',
+                        'Get Internet Price',
+                        'Get Your Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81F27,#D81F27)',
+                        'border-color' => '#D81F27',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BE1B22,#BE1B22)',
+                        'border-color' => '#BE1B22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#43A507,#43A507)',
+                        'border-color' => '#43A507',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#398B06,#398B06)',
+                        'border-color' => '#398B06',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F15316,#F15316)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D74A14,#D74A14)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+                'Normal-blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#295EF1,#295EF1)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#251B7D,#251B7D)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+            ),
+        ],
+        'Used Listing request-a-quote' => [
+            'url-match' => '/\\/used-vehicles/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.button-bar div:nth-of-type(5) a.button',
+            'css-class' => 'div.button-bar div:nth-of-type(5) a.button',
+            'css-hover' => 'div.button-bar div:nth-of-type(5) a.button:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.button-bar div:nth-of-type(5) a.button',
+                    'values' => array(
+                        'Get Today\'s Price',
+                        'Inquire Now',
+                        'Get Our Best Price',
+                        'Get Special Price',
+                        'Inquire Today',
+                        'Get Internet Price',
+                        'Get Your Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81F27,#D81F27)',
+                        'border-color' => '#D81F27',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BE1B22,#BE1B22)',
+                        'border-color' => '#BE1B22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#43A507,#43A507)',
+                        'border-color' => '#43A507',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#398B06,#398B06)',
+                        'border-color' => '#398B06',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F15316,#F15316)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D74A14,#D74A14)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+                'Normal-blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#295EF1,#295EF1)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#251B7D,#251B7D)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+            ),
+        ],
+        'request-a-quote' => [
+            'url-match' => '/\\/inventory\\/(?:new|used)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+            'css-class' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+            'css-hover' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.maincta-row.ctabox-row a[href*=gravity-form-1]',
+                    'values' => array(
+                        'Get Today\'s Price',
+                        'Inquire Now',
+                        'Get Our Best Price',
+                        'Get Special Price',
+                        'Inquire Today',
+                        'Get Internet Price',
+                        'Get Your Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D81F27,#D81F27)',
+                        'border-color' => '#D81F27',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BE1B22,#BE1B22)',
+                        'border-color' => '#BE1B22',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#43A507,#43A507)',
+                        'border-color' => '#43A507',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#398B06,#398B06)',
+                        'border-color' => '#398B06',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F15316,#F15316)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#D74A14,#D74A14)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+                'Normal-blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#295EF1,#295EF1)',
+                        'border-color' => '#076CA5',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#251B7D,#251B7D)',
+                        'border-color' => '#065B8B',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

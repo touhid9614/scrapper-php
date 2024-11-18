@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["patriotchevy"] = array(
+  'password'  => 'patriotchevy',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "patriotchevy",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );

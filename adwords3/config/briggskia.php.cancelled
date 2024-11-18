@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["briggskia"] = array(
+  'password'  => 'briggskia',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "banner"        => array(
+        "template"          => "briggskia",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

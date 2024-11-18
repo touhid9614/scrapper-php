@@ -1,0 +1,26 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["andreswireless"] = array(
+  'password'  => 'andreswireless',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    'title2'        => 'Still Interested',
+    "banner"        => array(        
+        "template"          => "andreswireless",
+			'fb_banner_title' => '[make] [model]',
+			'fb_retargeting_description'    => 'Don\'t miss out on your opportunity - buy the [make] [model] today!',
+			'fb_lookalike_description'    => 'Check out this [make] [model] today! Click for more info.',
+			'fb_dynamiclead_description' => 'Are you still interested in a [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.',
+        "flash_style"       => "default",
+		'fb_style' => 'andreselectronicexperts',
+		"styels" => array(
+            "new_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+        ),
+        "border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+    )
+);

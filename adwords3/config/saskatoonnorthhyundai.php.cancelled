@@ -1,0 +1,394 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["saskatoonnorthhyundai"] = array(
+    'password' => 'saskatoonnorthhyundai',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    /*smart offer*/
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'lead_in' => array(
+            'vdp' => '/\\/(?:all|new|used)\\/vehicle\\/[0-9]{4}-/i',
+        ),
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#0074C9',
+            '#0074C9',
+        ),
+        'button_color_hover' => array(
+            '#0063AD',
+            '#0063AD',
+        ),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get $1,000 OFF coupon from Saskatoon North Hyundai',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Saskatoon North Hyundai Team',
+        'forward_to' => array(
+            'websitecoupon@saskhyundai-sk.net',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    /*system ads*/
+    "banner" => array(
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click below for more info! Stock number: [stock_number]',
+        "template" => "saskatoonnorthhyundai",
+        'fb_lookalike_description' => 'Test drive the [year] [make] [model] today. Stock number: [stock_number]',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    //  'lead_to'=>[],
+    'form_live' => false,
+    'buttons_live' => null,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.used-button-columns button.btn-orange-vehicles1.icon-coin-dollar',
+            'css-class' => 'div.used-button-columns button.btn-orange-vehicles1.icon-coin-dollar',
+            'css-hover' => 'div.used-button-columns button.btn-orange-vehicles1.icon-coin-dollar:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.used-button-columns button.btn-orange-vehicles1.icon-coin-dollar span',
+                    'values' => array(
+                        'Internet Price',
+                        'Get your Price!',
+                        'Best Price',
+                        'Local Pricing',
+                        'Special Pricing!',
+                        'Get Active Market Price',
+                        'Get Market Price',
+                        'Market Pricing',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.used-button-columns button#request-info',
+            'css-class' => 'div.used-button-columns button#request-info',
+            'css-hover' => 'div.used-button-columns button#request-info:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.used-button-columns button#request-info span',
+                    'values' => array(
+                        'Book Test Drive',
+                        'Get More Information',
+                        'Ask a Question',
+                        'Inquire Now',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-coin-dollar:first-child',
+            'css-class' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-coin-dollar:first-child',
+            'css-hover' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-coin-dollar:first-child:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-coin-dollar:first-child span',
+                    'values' => array(
+                        'Appraise my trade in',
+                        'Value your trade',
+                        'We want your car',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a#apply-for-finance,button#apply-for-finance',
+            'css-class' => 'a#apply-for-finance,button#apply-for-finance',
+            'css-hover' => 'a#apply-for-finance:hover,button#apply-for-finance:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a#apply-for-finance span,button#apply-for-finance span',
+                    'values' => array(
+                        'Apply for Financing',
+                        'No hassle financing',
+                        'Get Financed Today',
+                        'Special Finance Offers',
+                        'Explore Payments',
+                    ),
+                ],
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#f06b20',
+                        'border-color' => '#f06b20',
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e',
+                    ],
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#e01212',
+                        'border-color' => '#e01212',
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d',
+                    ],
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#54b740',
+                        'border-color' => '#54b740',
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22',
+                    ],
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '#1ca0d1',
+                        'border-color' => '#1ca0d1',
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7',
+                    ],
+                ],
+            ],
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-Wheel',
+            'css-class' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-Wheel',
+            'css-hover' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-Wheel:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.iframe-link.ed-custom-cta.btn-red-0.btn-incentives-new.btn-lg.btn-incentives-big.icon-Wheel span',
+                    'values' => array(
+                        'Test drive',
+                        'Book Test Drive',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

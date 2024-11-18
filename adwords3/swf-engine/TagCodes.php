@@ -1,0 +1,71 @@
+<?php
+
+    class TagCodes
+    {
+        const End                           = 0;
+        const ShowFrame                     = 1;
+        const DefineShape                   = 2;
+        const PlaceObject                   = 4;
+        const RemoveObject                  = 5;
+        const DefineBitsJPEG                = 6;
+        const DefineButton                  = 7;
+        const JPEGTables                    = 8;
+        const SetBackgroundColor            = 9;
+        const DefineFont                    = 10;
+        const DefineText                    = 11;
+        const DoAction                      = 12;
+        const DefineFontInfo                = 13;
+        const DefineSound                   = 14;
+        const StatSound                     = 15;
+        const DefineButtonSound             = 17;
+        const SoundStreamHead               = 18;
+        const SoundStreamBlock              = 19;
+        const DefineBitsLossless            = 20;
+        const DefineBitsJPEG2               = 21;
+        const DefineShape2                  = 22;
+        const DefineButtonCxform            = 23;
+        const Protect                       = 24;
+        const PlaceObject2                  = 26;
+        const RemoveObject2                 = 28;
+        const DefineShape3                  = 32;
+        const DefineText2                   = 33;
+        const DefineButton2                 = 34;
+        const DefineBitsJPEG3               = 35;
+        const DefineBitsLossless2           = 36;
+        const DefineEditText                = 37;
+        const DefineSprite                  = 39;
+        const FrameLabel                    = 43;
+        const SoundStreamHead2              = 45;
+        const DefineMorphShape              = 46;
+        const DefineFont2                   = 48;
+        const ExportAssets                  = 56;
+        const ImportAssets                  = 57;
+        const EnableDebugger                = 58;
+        const DoInitAction                  = 59;
+        const DefineVideoStream             = 60;
+        const VideoFrame                    = 61;
+        const DefineFontInfo2               = 62;
+        const EnableDebugger2               = 64;
+        const ScriptLimits                  = 65;
+        const SetTabIndex                   = 66;
+        const FileAttributes                = 69;
+        const PlaceObject3                  = 70;
+        const ImportAssets2                 = 71;
+        const DefineFontAlignZones          = 73;
+        const CSMTextSettings               = 74;
+        const DefineFont3                   = 75;
+        const SymbolClass                   = 76;
+        const MetaData                      = 77;
+        const DefineScalingGrid             = 78;
+        const DoABC                         = 82;
+        const DefineShape4                  = 83;
+        const DefineMorphShape2             = 84;
+        const DefineSceneAndFrameLabelData  = 86;
+        const DefineBinaryData              = 87;
+        const DefineFontName                = 88;
+        const StartSound2                   = 89;
+        const DefineBitsJPEG4               = 90;
+        const DefineFont4                   = 91;
+        const EnableTelemetry               = 93;
+    }
+?>

@@ -1,0 +1,12 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["harmonybuilders"] = array(
+    'password'      => 'granitetransformations',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'customer_id'   => '265-726-6784',
+    'max_cost'      => 500.0,
+    'no_adv'        => true
+);

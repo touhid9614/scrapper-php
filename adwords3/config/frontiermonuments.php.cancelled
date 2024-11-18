@@ -1,0 +1,252 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["frontiermonuments"] = array(
+    'max_cost'      => 0,
+    "customer_id"   => "773-950-0995",
+    'password'      => 'frontiermonuments',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    
+    //'adf_to'        => ['_lead.C5183@easydealmail.ca'],
+    'form_live'     => false,
+    'buttons_live'  => false,
+    'buttons'       => [
+        'request-a-quote'  => [
+            'url-match' => '/\/our-products\/.+/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => '.details a.btn.top',
+            'css-class' => '.details a.btn.top',
+            'css-hover' => '.details a.btn.top:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes'     => [
+                '100'   => [
+                    //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'request-a-quote'  => [
+                    'target'    => '.details a.btn.top',
+                    'values'    => [
+                        'Get Our Best Price',
+                        'Get A Quote',
+                        'Inquire Today',
+                        'Inquire Now',
+                        "Today's Price",
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background' => '#fb9e45',
+                        'border-color'     => '#fb9e45'
+                    ],
+                    'hover'     => [
+                        'background' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#eb171c',
+                        'border-color'     => '#eb171c'
+                    ],
+                    'hover'     => [
+                        'background' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => '#3fcb38',
+                        'border-color'     => '#3fcb38'
+                    ],
+                    'hover'     => [
+                        'background' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => '#117e92',
+                        'border-color'     => '#117e92'
+                    ],
+                    'hover'     => [
+                        'background' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+         'request-information'  => [
+            'url-match' => '/\/our-products\/.+/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => '.desc .btn[data-id]',
+            'css-class' => '.desc .btn',
+            'css-hover' => '.desc .btn:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes'     => [
+                '100'   => [
+                   // 'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'request-information'  => [
+                    'target'    => '.desc .btn[data-id]',
+                    'values'    => [
+                        'Get More Info',
+                        'Learn More',
+                        'Ask A Question',
+                        'More Info',
+                        'Contact Us Today',
+                        'Contact Us',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background-color' => '#fb9e45',
+                        'border-color'     => '#fb9e45',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ],
+                    'hover'     => [
+                        'background-color' => '#cf540e',
+                        'border-color'     => '#cf540e',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#eb171c',
+                        'border-color'     => '#eb171c',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ],
+                    'hover'     => [
+                        'background-color' => '#c60c0d',
+                        'border-color'     => '#c60c0d',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background-color' => '#3fcb38',
+                        'border-color'     => '#3fcb38',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ],
+                    'hover'     => [
+                        'background-color' => '#359d22',
+                        'border-color'     => '#359d22',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background-color' => '#117e92',
+                        'border-color'     => '#117e92',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ],
+                    'hover'     => [
+                        'background-color' => '#188bb7',
+                        'border-color'     => '#188bb7',
+                        'padding-left'       => '0',
+                        'text-align'=> 'center',
+                        'font-size'=> '13px',
+                    ]
+                ]
+            ]
+        ],
+        'submit'  => [
+            'url-match' => '/\/our-products\/.+/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => '#request .fifth button',
+            'css-class' => '#request .fifth button',
+            'css-hover' => '#request .fifth button:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes'     => [
+                '100'   => [
+                    //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'submit'  => [
+                    'target'    => '#request .fifth button',
+                    'values'    => [
+                        'Send Request',
+                        'Submit Request',
+                        'Send Message',
+                        'Get A Quote',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background' => '#fb9e45',
+                        'border-color'     => '#fb9e45'
+                    ],
+                    'hover'     => [
+                        'background' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background' => '#eb171c',
+                        'border-color'     => '#eb171c'
+                    ],
+                    'hover'     => [
+                        'background' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background' => '#3fcb38',
+                        'border-color'     => '#3fcb38'
+                    ],
+                    'hover'     => [
+                        'background' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background' => '#117e92',
+                        'border-color'     => '#117e92'
+                    ],
+                    'hover'     => [
+                        'background' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+    ]
+]
+      
+);

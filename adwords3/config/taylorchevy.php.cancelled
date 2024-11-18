@@ -1,0 +1,19 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["taylorchevy"] = array(
+  'password'  => 'taylorchevy',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "taylorchevy",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

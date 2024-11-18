@@ -1,0 +1,96 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["westerngmdrumheller"] = array(
+    'password' => 'westerngmdrumheller',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "customer_id" => "296-916-3509",
+    'max_cost' => 580,
+    'cost_distribution' => array(
+        'adwords' => 580,
+    ),
+    'fb_title' => '[year] [make] [model] [body_style] [price]',
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        //  "new_display"       => yes,
+        // "used_display"      => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        // "new_marketbuyers"  => no,
+        // "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "banner" => array(
+        "template" => "westerngmdrumheller",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#891C1D',
+            '#891C1D',
+        ),
+        'button_color_hover' => array(
+            '#711314',
+            '#711314',
+        ),
+        'button_color_active' => array(
+            '#891C1D',
+            '#891C1D',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 off from Western GM Drumheller',
+        'response_email' => 'Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Western GM Drumheller Team',
+        'forward_to' => array(
+            'brad.ledrew@westerngmdrumheller.com',
+            'doug.lubinski@westerngmdrumheller.com',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+);

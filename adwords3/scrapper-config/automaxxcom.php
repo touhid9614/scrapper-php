@@ -1,0 +1,41 @@
+<?php
+global $scrapper_configs;
+$scrapper_configs["automaxxcom"] = array( 
+	 'entry_points' => array(
+        'used' => 'https://www.automaxx.com/inventory',
+    ),
+    'use-proxy'              => true,
+    'refine'                 => false,
+    'vdp_url_regex'          => '/\/inventory\//i',
+     'srp_page_regex'          => '/\/inventory\/(?:New|certified|Used)\//i',
+    'picture_selectors'      => ['.slick-slide img'],
+    'picture_nexts'          => ['.slick-next'],
+    'picture_prevs'          => ['.slick-prev'],
+    'details_start_tag'      => 'class="srpVehicles__wrap">',
+    'details_end_tag'        => 'class="disclaimer__wrap">',
+    'details_spliter'        => 'id="carbox',
+    'data_capture_regx'      => array(
+        'url'          => '/data-permalink="(?<url>[^"]+)/',
+    ),
+    'data_capture_regx_full' => array(
+        'kilometres'     => '/data-vehicle="miles"[^>]+>(?<kilometres>[^<]+)/',
+        'engine'         => '/Engine:<\/span>[^>]+>(?<engine>[^<]+)/',
+        'transmission'   => '/Transmission:<\/span>[^>]+>(?<transmission>[^<]+)/',
+        'exterior_color' => '/Exterior Color:<\/span>[^>]+>(?<exterior_color>[^<]+)/',
+        'interior_color' => '/Interior Color:<\/span>[^>]+>(?<interior_color>[^<]+)/',
+        'vin'            => '/data-vehicle="vin"\s*>(?<vin>[^<]+)/',
+        'stock_number'   => '/data-vehicle="stock"\s*>(?<stock_number>[^<]+)/',
+        'year'           => '/class="vehicle-title--year">(?<year>[^<]+)/',
+        // 'stock_type'     => '/class="vehicle-title--type">(?<stock_type>[^<]+)/',
+        'make'           => '/class="notranslate vehicle-title--make ">(?<make>[^<]+)/',
+        'model'          => '/class="notranslate vehicle-title--model ">(?<model>[^<]+)/',
+        'trim'           => '/class="notranslate vehicle-title--trim ">(?<trim>[^<]+)/',
+        'body_style'     => '/class="title-standardbody vehicle-title--subtitle-item">(?<body_style>[^<]+)/',
+        'drivetrain'     => '/class="title-drivetrain vehicle-title--subtitle-item">(?<drivetrain>[^<]+)/',
+        'price'          => '/,"price":(?<price>[^,]+),"priceCurrency":"USD"/',
+        'description'    => '/name="description" content="(?<description>[^"]+)/',
+    ),
+    'next_page_regx'         => '/rel="next"\shref="(?<next>[^"]+)"/',
+    'images_regx'            => '/"image":"(?<img_url>[^"]+)"\,"sku"/',
+    'images_fallback_regx'   => '/property="og:image" content="(?<img_url>[^"]+)"/',
+);

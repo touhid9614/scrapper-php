@@ -1,0 +1,337 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["rockydodge"] = array(
+    'password' => 'rockydodge',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "rockydodge",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'wolfdodge@gmail.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'financing' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=financing].btn',
+            'css-class' => 'a[href*=financing].btn',
+            'css-hover' => 'a[href*=financing].btn:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a[href*=financing].btn',
+                    'values' => array(
+                        'Financing Available',
+                        'Get Financed Today',
+                        'Explore Payments',
+                        'Special Finance Offers!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#DB8519,#DB8519)',
+                        'border-color' => '#DB8519',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#CF540E',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#871015,#871015)',
+                        'border-color' => '#871015',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#C60C0D',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#13610B,#13610B)',
+                        'border-color' => '#13610B',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359D22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#185E8C,#185E8C)',
+                        'border-color' => '#185E8C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        //        'test-drive' => [
+        //            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+        //            'target' => null,
+        //            //Don't move button
+        //            'locations' => [
+        //                'default' => null,
+        //            ],
+        //            'action-target' => 'a[href*=testdrive]',
+        //            'css-class' => 'a[href*=testdrive]',
+        //            'css-hover' => 'a[href*=testdrive]:hover',
+        //            'button_action' => ['form','test-drive'],
+        //            'sizes' => [
+        //                '100' => [],
+        //            ],
+        //            'texts' => [
+        //                'test-drive' => [
+        //                    'target' => 'a[href*=testdrive]',
+        //                    'values' => array(
+        //                        'Test drive',
+        //                        'Book Test Drive',
+        //                        'Schedule Test Drive',
+        //                        'Test Drive Now',
+        //                        'Test Drive today',
+        //                        'Test Ride',
+        //                        'Book My Test Drive',
+        //                        'Schedule My Test Drive',
+        //                    ),
+        //                ],
+        //            ],
+        //           'styles' => array(
+        //                'orange' => array(
+        //                    'normal' => array(
+        //                        'background' => '#DB8519',
+        //                        'border-color' => '#DB8519',
+        //                    ),
+        //                    'hover' => array(
+        //                        'background' => '#CF540E',
+        //                        'border-color' => '#CF540E',
+        //                    ),
+        //                ),
+        //                'red' => array(
+        //                    'normal' => array(
+        //                        'background' => '#871015',
+        //                        'border-color' => '#871015',
+        //                    ),
+        //                    'hover' => array(
+        //                        'background' => '#C60C0D',
+        //                        'border-color' => '#C60C0D',
+        //                    ),
+        //                ),
+        //                'green' => array(
+        //                    'normal' => array(
+        //                        'background' => '#13610B',
+        //                        'border-color' => '#13610B',
+        //                    ),
+        //                    'hover' => array(
+        //                        'background' => '#359D22',
+        //                        'border-color' => '#359D22',
+        //                    ),
+        //                ),
+        //                'blue' => array(
+        //                    'normal' => array(
+        //                        'background' => '#185E8C',
+        //                        'border-color' => '#185E8C',
+        //                    ),
+        //                    'hover' => array(
+        //                        'background' => '#188BB7',
+        //                        'border-color' => '#188bb7',
+        //                    ),
+        //                ),
+        //            ),
+        //        ],
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=tradein]',
+            'css-class' => 'a[href*=tradein]',
+            'css-hover' => 'a[href*=tradein]:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'a[href*=tradein]',
+                    'values' => array(
+                        'Value your trade',
+                        'What\'s your trade worth?',
+                        'We want your car',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#DB8519,#DB8519)',
+                        'border-color' => '#DB8519',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#CF540E',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#871015,#871015)',
+                        'border-color' => '#871015',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#C60C0D',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#13610B,#13610B)',
+                        'border-color' => '#13610B',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359D22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#185E8C,#185E8C)',
+                        'border-color' => '#185E8C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[data-href*=eprice]',
+            'css-class' => 'a[data-href*=eprice]',
+            'css-hover' => 'a[data-href*=eprice]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[data-href*=eprice]',
+                    'values' => array(
+                        'Request A Quote',
+                        'E- Price',
+                        'Get Internet Price Now!',
+                        'Special Pricing!',
+                        'Get Market Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#DB8519,#DB8519)',
+                        'border-color' => '#DB8519',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#CF540E',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#871015,#871015)',
+                        'border-color' => '#871015',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#C60C0D',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#13610B,#13610B)',
+                        'border-color' => '#13610B',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359D22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#185E8C,#185E8C)',
+                        'border-color' => '#185E8C',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+    'lead' => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#FFFFFF',
+        'border_color' => '#FFFFFF',
+        'button_color' => array(
+            '#FFFFFF',
+            '#FFFFFF',
+        ),
+        'button_color_hover' => array(
+            '#FFFFFF',
+            '#FFFFFF',
+        ),
+        'button_color_active' => array(
+            '#FFFFFF',
+            '#FFFFFF',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '',
+        'response_email' => '',
+        'forward_to' => array(
+            '',
+        ),
+        'special_to' => array(
+            '',
+        ),
+        'special_email' => '',
+    ),
+);

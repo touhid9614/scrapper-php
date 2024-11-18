@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["glamping"] = array( 
+	"name"  =>" glamping",
+	"email" => "regan@smedia.ca",
+	"password" =>" glamping",
+	"no_adv" => true ,
+);

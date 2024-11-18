@@ -1,0 +1,14 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["watermasterpumps"] = array(
+    "name" => "watermasterpumps",
+    "password" => "watermasterpumps",
+    'email' => 'regan@smedia.ca',
+    'customer_id' => '309-318-9295',
+    'max_cost' => 1200.0,
+    'cost_distribution' => array(
+        'adwords' => 1200,
+    ),
+    "no_adv" => true
+);

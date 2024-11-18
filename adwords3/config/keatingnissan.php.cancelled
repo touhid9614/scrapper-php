@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["keatingnissan"] = array(
+  'password'  => 'keatingnissan',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "keatingnissan",
+        'fb_description'    => 'Are you still interested in the [year] [make] [model]? Click here to see our recently reduced price!',
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );

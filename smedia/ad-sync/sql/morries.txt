@@ -1,0 +1,43 @@
+dealership IN ('mercedesbenzofstpaul', 'audilacrosse', 'vwlacrosse', 'brooklynparksubaru', 'morriesbuffaloford', 'minnetonkaford', 'minnetonkasubaru', 'westendlincoln', 'morries394hyundai', 'brenengenkiacom', 'morries')
+
+HighFunnelBrandResearch
+HighFunnelBodystyleResearch
+HighFunnelModelResearch
+MidFunnelModelAffordability
+MidFunnelModelDeals
+LowFunnelBrandWhereToBuy
+LowFunnelModelWhereToBuy
+
+audilacrosse
+brenengenkiacom
+brooklynparksubaru
+mercedesbenzofstpaul
+minnetonkaford
+minnetonkasubaru
+morriesbuffaloford
+morries394hyundai
+morries
+vwlacrosse
+westendlincoln
+
+brenengenkiacom
+minnetonkaford
+morries
+
+
+audilacrosse
+	SUV
+	Sportback
+	Sedan
+brenengenkiacom
+	?bodyStyle%5B%5D=Hatchback&bodyStyle%5B%5D=Minivan&bodyStyle%5B%5D=SUV&bodyStyle%5B%5D=Sedan
+brooklynparksubaru
+	bodyStyle=5-door&bodyStyle=Sedan&bodyStyle=SUV
+mercedesbenzofstpaul
+minnetonkaford
+	https://www.minnetonkaford.com/VehicleSearchResults?search=new&
+	bodyStyleClassification=Extended%20Cab%20Pickup%20-%20Long%20Bed%7CExtended%20Cab%20Pickup%20-%20Short%20Bed%7CExtended%20Cab%20Pickup%20-%20Standard%20Bed
+minnetonkasubaru
+	bodyStyle=5-door&bodyStyle=SUV&bodyStyle=Sedan
+morriesbuffaloford
+	bodyStyleClassification=Regular%20Cab%20Pickup%7CRegular%20Cab%20Pickup%20-%20Long%20Bed%7CRegular%20Cab%20Pickup%20-%20Short%20Bed%7CRegular%20Cab%20Pickup%20-%20Standard%20Bed

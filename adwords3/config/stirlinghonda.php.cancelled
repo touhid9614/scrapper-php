@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["stirlinghonda"] = array(
+    'password' => 'stirlinghonda',
+    "email" => "regan@smedia.ca",
+    'log' => false,
+    'utm_tags' => false,
+    "banner" => array(
+        "template" => "stirlinghonda",
+        'fb_description' => 'Contact us for Internet Sale price.',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff"
+    )
+);

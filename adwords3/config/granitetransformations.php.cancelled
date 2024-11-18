@@ -1,0 +1,211 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["granitetransformations"] = array(
+    'password'      => 'granitetransformations',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'no_adv'        => true,
+    //tracker
+    'display_after'     => 25000,
+    'resubmit_after'    => 3650,        //days large value 3650 means, it shall show once in 10 years
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#ed8c01", "#ed8c01"),
+        'button_color_hover'    => array("#f57800", "#f57800"),
+        'button_color_active'   => array("#ed8c01", "#ed8c01"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Granite Transformations",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Granite Transformations Team",
+        'forward_to'            => array("marshal@smedia.ca", "masterkeyy@gmail.com"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+        /*'respond_smtp'          => array(
+            'host'          => 'smtp.gmail.com',
+            'port'          => 587,
+            'auth_enabled'  => true,
+            'auth_user'     => 'cars@titanauto.ca',
+            'auth_pass'     => '755broad',
+            'smtp_secure'   => 'tls'
+        )*/
+    ),
+);
+
+$CronConfigs["granitetransformations_regina"] = array(
+    'password'      => 'granitetransformations_regina',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'no_adv'        => true,
+    'max_cost'      => 450.0,
+    'customer_id'   => '928-214-4879',
+    //tracker
+    'display_after'     => 25000,
+    'resubmit_after'    => 3650,        //days large value 3650 means, it shall show once in 10 years
+    /*"lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#ed8c01", "#ed8c01"),
+        'button_color_hover'    => array("#f57800", "#f57800"),
+        'button_color_active'   => array("#ed8c01", "#ed8c01"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Granite Transformations",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Granite Transformations Team",
+        'forward_to'            => array("marshal@smedia.ca", "robc@gtwest.ca", "greg@gtwest.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+        /*'respond_smtp'          => array(
+            'host'          => 'smtp.gmail.com',
+            'port'          => 587,
+            'auth_enabled'  => true,
+            'auth_user'     => 'cars@titanauto.ca',
+            'auth_pass'     => '755broad',
+            'smtp_secure'   => 'tls'
+        )* /
+    ),*/
+);
+
+$CronConfigs["granitetransformations_calgary"] = array(
+    'password'      => 'granitetransformations_calgary',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'no_adv'        => true,
+    'max_cost'      => 3500.0,
+    'cost_distribution' => array(
+        'adwords'   => 2500,        //Defines all adwords ads
+        'youtube'   => 400,
+    ),
+    'customer_id'   => '518-472-6096',
+    //tracker
+    'display_after'     => 25000,
+    'resubmit_after'    => 3650,        //days large value 3650 means, it shall show once in 10 years
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#ed8c01", "#ed8c01"),
+        'button_color_hover'    => array("#f57800", "#f57800"),
+        'button_color_active'   => array("#ed8c01", "#ed8c01"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Granite Transformations",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Granite Transformations Team",
+        'forward_to'            => array("marshal@smedia.ca", "pauline@gtwest.ca", "greg@gtwest.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+        /*'respond_smtp'          => array(
+            'host'          => 'smtp.gmail.com',
+            'port'          => 587,
+            'auth_enabled'  => true,
+            'auth_user'     => 'cars@titanauto.ca',
+            'auth_pass'     => '755broad',
+            'smtp_secure'   => 'tls'
+        )*/
+    ),
+);
+
+$CronConfigs["granitetransformations_kelowna"] = array(
+    'password'      => 'granitetransformations_kelowna',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'no_adv'        => true,
+    'max_cost'      => 1150.0,
+    'cost_distribution' => array(
+        'adwords'   => 1150,        //Defines all adwords ads
+        'youtube'   => 0
+    ),
+    'customer_id'   => '923-749-0615',
+    //tracker
+    'display_after'     => 25000,
+    'resubmit_after'    => 3650,        //days large value 3650 means, it shall show once in 10 years
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#ed8c01", "#ed8c01"),
+        'button_color_hover'    => array("#f57800", "#f57800"),
+        'button_color_active'   => array("#ed8c01", "#ed8c01"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Granite Transformations",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Granite Transformations Team",
+        'forward_to'            => array("marshal@smedia.ca", "tami@gtwest.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+        /*'respond_smtp'          => array(
+            'host'          => 'smtp.gmail.com',
+            'port'          => 587,
+            'auth_enabled'  => true,
+            'auth_user'     => 'cars@titanauto.ca',
+            'auth_pass'     => '755broad',
+            'smtp_secure'   => 'tls'
+        )*/
+    ),
+);
+
+$CronConfigs["granitetransformations_alberta"] = array(
+    'password'      => 'granitetransformations_alberta',
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'T2E 8T3',
+    'no_adv'        => true,
+    /*
+    'max_cost'      => 1150.0,
+    'cost_distribution' => array(
+        'adwords'   => 1150,        //Defines all adwords ads
+        'youtube'   => 0
+    ),
+    'customer_id'   => '923-749-0615',
+     * 
+     */
+    //tracker
+    'display_after'     => 25000,
+    'resubmit_after'    => 3650,        //days large value 3650 means, it shall show once in 10 years
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#ed8c01", "#ed8c01"),
+        'button_color_hover'    => array("#f57800", "#f57800"),
+        'button_color_active'   => array("#ed8c01", "#ed8c01"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Granite Transformations",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Granite Transformations Team",
+        'forward_to'            => array("marshal@smedia.ca", "pauline@gtwest.ca", "greg@gtwest.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+        /*'respond_smtp'          => array(
+            'host'          => 'smtp.gmail.com',
+            'port'          => 587,
+            'auth_enabled'  => true,
+            'auth_user'     => 'cars@titanauto.ca',
+            'auth_pass'     => '755broad',
+            'smtp_secure'   => 'tls'
+        )*/
+    ),
+);

@@ -1,0 +1,74 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["classicchevyonline"] = array(
+    //'budget'    => 2.0,
+    'bid'           => 3.0,
+    'password'  => 'classicchevyonline',
+    'post_code'     => 'N8M 2C8',
+    "email"         => "regan@smedia.ca",
+    "banner"        => array(
+        "template" => "classicchevyonline",
+            "flash_style"       => "default",
+            "hst" => yes,
+            "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+        ),
+        "font_color"        => "#ffffff"
+    ),
+    /*
+    'fb_config' => [
+        'monthly_budget'    => 200,
+        'account_id'        => '1151331624904799',
+        'page_id'           => '106675192019',
+        'pixel_id'          => '1788142981462003',
+        'plain'             => false,
+        'include_stock'     => false,
+        'polk_data'         => true,
+        'targeting' => [
+            'desktop' => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key"       => 3865,
+                            "name"      => 'Michigan',
+                            "country"   => 'US'
+                        ]
+                    ],
+                    "location_types" => ['home']
+                ],
+                "publisher_platforms" => ['facebook'],
+                "facebook_positions"    => ['feed'],
+                "device_platforms" => ['desktop']
+            ],
+            'mobile'        => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key"       => 3865,
+                            "name"      => 'Michigan',
+                            "country"   => 'US'
+                        ]
+                    ],
+                    "location_types" => ['home']
+                ],
+                "publisher_platforms"   => ['facebook'],
+                "facebook_positions"    => ['feed'],
+                "device_platforms"      => ['mobile']
+            ]
+        ]
+    ]
+     * 
+     */
+);

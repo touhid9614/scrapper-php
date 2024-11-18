@@ -1,0 +1,118 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["calstarmercedes"] = array( 
+    "name"=>"calstarmercedes",
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    "password"      => "calstarmercedes",
+    'max_cost' => 0,
+    'cost_distribution' => array(
+        'adwords' => 0,
+    ),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+     
+     
+    "lead"  => array(
+        'live'                  => true,
+        'lead_in'               => '/\/inventory\/(?:used)/', 
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#891c1d", "#891c1d"),
+        'button_color_hover'    => array("#711314", "#711314"),
+        'button_color_active'   => array("#891c1d", "#891c1d"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "CLAIM YOUR 250$ OFF COUPON from Calstar Mercedes-Benz",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Calstar Mercedes-Benz Team",
+        'forward_to'            => array("marshal@smedia.ca"),
+        'special_to'            => ["leads@vin.calstarmercedes.com"],'special_email' => '<?xml version="1.0"?>
+<?adf version="1.0"?>
+<adf>
+    <prospect>
+        <id sequence="[total_count]" source="sMedia"></id>
+        <requestdate>[fdt]</requestdate>
+        <vehicle interest="buy" status="[stock_type]">
+            <year>[year]</year>
+            <make>[make]</make>
+            <model>[model]</model>
+            <stock>[stock_number]</stock>
+        </vehicle>
+
+       <customer>
+           <contact>
+                <name part="full">[name]</name>
+                <email>[email]</email>
+                <phone>[phone]</phone>
+            </contact>
+       </customer>
+
+        <vendor>
+            <contact>
+                <name part="full">Calstar Mercedes-Benz</name>
+                <email>[dealer_email]</email>
+            </contact>
+        </vendor>
+        <provider>
+            <name part="full">sMedia</name>
+            <url>http://smedia.ca</url>
+            <email>offers@mail.smedia.ca</email>
+            <phone>855-775-0062</phone>
+        </provider>
+    </prospect>
+</adf>',
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+     ),
+ 'fb_brand'          => '[year] [make] [model] - [body_style]',
+     'customer_id' => '699-673-6464',
+     "banner" => array(
+        "template" => "calstarmercedes",
+        "fb_style"          => 'fb_rightsidebar',
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click below for more info.',
+        'fb_lookalike_description'	=> 'Test drive the [year] [make] [model] today.',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner_black",
+            "used_display" => "custom_banner_black",
+            "new_retargeting" => "custom_banner_black",
+            "used_retargeting" => "custom_banner_black",
+            "new_marketbuyers" => "custom_banner_black",
+            "used_marketbuyers" => "custom_banner_black"
+        ),
+        "font_color" => "#ffffff"
+    ),
+);

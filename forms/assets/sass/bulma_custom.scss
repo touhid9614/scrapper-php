@@ -1,0 +1,36 @@
+// Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/_all";
+
+// Set your own initial variables
+// Add a serif family
+$family-sans-serif: 'Montserrat', sans-serif;
+// Use the new sans serif family
+$family-primary: $family-sans-serif;
+
+// Import the rest of Bulma
+@import "../../node_modules/bulma/sass/base/_all";
+
+// $input-color: $grey-darker !default;
+// $input-background-color: $white !default;
+// $input-border-color: #e6e6e6 !default;
+// $input-shadow: none !default;
+
+// $input-hover-color: $grey-darker !default;
+// $input-hover-border-color: $grey-darker !default;
+
+// $input-focus-color: $grey-darker !default;
+// $input-focus-border-color: #2a7c9e !default;
+// $input-focus-box-shadow-size: 0 !default;
+// $input-focus-box-shadow-color: rgba(#2a7c9e, 0.5) !default;
+
+// @import "../../node_modules/bulma/sass/elements/form";
+
+@import "../../node_modules/bulma/sass/elements/_all";
+
+@import "../../node_modules/bulma/sass/components/modal";
+@import "../../node_modules/bulma/sass/grid/_all";
+
+$calendar-header-background-color: #fff;
+$calendar-border: 1px solid #e6e6e6;
+
+@import "../../node_modules/bulma-extensions/bulma-calendar/calendar";

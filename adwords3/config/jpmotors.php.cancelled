@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["jpmotors"] = array(
+  'password'  => 'jpmotors',
+    "email"         => "regan@smedia.ca",
+    'log'       => true,
+    "banner"        => array(
+        "template"          => "jpmotors",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );
+
+

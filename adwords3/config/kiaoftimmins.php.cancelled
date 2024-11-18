@@ -1,0 +1,169 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["kiaoftimmins"] = array(
+    "name" => " kiaoftimmins",
+    "email" => "regan@smedia.ca",
+    "password" => " kiaoftimmins",
+    'log' => true,
+    "banner" => array(
+        "template" => "kiaoftimmins",
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click for more info.',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'matt@kiaoftimmins.net',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.xlarge.eprice.dialog.link',
+            'css-class' => 'a.xlarge.eprice.dialog.link',
+            'css-hover' => 'a.xlarge.eprice.dialog.link:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.xlarge.eprice.dialog.link',
+                    'values' => array(
+                        'Get e-Price',
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Get Sale Price',
+                        'Get Special Pricing',
+                        'Inquire Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C37C17,#C37C17)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96C14,#A96C14)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BB162B,#BB162B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A11325,#A11325)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#298A10,#298A10)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2781D4,#2781D4)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123D64,#123D64)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+            'css-class' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+            'css-hover' => 'a.btn.btn-primary.btn-lg.dialog.btn-block:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a.btn.btn-primary.btn-lg.dialog.btn-block',
+                    'values' => array(
+                        'Book a Test Drive',
+                        'Request a Test Drive',
+                        'Test Drive Now',
+                        'Test Drive Today',
+                        'Want To Test Drive?',
+                        'Schedule My Visit',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C37C17,#C37C17)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96C14,#A96C14)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BB162B,#BB162B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A11325,#A11325)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#298A10,#298A10)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2781D4,#2781D4)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#123D64,#123D64)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

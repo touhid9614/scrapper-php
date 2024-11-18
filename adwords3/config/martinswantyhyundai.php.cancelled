@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["martinswantyhyundai"] = array(
+  'password'                        => 'martinswantyhyundai',
+    "email"                         => "regan@smedia.ca",
+    'log'                           => true,
+
+    "banner"                        => array(
+        "template"                  => "martinswantyhyundai",
+		"flash_style"               => "default",
+		"border_color"              => "#282828",
+        "fb_title"                  => "[year] [make] [model] [price]",
+        'fb_description'            => 'Test drive the [year] [make] [model] today!'
+        ),
+    );
+

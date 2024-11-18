@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tjspizza_medicinehat"] = array(
+    'max_cost'      => 125.00,
+    'log'           => false,
+    "customer_id"   => "609-102-2070",
+    'password'      => 'tjspizza_medicinehat',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    'cost_distribution' => array(
+        'adwords'   => 125,        //Defines all adwords ads
+        
+    ),
+);

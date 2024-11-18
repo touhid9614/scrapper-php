@@ -1,0 +1,69 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["transconatrailers"] = array(
+    'name'      => 'transconatrailers',
+    'max_cost'      => 1500.0,
+    'post_code'     => 'R2J 0H2',
+    "email"         => "regan@smedia.ca",
+    "log"           => true,
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => yes,
+        "used_display"      => yes,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => yes,
+        "used_marketbuyers" => yes,
+        "new_combined"      => yes,
+        "used_combined"     => yes
+    ),
+    "host_url"      => "http://www.transconatrailers.com",		//must start with http or https and end without /
+    "display_url"   => "transconatrailers.com",				//Max lenght 35 char
+    "new_descs"         => array(
+       
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "customer_id"   => "403-859-0044",
+    "market_buyers" => array(
+        "common"    => array(
+            1213,   //"Campers & RVs"
+            80069   //"Campers & RVs"
+        ),
+        "new"       => array(
+            
+        ),
+        "used"      => array(
+            
+        )
+    ),
+    "banner"        => array(
+        "template"          => "transconatrailers",
+ 'fb_description'    => 'Check out the [make] [model] Today!',
+		"flash_style"       => "default",
+		"border_color"    => "#f7e9cc",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        )
+    );
+
+?>

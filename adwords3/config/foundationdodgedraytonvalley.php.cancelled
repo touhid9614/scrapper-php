@@ -1,0 +1,167 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["foundationdodgedraytonvalley"] = array(
+    "name" => " foundationdodgedraytonvalley",
+    "email" => "regan@smedia.ca",
+    "password" => " foundationdodgedraytonvalley",
+    "log" => true,
+    'adf_to' => array(
+        'foundationauto1@pbssystems.com',
+        
+    ),
+    'lead_to' => array(
+        'clintf@foundationdraytonvalley.com',
+        'travisv@foundationdraytonvalley.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+//        'request-a-quote' => [
+//            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a[data-href*=eprice-form]',
+//            'css-class' => 'a[data-href*=eprice-form]',
+//            'css-hover' => 'a[data-href*=eprice-form]:hover',
+//            'button_action' => [
+//                'form',
+//                'trade-in',
+//            ],
+//            'sizes' => [
+//                '100' => [],
+//            ],
+//            'texts' => [
+//                'request-a-quote' => [
+//                    'target' => 'a[data-href*=eprice-form]',
+//                    'values' => array(
+//                        'Get Internet Price',
+//                        'Get Your Best Price',
+//                        'Get The Right Price',
+//                        'Get Today\'s Price',
+//                        'Request a Quote',
+//                        'Get a Quote',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'orange' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#C38820,#C38820)',
+//                        'border-color' => '#f06b20',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#A9761C,#A9761C)',
+//                        'border-color' => '#cf540e',
+//                    ),
+//                ),
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#C33320,#C33320)',
+//                        'border-color' => '#e01212',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#A92C1C,#A92C1C)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#189138,#189138)',
+//                        'border-color' => '#54b740',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#14782E,#14782E)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#1F4581,#1F4581)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#193767,#193767)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=schedule].btn',
+            'css-class' => 'a[href*=schedule].btn',
+            'css-hover' => 'a[href*=schedule].btn:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[href*=schedule].btn',
+                    'values' => array(
+                        'Request a Test Drive',
+                        'Book a Test Drive',
+                        'Book Test Drive',
+                        'Want to Test Drive?',
+                        'Test Drive Today',
+                        'Test Drive Now',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C38820,#C38820)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A9761C,#A9761C)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C33320,#C33320)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A92C1C,#A92C1C)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#189138,#189138)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#14782E,#14782E)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1F4581,#1F4581)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#193767,#193767)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

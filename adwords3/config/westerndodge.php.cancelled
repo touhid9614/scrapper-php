@@ -1,0 +1,36 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["westerndodge"] = array(
+    'password'  => 'westerndodge',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "lead"  => array(
+        'live'                  => false,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#891c1d", "#891c1d"),
+        'button_color_hover'    => array("#711314", "#711314"),
+        'button_color_active'   => array("#891c1d", "#891c1d"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "$200 trade-in offer from Western Dodge",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Western Dodge Team",
+        'forward_to'            => array("darroch@westerndodge.ca","dean@westerndodge.ca","marshal@smedia.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+     ),
+    "banner"        => array(
+        "template"          => "westerndodge",
+		"fb_description"	=> "Are you still interested in the [year] [make] [model]? Click below for more info!",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+    ),
+
+);

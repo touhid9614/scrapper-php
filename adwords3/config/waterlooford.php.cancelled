@@ -1,0 +1,310 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["waterlooford"] = array(
+    'password' => 'waterlooford',
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'log' => true,
+    'tag_debug' => false,
+    // 'max_cost'      => 0,
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => yes,
+        "used_marketbuyers" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes,
+),
+    'new_title2' => 'See Inventory, Prices & Offers',
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "customer_id" => "282-167-6809",
+    "banner" => array(
+        "template" => "waterlooford",
+        //'fb_description_new' => 'Get 0% apr financing for up to 84 months on select models, PLUS get a No-Extra-Charge Winter Safety Package on most new Ford models.',
+        'fb_description' => 'Test drive the [year] [make] [model]. Click for more info!',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+),
+        "font_color" => "#ffffff",
+),
+    'adf_to' => array(
+        'leads@waterlooford.motosnap.com',
+),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/new\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a.btn.btn-primary.dialog[data-href*=lead-form]',
+            'css-class' => 'a.btn.btn-primary.dialog[data-href*=lead-form]',
+            'css-hover' => 'a.btn.btn-primary.dialog[data-href*=lead-form]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-primary.dialog[data-href*=lead-form]',
+                    'values' => array(
+                        'Special Pricing!',
+                        'Internet Price',
+                        'Get Special Price',
+                        'Get Your Best Price',
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Get Internet Price Now',
+                        'Get Your Exclusive Price',
+                        'SPECIAL PRICING!',
+                        'GET SPECIAL OFFER',
+                        'CURRENT MARKET PRICE',
+                        'GET OUR BEST OFFER',
+                        'You are Eligible for Special Pricing',
+                        'GET INTERNET SPECIAL',
+                        'TODAY\'S MARKET PRICE',
+                        'GET SPECIAL PRICE',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9406,#FF9406)',
+                        'border-color' => 'FF9406',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D5002E,#D5002E)',
+                        'border-color' => 'D5002E',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#46C800,#46C800)',
+                        'border-color' => '46C800',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1072BB,#1072BB)',
+                        'border-color' => '1072BB',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+        'Used request-a-quote' => [
+            'url-match' => '/\\/(?:used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'div.links-list.testDrive.ddc-content a:nth-of-type(2).btn',
+            'css-class' => 'div.links-list.testDrive.ddc-content a:nth-of-type(2).btn',
+            'css-hover' => 'div.links-list.testDrive.ddc-content a:nth-of-type(2).btn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.links-list.testDrive.ddc-content a:nth-of-type(2).btn',
+                    'values' => array(
+                        'Special Pricing!',
+                        'Internet Price',
+                        'Get Special Price',
+                        'Get Your Best Price',
+                        'Get Internet Price',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Get Internet Price Now',
+                        'Get Your Exclusive Price',
+                        'SPECIAL PRICING!',
+                        'GET SPECIAL OFFER',
+                        'CURRENT MARKET PRICE',
+                        'GET OUR BEST OFFER',
+                        'You are Eligible for Special Pricing',
+                        'GET INTERNET SPECIAL',
+                        'TODAY\'S MARKET PRICE',
+                        'GET SPECIAL PRICE',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9406,#FF9406)',
+                        'border-color' => 'FF9406',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D5002E,#D5002E)',
+                        'border-color' => 'D5002E',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#46C800,#46C800)',
+                        'border-color' => '46C800',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1072BB,#1072BB)',
+                        'border-color' => '1072BB',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a[href*= schedule-form]',
+            'css-class' => 'a[href*= schedule-form]',
+            'css-hover' => 'a[href*= schedule-form]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a[href*= schedule-form]',
+                    'values' => array(
+                        'Schedule a Test Drive',
+                        'Schedule Your Test Drive',
+                        'Book a Test Drive',
+                        'SCHEDULE A TEST DRIVE',
+                        'TEST RIDE',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9406,#FF9406)',
+                        'border-color' => 'FF9406',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D5002E,#D5002E)',
+                        'border-color' => 'D5002E',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#46C800,#46C800)',
+                        'border-color' => '46C800',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1072BB,#1072BB)',
+                        'border-color' => '1072BB',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+);

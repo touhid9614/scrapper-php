@@ -1,0 +1,39 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["cranbrookmitsubishi"] = array( 
+	"name"  =>" cranbrookmitsubishi",
+	"email" => "regan@smedia.ca",
+	"password" =>" cranbrookmitsubishi",
+ 'fb_brand'          => '[year] [make] [model] - [body_style]',
+     'fb_title' => '[year] [make] [model] [body_style] [price]',
+	"log" => true ,
+	
+	"banner" => array(
+        "template" => "cranbrookmitsubishi",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+			"fb_lookalike_description"	=> "Check out this [year] [make] [model]! Click for more information.",
+		"flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "ffffff",
+    ),
+	
+	"lead"  => array(
+		'live'                  => false,
+		'lead_type_'            => true,
+		'lead_type_new'         => true,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#e60013", "#e60013"),
+		'button_color_hover'    => array("#0a0a0a", "#0a0a0a"),
+		'button_color_active'   => array("#0a0a0a", "#0a0a0a"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "$500 off coupon from Cranbrook Mitsubishi",
+		'response_email'        => "Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Cranbrook Mitsubishi Team",
+		'forward_to'            => array("phil@cranbrookmitsubishi.ca","marshal@smedia.ca"),
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),
+);

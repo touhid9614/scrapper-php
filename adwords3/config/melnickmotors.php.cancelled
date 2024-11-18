@@ -1,0 +1,219 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["melnickmotors"] = array(
+    "name" => " melnickmotors",
+    "email" => "regan@smedia.ca",
+    "password" => " melnickmotors",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    "banner" => array(
+        "template" => "melnickmotors",
+        "fb_retargeting_description_new" => "Are you still interested in the [year] [make] [model]? Click for more information.MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+        "fb_retargeting_description_used" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        'fb_lookalike_description_new' => "Check out this [year] [make] [model] today! MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+        "fb_lookalike_description_used" => "Check out this [year] [make] [model] today! Click for more information.",
+        "fb_special_description_new" => "Click for more information a discount details on the [year] [make] [model]. MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+        "fb_special_description_new" => "Click for more information a discount details on the [year] [make] [model].",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info to claim a \$300 accessory credit, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#00406B',
+            '#00406B',
+),
+        'button_color_hover' => array(
+            '#00193E',
+            '#00193E',
+),
+        'button_color_active' => array(
+            '#00193E',
+            '#00193E',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$300 Accessory Credit from Melnick Motors',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Melnick Motors Team',
+        'forward_to' => array(
+            'melnickmotors@mymts.net',
+            'lancef@mymts.net',
+            'jeffmelnick@mymts.net',
+            'marshal@smedia.ca',
+            'nanang@smedia.ca',
+),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+),
+    'lead_to' => array(
+        'melnickmotors@mymts.net',
+        'lancef@mymts.net',
+        'jeffmelnick@mymts.net',
+),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used)-[0-9]{4}/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+            'css-class' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]',
+            'css-hover' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+                    'values' => array(
+                        'Get a Quote',
+                        'Inquire Now',
+                        'Inquire Today',
+                        'Get e-Price Now',
+                        'Get Internet Price',
+                        'Get Sale Price',
+                        'Get Our Best Price',
+                        'Get Market Price',
+                        'Request a Quote',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C95F05,#C95F05)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#974704,#974704)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BF040B,#BF040B)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#970309,#970309)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#039747,#039747)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#037E3B,#037E3B)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0461B0,#0461B0)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03467E,#03467E)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+        /* financing button actually test drive button. but client want to replace it by financing options*/
+        'financing' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used)-[0-9]{4}/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a[name=4969ed15-0c26-4ba1-8a8d-81cdc4ec014a]',
+            'css-class' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]',
+            'css-hover' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]:hover',
+            'button_action' => [
+                'form',
+                'finance',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a[name=4969ed15-0c26-4ba1-8a8d-81cdc4ec014a]',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Special Finance Offers!',
+                        'Financing Available',
+                        'Apply for Financing',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C95F05,#C95F05)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#974704,#974704)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BF040B,#BF040B)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#970309,#970309)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#039747,#039747)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#037E3B,#037E3B)',
+                        'border-color' => '359D22',
+),
+),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0461B0,#0461B0)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#03467E,#03467E)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+    'smart_banner' => array(
+        'live' => null,
+        'title' => '',
+),
+);

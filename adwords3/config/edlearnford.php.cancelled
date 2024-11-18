@@ -1,0 +1,56 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["edlearnford"] = array(
+  //'budget'    => 2.0,
+  'bid'           => 3.0,
+  'password'  => 'edlearnford',
+    'post_code'     => 'L2R5L3',
+  
+
+    "email"         => "regan@smedia.ca",
+
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#d2d2d2",
+        'button_color'          => array("#1f92cb", "#0064ae"),
+        'button_color_hover'    => array("#560c0c", "#00528e"),
+        'button_color_active'   => array("#560c0c", "#00528e"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from Ed Learn Ford",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Ed Learn Ford Team",
+        'forward_to'            => array("dan@edlearnford.com", "masterkeyy@gmail.com"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>"
+    ),
+
+
+
+
+
+    "banner"        => array(
+        "template"          => "edlearnford",
+			"flash_style"       => "default",
+			"hst" => yes,
+			"border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

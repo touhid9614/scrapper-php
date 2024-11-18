@@ -1,0 +1,64 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["huffford"] = array(
+    'password' => 'huffford',
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'log' => true,
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => "#efefef",
+        'text_color' => "#404450",
+        'border_color' => "#e5e5e5",
+        'button_color' => array(
+            "#fac703",
+            "#fac703",
+        ),
+        'button_color_hover' => array(
+            "#e1a504",
+            "#e1a504",
+        ),
+        'button_color_active' => array(
+            "#e1a504",
+            "#e1a504",
+        ),
+        'button_text_color' => "#ffffff",
+        'response_email_subject' => "Get \$100 off with this offer from Huff Ford",
+        'response_email' => "Hello [name],<p> Thank you for booking a test drive! Please print this off or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Huff Ford",
+        'forward_to' => array(
+            "jsarver@huffonline.com",
+            "marshal@smedia.ca",
+        ),
+        'respond_from' => "offers@mail.smedia.ca",
+        'forward_from' => "offers@mail.smedia.ca",
+        'thank_you' => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+    ),
+    "banner" => array(
+        "template" => "huffford",
+        /*NEW INVENTORY*/
+		"fb_retargeting_description_new" => "Are you still interested in the New [year] [make] [model]? Click for more information. MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+        "fb_lookalike_description_new" => "Test drive the New [year] [make] [model] today!  MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+        "fb_dynamiclead_description_new" => "Are you still interested in the New [year] [make] [model]? Click below and fill in your information to get $100 off coupon. A product specialist will be in touch to aid in any questions. MSRP [msrp]. Sale price [price]. Stock #[stock_number].",
+		/*USED INVENTORY*/
+		"fb_retargeting_description_used" => "Are you still interested in the Used [year] [make] [model]? Click for more information. Sale price [price]. Stock #[stock_number].",
+        "fb_lookalike_description_used" => "Test drive the Used [year] [make] [model] today! Sale price [price]. Stock #[stock_number].",
+        "fb_dynamiclead_description_used" => "Are you still interested in the Used [year] [make] [model]? Click below and fill in your information to get $100 off coupon. A product specialist will be in touch to aid in any questions. Sale price [price]. Stock #[stock_number].",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17589',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

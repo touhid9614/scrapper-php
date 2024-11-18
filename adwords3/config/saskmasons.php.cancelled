@@ -1,0 +1,14 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["saskmasons"] = array(
+    "name" => " saskmasons",
+    "email" => "regan@smedia.ca",
+    "password" => " saskmasons",
+    "log" => true,
+    'customer_id' => '749-468-6537',
+    'max_cost' => 450,
+    'cost_distribution' => array(
+        'youtube' => 450,
+    ),
+);

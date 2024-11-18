@@ -1,0 +1,177 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["chaletgm"] = array(
+    'name'      => 'chaletgm',
+  //'budget'    => 2.0,
+  'bid'           => 3.0,
+  'log'         => true,
+  'fb_brand'          => '[year] [make] [model] - [body_style]',
+  'password'  => 'chaletgm',
+    'bid_modifier'  => array(
+        'after'     => 45, //days
+        'bid'       => 1.5
+    ),
+    'max_cost'      => 0,
+	'cost_distribution' => array(
+        'new'   => 0,
+        'used'  => 0,
+'youtube'  => 0,
+    ),
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'V1A 3H6',
+    //tracker
+
+    "create"     => array(
+          "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => no,
+        "used_display"      => no,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+		 "new_combined"    => yes,
+        "used_combined"   => yes
+    ),
+    "host_url"      => "http://www.chaletgm.com",		//must start with http or https and end without /
+    "display_url"   => "www.chaletgm.com",				//Max lenght 35 char
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id"   => "322-554-2181",
+    "email"         => "regan@smedia.ca",
+    "banner"        => array(
+        "template"          => "chaletgm",
+			"fb_description"	=> "Are you still interested in the [year] [make] [model]? Click for more info!",
+			"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today! Click for more information.",
+			"flash_style"       => "default",
+			"border_color"    => "#101010",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#f7f7f7"
+        ),
+//    'buttons_live'  => false,
+//    'buttons'       => [
+//        'request-a-quote'  => [
+//            'url-match' => '/\/VehicleDetails\/(?:new|used|certified)-/i',
+//            'target'    => null,        //Don't move button
+//            'locations' => [
+//                'default'   => null,    //Don't need to change location
+//            ],
+//            'action-target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+//            'css-class' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]',
+//            'css-hover' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]:hover',
+//            'sizes'     => [
+//                '100'   => [
+//                    'font-size' => '1.4rem'
+//                ]
+//            ],
+//            'texts'     => [
+//                'request-a-quote'  => [
+//                    'target'    => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+//                    'values'    => [
+//                        'Request A Quote',
+//                        'Get E Price Now!',
+//                        'Internet Price',
+//                        'Get your Price!',
+//                        'E- Price',
+//                        'Get Internet Price Now!',
+//                        'Contact Us.',
+//                        'Get Our Best Price',
+//                        'Best Price',
+//                        'Contact Us',
+//                        'Contact Store',
+//                        'Local Pricing',
+//                        'Special Pricing!',
+//                        'Get More Information',
+//                        'Ask a Question',
+//                        'Inquire Now',
+//                        'Get Active Market Price',
+//                        'Get Market Price',
+//                        'Market Pricing'
+//                    ]
+//                ]
+//            ],
+//            'styles'    => [
+//                'orange'  => [
+//                    'normal'    => [
+//                        'background-color' => '#f06b20',
+//                        'border-color'     => '#f06b20'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#cf540e',
+//                        'border-color'     => '#cf540e'
+//                    ]
+//                ],
+//                'red'  => [
+//                    'normal'    => [
+//                        'background-color' => '#e01212',
+//                        'border-color'     => '#e01212'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#c60c0d',
+//                        'border-color'     => '#c60c0d'
+//                    ]
+//                ],
+//                'green'  => [
+//                    'normal'    => [
+//                        'background-color' => '#54b740',
+//                        'border-color'     => '#54b740'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#359d22',
+//                        'border-color'     => '#359d22'
+//                    ]
+//                ],
+//                'blue'  => [
+//                    'normal'    => [
+//                        'background-color' => '#1ca0d1',
+//                        'border-color'     => '#1ca0d1'
+//                    ],
+//                    'hover'     => [
+//                        'background-color' => '#188bb7',
+//                        'border-color'     => '#188bb7'
+//                    ]
+//                ]
+//            ]
+//        ]
+//    ]
+       
+    );

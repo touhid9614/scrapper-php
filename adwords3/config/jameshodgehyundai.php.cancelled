@@ -1,0 +1,184 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jameshodgehyundai"] = array(
+    "name" => " jameshodgehyundai",
+    "email" => "regan@smedia.ca",
+    "password" => " jameshodgehyundai",
+    "log" => true,
+    "banner" => array(
+        "template" => "jameshodgehyundai",
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click for more info.',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'webleads@jameshodgehyundai.dsmessage.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[name=f0737c1e-5e88-4ca3-981b-db3b00687c76]',
+            'css-class' => 'a[name=f0737c1e-5e88-4ca3-981b-db3b00687c76]',
+            'css-hover' => 'a[name=f0737c1e-5e88-4ca3-981b-db3b00687c76]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[name=f0737c1e-5e88-4ca3-981b-db3b00687c76]',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Sale Price',
+                        'Get Your Price',
+                        'Get Our Best Price',
+                        'Get Special Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0075C9,#0075C9)',
+                        'border-color' => '#0075C9',
+                        'color' => '#fff ',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0066AF,#0066AF)',
+                        'border-color' => '#0066AF',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D21815,#D21815)',
+                        'border-color' => '#D21815',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B81512,#B81512)',
+                        'border-color' => '#B81512',
+                        'color' => '#fff',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FC5F19,#FC5F19)',
+                        'border-color' => '#FC5F19',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E25516,#E25516)',
+                        'border-color' => '#E25516',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#96960F,#96960F)',
+                        'border-color' => '#96960F',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#7C7C0C,#7C7C0C)',
+                        'border-color' => '#7C7C0C',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[repeat=secondaryHyperlinks]',
+            'css-class' => 'a[repeat=secondaryHyperlinks]',
+            'css-hover' => 'a[repeat=secondaryHyperlinks]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a[repeat=secondaryHyperlinks]',
+                    'values' => array(
+                        'Request A Quote',
+                        'Inquire Now',
+                        'Inquire Today',
+                        'Ask Question',
+                        'Get More Info',
+                        'More Information',
+                        'Request More Info',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0075C9,#0075C9)',
+                        'border-color' => '#0075C9',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0066AF,#0066AF)',
+                        'border-color' => '#0066AF',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D21815,#D21815)',
+                        'border-color' => '#D21815',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#B81512,#B81512)',
+                        'border-color' => '#B81512',
+                        'color' => '#fff',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FC5F19,#FC5F19)',
+                        'border-color' => '#FC5F19',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E25516,#E25516)',
+                        'border-color' => '#E25516',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#96960F,#96960F)',
+                        'border-color' => '#96960F',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#7C7C0C,#7C7C0C)',
+                        'border-color' => '#7C7C0C',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

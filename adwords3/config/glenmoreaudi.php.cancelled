@@ -1,0 +1,152 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["glenmoreaudi"] = array(
+    "name" => " glenmoreaudi",
+    "email" => "regan@smedia.ca",
+    "password" => " glenmoreaudi",
+    "log" => true,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/en\\/(?:new|pre-owned)-inventory\\/[^\\/]+/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.car-cta a.sr-button-2.is-fluid.vehicle-cta-btn, a[href*=price-request].btn',
+            'css-class' => 'div.car-cta a.sr-button-2.is-fluid.vehicle-cta-btn, a[href*=price-request].btn',
+            'css-hover' => 'div.car-cta a.sr-button-2.is-fluid.vehicle-cta-btn, a[href*=price-request].btn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.car-cta a.sr-button-2.is-fluid.vehicle-cta-btn, a[href*=price-request].btn',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Our Best Price',
+                        'Get a Quote',
+                        'Request a Quote',
+                        'Inquire Now',
+                        'Inquire Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'buy-online' => [
+            'url-match' => '/\\/en\\/(?:new|pre-owned)-inventory\\/[^\\/]+/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.car-cta button.btn-get-started.sr-button-1.is-fluid.vehicle-cta-btn',
+            'css-class' => 'div.car-cta button.btn-get-started.sr-button-1.is-fluid.vehicle-cta-btn',
+            'css-hover' => 'div.car-cta button.btn-get-started.sr-button-1.is-fluid.vehicle-cta-btn:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'buy-online' => [
+                    'target' => 'div.car-cta button.btn-get-started.sr-button-1.is-fluid.vehicle-cta-btn',
+                    'values' => array(
+                        'Buy Online',
+                        'Click Here To Buy Online',
+                        'Buy Online Here',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

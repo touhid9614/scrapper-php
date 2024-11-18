@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["directbuytruckcenter"] = array( 
+	"name"  =>" directbuytruckcenter",
+	"email" => "regan@smedia.ca",
+	"password" =>" directbuytruckcenter",
+	"log" => true ,
+);

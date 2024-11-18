@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listings>
+    <title>
+        titanauto
+    </title>
+    <link href="www.titanauto.ca" rel="self"/>
+    <listing>
+        <vehicle_id>
+            GP10530-desktop
+        </vehicle_id>
+        <title>
+            1995 Dodge Ram BR2500 $78,000
+        </title>
+        <stock_number>
+            GP10530
+        </stock_number>
+        <description>
+            Are you still interested in the 1995 Dodge Ram BR2500? Click for more info!
+        </description>
+        <url>
+            https://www.titanauto.ca/inventory/1995-dodge-ram-br2500-kenworth-semi-conversion-5-9-cummins-diesel-pickup-1b7kc26c1ss375884?utm_source=smedia_retargeting&utm_medium=facebook
+        </url>
+        <year>
+            1995
+        </year>
+        <make>
+            Dodge
+        </make>
+        <model>
+            Ram BR2500
+        </model>
+        <mileage>
+            <value>
+                330655
+            </value>
+            <unit>
+                KM
+            </unit>
+        </mileage>
+        <vin>
+            1B7KC26C1SS375884
+        </vin>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <body_style>
+            OTHER
+        </body_style>
+        <custom_label_0>
+            OTHER
+        </custom_label_0>
+        <fuel_type>
+            OTHER
+        </fuel_type>
+        <drivetrain>
+            OTHER
+        </drivetrain>
+        <transmission>
+            OTHER
+        </transmission>
+        <state_of_vehicle>
+            USED
+        </state_of_vehicle>
+        <price>
+            78000 CAD
+        </price>
+        <exterior_color>
+            Green
+        </exterior_color>
+        <address format="simple">
+            <component name="addr1">
+                755 Broad
+            </component>
+            <component name="city">
+                Regina
+            </component>
+            <component name="region">
+                Saskatchewan
+            </component>
+            <component name="country">
+                Canada
+            </component>
+            <component name="postal_code">
+                S4R 8G3
+            </component>
+        </address>
+        <latitude>
+            50.4670413
+        </latitude>
+        <longitude>
+            -104.60532
+        </longitude>
+        <fb_page_id>
+            143923312335088
+        </fb_page_id>
+        <dealer_id>
+            titanauto
+        </dealer_id>
+        <dealer_name>
+            Titan Auto
+        </dealer_name>
+        <dealer_phone>
+            888-311-9677
+        </dealer_phone>
+        <dealer_privacy_policy_url>
+            https://www.titanauto.ca/privacy-policy/
+        </dealer_privacy_policy_url>
+    </listing>
+    <listing>
+        <vehicle_id>
+            GP10613A-desktop
+        </vehicle_id>
+        <title>
+            2017 Dodge Charger $33,995
+        </title>
+        <stock_number>
+            GP10613A
+        </stock_number>
+        <description>
+            Are you still interested in the 2017 Dodge Charger? Click for more info!
+        </description>
+        <url>
+            https://www.titanauto.ca/inventory/2017-dodge-charger-rt-plus-hemi-370hp-htdcld-leather-sunroof-local-rwd-4dr-car-2c3cdxct8hh620123?utm_source=smedia_retargeting&utm_medium=facebook
+        </url>
+        <year>
+            2017
+        </year>
+        <make>
+            Dodge
+        </make>
+        <model>
+            Charger
+        </model>
+        <mileage>
+            <value>
+                61284
+            </value>
+            <unit>
+                KM
+            </unit>
+        </mileage>
+        <vin>
+            2C3CDXCT8HH620123
+        </vin>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <body_style>
+            SMALL_CAR
+        </body_style>
+        <custom_label_0>
+            SMALL_CAR
+        </custom_label_0>
+        <fuel_type>
+            OTHER
+        </fuel_type>
+        <drivetrain>
+            OTHER
+        </drivetrain>
+        <transmission>
+            AUTOMATIC
+        </transmission>
+        <state_of_vehicle>
+            USED
+        </state_of_vehicle>
+        <price>
+            33995 CAD
+        </price>
+        <exterior_color>
+            Granite Crystal Metallic
+        </exterior_color>
+        <address format="simple">
+            <component name="addr1">
+                755 Broad
+            </component>
+            <component name="city">
+                Regina
+            </component>
+            <component name="region">
+                Saskatchewan
+            </component>
+            <component name="country">
+                Canada
+            </component>
+            <component name="postal_code">
+                S4R 8G3
+            </component>
+        </address>
+        <latitude>
+            50.4670413
+        </latitude>
+        <longitude>
+            -104.60532
+        </longitude>
+        <fb_page_id>
+            143923312335088
+        </fb_page_id>
+        <dealer_id>
+            titanauto
+        </dealer_id>
+        <dealer_name>
+            Titan Auto
+        </dealer_name>
+        <dealer_phone>
+            888-311-9677
+        </dealer_phone>
+        <dealer_privacy_policy_url>
+            https://www.titanauto.ca/privacy-policy/
+        </dealer_privacy_policy_url>
+    </listing>
+    <listing>
+        <vehicle_id>
+            GP11217-desktop
+        </vehicle_id>
+        <title>
+            2018 Dodge Charger $33,955
+        </title>
+        <stock_number>
+            GP11217
+        </stock_number>
+        <description>
+            Are you still interested in the 2018 Dodge Charger? Click for more info!
+        </description>
+        <url>
+            https://www.titanauto.ca/inventory/2018-dodge-charger-gtawdv6camsunroofbluetooth-awd-4dr-car-2c3cdxjg5jh170782?utm_source=smedia_retargeting&utm_medium=facebook
+        </url>
+        <year>
+            2018
+        </year>
+        <make>
+            Dodge
+        </make>
+        <model>
+            Charger
+        </model>
+        <mileage>
+            <value>
+                29694
+            </value>
+            <unit>
+                KM
+            </unit>
+        </mileage>
+        <vin>
+            2C3CDXJG5JH170782
+        </vin>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <body_style>
+            SMALL_CAR
+        </body_style>
+        <custom_label_0>
+            SMALL_CAR
+        </custom_label_0>
+        <fuel_type>
+            OTHER
+        </fuel_type>
+        <drivetrain>
+            AWD
+        </drivetrain>
+        <transmission>
+            AUTOMATIC
+        </transmission>
+        <state_of_vehicle>
+            USED
+        </state_of_vehicle>
+        <price>
+            33955 CAD
+        </price>
+        <exterior_color>
+            Destroyer Grey
+        </exterior_color>
+        <address format="simple">
+            <component name="addr1">
+                755 Broad
+            </component>
+            <component name="city">
+                Regina
+            </component>
+            <component name="region">
+                Saskatchewan
+            </component>
+            <component name="country">
+                Canada
+            </component>
+            <component name="postal_code">
+                S4R 8G3
+            </component>
+        </address>
+        <latitude>
+            50.4670413
+        </latitude>
+        <longitude>
+            -104.60532
+        </longitude>
+        <fb_page_id>
+            143923312335088
+        </fb_page_id>
+        <dealer_id>
+            titanauto
+        </dealer_id>
+        <dealer_name>
+            Titan Auto
+        </dealer_name>
+        <dealer_phone>
+            888-311-9677
+        </dealer_phone>
+        <dealer_privacy_policy_url>
+            https://www.titanauto.ca/privacy-policy/
+        </dealer_privacy_policy_url>
+    </listing>
+    <listing>
+        <vehicle_id>
+            GP11257-desktop
+        </vehicle_id>
+        <title>
+            2019 Hyundai Sonata $26,995
+        </title>
+        <stock_number>
+            GP11257
+        </stock_number>
+        <description>
+            Are you still interested in the 2019 Hyundai Sonata? Click for more info!
+        </description>
+        <url>
+            https://www.titanauto.ca/inventory/2019-hyundai-sonata-sportcamalloyssunroofbluetooth-fwd-4dr-car-5npe34af3kh768925?utm_source=smedia_retargeting&utm_medium=facebook
+        </url>
+        <year>
+            2019
+        </year>
+        <make>
+            Hyundai
+        </make>
+        <model>
+            Sonata
+        </model>
+        <mileage>
+            <value>
+                16748
+            </value>
+            <unit>
+                KM
+            </unit>
+        </mileage>
+        <vin>
+            5NPE34AF3KH768925
+        </vin>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <image>
+            <url>
+                https://tm.smedia.ca/tests/600x600.png
+            </url>
+        </image>
+        <body_style>
+            SMALL_CAR
+        </body_style>
+        <custom_label_0>
+            SMALL_CAR
+        </custom_label_0>
+        <fuel_type>
+            GASOLINE
+        </fuel_type>
+        <drivetrain>
+            OTHER
+        </drivetrain>
+        <transmission>
+            MANUAL
+        </transmission>
+        <state_of_vehicle>
+            USED
+        </state_of_vehicle>
+        <price>
+            14995 CAD
+        </price>
+        <exterior_color>
+            Bright White
+        </exterior_color>
+        <address format="simple">
+            <component name="addr1">
+                755 Broad
+            </component>
+            <component name="city">
+                Regina
+            </component>
+            <component name="region">
+                Saskatchewan
+            </component>
+            <component name="country">
+                Canada
+            </component>
+            <component name="postal_code">
+                S4R 8G3
+            </component>
+        </address>
+        <latitude>
+            50.4670413
+        </latitude>
+        <longitude>
+            -104.60532
+        </longitude>
+        <fb_page_id>
+            143923312335088
+        </fb_page_id>
+        <dealer_id>
+            titanauto
+        </dealer_id>
+        <dealer_name>
+            Titan Auto
+        </dealer_name>
+        <dealer_phone>
+            888-311-9677
+        </dealer_phone>
+        <dealer_privacy_policy_url>
+            https://www.titanauto.ca/privacy-policy/
+        </dealer_privacy_policy_url>
+    </listing>
+</listings>

@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["keatinghonda"] = array(
+  'password'  => 'keatinghonda',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "keatinghonda",
+		'fb_description'	=> "Are you still interested in the [year] [make] [model]? Click for more information.",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

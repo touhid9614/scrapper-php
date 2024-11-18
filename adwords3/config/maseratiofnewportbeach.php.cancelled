@@ -1,0 +1,30 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["maseratiofnewportbeach"] = array(
+  'password'  => 'maseratiofnewportbeach',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "maseratiofnewportbeach",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            //"used_display"  => "quick_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            //"used_retargeting" => "quick_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+           // "used_marketbuyers"  => "quick_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

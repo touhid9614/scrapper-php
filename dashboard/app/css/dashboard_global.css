@@ -1,0 +1,162 @@
+.italic-placeholder
+{
+   /*keep it cool*/
+   font-style: italic;
+}
+
+.italic-placeholder::-webkit-input-placeholder
+{
+   font-style: italic;
+}
+
+.italic-placeholder:-moz-placeholder
+{
+   font-style: italic;
+}
+
+.italic-placeholder::-moz-placeholder
+{
+   font-style: italic;
+}
+
+.italic-placeholder:-ms-input-placeholder
+{
+   font-style: italic;
+}
+
+
+.unselectable
+{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+
+    /*Mobile*/
+
+    /* -webkit-touch-callout: default*/   /* displays the callout */
+    -webkit-touch-callout: none      /* disables the callout */
+}
+
+.nav .image-icon
+{
+    width: 16px;
+    margin-right: 16px;
+}
+
+.sm-toggle-switch input
+{
+    width: 0;
+}
+
+.sm-toggle-switch span
+{
+    line-height: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sm-toggle-switch label .toggle
+{
+    position:relative;
+    width: 48px;
+    margin:0 8px 0 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sm-toggle-switch label .toggle:before
+{
+    content: "";
+    display: inline-block;
+    position:absolute;
+    width: 48px;
+    height: 28px;
+    background: #ccc;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.sm-toggle-switch label .toggle:after
+{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 15px;
+    top: 3px;
+    right: 23px;
+    transition: .4s;
+}
+
+.sm-toggle-switch.yes label .toggle:before
+{
+    background: #4CAF50;
+}
+
+.sm-toggle-switch.yes label .toggle:after
+{
+    right: 3px;
+}
+
+.thumb-info .thumb-info-image 
+{
+	background-color: #CCC;
+	border-radius: 2px;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0;
+	margin: 8px -2px -15px -2px;
+	padding: 2px 9px;
+	text-transform: none;
+}
+
+/* Password strength meter css */
+.pass-wrapper
+{
+    margin-top: -3px;
+}
+
+.pass-graybar 
+{
+    height: 6px;
+    background-color: #CCC;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.pass-colorbar 
+{
+    height: 6px;
+    background-image: url(../img/passwordstrength.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pass-percent, .pass-text 
+{
+    font-size: 1em;
+}
+
+.pass-percent 
+{
+    margin-right: 5px;
+}
+
+.hideMe
+{
+    display: none !important;
+}

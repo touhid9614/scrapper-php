@@ -1,0 +1,583 @@
+.hidden
+{
+    display: none;
+}
+
+.cs-header-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.all-lowercase
+{
+    text-transform: lowercase !important;
+}
+
+
+.align-right
+{
+    position: absolute;
+    right: 25px;
+    height: 60px;
+}
+
+
+.form-popup 
+{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.form-popup .form-popuptext 
+{
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+.form-popup .form-popuptext::after 
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+.form-popup .form-show 
+{
+    visibility: visible;
+    -webkit-animation: form-fadeIn 1s;
+    animation: form-fadeIn 1s;
+}
+
+.form-close-btn {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: url('https://tm.smedia.ca/adwords3/templates/close.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+
+@-webkit-keyframes form-fadeIn 
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+@keyframes form-fadeIn 
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity:1 ;
+    }
+}
+
+section .button.smedia-form-button 
+{
+    font-family: "Montserrat", sans-serif;
+    background: #4BC582;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    border-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+}
+
+section .button.smedia-form-button:hover 
+{
+    background-color: #54ea98;
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-form-button:focus 
+{
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-form-button[disabled] 
+{
+    background-color: #209cee;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow-box-shadow: none;
+}
+
+section .button.smedia-form-button-v1 
+{
+    font-family: "Montserrat", sans-serif;
+    background: #EB974E;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    border-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+}
+
+section .button.smedia-form-button-v1:hover 
+{
+    background-color: #f99e4f;
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-form-button-v1:focus 
+{
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-form-button-v1[disabled] 
+{
+    background-color: #7f522b;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow-box-shadow: none;
+}
+
+@keyframes cs-popover-slide-bottom 
+{
+    0% 
+    {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+
+    100% 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*.cs-popover */
+/*{*/
+    /*font-family: "Montserrat", sans-serif;*/
+    /*padding-left: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*padding-top: 10px;*/
+    /*border: 1px solid orange;*/
+    /*border-radius: 4px;*/
+    /*background: white;*/
+    /*color: orange;*/
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+.cs-popover
+{
+    font-family: "Montserrat", sans-serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: red;
+    color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cs-popover-bottom 
+{
+    margin-top: 8px;
+    animation: 0.4s cs-popover-slide-bottom;
+}
+
+.cs-popover-bottom::before, .cs-popover-bottom::after 
+{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border: 8px solid transparent;
+    border-bottom-color: red;
+}
+
+.cs-popover-bottom::before 
+{
+    margin-bottom: 1px;
+    border-bottom-color: orange;
+}
+
+.required-fields
+{
+    padding-left: 30px !important;
+}
+
+.size-three-fifty-by-six-hundread
+{
+    width: 350px;
+    height: 600px;
+}
+
+.size-eight-hundread-by-six-hundread
+{
+    width: 900px;
+    height: 800px;
+}
+
+/*.cs-left-div-image
+{
+    background-image: url("../images/trade-in-background.png");
+    background-color: #ffffff;
+    height: 600px;
+    background-repeat: no-repeat;
+}*/
+
+.cs-security-image-div-trade-in
+{
+    position: relative;
+    width: 50%;
+    height: 18%;
+    top: 40%;
+    left: 25%;
+    background: white;
+}
+
+.cs-trade-in-right-side
+{
+    width: 90%;
+    /*height: 600px;*/
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: white;
+}
+
+.cs-trade-in-rightside-header-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cs-personal-info-div
+{
+    margin-top: 15px;
+}
+
+.margin-top-twenty
+{
+    margin-top: 20px;
+}
+
+.cs-month
+{
+    width: 128px;   /* should be 130px by 40px */
+    height: 48px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.cs-trade-in-button
+{
+    background: #D88F43;
+}
+
+section .button.smedia-trade-in-button 
+{
+    font-family: "Montserrat", sans-serif;
+    background: #D88F43;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    border-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+}
+
+section .button.smedia-trade-in-v2-button
+{
+    font-family: "Montserrat", sans-serif;
+    background: green;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    border-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+}
+
+section .button.smedia-trade-in-button:hover 
+{
+    background-color: #e59644;
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-trade-in-button:focus 
+{
+    border-color: transparent;
+    color: #fff;
+}
+
+section .button.smedia-trade-in-button[disabled] 
+{
+    background-color: #66421e;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    -webkit-box-shadow-box-shadow: none;
+}
+
+.cs-trade-in-v2-info
+{
+
+}
+
+.cs-test-drive-info
+{
+
+}
+
+.cs-finance-info
+{
+
+}
+
+.cs-trade-in-v2-background
+{
+    /*width: 350px; */    
+    width: inherit;
+    height: 600px;
+}
+
+.cs-security-image-div-trade-in-v2
+{
+    position: relative;
+    width: 50%;
+    height: 18%;
+    background: white;
+}
+
+.cs-tade-in-v2-left
+{
+
+}
+
+.cs-security-image-trade-in-v2
+{
+    position: relative;
+    left: 50px;
+    top: 40px;
+    width: 145px;
+    height: 80px;
+}
+
+.cs-right-div
+{
+
+}
+
+.columns_section.group
+{
+
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .size-eight-hundread-by-six-hundread
+    {
+        padding-top: 10px !important;
+        width: 380px;
+        height: 825px;
+    }
+
+    .cs-security-image-trade-in
+    {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        height: 70%;
+    }
+
+    /*.cs-left-div-image
+    {
+        background-image: url("../images/trade-in-background.png");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        height: 776px;
+    }*/
+
+    div.col.span_1_of_2.cs-left-div-image,  div.col.span_1_of_2.cs-left-div-image-v2
+    {
+        display: none !important;
+    }
+
+    .columns_section.group
+    {
+        padding-right: 7.5% !important;
+    }
+
+    .cs-right-div
+    {
+        /*padding-left: 5%;*/
+        width: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) 
+{
+    .size-eight-hundread-by-six-hundread
+    {
+        width: 950px;
+        height: 750px;
+    }
+
+    .cs-security-image-trade-in
+    {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        height: 70%;
+    }
+
+    /*.cs-left-div-image
+    {
+        background-image: url("../images/trade-in-background.png");
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        height: 776px;
+    }*/
+
+    div.col.span_1_of_2.cs-left-div-image, div.col.span_1_of_2.cs-left-div-image-v2
+    {
+        display: none !important;
+    }
+
+    .columns_section.group
+    {
+        padding-right: 7.5% !important;
+    }
+
+    .cs-right-div
+    {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .size-eight-hundread-by-six-hundread
+    {
+        height: 800px;
+    }
+
+    .cs-security-image-trade-in 
+    {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 12.5%;
+        margin-bottom: 15%;
+        height: 70%;
+    }
+
+    div.col.span_1_of_2.cs-left-div-image
+    {
+        background-image: url("../images/trade-in-background.png");
+        background-size: 370px 700px;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 370px;
+    }
+
+    div.col.span_1_of_2.cs-left-div-image-v2
+    {
+        background-image: url("../images/trade-in-v2-background.png");
+        background-size: 370px 700px;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 370px;
+    }
+
+    div.col.span_1_of_2.cs-left-div-image, div.col.span_1_of_2.cs-left-div-image-v2
+    {
+        display: block !important;
+    }
+
+    .columns_section.group
+    {
+        padding-right: 0 !important;
+    }
+
+    .cs-right-div
+    {
+        width: 48.7% !important;
+    }
+}
+
+/*@media only screen and (min-width: 992px)
+{
+    .size-eight-hundread-by-six-hundread
+    {
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .size-eight-hundread-by-six-hundread
+    {
+        width: 800px;
+        height: 800px;
+    }
+}*/

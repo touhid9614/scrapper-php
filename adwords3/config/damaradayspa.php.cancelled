@@ -1,0 +1,9 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["damaradayspa"] = array(
+    'password'      => 'damaradayspa',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

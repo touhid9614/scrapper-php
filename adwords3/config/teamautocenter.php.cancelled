@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["teamautocenter"] = array(
+  'password'  => 'teamautocenter',
+    "email"         => "regan@smedia.ca",
+
+    "banner"        => array(
+        "template"          => "teamautocenter",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

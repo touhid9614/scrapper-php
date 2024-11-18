@@ -1,0 +1,87 @@
+inurl:"searchused.aspx" Ontario'
+   inurl:"searchused.aspx" 
+   inurl:"searchused.aspx"
+   inurl:"searchused.aspx" 
+   inurl:"searchused.aspx" 
+   inurl:"searchnew.aspx"
+   inurl:"searchnew.aspx"
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx"
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx"
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   inurl:"searchnew.aspx" 
+   "Website by FlexDealer™"',
+   inurl:"/search/used/tp/"',
+   inurl:"en/usedcars/listing/index.spy
+   inurl:"en/usedcars/listing/index.spy
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"en/usedcars/listing/index.spy 
+   inurl:"searchnew.aspx" 
+   inurl:"used/yearF/2014/yearT/2014"',
+   inurl:"VehicleSearchResults?search=preowned"
+   inurl:"VehicleSearchResults?search=preowned"
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned"
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned"
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"VehicleSearchResults?search=preowned" 
+   inurl:"search?stock_tyPrince Edward Island=USED"
+   inurl:"search?stock_tyPrince Edward Island=USED"
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED"
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED"
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+   inurl:"search?stock_tyPrince Edward Island=USED" 
+    inurl:"used-inventory/index.htm"
+    inurl:"used-inventory/index.htm"
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm"
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm"
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+    inurl:"used-inventory/index.htm" 
+       inurl:"searchused.aspx"
+    inurl:"searchused.aspx"
+    inurl:"searchused.aspx" 
+    inurl:"searchused.aspx" 
+    inurl:"searchused.aspx" 
+    inurl:"searchused.aspx"
+    inurl:"searchused.aspx" 
+    inurl:"searchused.aspx"
+    inurl:"searchused.aspx" 

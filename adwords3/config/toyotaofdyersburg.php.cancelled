@@ -1,0 +1,325 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["toyotaofdyersburg"] = array(
+    "name" => "toyotaofdyersburg",
+    "email" => "regan@smedia.ca",
+    "password" => "toyotaofdyersburg",
+    "log" => true,
+    "banner" => array(
+        "template" => "toyotaofdyersburg",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        //"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'leads@tryuscars.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        ///Request Pricing Updates///
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => '#primaryButtonPageModalButton.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-class' => '#primaryButtonPageModalButton.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-hover' => '#primaryButtonPageModalButton.btn.btn-cta.btn-lg.btn-block.ePriceBtn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => '#primaryButtonPageModalButton.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Price Watch',
+                        'Follow Price',
+                        'Follow This Price',
+                        'Track Price',
+                        'Track This Price',
+                        'Get Price Alerts',
+                        'Get Price Update',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#6734bc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#4e2690',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#d11203',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#ba0f01',
+                    ),
+                ),
+                'brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#7b5647',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#5b4034',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#01a6f3',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#008aca',
+                    ),
+                ),
+            ),
+        ],
+        //Get Pre-Approved///
+        'financing' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.priceBlockResponsiveVdp a[href*=preapproved].btn.btn-main.btn-block.btn-sm',
+            'css-class' => 'ul.priceBlockResponsiveVdp a[href*=preapproved].btn.btn-main.btn-block.btn-sm',
+            'css-hover' => 'ul.priceBlockResponsiveVdp a[href*=preapproved].btn.btn-main.btn-block.btn-sm:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'ul.priceBlockResponsiveVdp a[href*=preapproved].btn.btn-main.btn-block.btn-sm',
+                    'values' => array(
+                        'Watch Price',
+                        'Watch This Price',
+                        'Price Watch',
+                        'Follow Price',
+                        'Follow This Price',
+                        'Track Price',
+                        'Track This Price',
+                        'Get Price Alerts',
+                        'Get Price Update',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#6734bc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#4e2690',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#d11203',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#ba0f01',
+                    ),
+                ),
+                'brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#7b5647',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#5b4034',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#01a6f3',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#008aca',
+                    ),
+                ),
+            ),
+        ],
+        ///Value Your Trade///
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.priceBlockResponsiveVdp a[href*=trade].btn.btn-main.btn-block.btn-sm',
+            'css-class' => 'ul.priceBlockResponsiveVdp a[href*=trade].btn.btn-main.btn-block.btn-sm',
+            'css-hover' => 'ul.priceBlockResponsiveVdp a[href*=trade].btn.btn-main.btn-block.btn-sm:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'ul.priceBlockResponsiveVdp a[href*=trade].btn.btn-main.btn-block.btn-sm',
+                    'values' => array(
+                        'Get Trade-In Value',
+                        'Trade Offer',
+                        'What\'s Your Trade Worth?',
+                        'Trade-In Appraisal',
+                        'Appraise Your Trade',
+                        'We Want Your Car',
+                        'We\'ll Buy Your Car',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#6734bc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#4e2690',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#d11203',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#ba0f01',
+                    ),
+                ),
+                'brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#7b5647',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#5b4034',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#01a6f3',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#008aca',
+                    ),
+                ),
+            ),
+        ],
+        ///Get Sale Price///
+        'Used get-sale-price' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}-/i',
+            'target' => null,
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.priceBlockResponsiveVdp li div#getSalePriceElement span input-button-price-element#getSalePriceEntryFormButton',
+            'css-class' => 'ul.priceBlockResponsiveVdp li div#getSalePriceElement span input-button-price-element#getSalePriceEntryFormButton',
+            'css-hover' => 'ul.priceBlockResponsiveVdp li div#getSalePriceElement span input-button-price-element#getSalePriceEntryFormButton:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'get-sale-price' => [
+                    'target' => 'ul.priceBlockResponsiveVdp li div#getSalePriceElement span input-button-price-element#getSalePriceEntryFormButton',
+                    'values' => array(
+                        'Get ePrice',
+                        'Get Internet Price',
+                        'Get Your Best Price',
+                        'Get The Right Price',
+                        'Get Today\'s Price',
+                        'Request a Quote',
+                        'Get a Quote',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'purple' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#6734BC,#6734BC)',
+                        'border-color' => '#6734bc',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#4E2690,#4E2690)',
+                        'border-color' => '#4e2690',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D11203,#D11203)',
+                        'border-color' => '#d11203',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#BA0F01,#BA0F01)',
+                        'border-color' => '#ba0f01',
+                    ),
+                ),
+                'brown' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#7B5647,#7B5647)',
+                        'border-color' => '#7b5647',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#5B4034,#5B4034)',
+                        'border-color' => '#5b4034',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#01A6F3,#01A6F3)',
+                        'border-color' => '#01a6f3',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#008ACA,#008ACA)',
+                        'border-color' => '#008aca',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

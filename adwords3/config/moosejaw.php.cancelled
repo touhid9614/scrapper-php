@@ -1,0 +1,291 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["moosejaw"] = array(
+    'name' => 'Moose Jaw Ford',
+    'log' => true,
+    //'budget'    => 2.0,
+    'password' => 'moosejaw',
+    'bid' => 3.0,
+    'bid_modifier' => array(
+        'after' => 45,
+        //days
+        'bid' => 1.5,
+    ),
+    'max_cost' => 0,
+    'budget_modifier' => 1,
+    'cost_distribution' => array(
+        'new' => 0,
+        'used' => 0,
+    ),
+    'email_tag' => array(
+        'fb_pixel_id' => '15423023236033034',
+        'google_conversion_id' => '927466391',
+        'google_conversion_label' => '1MIxCJvU0lsQl4egugM',
+    ),
+    'post_code' => 'S6H 1R1',
+    "email" => "regan@smedia.ca",
+    //tracker
+    "trackers" => array(
+        "new_search" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_search" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_display" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_display" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_retargeting" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_retargeting" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "new_combined" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+        "used_combined" => "utm_source=smedia&utm_medium=google&utm_campaign=inventory",
+    ),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => yes,
+        "used_marketbuyers" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "host_url" => "http://www.moosejawfordsales.com/",
+    //must start with http or https and end without /
+    "display_url" => "http://www.moosejawfordsales.com/",
+    //Max lenght 35 char
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Free Shipping to Regina ",
+            "desc2" => "on all [model]s .",
+        ),
+        array(
+            "desc1" => "Free Shipping to Regina ",
+            "desc2" => "Book a test drive!",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model].",
+        ),
+    ),
+    "customer_id" => "502-882-7581",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "moosejaw",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+			"fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+			"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below and fill in your information to claim your $200 OFF.",
+        "flash_style" => "default",
+        "border_color" => "#0481c2",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_combined" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_combined" => "dynamic_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    "phone_domelement" => 'document.getElementsByClassName("tel")[0]',
+    "phone_regex" => "/[0-9]{3}\\-[0-9]{3}\\-[0-9]{4}/",
+    "new_phone" => "1-888-984-9677",
+/*    'adf_to' => array(
+      
+        'joel@moosejawfordsales.com',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a#primaryButtonPageModalButton',
+            'css-class' => 'a.ePriceBtn',
+            'css-hover' => 'a.ePriceBtn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.ePriceBtn',
+                    'values' => array(
+                        'Get E-Price',
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Our Best Price',
+                        'Get More Information',
+                        'Get More Info',
+                        'Contact Us',
+                        'Best Price',
+                        'Check Availability',
+                        'Get Special Price!',
+                        'SPECIAL PRICING!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FA9400,#FA9400)',
+                        'border-color' => '#fa9400',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5000B,#E5000B)',
+                        'border-color' => '#e5000b',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0F9A00,#0F9A00)',
+                        'border-color' => '#0f9a00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '#086597',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '#086597',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)-[^-]+-[0-9]{4}/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*="testdrive"]',
+            'css-class' => 'a[href*="testdrive"]',
+            'css-hover' => 'a[href*="testdrive"]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a[href*="testdrive"]',
+                    'values' => array(
+                        'Book Test Drive',
+                        'Test Drive Today',
+                        'Test Drive Now',
+                        'Schedule My Visit',
+                        'Schedule Test Drive',
+                        'Request Test Drive',
+                        'Test Drive This Vehicle',
+                        'Test Drive Booking',
+                        'TEST RIDE',
+                        'Book My Test Drive',
+                        'SCHEDULE MY TEST DRIVE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FA9400,#FA9400)',
+                        'border-color' => '#fa9400',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E5000B,#E5000B)',
+                        'border-color' => '#e5000b',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0F9A00,#0F9A00)',
+                        'border-color' => '#0f9a00',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '#086597',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#086597,#086597)',
+                        'border-color' => '#086597',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],  */
+);

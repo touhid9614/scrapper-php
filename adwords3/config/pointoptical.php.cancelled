@@ -1,0 +1,12 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["pointoptical"] = array(
+    //'max_cost'      => 400,
+   // "customer_id"   => "746-226-8900",
+    'password'      => 'pointoptical',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);
+

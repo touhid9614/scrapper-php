@@ -1,0 +1,39 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["eropowersports"] = array(
+  'password'  => 'eropowersports',
+    "email"         => "regan@smedia.ca",
+    'fb_brand'          => '[year] [make] [model] - [body_style]',
+    'log'           => true,
+	/*smart offer*/
+	"lead"  => array(
+		'live'                  => true,
+		'lead_type_'            => true,
+		'lead_type_new'         => true,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#ffb800", "#ffb800"),
+		'button_color_hover'    => array("#000000", "#000000"),
+		'button_color_active'   => array("#1a3972", "#1a3972"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "Get $100 in store credit from Ero Powersports",
+		'response_email'        => "Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Ero Powersports Team",
+		'forward_to'            => array("jason@erosales.ca","marshal@smedia.ca"),
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),
+	/*dynamic social ads*/
+    "banner"        => array(
+        "template"          => "eropowersports",
+		'fb_description'	=> 'Are you still interested in this [year] [make] [model]? Click for more info!',
+		'fb_lookalike_description'	=> 'Test ride the [year] [make] [model] today!',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

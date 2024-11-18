@@ -1,0 +1,82 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["hyundaiofelpaso"] = array(
+  'password'  => 'hyundaiofelpaso',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+"lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#fac703", "#fac703"),
+        'button_color_hover'    => array("#e1a504", "#e1a504"),
+        'button_color_active'   => array("#e1a504", "#e1a504"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Get $200 off with this offer from Hyundai El Paso",
+        'response_email'        => "Hello [name],<p> Thank you for booking a test drive! Please print this off or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Hyundai El Paso",
+        'forward_to'            => array("hyundaiofelpaso@eleadtrack.net","brittany@madsenmarketingpr.com","marshal@smedia.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+    ),
+    'max_cost'      => 500.0,
+    'cost_distribution' => array(
+        'adwords'      => 500,
+    ),
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_placement"     => yes,
+        "used_placement"    => yes,
+        "new_display"       => yes,
+        "used_display"      => yes,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"      => yes,
+        "used_combined"     => yes
+    ),
+   "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    
+    "customer_id"   => "183-827-4996",
+    "banner"        => array(
+        "template"          => "hyundaiofelpaso",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        )
+    );

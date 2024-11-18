@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["landmarkdodgechryslerjeepmissouri"] = array(
+  'password'  => 'landmarkdodgechryslerjeepmissouri',
+    "email"         => "regan@smedia.ca",
+
+    "banner"        => array(
+        "template"          => "landmarkdodgechryslerjeepmissouri",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

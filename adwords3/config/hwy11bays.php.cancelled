@@ -1,0 +1,9 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["hwy11bays"] = array( 
+	"name"          =>"hwy11bays",
+	"password"      =>"hwy11bays",
+        'max_cost'      => 0,
+        'customer_id'   => '873-717-5294',
+	"no_adv"        =>true,
+);

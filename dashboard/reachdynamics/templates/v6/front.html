@@ -1,0 +1,272 @@
+<html>
+    
+    <head>
+        <!-- Important Note: All HTML resources must be hosted on an always avaiable CDN such as Amazon S3. -->
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <style>
+            *,
+            *:before,
+            *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 6.5in;
+                height: 4.5in;
+                min-height: 4.5in;
+                padding: 0in;
+                margin: 0in;
+                font-family: 'Roboto', sans-serif;
+                    /*border: 2px solid red; */
+            }
+
+            #saftey-cover {
+                position: absolute;
+                
+                width: 2in;
+                height: 4in;
+                min-height: 4in;
+                /*width: 2.25in;
+                height: 4.5in;
+                min-height: 4.5in;*/
+                padding: 0in;
+                margin: 0in;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+
+            #saftey-zone {
+                position: absolute;
+                width: 2in;
+                height: 4in;
+                min-height: 4in;
+                /*left: 0.25in;
+                top: 0.25in;*/
+                padding: 0in;
+                margin: 0in;
+            }
+
+            #header {
+                position: relative;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: .15in;
+                text-transform: uppercase;
+                letter-spacing: .03in;
+                color: black;
+                padding: .075in;
+                text-align: left;
+                margin: 0in;
+            }
+
+            .sub-text {
+                position: relative;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: .125in;
+                letter-spacing: .01in;
+                color: black;
+                text-align: left;
+                padding: .075in;
+                margin: 0in;
+            }
+
+            #car1 {
+                position: absolute;
+                margin: 0in;
+                top: .25in;
+                left: 1.05in;
+                width: 4in;
+                height: 1in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: .5in;
+            }
+
+            #car2 {
+                position: absolute;
+                margin: 0in;
+                top: 1.75in;
+                left: 1.05in;
+                width: 4in;
+                height: 1in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: .5in;
+            }
+
+            .midDown {
+                position: absolute;
+                margin: 0in;
+                top: 3.2in;
+                left: 2in;
+                width: 4in;
+                height: 0.8in;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: .15in;
+                padding-left: 0in;
+            }
+
+            .carText {
+                text-align: right;
+                width: 2in;
+                position: absolute;
+            }
+
+            .year {
+                font-size: .15in;
+                font-weight: 600;
+                line-height: 1.4;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+            }
+
+            .make {
+                font-size: .15in;
+                font-weight: 600;
+                line-height: 1.4;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+            }
+
+            .model {
+                font-size: .15in;
+                line-height: 1.4;
+            }
+
+            .trim {
+                font-size: .15in;
+            }
+
+            .price {
+                font-size: .4in;
+                line-height: 1.2;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+            }
+
+            .stock {
+                margin-left: auto;
+                line-height: 2;
+                color: #333333;
+                font-size: .1in;
+            }
+
+            .stock span {
+                background-color: rgb(233, 236, 239);
+                padding: .03in;
+            }
+
+            .Promotion {
+                text-align: center;
+                border-top: 1px solid rgb(86, 125, 192);
+                font-size: .2in;
+                color: rgb(86, 125, 192);
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .pro-text {
+                margin: .1in;
+                font-size: .22in;
+                font-family: Arial;
+            }
+
+            .Promotion_bg {
+                text-align: center;
+                color: rgb(86, 125, 192);
+                font-size: .19in;
+                font-family: Arial;
+            }
+
+            .Promotion_bg span {
+                background: rgb(233, 236, 239);
+                padding: .03in .15in;
+            }
+
+            .FEATURED {
+                position: absolute;
+                margin: 0in;
+                top: .2in;
+                left: 5.2in;
+                width: .4in;
+            height: 1.4in;
+                font-size: .12in;
+                padding: .1in .2in;
+                writing-mode: vertical-rl;
+                -webkit-writing-mode: vertical-rl;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+            }
+
+            .car {
+                left: 2.6in;
+                width: 1.74in;
+                height: 1.3in;
+                position: absolute;
+                border:1px solid #ccc;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 1.74in auto;
+            }
+        </style>
+        <title>Reach Dynamics Template - Front</title>
+    </head>
+
+    <body>
+        <!-- all content must be within the safety zone -->
+        <div id="saftey-cover" style="background-image:url('{{front_banner}}'); background-size: cover;">
+            <div id="saftey-zone" >
+
+            </div>
+        </div>
+        <div style="height:4in;width:6in;border-style:none;position:absolute;">
+            <!-- return address should be placed in this zone.  may include text and images -->
+            <div id="car1">
+
+                <div class=" carText">
+                    <div class="year">{{vehicle_1_year}}</div>
+                    <div class="make">{{vehicle_1_make}}</div>
+                    <div class="trim">{{vehicle_1_model}}</div>
+                    <div class="price" style="color: {{price_color}};">{{vehicle_1_price}}</div>
+                    <div class="stock"><span>STOCK #: {{vehicle_1_stock}}</span></div>
+
+                </div>
+                <div class="car" style="background-image:url('{{vehicle_1_img}}')"></div>
+
+            </div>
+            <div id="car2">
+
+                <div class=" carText">
+                    <div class="year">{{vehicle_2_year}}</div>
+                    <div class="make">{{vehicle_2_make}}</div>
+                    <div class="trim">{{vehicle_2_model}}</div>
+                    <div class="price" style="color: {{price_color}};">{{vehicle_2_price}}</div>
+                    <div class="stock"><span>STOCK #: {{vehicle_2_stock}}</span></div>
+
+                </div>
+                <div class="car" style="background-image:url('{{vehicle_1_img}}')"></div>
+
+            </div>
+            <div class="midDown">
+                <div class="Promotion">
+                    <div class="pro-text">{{coupon_offer}}</div>
+                </div>
+                <div class="Promotion_bg">
+                    <span>{{coupon_date}} Must be used within {{coupon_validity}} days</span>
+                </div>
+            </div>
+
+            <div class="FEATURED" style="color: {{promo_color}}; background: {{promo_bg_color}};">
+                {{promo_text}}
+            </div>
+        </div>
+    </body>
+</html>

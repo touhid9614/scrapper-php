@@ -1,0 +1,41 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["baughford"] = array(
+    "name" => " baughford",
+    "email" => "regan@smedia.ca",
+    "password" => " baughford",
+    "log" => true,
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#2D96CD',
+            '#2D96CD',
+        ),
+        'button_color_hover' => array(
+            '#1C394F',
+            '#1C394F',
+        ),
+        'button_color_active' => array(
+            '#1C394F',
+            '#1C394F',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 OFF coupon from from Baugh Ford',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Baugh Ford Team',
+        'forward_to' => array(
+            'emoore@baughford.com',
+            'marshal@smedia.ca',
+            'nanang@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+);

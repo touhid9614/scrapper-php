@@ -1,0 +1,41 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["evslomiraford"] = array(
+    'password'  => 'evslomiraford',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_placement"     => yes,
+        "used_placement"    => yes,
+        "new_display"       => yes,
+        "used_display"      => yes,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"      => no,
+        "used_combined"     => no,
+    ),
+
+    "banner"        => array(
+        "template"          => "evslomiraford",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+    ),
+
+);
+
+?>

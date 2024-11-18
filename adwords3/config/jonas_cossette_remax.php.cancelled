@@ -1,0 +1,8 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["jonas_cossette_remax"] = array( 
+	"name"  =>" jonas_cossette_remax",
+	"email" => "regan@smedia.ca",
+	"password" =>" jonas_cossette_remax",
+	"log" => true ,
+);

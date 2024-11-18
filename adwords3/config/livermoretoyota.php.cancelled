@@ -1,0 +1,164 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["livermoretoyota"] = array(
+    "name" => "livermoretoyota",
+    "email" => "regan@smedia.ca",
+    "password" => "livermoretoyota",
+   	"log" => true ,
+	"banner" => array(
+        "template" => "livermoretoyota",
+			"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+			"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+			//"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'LIVERMORETOYOTA2086@ADFLEADS.COM ',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-information' => [
+            'url-match' => '/\/(?:new|used)\/[^\/]+\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn-window-opener.btn.btn-block.btn-success',
+            'css-class' => 'a.btn-window-opener.btn.btn-block.btn-success',
+            'css-hover' => 'a.btn-window-opener.btn.btn-block.btn-success:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a.btn-window-opener.btn.btn-block.btn-success',
+                    'values' => array(
+                        'Ask Availability',
+                        'Get Availability',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BB0A30,#BB0A30)',
+                        'border-color' => '#bb0a30',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9B0828,#9B0828)',
+                        'border-color' => '#9b0828',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC7500,#CC7500)',
+                        'border-color' => '#CC7500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#CF540E',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#00ABF1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#005C82',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A300,#00A300)',
+                        'border-color' => '#00A300',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#297A1B,#297A1B)',
+                        'border-color' => '#297A1B',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\/(?:new|used)\/[^\/]+\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.custom-button a.btn.btn-block.btn-success',
+            'css-class' => 'div.custom-button a.btn.btn-block.btn-success',
+            'css-hover' => 'div.custom-button a.btn.btn-block.btn-success:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'div.custom-button a.btn.btn-block.btn-success ',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Special Finance Offers!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#BB0A30,#BB0A30)',
+                        'border-color' => '#bb0a30',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9B0828,#9B0828)',
+                        'border-color' => '#9b0828',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CC7500,#CC7500)',
+                        'border-color' => '#CC7500',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#CF540E',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#00ABF1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#005C82',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A300,#00A300)',
+                        'border-color' => '#00A300',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#297A1B,#297A1B)',
+                        'border-color' => '#297A1B',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,120 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jdbyridercom"] = array(
+    "name" => " jdbyridercom",
+    "email" => "regan@smedia.ca",
+    "password" => " jdbyridercom",
+    "log" => true,
+    "customer_id" => "998-739-2247",
+    'max_cost' => 200,
+    'cost_distribution' => array(
+        'adwords' => 200,
+),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes,
+),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+),
+),
+    "banner" => array(
+        "template" => "jdbyridercom",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Check out this [year] [make] [model]! Click for more information.",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+),
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+),
+    'lead' => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => false,
+        'lead_type_used' => true,
+        'lead_type_service' => false,
+        'shown_cap' => false,
+        'fillup_cap' => false,
+        'session_close' => false,
+        'device_type' => array(
+            'mobile' => true,
+            'desktop' => true,
+            'tablet' => true,
+),
+        'offer_minimum_price' => 0,
+        'offer_maximum_price' => 10000000,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#E6792B',
+            '#E6792B',
+),
+        'button_color_hover' => array(
+            '#FD852F',
+            '#FD852F',
+),
+        'button_color_active' => array(
+            '#FD852F',
+            '#FD852F',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Get the car at Fair Prices',
+        'response_email' => 'Hello [name],<p> Thank you for your interest in Byrider. We have helped more than one million customers secure financing, get into reliable vehicles and keep life moving forward. One of our representatives will be in contact shortly. You can also start the approval process online by visiting <a href="https://www.byrider.com/get-approved">www.byrider.com/get-approved</a></p><br><img src=\\"[image]\\"/><p><br><br>Byrider Team',
+        'forward_to' => array(
+            'jfreund@byrider.com',
+            'kzalaznik@hoffman-development.com',
+            'gschluet@byrider.com',
+            'marshal@smedia.ca',
+),
+        'special_to' => array(
+            '',
+),
+        'special_email' => '',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+        'video_smart_offer' => false,
+        'video_smart_offer_form' => false,
+        'video_url' => '',
+        'video_title' => '',
+        'video_description' => '',
+        'lead_in' => array(
+            'vdp' => '/\\/inventory\\/[0-9]{4}-/i',
+            'service' => '',
+),
+),
+);

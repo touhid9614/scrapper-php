@@ -1,0 +1,48 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["mcgeemotors"] = array(
+    'password' => 'mcgeemotors',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    /*===smart offer===*/
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#0086F4',
+            '#0086F4',
+        ),
+        'button_color_hover' => array(
+            '#1A46F2',
+            '#1A46F2',
+        ),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Claim your special offer from McGee Motors Ltd',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>McGee Motors Team',
+        'forward_to' => array(
+            'brad@mcgeemotors.ca',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    /*===dynamic social ads===*/
+    "banner" => array(
+        "template" => "mcgeemotors",
+        "fb_description" => "You are eligible for a special offer! Click below to claim it!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+);

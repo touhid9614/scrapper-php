@@ -1,0 +1,356 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["wilsonniblett"] = array(
+    "name" => " wilsonniblett",
+    "email" => "regan@smedia.ca",
+    "password" => " wilsonniblett",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    'fb_title' => 'MSRP [msrp] - Our Price [price]',
+    "banner" => array(
+        "template" => "wilsonniblett",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model] today! Click for more information.",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "ffffff",
+),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#1E4387',
+            '#1E4387',
+),
+        'button_color_hover' => array(
+            '#1A3972',
+            '#1A3972',
+),
+        'button_color_active' => array(
+            '#1A3972',
+            '#1A3972',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Receive a $10 Esso Gas Card with a Test Drive!',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Wilson Niblett Team',
+        'forward_to' => array(
+            'marshal@smedia.ca',
+            'leads@wilsonniblett.motosnap.com',
+),
+        'special_to' => array(
+            'leads@wilsonniblett.motosnap.com',
+),
+        'special_email' => '<?xml version="1.0"?>
+		<?adf version="1.0"?>
+		<adf>
+			<prospect>
+				<id sequence="[total_count]" source="sMedia Coupon"></id>
+				<requestdate>[fdt]</requestdate>
+				<vehicle interest="buy" status="[stock_type]">
+					<year>[year]</year>
+					<make>[make]</make>
+					<model>[model]</model>
+					<stock>[stock_number]</stock>
+				</vehicle>
+				<customer>
+				   <contact>
+						<name part="full">[name]</name>
+						<email>[email]</email>
+						<phone>[phone]</phone>
+					</contact>
+				</customer>
+				<vendor>
+					<contact>
+						<name part="full">Wilson Nibblett</name>
+						<email>[dealer_email]</email>
+					</contact>
+				</vendor>
+				<provider>
+					<name part="full">sMedia Coupon</name>
+					<url>http://smedia.ca</url>
+					<email>offers@mail.smedia.ca</email>
+					<phone>855-775-0062</phone>
+				</provider>
+			</prospect>
+		</adf>',
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+),
+    'adf_to' => array(
+        'leads@wilsonniblett.motosnap.com',
+),
+    'form_live' => true,
+    'button_algorithm' => 'thompson_sampling|softmax|ucb-1|default',
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a[href*="eprice-form"]',
+            'css-class' => 'a[href*="eprice-form"]',
+            'css-hover' => 'a[href*="eprice-form"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[href*="eprice-form"]',
+                    'values' => array(
+                        'More Info',
+                        'Ask an Expert!',
+                        'Ask a Question!',
+                        'Get More Details',
+                        'Ask For More Info',
+                        'Get More Information',
+),
+],
+],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#134A9C,#134A9C)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC1E08,#EC1E08)',
+                        'border-color' => 'E01212',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#06B32C,#06B32C)',
+                        'border-color' => '54B740',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC9808,#EC9808)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'li a[href*="schedule-form"]',
+            'css-class' => 'li a[href*="schedule-form"]',
+            'css-hover' => 'li a[href*="schedule-form"]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'li a[href*="schedule-form"]',
+                    'values' => array(
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Schedule Test Drive',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Test Drive Now',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Book Test Drive',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Want to Test Drive?',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Request a Test Ride',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Request a Test Drive',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Test Drive Today',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Test Ride Today',
+                        '<i class="ddc-icon-steeringwheel ddc-icon d-block pb-1 text-neutral-800"></i>Want to Test Drive It?',
+),
+],
+],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#134A9C,#134A9C)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC1E08,#EC1E08)',
+                        'border-color' => 'E01212',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#06B32C,#06B32C)',
+                        'border-color' => '54B740',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC9808,#EC9808)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used|certified)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => 'a[href*="lead-form"]',
+            'css-class' => 'a[href*="lead-form"]',
+            'css-hover' => 'a[href*="lead-form"]:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a[href*="lead-form"]',
+                    'values' => array(
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Price Updates',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Get Price Updates',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Price Alerts',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Price Watch',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Watch This Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Track Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Special Pricing',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Your Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Best Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Internet Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Get E Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Get Your Exclusive Price',
+                        '<i class="ddc-icon-help-circle ddc-icon d-block pb-1 text-neutral-800"></i>Exclusive Price',
+),
+],
+],
+            'styles' => array(
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#134A9C,#134A9C)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC1E08,#EC1E08)',
+                        'border-color' => 'E01212',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => 'C60C0D',
+                        'color' => '#fff',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#06B32C,#06B32C)',
+                        'border-color' => '54B740',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '359D22',
+                        'color' => '#fff',
+),
+),
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#EC9808,#EC9808)',
+                        'border-color' => '1CA0D1',
+                        'color' => '#fff',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#06214E,#06214E)',
+                        'border-color' => '188BB7',
+                        'color' => '#fff',
+),
+),
+),
+],
+],
+    'email_templates' => [
+        'e-price' => [
+            'subject' => "CDK Leads",
+],
+        'test-drive' => [
+            'subject' => "CDK Leads",
+],
+],
+);

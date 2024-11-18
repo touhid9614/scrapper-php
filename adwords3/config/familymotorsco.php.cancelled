@@ -1,0 +1,273 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["familymotorsco"] = array(
+    'password' => 'familymotorsco',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    'max_cost'      => 1120 ,
+     'cost_distribution' => array(
+        'adwords'      => 1120,
+    ),
+     "create" => array(
+        "used_search" => yes,
+        "used_placement" => yes,
+        "used_display" => no,
+        "used_retargeting" => yes,
+        "used_marketbuyers" => no,
+        "used_combined" => yes
+    ),   
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id'   => '222-695-7896',
+	//smart offer =======
+	/*"lead"  => array(
+		'live'                  => false,
+		'lead_type_'            => true,
+		'lead_type_new'         => true,
+		'lead_type_used'        => true,
+		'bg_color'              => "#efefef",
+		'text_color'            => "#404450",
+		'border_color'          => "#e5e5e5",
+		'button_color'          => array("#1e4387", "#1e4387"),
+		'button_color_hover'    => array("#1a3972", "#1a3972"),
+		'button_color_active'   => array("#1a3972", "#1a3972"),
+		'button_text_color'     => "#ffffff",
+		'response_email_subject'=> "$200 offer from Family Motors",
+		'response_email'        => "Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Family Motors Team",
+		'forward_to'            => array("4624340@leadsprod.dealercenter.net","marshal@smedia.ca"),
+		'respond_from'          => "offers@mail.smedia.ca",
+		'forward_from'          => "offers@mail.smedia.ca",
+		'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+	),*/
+    "banner" => array(
+        "template" => "familymotorsco",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),
+        "font_color" => "#ffffff"
+    ),
+    //'form_live'     => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\/inventory\//i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'div#DWS_Form_Button_5 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-class' => 'div#DWS_Form_Button_5 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-hover' => 'div#DWS_Form_Button_5 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block:hover',
+           // 'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div#DWS_Form_Button_5 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+                    'values' => [
+                        'ASK A QUESTION',
+                        'INQUIRE NOW',
+                        'CONTACT US',
+                        'GET MORE INFORMATION'
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#f06b20',
+                        'border-color' => '#f06b20'
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#e01212',
+                        'border-color' => '#e01212'
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#54b740',
+                        'border-color' => '#54b740'
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '#1ca0d1',
+                        'border-color' => '#1ca0d1'
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+        'test-drive' => [
+            'url-match' => '/\/inventory\//i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'div#DWS_Form_Button_7 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-class' => 'div#DWS_Form_Button_7 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-hover' => 'div#DWS_Form_Button_7 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block:hover',
+            // 'button_action' => ['form','test-drive'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'div#DWS_Form_Button_7 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+                    'values' => [
+                        'BOOK TEST DRIVE',
+                        'TEST DRIVE TODAY',
+                        'TEST DRIVE NOW',
+                        'SCHEDULE MY VISIT'
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background-color' => '#f06b20',
+                        'border-color' => '#f06b20'
+                    ],
+                    'hover' => [
+                        'background-color' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background-color' => '#e01212',
+                        'border-color' => '#e01212'
+                    ],
+                    'hover' => [
+                        'background-color' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background-color' => '#54b740',
+                        'border-color' => '#54b740'
+                    ],
+                    'hover' => [
+                        'background-color' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background-color' => '#1ca0d1',
+                        'border-color' => '#1ca0d1'
+                    ],
+                    'hover' => [
+                        'background-color' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+        'request-information' => [
+            'url-match' => '/\/inventory\//i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'div#DWS_Form_Button_8 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-class' => 'div#DWS_Form_Button_8 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+            'css-hover' => 'div#DWS_Form_Button_8 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block:hover',
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div#DWS_Form_Button_8 button.btn.dws-iframe-pop-up-button.btn-primary.dws-btn-with-shadow.btn-block',
+                    'values' => [
+                        'GET YOUR PRICE',
+                        'GET OUR BEST PRICE',
+                        'GET INTERNET PRICE',
+                        'GET SPECIAL PRICING'
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background' => '#e36926',
+                        'border-color' => '#e36926'
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#da1f26',
+                        'border-color' => '#da1f26'
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#098d44',
+                        'border-color' => '#098d44'
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '#2888c9',
+                        'border-color' => '#2888c9'
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]
+);

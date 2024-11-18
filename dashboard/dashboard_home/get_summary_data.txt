@@ -1,0 +1,1 @@
+{"impression":122567,"clicks":631,"ctr":"0.51","budget":42.73,"cost":"640.93"}

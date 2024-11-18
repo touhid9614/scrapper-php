@@ -1,0 +1,244 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["jenkinshyundaiofleesburg"] = array(
+    'password' => 'jenkinshyundaiofleesburg',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "banner" => array(
+        "template" => "jenkinshyundaiofleesburg",
+        'fb_description' => 'Are you still interested in the [Year] [Make] [Model]? Click here to see our new price!',
+        'fb_description_new' => "Lease the [year] [make] [model] for [biweekly] per month! Click here for more info or give us a call for a test drive.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+/*    'adf_to' => array(
+        'jenkinshyundaileesburg@eleadtrack.net',
+    ),
+    'form_live' => true,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-class' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-hover' => 'a.btn.btn-default.eprice.dialog.button:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.eprice.dialog.button',
+                    'values' => array(
+                        'Get E-Price',
+                        'Get Internet Price',
+                        'Get Your Price',
+                        'Get Sale Price',
+                        'Get Our Best Price',
+                        'Get Current Price',
+                        'Get Today\'s Price',
+                        'Inquire Now',
+                        'Inquire Today',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CF7C00,#CF7C00)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A86500,#A86500)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C5001B,#C5001B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A00016,#A00016)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2AB000,#2AB000)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228E00,#228E00)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#18CCF0,#18CCF0)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#04386D,#04386D)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        /*'financing' => [
+              'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+              'target' => null,
+              //Don't move button
+              'locations' => [
+                  'default' => null,
+              ],
+              'action-target' => 'a.btn.btn-primary.btn-lg.btn-block.calculate-dealertrack',
+              'css-class' => 'a.btn.btn-primary.btn-lg.btn-block.calculate-dealertrack',
+              'css-hover' => 'a.btn.btn-primary.btn-lg.btn-block.calculate-dealertrack:hover',
+              'button_action' => [
+                  'form',
+                  'finance',
+              ],
+              'sizes' => [
+                  '100' => [],
+              ],
+              'texts' => [
+                  'request-a-quote' => [
+                      'target' => 'a.btn.btn-primary.btn-lg.btn-block.calculate-dealertrack',
+                      'values' => array(
+                          'No Hassle Financing',
+                          'Get Financed Today',
+                          'Get Approved Today',
+                          'Financing Available',
+                          'Special Finance Offers',
+                          'Explore Payments',
+                      ),
+                  ],
+              ],
+              'styles' => array(
+                  'orange' => array(
+                      'normal' => array(
+                          'background' => 'linear-gradient(#CF7C00,#CF7C00)',
+                          'border-color' => '#f06b20',
+                      ),
+                      'hover' => array(
+                          'background' => 'linear-gradient(#A86500,#A86500)',
+                          'border-color' => '#cf540e',
+                      ),
+                  ),
+                  'red' => array(
+                      'normal' => array(
+                          'background' => 'linear-gradient(#C5001B,#C5001B)',
+                          'border-color' => '#e01212',
+                      ),
+                      'hover' => array(
+                          'background' => 'linear-gradient(#A00016,#A00016)',
+                          'border-color' => '#c60c0d',
+                      ),
+                  ),
+                  'green' => array(
+                      'normal' => array(
+                          'background' => 'linear-gradient(#2AB000,#2AB000)',
+                          'border-color' => '#54b740',
+                      ),
+                      'hover' => array(
+                          'background' => 'linear-gradient(#228E00,#228E00)',
+                          'border-color' => '#359d22',
+                      ),
+                  ),
+                  'blue' => array(
+                      'normal' => array(
+                          'background' => 'linear-gradient(#064587,#064587)',
+                          'border-color' => '#1ca0d1',
+                      ),
+                      'hover' => array(
+                          'background' => 'linear-gradient(#04386D,#04386D)',
+                          'border-color' => '#188bb7',
+                      ),
+                  ),
+              ),
+          ],*/
+/*        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=schedule-form].btn, a[href*=test-drive].btn',
+            'css-class' => 'a[href*=schedule-form].btn, a[href*=test-drive].btn',
+            'css-hover' => 'a[href*=schedule-form].btn, a[href*=test-drive].btn:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[href*=schedule-form].btn, a[href*=test-drive].btn',
+                    'values' => array(
+                        'Request a Test Drive',
+                        'Want To Test Drive?',
+                        'Test Drive Today',
+                        'Test Drive Now',
+                        'Schedule My Visit',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#CF7C00,#CF7C00)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A86500,#A86500)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C5001B,#C5001B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A00016,#A00016)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2AB000,#2AB000)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#228E00,#228E00)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#18CCF0,#18CCF0)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#04386D,#04386D)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],  */
+);

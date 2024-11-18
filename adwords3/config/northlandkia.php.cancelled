@@ -1,0 +1,494 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["northlandkia"] = array(
+    "name" => "northlandkia",
+    "email" => "regan@smedia.ca",
+    "password" => "northlandkia",
+    "log" => true,
+    "banner" => array(
+        "template" => "northlandkia",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        //"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#BB162B',
+            '#BB162B',
+        ),
+        'button_color_hover' => array(
+            '#333333',
+            '#333333',
+        ),
+        'button_color_active' => array(
+            '#333333',
+            '#333333',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 OFF coupon from Northland KIA',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Northland KIA Team',
+        'forward_to' => array(
+            'daren@lagauto.ca',
+            'marshal@smedia.ca',
+            'emil@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'adf_to' => array(
+        'daren@lagauto.ca',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'trade-in' => [
+            'url-match' => '/\\/new\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'p.btns-price-incentives-new span:nth-of-type(3) a',
+            'css-class' => 'p.btns-price-incentives-new span:nth-of-type(3) a',
+            'css-hover' => 'p.btns-price-incentives-new span:nth-of-type(3) a:hover',
+            'button_action' => [
+                'form',
+                'trade-in',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'p.btns-price-incentives-new span:nth-of-type(3) a',
+                    'values' => array(
+                        'Get Trade-In Value',
+                        'Trade Offer',
+                        'What\'s Your Trade Worth?',
+                        'Trade-In Appraisal',
+                        'Appraise Your Trade',
+                        'Value Your Trade',
+                        'We Want Your Car',
+                        'We\'ll Buy Your Car',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+        /// New Apply for Financing///
+        'financing' => [
+            'url-match' => '/\\/new\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'p.btns-price-incentives-new span:nth-of-type(4) a',
+            'css-class' => 'p.btns-price-incentives-new span:nth-of-type(4) a',
+            'css-hover' => 'p.btns-price-incentives-new span:nth-of-type(4) a:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'p.btns-price-incentives-new span:nth-of-type(4) a',
+                    'values' => array(
+                        'No Hassle Financing',
+                        'Get Financed Today',
+                        'Financing Available',
+                        'Special FInance Offers',
+                        'Financing Options',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+        'Used financing' => [
+            'url-match' => '/\\/used\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-orange-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-orange-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-orange-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'finance',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'Used financing' => [
+                    'target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(1) .btn-orange-vehicles1',
+                    'values' => array(
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">No Hassle Financing</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Get Financed Today</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Get Pre-Approved</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Financing Available</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Special Finance Offers</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Explore Payments</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+        'Used trade-in' => [
+            'url-match' => '/\\/used\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'Used trade-in' => [
+                    'target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(2) .btn-orange-vehicles1',
+                    'values' => array(
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Get Trade-In Value</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Trade Offer</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">What\'s Your Trade Worth?</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Trade-In Appraisal</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Value Your Trade</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">We Want Your Car</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">We\'ll Buy Your Car</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+        'Used test-drive' => [
+            'url-match' => '/\\/used\\/vehicle\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1',
+            'css-class' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1',
+            'css-hover' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'div.row.margin-buttons-used.buttons1 div:nth-of-type(3) .btn-orange-vehicles1',
+                    'values' => array(
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Schedule My Visit</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Test Drive</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Request A Test Drive</span>',
+                        '<span style="display: inline-block;margin-bottom: 10px;font-family: roboto;vertical-align: bottom; width: 60px; vertical-align: baseline; font-size: 9px;">Want to Test Drive It?</span>',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C21116,#C21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9D0A0E,#9D0A0E)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C47C18,#C47C18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#A96B14,#A96B14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184D7F,#184D7F)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31A413,#31A413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288A0F,#288A0F)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/new\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'p.btns-price-incentives-new span:nth-of-type(5) a',
+            'css-class' => 'p.btns-price-incentives-new span:nth-of-type(5) a',
+            'css-hover' => 'p.btns-price-incentives-new span:nth-of-type(5) a:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'p.btns-price-incentives-new span:nth-of-type(5) a',
+                    'values' => array(
+                        'Schedule My Visit',
+                        'Test Drive',
+                        'Request A Test Drive',
+                        'Want to Test Drive It?',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c21116,#c21116)',
+                        'border-color' => '#c21116',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#9d0a0e,#9d0a0e)',
+                        'border-color' => '#9d0a0e',
+                    ),
+                ),
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#c47c18,#c47c18)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#a96b14,#a96b14)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#184d7f ,#184d7f)',
+                        'border-color' => '#000000',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#005C82,#005C82)',
+                        'border-color' => '#222',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#31a413,#31a413)',
+                        'border-color' => '#31a413',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#288a0f,#288a0f)',
+                        'border-color' => '#288a0f',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,99 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["toyotaknoxville"] = array(
+    'password' => 'toyotaknoxville',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => false,
+        'lead_type_new' => false,
+        'lead_type_used' => false,
+        'bg_color' => "#efefef",
+        'text_color' => "#404450",
+        'border_color' => "#e5e5e5",
+        'button_color' => array(
+            "#891c1d",
+            "#891c1d",
+        ),
+        'button_color_hover' => array(
+            "#711314",
+            "#711314",
+        ),
+        'button_color_active' => array(
+            "#891c1d",
+            "#891c1d",
+        ),
+        'button_text_color' => "#ffffff",
+        'response_email_subject' => "Get \$300 off any used vehicles from Toyota Knoxville",
+        'response_email' => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Toyota Knoxville Team",
+        'forward_to' => array(
+            "bchandler@toyotaknoxville.com",
+            "mbracey@toyotaknoxville.com",
+            "rdavis@toyotaknoxville.com",
+            "sbowen@toyotaknoxville.com",
+            "bgriffitt@toyotaknoxville.com",
+            "marshal@smedia.ca",
+        ),
+        'special_to' => [
+            'toyotaknoxvilletn@eleadtrack.net',
+        ],
+        'special_email' => '<?xml version="1.0"?>
+<?adf version="1.0"?>
+<adf>
+    <prospect>
+        <id sequence="[total_count]" source="sMedia"></id>
+        <requestdate>[fdt]</requestdate>
+        <vehicle interest="buy" status="[stock_type]">
+            <year>[year]</year>
+            <make>[make]</make>
+            <model>[model]</model>
+            <stock>[stock_number]</stock>
+        </vehicle>
+
+       <customer>
+           <contact>
+                <name part="full">[name]</name>
+                <email>[email]</email>
+                <phone>[phone]</phone>
+            </contact>
+       </customer>
+
+        <vendor>
+            <contact>
+                <name part="full">Toyota of knoxville</name>
+                <email>[dealer_email]</email>
+            </contact>
+        </vendor>
+        <provider>
+            <name part="full">sMedia</name>
+            <url>http://smedia.ca</url>
+            <email>offers@mail.smedia.ca</email>
+            <phone>855-775-0062</phone>
+        </provider>
+    </prospect>
+</adf>',
+        'respond_from' => "offers@mail.smedia.ca",
+        'forward_from' => "offers@mail.smedia.ca",
+        'thank_you' => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+    ),
+    "banner" => array(
+        "template" => "toyotaknoxville",
+        "fb_description" => "Come check out this gorgeous [year] [make] [model] at Toyota Knoxville! Priced at only [price] while supplies last!",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below and fill in your information to get an additional \$300 OFF any used vehicle purchase. *Conditions apply - must bring in before negotiations.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17612',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

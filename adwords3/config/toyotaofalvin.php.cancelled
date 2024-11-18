@@ -1,0 +1,64 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["toyotaofalvin"] = array(
+  'password'  => 'toyotaofalvin',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    "banner"        => array(
+        "template"                  => "toyotaofalvin",
+        "flash_style"               => "default",
+        "border_color"              => "#282828",
+        "font_color"                => "#ffffff",
+        'fb_description_messenger'  => 'Have some questions? Start a live chat.'
+    ),
+    'fb_config' => [
+        'monthly_budget'    => 200,
+        'account_id'        => '1305844339453526',
+        'page_id'           => '288924967912308',
+        'pixel_id'          => '457794264564320',
+        'dataset'           => '303901506711149',
+        'form_id'           => '1857779634543326',
+        'action_types'      => ['click', 'lead', 'messenger'],
+        'plain'             => false,
+        'include_stock'     => false,
+        'polk_data'         => true,
+        'targeting' => [
+            'desktop' => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key"       => 3886,
+                            "name"      => 'Texas',
+                            "country"   => 'US'
+                        ]
+                    ],
+                    "location_types" => ['home']
+                ],
+                "publisher_platforms" => ['facebook'],
+                "facebook_positions"    => ['feed'],
+                "device_platforms" => ['desktop']
+            ],
+            'mobile'        => [
+                "age_max" => 65,
+                "age_min" => 18,
+                "geo_locations" => [
+                    "regions" => [
+                        [
+                            "key"       => 3886,
+                            "name"      => 'Texas',
+                            "country"   => 'US'
+                        ]
+                    ],
+                    "location_types" => ['home']
+                ],
+                "publisher_platforms"   => ['facebook'],
+                "facebook_positions"    => ['feed'],
+                "device_platforms"      => ['mobile']
+            ]
+        ]
+    ]
+);

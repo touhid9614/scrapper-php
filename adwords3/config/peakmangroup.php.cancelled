@@ -1,0 +1,25 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["peakmangroup"] = array(
+    'name'      => 'peakmangroup',
+    'password'  => 'peakmangroup',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    'no_adv'        => true,
+    "banner"        => array(
+        "template"          => "peakmangroup",
+        "styels"            => array(
+            "new_display"       => "custom_banner",
+            "used_display"      => "custom_banner",
+            "new_retargeting"   => "custom_banner",
+            "used_retargeting"  => "custom_banner",
+            "new_marketbuyers"  => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),
+        "fb_title"        => "[make], [model]",
+        'fb_description'  => 'Check out this beautiful home today!',
+        "font_color"      => "#ffffff"
+    )
+);

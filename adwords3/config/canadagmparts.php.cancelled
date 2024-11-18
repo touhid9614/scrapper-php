@@ -1,0 +1,11 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["canadagmparts"] = array(
+    
+    'no_adv'        => true,
+    'password'      => 'canadagmparts',
+    "email"         => "regan@smedia.ca",
+    
+);

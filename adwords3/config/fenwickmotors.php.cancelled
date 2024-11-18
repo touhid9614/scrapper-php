@@ -1,0 +1,29 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["fenwickmotors"] = array(
+    "name" => " fenwickmotors",
+    "email" => "regan@smedia.ca",
+    "password" => " fenwickmotors", 
+	'fb_brand'          => '[year] [make] [model] - [body_style]',
+    'log' => true,
+    "fb_title" => "[year] [make] [model] [price]",
+    //=====dynamic social ads=====
+    "banner" => array(
+        "template" => "fenwickmotors",
+			"fb_description" => "Are you still interested in the [year] [make] [model] [price]? Click for more info!",
+			"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+		"fb_style" => "facebook_new_ad",
+        "font_color" => "#ffffff",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),
+    ),
+);

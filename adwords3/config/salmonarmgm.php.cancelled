@@ -1,0 +1,93 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["salmonarmgm"] = array(
+    "name" => "salmonarmgm",
+    "email" => "regan@smedia.ca",
+    "password" => "salmonarmgm",
+    'log' => true,
+  //  "no_adv" => true,
+    "customer_id"   => "568-152-9000",
+    'max_cost'      => 1100 ,
+    'cost_distribution' => array(
+        'adwords'      => 1100 ,
+    ), 
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "banner" => array(
+        "template" => "salmonarmgm",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description"	=> "Check out this [year] [make] [model] today! Click for more information.",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+        "styels" => array(
+			"new_display" => "dynamic_banner",
+			"used_display" => "dynamic_banner",
+			"new_retargeting" => "dynamic_banner",
+			"used_retargeting" => "dynamic_banner",
+			"new_marketbuyers" => "dynamic_banner",
+			"used_marketbuyers" => "dynamic_banner",
+        ),
+    ),
+    "lead" => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#004080',
+            '#004080',
+        ),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_color_active' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 OFF coupon from Salmon Arm GM',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Salmon Arm GM Team',
+        'forward_to' => array(
+            'Ian@salmonarmgm.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+);

@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tjspizza_lloydminster"] = array(
+    'max_cost'      => 0,
+    'log'           => false,
+    "customer_id"   => "771-629-7282",
+    'password'      => 'tjspizza_lloydminster',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    'cost_distribution' => array(
+        'adwords'   => 0,        //Defines all adwords ads
+        
+    ),
+);

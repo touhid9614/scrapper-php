@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["jjstewart"] = array(
+  'password'  => 'jjstewart',
+    "email"         => "regan@smedia.ca",
+
+    "banner"        => array(
+        "template"          => "jjstewart",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

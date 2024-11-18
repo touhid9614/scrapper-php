@@ -1,0 +1,20 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["reginarealestateshop"] = array( 
+	"name"  =>" reginarealestateshop",
+	"email" => "regan@smedia.ca",
+	"password" =>" reginarealestateshop",
+	"no_adv" => true ,
+	
+	"fb_title" => "[year] [Make] [Model] [price]",
+    //=====dynamic social ads=====
+    "banner" => array(
+        "template" => "reginarealestateshop",
+			//"fb_description" => "Are you still interested in this [year] [make] [model]? Click for more info!",
+			"fb_description" => "Our agents bring years of experience ensuring your home buying process is a positive one! Inquire today about [year] [Make] [Model]",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+		"fb_style" => "facebook_new_ad",
+        "font_color" => "#ffffff",
+    ),
+);

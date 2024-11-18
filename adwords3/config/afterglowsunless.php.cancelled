@@ -1,0 +1,11 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["afterglowsunless"] = array(
+    //'max_cost'      => 200,
+    //"customer_id"   => "180-130-7576",
+    'password'      => 'afterglowsunless',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

@@ -1,0 +1,237 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["mercedesoflittleton"] = array(
+    "name" => "mercedesoflittleton",
+    "password" => "mercedesoflittleton",
+    'log' => true,
+    "banner" => array(
+        "template" => "mercedesoflittleton",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'kammon.wilcoxson@cdk.com',
+        'leads@mboflittleton.com',
+        'tania102028@gmail.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    //client want form in contact us button only
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)-Littleton[^-]*-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'span.input-group-btn input-button-price-element#getSalePriceEntryFormButton',
+            'css-class' => 'span.input-group-btn input-button-price-element#getSalePriceEntryFormButton',
+            'css-hover' => 'span.input-group-btn input-button-price-element#getSalePriceEntryFormButton:hover',
+            'sizes' => [
+                '100' => [
+                    'font-size' => '1.4rem',
+                ],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'span.input-group-btn input-button-price-element#getSalePriceEntryFormButton',
+                    'values' => array(
+                        'Get Special Price',
+                        'Get Current Market Price',
+                        'Get Today\'s Market Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/(?:new|used)-Littleton[^-]*-[0-9]{4}/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=edmunds-trade]',
+            'css-class' => 'a[href*=edmunds-trade]',
+            'css-hover' => 'a[href*=edmunds-trade]:hover',
+            //  'button_action' => ['form','trade-in'],
+            'sizes' => [
+                '100' => [
+                    'font-size' => '1.4rem',
+                    'display' => 'block',
+                    'width' => '100%',
+                    'color' => '#fff',
+                    'text-align' => 'center',
+                    'padding' => '10px',
+                    'text-decoration' => 'none',
+                ],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[href*=edmunds-trade]',
+                    'values' => array(
+                        'Get Trade-In Value',
+                        'What\'s Your Trade Worth?',
+                        'Trade Offer',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used)-Littleton[^-]*-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'ul.priceBlockResponsiveVdp li.priceBlockItem.priceBlockItemButton a#primaryButtonPageModalButton.btn',
+            'css-class' => 'ul.priceBlockResponsiveVdp li.priceBlockItem.priceBlockItemButton a#primaryButtonPageModalButton.btn',
+            'css-hover' => 'ul.priceBlockResponsiveVdp li.priceBlockItem.priceBlockItemButton a#primaryButtonPageModalButton.btn:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'ul.priceBlockResponsiveVdp li.priceBlockItem.priceBlockItemButton a#primaryButtonPageModalButton.btn',
+                    'values' => array(
+                        'Get More Information',
+                        'Request More Info',
+                        'Learn More',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

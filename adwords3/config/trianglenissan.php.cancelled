@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["trianglenissan"] = array(
+  'password'  => 'trianglenissan',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+
+    "banner"        => array(
+        "template"          => "trianglenissan",
+		'fb_description'	=> 'Prueba de conduccion de la [year] [make] [model] hoy.',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["courtesyforddanville"] = array(
+  'password'  => 'courtesyforddanville',
+    "email"         => "regan@smedia.ca",
+    'log'         => true,
+
+    "banner"        => array(
+        "template"          => "courtesyforddanville",
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

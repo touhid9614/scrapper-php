@@ -1,0 +1,18 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tomballdodge"] = array(
+  'password'  => 'tomballdodge',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    'tag_debug'     => false,
+    "banner"        => array(
+        "template"          => "tomballdodge",
+		'fb_description'    => 'Are you still interested in the [Year] [Make] [Model]? Click here to see our new price!',
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );

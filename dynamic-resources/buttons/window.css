@@ -1,0 +1,34 @@
+div#smedia-window-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 999999;
+	background: #000000;
+	display: none;
+	opacity: 0.75;
+}
+
+div#smedia-window-container {
+	overflow: hidden;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: fixed;
+	font-family: Arial;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	display: none;
+	z-index: 1000000;
+}
+
+iframe#smedia-window-frame {
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}

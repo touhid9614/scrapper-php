@@ -1,0 +1,274 @@
+<?php
+
+
+global $CronConfigs;
+
+$CronConfigs["sharpmotor_chrysler"] = array(
+    'password' => 'sharpmotor_chrysler',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+     'max_cost'      => 0,
+    'cost_distribution' => [
+        'adwords' => 0,
+    ],
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id'   => '696-833-3292 ',
+    "banner" => array(
+        "template" => "sharpmotor_chrysler",
+        'fb_description' => "Are you still interested in the [year] [make] [model]? Click for more info.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),
+        "font_color" => "#ffffff"
+    ),
+    /*'adf_to' => ['leads@ancirakia.motosnap.com '],
+    // 'form_live'     => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\/(?:new|used)-[^\-]+-[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-class' => 'a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+            'css-hover' => 'a.btn.btn-cta.btn-lg.btn-block.ePriceBtn:hover',
+         // 'button_action' => ['form', 'e-price'],
+            'sizes' => [
+                '100' => [
+                //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-cta.btn-lg.btn-block.ePriceBtn',
+                    'values' => [
+                        //'GET E-PRICE',
+                        //'GET INTERNET PRICE',
+                        'GET YOUR PRICE',
+                        'GET OUR BEST PRICE',
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background-color' => '#c37317',
+                        'border-color' => '#f06b20'
+                    ],
+                    'hover' => [
+                        'background-color' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background-color' => '#bb162b',
+                        'border-color' => '#e01212'
+                    ],
+                    'hover' => [
+                        'background-color' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background-color' => '#31a413',
+                        'border-color' => '#54b740'
+                    ],
+                    'hover' => [
+                        'background-color' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background-color' => '#145a7b',
+                        'border-color' => '#1ca0d1'
+                    ],
+                    'hover' => [
+                        'background-color' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+        'financing' => [
+            'url-match' => '/\/(?:new|used)-[^\-]+-[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'a.btn.btn-cta.btn-block.btn-lg[href*="trade"]',
+            'css-class' => 'a.btn.btn-cta.btn-block.btn-lg[href*="trade"]',
+            'css-hover' => 'a.btn.btn-cta.btn-block.btn-lg[href*="trade"]:hover',
+         // 'button_action' => ['form', 'finance'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.btn.btn-cta.btn-block.btn-lg[href*="trade"]',
+                    'values' => [
+                        'GET FINANCED TODAY',
+                        'EXPLORE PAYMENTS',
+                        'FINANCING AVAILABLE',
+                        'NO HASSLE FINANCING',
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background-color' => '#c37317',
+                        'border-color' => '#f06b20'
+                    ],
+                    'hover' => [
+                        'background-color' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background-color' => '#bb162b',
+                        'border-color' => '#e01212'
+                    ],
+                    'hover' => [
+                        'background-color' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background-color' => '#31a413',
+                        'border-color' => '#54b740'
+                    ],
+                    'hover' => [
+                        'background-color' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background-color' => '#145a7b',
+                        'border-color' => '#1ca0d1'
+                    ],
+                    'hover' => [
+                        'background-color' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ],
+        'trade-in' => [
+            'url-match' => '/\/(?:new|used)-[^\-]+-[0-9]{4}-/i',
+            'target' => null, //Don't move button
+            'locations' => [
+                'default' => null, //Don't need to change location
+            ],
+            'action-target' => 'a.btn.btn-main.btn-block[href*="get-pre-approved"]',
+            'css-class' => 'a.btn.btn-main.btn-block[href*="get-pre-approved"]',
+            'css-hover' => 'a.btn.btn-main.btn-block[href*="get-pre-approved"]:hover',
+         // 'button_action' => ['form', 'trade-in'],
+            'sizes' => [
+                '100' => [
+                ]
+            ],
+            'texts' => [
+                'trade-in' => [
+                    'target' => 'a.btn.btn-main.btn-block[href*="get-pre-approved"]',
+                    'values' => [
+                        'WHAT\'S  YOUR TRADE WORTH?',
+                        'WE WANT YOUR CAR',
+                        'WE\'LL BUY YOUR CAR',
+                        'GET TRADE-IN VALUE',
+                    ]
+                ]
+            ],
+            'styles' => [
+                'orange' => [
+                    'normal' => [
+                        'background-color' => '#c37317',
+                        'border-color' => '#f06b20'
+                    ],
+                    'hover' => [
+                        'background-color' => '#cf540e',
+                        'border-color' => '#cf540e'
+                    ]
+                ],
+                'red' => [
+                    'normal' => [
+                        'background-color' => '#bb162b',
+                        'border-color' => '#e01212'
+                    ],
+                    'hover' => [
+                        'background-color' => '#c60c0d',
+                        'border-color' => '#c60c0d'
+                    ]
+                ],
+                'green' => [
+                    'normal' => [
+                        'background-color' => '#31a413',
+                        'border-color' => '#54b740'
+                    ],
+                    'hover' => [
+                        'background-color' => '#359d22',
+                        'border-color' => '#359d22'
+                    ]
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background-color' => '#145a7b',
+                        'border-color' => '#1ca0d1'
+                    ],
+                    'hover' => [
+                        'background-color' => '#188bb7',
+                        'border-color' => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]*/
+);

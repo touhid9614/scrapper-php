@@ -1,0 +1,447 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["mckeownmotor"] = array(
+    "name" => " mckeownmotor",
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "password" => " mckeownmotor",
+    'log' => true,
+/*
+	"lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#DF0000',
+            '#DF0000',
+        ),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_color_active' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 Christmas Cash from McKeown Motor Sales',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>McKeown Motor Sales Team',
+        'forward_to' => array(
+            'info@mckeownmotorsales.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+*/
+    "banner" => array(
+        "template" => "mckeownmotor",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Test drive the [year] [make] [model] today!",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    'adf_to' => array(
+        'info@mckeownmotorsales.com',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.medium',
+            'css-class' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.medium',
+            'css-hover' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.medium:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.medium',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Sale Price',
+                        'Get Special Pricing',
+                        'Current Market Price',
+                        'Request a Quote',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7C35,#FF7C35)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF3528,#FF3528)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF3F35,#FF3F35)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF28DB,#FF28DB)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2EDF44,#2EDF44)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#91FC25,#91FC25)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3686CC,#3686CC)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2FD9CE,#2FD9CE)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'Listing request-a-quote' => [
+            'url-match' => '/\\/(?:new|used)-inventory\\/index/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+            'css-class' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+            'css-hover' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.mycars-btn.mycars-add-alert-btn.btn-no-decoration.large-cta',
+                    'values' => array(
+                        'Get Internet Price',
+                        'Get Sale Price',
+                        'Get Special Pricing',
+                        'Current Market Price',
+                        'Request a Quote',
+                        'Get a Quote',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7C35,#FF7C35)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF3528,#FF3528)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF3F35,#FF3F35)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF28DB,#FF28DB)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2EDF44,#2EDF44)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#91FC25,#91FC25)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3686CC,#3686CC)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2FD9CE,#2FD9CE)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'Listing get-eprice' => [
+            'url-match' => '/\\/(?:new|used)-inventory\\/index/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[data-href*=eprice-form]',
+            'css-class' => 'a[data-href*=eprice-form]',
+            'css-hover' => 'a[data-href*=eprice-form]:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a[data-href*=eprice-form]',
+                    'values' => array(
+                        'Get Price Updates',
+                        'Watch Price',
+                        'Track Price',
+                        'Follow This Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7C35,#FF7C35)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF3528,#FF3528)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF3F35,#FF3F35)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF28DB,#FF28DB)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2EDF44,#2EDF44)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#91FC25,#91FC25)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3686CC,#3686CC)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2FD9CE,#2FD9CE)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'get-eprice' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-class' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-hover' => 'a.btn.btn-default.eprice.dialog.button:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.btn.btn-default.eprice.dialog.button',
+                    'values' => array(
+                        'Get Price Updates',
+                        'Watch Price',
+                        'Track Price',
+                        'Follow This Price',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7C35,#FF7C35)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF3528,#FF3528)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF3F35,#FF3F35)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF28DB,#FF28DB)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2EDF44,#2EDF44)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#91FC25,#91FC25)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3686CC,#3686CC)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2FD9CE,#2FD9CE)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+        'test-drive' => [
+            'url-match' => '/\\/(?:new|used)\\/[^\\/]+\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a[href*=testdrive]',
+            'css-class' => 'a[href*=testdrive]',
+            'css-hover' => 'a[href*=testdrive]:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a[href*=testdrive]',
+                    'values' => array(
+                        'Test Drive Today',
+                        'Want to Test Drive?',
+                        'Schedule Your Visit',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7C35,#FF7C35)',
+                        'border-color' => '#f06b20',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF3528,#FF3528)',
+                        'border-color' => '#cf540e',
+                        'color' => '#fff',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF3F35,#FF3F35)',
+                        'border-color' => '#e01212',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#FF28DB,#FF28DB)',
+                        'border-color' => '#c60c0d',
+                        'color' => '#fff',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#2EDF44,#2EDF44)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#91FC25,#91FC25)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#3686CC,#3686CC)',
+                        'border-color' => '#54b740',
+                        'color' => '#fff',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#2FD9CE,#2FD9CE)',
+                        'border-color' => '#359d22',
+                        'color' => '#fff',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

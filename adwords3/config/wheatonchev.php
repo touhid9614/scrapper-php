@@ -1,0 +1,118 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["wheatonchev"] = array(
+    "name" => " wheatonchev",
+    "email" => "regan@smedia.ca",
+    "password" => " wheatonchev",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    'customer_id' => '374-632-8788',
+    'max_cost' => 3800,
+    'bing_account_id'  =>  156003548,
+    'cost_distribution' => array(
+        'new' => 1500,
+        'used' => 1500,
+        'dynamic' => 500,
+        'custom' => 300,
+),
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_placement" => no,
+        "used_placement" => no,
+        "new_retargeting" => no,
+        "used_retargeting" => no,
+        "new_combined" => no,
+        "used_combined" => no,
+),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+),
+),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+),
+),
+    "banner" => array(
+        "template" => "wheatonchev",
+        //"fb_description" => "At Wheaton Chev, enjoy a fully digital, touch-less shopping experience from the comfort of your own home. We've got virtual shopping tools to help you pick your vehicle, check your credit, figure out your trade value and more! We will even pick up and drop off your vehicle for service or deliver for a test-drive/purchase.",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+        "fb_lookalike_description" => "Check out this [year] [make] [model]! Click for more information.",
+        "fb_dynamiclead_description" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        //"flash_style" => "default",
+        //"old_price" => "msrp",
+        //"show_was_is_price" => false,
+        //"fb_style" => "drivenation",
+        "border_color" => "#282828",
+        "font_color" => "ffffff",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+),
+),
+    'lead' => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => false,
+        'lead_type_used' => true,
+        'shown_cap' => false,
+        'fillup_cap' => false,
+        'session_close' => false,
+        'device_type' => array(
+            'mobile' => true,
+            'desktop' => true,
+            'tablet' => true,
+),
+        'offer_minimum_price' => 0,
+        'offer_maximum_price' => 10000000,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#FFFFFF',
+        'button_color' => array(
+            '#CCA64F',
+            '#CCA64F',
+),
+        'button_color_hover' => array(
+            '#111111',
+            '#111111',
+),
+        'button_color_active' => array(
+            '#111111',
+            '#111111',
+),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$250 off coupon from Wheaton Chevrolet',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\\"[image]\\"/><p><br><br>Wheaton Chevrolet Team',
+        'forward_to' => array(
+            'luke@wheatonchev.com',
+            'slavanway@wheatonchev.com',
+            'bleake@wheatonchev.com',
+),
+        'special_to' => array(
+            '',
+),
+        'special_email' => '',
+        'display_after' => 30000,
+        'retarget_after' => 5000,
+        'fb_retarget_after' => 5000,
+        'adword_retarget_after' => 5000,
+        'visit_count' => 0,
+),
+);

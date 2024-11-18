@@ -1,0 +1,123 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["carlblackroswell"] = array(
+  'password'  => 'carlblackroswell',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#891c1d", "#891c1d"),
+        'button_color_hover'    => array("#711314", "#711314"),
+        'button_color_active'   => array("#891c1d", "#891c1d"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Get $500 off with this offer from Carl Black Buick GMC of Roswell",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Carl Black Buick GMC of Roswell Team",
+        'forward_to'            => array("leads@carlblackbuickgmc.motosnap.com","regan@smedia.ca", "marshal@smedia.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+    ),
+    "banner"        => array(
+        "template"          => "carlblackroswell",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+    'buttons_live'  => false,
+    'buttons'       => [
+        'request-a-quote'  => [
+            'url-match' => '/\/(?:new|used|certified)\/[^\/]+\/[0-9]{4}-/i',
+            'target'    => null,        //Don't move button
+            'locations' => [
+                'default'   => null,    //Don't need to change location
+            ],
+            'action-target' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-class' => 'a.btn.btn-default.eprice.dialog.button',
+            'css-hover' => 'a.btn.btn-default.eprice.dialog.button:hover',
+            'sizes'     => [
+                '100'   => [
+                    //'font-size' => '1.4rem'
+                ]
+            ],
+            'texts'     => [
+                'request-a-quote'  => [
+                    'target'    => 'a.btn.btn-default.eprice.dialog.button',
+                    'values'    => [
+                        'Request A Quote',
+                        'Get E Price Now!',
+                        'Internet Price',
+                        'Get your Price!',
+                        'E- Price',
+                        'Get Internet Price Now!',
+                        'Contact Us.',
+                        'Get Our Best Price',
+                        'Best Price',
+                        'Contact Us',
+                        'Contact Store',
+                        'Local Pricing',
+                        'Special Pricing!',
+                        'Get More Information',
+                        'Ask a Question',
+                        'Inquire Now',
+                        'Get Active Market Price',
+                        'Get Market Price',
+                        'Market Pricing',
+                        'Check for<br>Discounts',
+                        'Reserve it Now',
+                    ]
+                ]
+            ],
+            'styles'    => [
+                'orange'  => [
+                    'normal'    => [
+                        'background-color' => '#f06b20',
+                        'border-color'     => '#f06b20'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#cf540e',
+                        'border-color'     => '#cf540e'
+                    ]
+                ],
+                'red'  => [
+                    'normal'    => [
+                        'background-color' => '#e01212',
+                        'border-color'     => '#e01212'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#c60c0d',
+                        'border-color'     => '#c60c0d'
+                    ]
+                ],
+                'green'  => [
+                    'normal'    => [
+                        'background-color' => '#54b740',
+                        'border-color'     => '#54b740'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#359d22',
+                        'border-color'     => '#359d22'
+                    ]
+                ],
+                'blue'  => [
+                    'normal'    => [
+                        'background-color' => '#1ca0d1',
+                        'border-color'     => '#1ca0d1'
+                    ],
+                    'hover'     => [
+                        'background-color' => '#188bb7',
+                        'border-color'     => '#188bb7'
+                    ]
+                ]
+            ]
+        ]
+    ]
+       
+    );

@@ -1,0 +1,14 @@
+inurl:"used-inventory/index.htm" BC
+inurl:"used-inventory/index.htm" AB
+inurl:"used-inventory/index.htm" SK
+inurl:"used-inventory/index.htm" MB
+inurl:"used-inventory/index.htm" NB
+inurl:"used-inventory/index.htm" NL
+inurl:"used-inventory/index.htm" NT
+inurl:"used-inventory/index.htm" NS
+inurl:"used-inventory/index.htm" NU
+inurl:"used-inventory/index.htm" ON
+inurl:"used-inventory/index.htm" PE
+inurl:"used-inventory/index.htm" QC
+inurl:"used-inventory/index.htm" SK
+inurl:"used-inventory/index.htm" YT

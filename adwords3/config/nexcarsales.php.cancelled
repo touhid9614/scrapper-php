@@ -1,0 +1,159 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["nexcarsales"] = array(
+    "name" => " nexcarsales",
+    "email" => "regan@smedia.ca",
+    "password" => " nexcarsales",
+    "no_adv" => true,
+    'adf_to' => array(
+        'nexcar@shaw.ca',
+    ),
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'test-drive' => [
+            'url-match' => '/\\/inventory\\/used\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a#accordion_two_button',
+            'css-class' => 'a#accordion_two_button',
+            'css-hover' => 'a#accordion_two_button:hover',
+            'button_action' => [
+                'form',
+                'test-drive',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'test-drive' => [
+                    'target' => 'a#accordion_two_button',
+                    'values' => array(
+                        'SCHEDULE A TEST DRIVE',
+                        'TEST DRIVE NOW',
+                        'SCHEDULE YOUR VISIT',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9F0B,#FF9F0B)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E58F0A,#E58F0A)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF0B0B,#FF0B0B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E50A0A,#E50A0A)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#09DD09,#09DD09)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#08C308,#08C308)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#176AC4,#176AC4)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#145CAA,#145CAA)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/inventory\\/used\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a#accordion_one_button',
+            'css-class' => 'a#accordion_one_button',
+            'css-hover' => 'a#accordion_one_button:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+            ],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a#accordion_one_button',
+                    'values' => array(
+                        'ASK A QUESTION',
+                        'LET OUR EXPERTS HELP',
+                        'ASK OUR EXPERTS',
+                        'CONTACT US NOW',
+                        'CONTACT US TODAY',
+                        'GET A QUOTE',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF9F0B,#FF9F0B)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E58F0A,#E58F0A)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF0B0B,#FF0B0B)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#E50A0A,#E50A0A)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#09DD09,#09DD09)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#08C308,#08C308)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#176AC4,#176AC4)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#145CAA,#145CAA)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

@@ -1,0 +1,360 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["lardners"] = array(
+    'password' => 'lardners',
+    //'budget'    => 2.0,
+    'bid' => 3.0,
+    'bid_modifier' => array(
+        'after' => 45,
+        //days
+        'bid' => 1.5,
+    ),
+    'max_cost' => 1000,
+    'cost_distribution' => array(
+        'youtube' => 0,
+        'adwords' => 1000,
+    ),
+    'log' => false,
+    'post_code' => 'S7L 6G3',
+    "email" => "regan@smedia.ca",
+    'retargetting_delay' => 30000,
+    'title' => '[year] [model] [price]',
+    'display_title' => '[model]',
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => yes,
+        "used_marketbuyers" => yes,
+        "new_placement" => yes,
+        "used_placement" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [model]",
+        ),
+    ),
+    "customer_id" => "278-709-8567",
+    "market_buyers" => array(
+        "common" => array(
+            1213,
+            //"Campers & RVs"
+            80069,
+        ),
+        "new" => array(),
+        "used" => array(),
+    ),
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "lardners",
+        'fb_description' => 'Check out the [model] today! Click for more information.',
+        "fb_dynamiclead_description" => "Check out this [model]! Click below, fill in your info to get an additional \$100 in store credit with purchase, and a product specialist will be in touch to answer any questions.",
+        "fb_title" => "[year] [make] [model] [price]",
+		"old_price_new" => "msrp",
+        //'fb_title'          => '[year] [model]',
+        //"flash_style"       => "default",                             #Turn of flash banners
+        "border_color" => "#344c32",
+        "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+        ),
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#4CAF51',
+            '#4CAF51',
+        ),
+        'button_color_hover' => array(
+            '#1F4343',
+            '#1F4343',
+        ),
+        'button_color_active' => array(
+            '#1F4343',
+            '#1F4343',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Here\'s your Lardner\'s $100 In-Store Credit!',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Lardners Trailer Sales Team',
+        'forward_to' => array(
+            'info@lardners.com',
+            'marshal@smedia.ca',
+            'tania102028@gmail.com',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'biweekly' => array(),
+    //'form_live'     => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/inventory\\/(?:new|preowned)\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.lightbox-form.finance-btn',
+            'css-class' => 'a.lightbox-form.finance-btn',
+            'css-hover' => 'a.lightbox-form.finance-btn:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [
+                    'font-size' => '1.4rem',
+                ],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'a.lightbox-form.finance-btn',
+                    'values' => array(
+                        'GET MORE INFO',
+                        'ASK A QUESTION',
+                        'INQUIRE NOW',
+                        'GET E-PRICE',
+                        'Check Availability',
+                        'Get Special Price!',
+                        'SPECIAL PRICING!',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#8E865F,#8E865F)',
+                        'border-color' => '#8e865f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#8E5F5F,#8E5F5F)',
+                        'border-color' => '#8e5f5f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'trade-in' => [
+            'url-match' => '/\\/inventory\\/(?:new|preowned)\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.trade-in.lightbox-form',
+            'css-class' => 'a.trade-in.lightbox-form',
+            'css-hover' => 'a.trade-in.lightbox-form:hover',
+            // 'button_action' => ['form','trade-in'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.trade-in.lightbox-form',
+                    'values' => array(
+                        'Value your trade',
+                        'What\'s your trade worth?',
+                        'We want your car',
+                        'WHAT\'S YOUR TRADE WORTH?',
+                        'What is Your Trade Worth?',
+                        'Trade Appraisal',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'yellow' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#8E865F,#8E865F)',
+                        'border-color' => '#8e865f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#8E5F5F,#8E5F5F)',
+                        'border-color' => '#8e5f5f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'financing' => [
+            'url-match' => '/\\/inventory\\/(?:new|preowned)\\/[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.get-approved',
+            'css-class' => 'a.get-approved',
+            'css-hover' => 'a.get-approved:hover',
+            //'button_action' => ['form','finance'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'financing' => [
+                    'target' => 'a.get-approved',
+                    'values' => array(
+                        'Apply for Financing',
+                        'No hassle financing',
+                        'Financing Available',
+                        'Get Financed Today',
+                        'Explore Payments',
+                        'Special Finance Offers!',
+                        'Special Finance Offers',
+                        'TODAY\'S MARKET PRICE',
+                    ),
+                ],
+            ],
+            'styles' => [
+                'yellow' => [
+                    'normal' => [
+                        'background' => '#8e865f',
+                        'border-color' => '#8e865f',
+                    ],
+                    'hover' => [
+                        'background' => '#cf540e',
+                        'border-color' => '#cf540e',
+                    ],
+                ],
+                'red' => [
+                    'normal' => [
+                        'background' => '#8e5f5f',
+                        'border-color' => '#8e5f5f',
+                    ],
+                    'hover' => [
+                        'background' => '#c60c0d',
+                        'border-color' => '#c60c0d',
+                    ],
+                ],
+                'green' => [
+                    'normal' => [
+                        'background' => '#54b740',
+                        'border-color' => '#54b740',
+                    ],
+                    'hover' => [
+                        'background' => '#359d22',
+                        'border-color' => '#359d22',
+                    ],
+                ],
+                'blue' => [
+                    'normal' => [
+                        'background' => '#1ca0d1',
+                        'border-color' => '#1ca0d1',
+                    ],
+                    'hover' => [
+                        'background' => '#188bb7',
+                        'border-color' => '#188bb7',
+                    ],
+                ],
+            ],
+        ],
+    ],
+);

@@ -1,0 +1,340 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["weidnerschevrolet"] = array(
+    //'budget'    => 2.0,
+    'bid' => 3.0,
+    'password' => 'weidnerschevrolet',
+    'log' => true,
+    'post_code' => 'T4L 1A3',
+    "email" => "regan@smedia.ca",
+    'retargetting_delay' => 30000,
+   
+    'start_date' => '24 october 2016',
+    'prorated_budget' => 1935.0,
+    "create" => array(
+        "new_search" => yes,
+        "used_search" => yes,
+        "new_display" => yes,
+        "used_display" => yes,
+        "new_retargeting" => yes,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => yes,
+        "used_combined" => yes,
+    ),
+    "email" => "regan@smedia.ca",
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]",
+        ),
+    ),
+    "ymmcount_descs" => array(
+        array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "customer_id" => "",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "banner" => array(
+        "template" => "weidnerschevrolet",
+		'old_price' => "msrp",
+		'old_price' => true,
+		"fb_description_new" => "Are you still interested in the [year] [make] [model]? Price Beat Guarantee! We will beat or match any price or give you \$100! Price [price]. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_description_used" => "Are you still interested in the [year] [make] [model]? Click for more info. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_lookalike_description_new" => "Test drive the [year] [make] [model] today! Price Beat Guarantee! We will beat or match any price or give you \$100! Price [price]. Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_lookalike_description_used" => "Test drive the [year] [make] [model] today! Stock: [stock_number]. Amvic Licensed Dealership",
+        "fb_dynamiclead_description_new" => "Are you still interested in the [year] [make] [model]? MSRP [msrp]. Price [price]. Click below, fill in your info to get \$250 accessory credit with purchase. Stock: [stock_number]. Amvic Licensed Dealership",
+/*=====*/
+		"fb_customgeotarget_description" => "Are you still interested in the [year] [make] [model]? Visit us to test drive and get a $100 Gas Card! Price [price]. Stock: [stock_number]. Amvic Licensed Dealership.",
+/*=====*/
+        "fb_dynamiclead_description_used" => "Are you still interested in the [year] [make] [model]? Click below, fill in your info to get \$250 accessory credit with purchase. Stock: [stock_number]. Amvic Licensed Dealership",
+        "flash_style" => "default",
+        //"hst" => yes,
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "font_color" => "ffffff",
+    ),
+    "smart_ad_url" => 'http://www.weidnerchevrolet.ca/VehicleSearchResults?year=[year]&make=[make]&model=[model]',
+    "lead" => array(
+        'live' => true,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#2D365A',
+            '#2D365A',
+        ),
+        'button_color_hover' => array(
+            '#0E1563',
+            '#0E1563',
+        ),
+        'button_color_active' => array(
+            '#0E1563',
+            '#0E1563',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 Off from Weidner Motors',
+        'response_email' => 'Hello [name],<p> Thank you signing up for our offer! Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Weidner Motors Team',
+        'forward_to' => array(
+            'weidner-chevrolet@emailtolead.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+//    'adf_to' => array(
+//        'weidner-chevrolet@emailtolead.com',
+//        'blayne@weidnerchevrolet.ca',
+//        'dave@weidnerchevrolet.ca',
+//    ),
+//    //date25-06-2018, delete ileads@weidnermotors.ca and replace it with weidner-chevrolet@emailtolead.com
+//    'form_live' => true,
+//    'buttons_live' => true,
+//    'buttons' => [
+//        'request-a-quote' => [
+//            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+//            'css-class' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]',
+//            'css-hover' => 'a[name="a303d7ab-332d-4afe-9bab-91658fa4be0d"]:hover',
+//            'button_action' => [
+//                'form',
+//                'e-price-v2',
+//            ],
+//            'sizes' => [
+//                '100' => [
+//                    'font-size' => '1.4rem',
+//                ],
+//            ],
+//            'texts' => [
+//                'request-a-quote' => [
+//                    'target' => 'a[name=a303d7ab-332d-4afe-9bab-91658fa4be0d]',
+//                    'values' => array(
+//                        'Get Our Best Price',
+//                        'Local Pricing',
+//                        'Special Pricing!',
+//                        'Get More Information',
+//                        'Get Market Price',
+//                        'Market Pricing',
+//                        'Get Special Price!',
+//                        'SPECIAL PRICING!',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'orange' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+//                        'border-color' => '#f06b20',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+//                        'border-color' => '#cf540e',
+//                    ),
+//                ),
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#E01212,#E01212)',
+//                        'border-color' => '#e01212',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#54B740,#54B740)',
+//                        'border-color' => '#54b740',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//        'test-drive' => [
+//            'url-match' => '/\\/VehicleDetails\\/(?:new|used|certified)-/i',
+//            'target' => null,
+//            //Don't move button
+//            'locations' => [
+//                'default' => null,
+//            ],
+//            'action-target' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]',
+//            'css-class' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]',
+//            'css-hover' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]:hover',
+//            'button_action' => [
+//                'form',
+//                'test-drive',
+//            ],
+//            'sizes' => [
+//                '100' => [
+//                    'font-size' => '1.4rem',
+//                ],
+//            ],
+//            'texts' => [
+//                'test-drive' => [
+//                    'target' => 'a[name="4969ed15-0c26-4ba1-8a8d-81cdc4ec014a"]',
+//                    'values' => array(
+//                        'Book Test Drive',
+//                        'TEST DRIVE TODAY',
+//                        'TEST DRIVE NOW',
+//                        'SCHEDULE MY VISIT',
+//                    ),
+//                ],
+//            ],
+//            'styles' => array(
+//                'orange' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+//                        'border-color' => '#f06b20',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+//                        'border-color' => '#cf540e',
+//                    ),
+//                ),
+//                'red' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#E01212,#E01212)',
+//                        'border-color' => '#e01212',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+//                        'border-color' => '#c60c0d',
+//                    ),
+//                ),
+//                'green' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#54B740,#54B740)',
+//                        'border-color' => '#54b740',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#359D22,#359D22)',
+//                        'border-color' => '#359d22',
+//                    ),
+//                ),
+//                'blue' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Platinum' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Black' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#333333,#333333)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#000000,#000000)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//                'Cyan' => array(
+//                    'normal' => array(
+//                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+//                        'border-color' => '#1ca0d1',
+//                    ),
+//                    'hover' => array(
+//                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+//                        'border-color' => '#188bb7',
+//                    ),
+//                ),
+//            ),
+//        ],
+//    ],
+);

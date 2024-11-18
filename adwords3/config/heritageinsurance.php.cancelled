@@ -1,0 +1,12 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["heritageinsurance"] = array( 
+	"name"=>"heritageinsurance",
+	"password"=>"heritageinsurance",
+	"no_adv"=>true,
+        'customer_id' => '613-512-0480',
+        'max_cost' => 0,
+        'cost_distribution' => array(
+            'adwords' => 0,
+        ),
+);

@@ -1,0 +1,108 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["adamsautosales"] = array(
+    "name" => " adamsautosales",
+    "email" => "regan@smedia.ca",
+    "password" => " newwayford",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    "log" => true,
+    'max_cost' => 0,
+     'cost_distribution' => array(
+        'adwords' => 0,
+    ),
+    "create" => array(
+        "new_search" => no,
+        "used_search" => yes,
+        "new_placement" => no,
+        "used_placement" => yes,
+        "new_display" => no,
+        "used_display" => no,
+        "new_retargeting" => no,
+        "used_retargeting" => yes,
+        "new_marketbuyers" => no,
+        "used_marketbuyers" => no,
+        "new_combined" => no,
+        "used_combined" => yes,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs" => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id' => '483-415-7680',
+    "banner" => array(
+        "template" => "adamsautosales",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        "fb_lookalike_description" => "Check out this [year] [make] [model]! Click for more information.",
+        //"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+         "styels" => array(
+            "new_display" => "dynamic_banner",
+            "used_display" => "dynamic_banner",
+            "new_retargeting" => "dynamic_banner",
+            "used_retargeting" => "dynamic_banner",
+            "new_marketbuyers" => "dynamic_banner",
+            "used_marketbuyers" => "dynamic_banner",
+        ),
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+    ),
+    "lead" => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#C12F3B',
+            '#C12F3B',
+        ),
+        'button_color_hover' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_color_active' => array(
+            '#000000',
+            '#000000',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => 'Claim your First Oil Change FREE!',
+        'response_email' => 'Hello [name],<p> Please print this off or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Adam Auto Sales Team',
+        'forward_to' => array(
+            'barbie.adamsauto@gmail.com',
+            'marshal@smedia.ca',
+        ),
+        'respond_from' => 'offers@mail.smedia.ca',
+        'forward_from' => 'offers@mail.smedia.ca',
+        'thank_you' => '<h1 style="margin: 100px 27px; text-align: center;">Thank you</h1>',
+    ),
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17563',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+    ),
+);

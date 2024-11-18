@@ -1,0 +1,11 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["jamesbrittoninsurance"] = array(
+    'max_cost'      => 500,
+    "customer_id"   => "524-288-6656",
+    'password'      => 'jamesbrittoninsurance',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true
+);

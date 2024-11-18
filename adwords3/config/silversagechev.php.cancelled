@@ -1,0 +1,81 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["silversagechev"] = array(
+    'name'    => ' Silver Sage Chev',
+    'password'  => 'silversagechev',
+    "email"         => "regan@smedia.ca",
+    'log'           => false,
+    'max_cost'      => 550,
+    
+    "lead"  => array(
+        'live'                  => false,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#891c1d", "#891c1d"),
+        'button_color_hover'    => array("#711314", "#711314"),
+        'button_color_active'   => array("#891c1d", "#891c1d"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "offer from Silver Sage Chev",
+        'response_email'        => "Hello [name],<p> Thanks for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>Silver Sage Chev Team",
+        'forward_to'            => array("regan@smedia.ca", "marshal@smedia.ca"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+    ),
+    
+    "create"     => array(
+        "new_search"        => yes,
+        "used_search"       => yes,
+        "new_placement"     => yes,
+        "used_placement"    => yes,
+        "new_display"       => yes,
+        "used_display"      => yes,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"      => yes,
+        "used_combined"     => yes
+    ),
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model] today",
+        ),
+    ),
+    'customer_id'   => ' 810-153-6899',
+    "banner"        => array(
+        "template"          => "silversagechev",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+         "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        )
+    );

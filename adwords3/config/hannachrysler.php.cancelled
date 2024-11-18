@@ -1,0 +1,20 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["hannachrysler"] = array(
+  'password'  => 'hannachrysler',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "hannachrysler",
+		'fb_description'	=> 'Are you still interested in the [year] [make] [model]? Click below for more information!',
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

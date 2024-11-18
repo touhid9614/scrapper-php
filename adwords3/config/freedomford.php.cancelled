@@ -1,0 +1,107 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["freedomford"] = array(
+    'password' => 'freedomford',
+    "email" => "regan@smedia.ca",
+    'fb_brand' => '[year] [make] [model] - [body_style]',
+    'log' => true,
+    "banner" => array(
+        "template" => "freedomford",
+        "fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        //"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        //"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+),
+    'form_live' => false,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-information' => [
+            'url-match' => '/\\/details\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+],
+            'action-target' => '.check-available-vdp div',
+            'css-class' => '.check-available-vdp div',
+            'css-hover' => '.check-available-vdp div:hover',
+            'button_action' => [
+                'form',
+                'e-price',
+],
+            'sizes' => [
+                '100' => [],
+],
+            'texts' => [
+                'request-information' => [
+                    'target' => '.check-available-vdp div',
+                    'values' => array(
+                        'Request More Info',
+                        'Request Information',
+                        'Ask a Question',
+                        'More Information',
+                        'Ask Our Expert',
+                        'Let Our Experts Help',
+                        'More Info',
+                        'Confirm Availability',
+),
+],
+],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF6506,#FF6506)',
+                        'border-color' => 'F06B20',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => 'CF540E',
+),
+),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#C73005,#C73005)',
+                        'border-color' => 'E01212',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => 'C60C0D',
+),
+),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00A531,#00A531)',
+                        'border-color' => '54B740',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '359D22',
+),
+),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#0083F1,#0083F1)',
+                        'border-color' => '1CA0D1',
+),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '188BB7',
+),
+),
+),
+],
+],
+    'mail_retargeting' => array(
+        'enabled' => true,
+        'client_id' => '17581',
+        'promotion_text' => '',
+        'promotion_color' => '#567DC0',
+        'overlay_color' => '#FF8500',
+        'overlay_text_colour' => '#FFFFFF',
+        'price_color' => '#FF8500',
+        'coupon_validity' => '7',
+),
+);

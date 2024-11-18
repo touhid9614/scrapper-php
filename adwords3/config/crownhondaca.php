@@ -1,0 +1,40 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["crownhondaca"] = array(
+    "name" => " crownhondaca",
+    "email" => "regan@smedia.ca",
+    "password" => " crownhondaca",
+    'customer_id' => '977-691-8080',
+    "log" => true,
+    'max_cost' => 1200,
+    'cost_distribution' => array(
+        'adwords' => 1200,
+),
+    "banner" => array(
+        "template" => "crownhondaca",
+        //"fb_description" => "Are you still interested in the [year] [make] [model]? Click for more info!",
+        /////	"fb_description_new" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. Call us at 204-594-9215.",
+        "fb_description_new" => "[year] [make] [model] - MSRP [price].Lease at [biweekly] bi-weekly for 48 months. Call us at 204-594-9215.",
+        "fb_alt_description_new" => "[year] [make] [model] - MSRP [msrp]. Are you still interested in this [year] [make] [model]? Call us at 204-594-9215.",
+        "g_alt_description_new" => "[year] [make] [model] - MSRP [msrp]. Are you still interested in this [year] [make] [model]?",
+        "g_description_new" => "[year] [make] [model] - MSRP [price].Lease at [biweekly] bi-weekly for 48 months.",
+        "g_description_used" => "Buy this [year] [make] [model] for [price] or finance at [biweekly] bi-weekly for 60 months!",
+        //"fb_description_2020_civic sedan" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. $1000 Finance/Lease Bonus on most Civics. Call us at 204-594-9215.",
+        //"fb_description_2020_civic hatchback" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. $1000 Finance/Lease Bonus on most Civics. Call us at 204-594-9215.",
+        //"fb_description_2020_civic coupe" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. $1000 Finance/Lease Bonus on most Civics. Call us at 204-594-9215.",
+        //"fb_description_2020_civic si sedan" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. $1000 Finance/Lease Bonus on most Civics. Call us at 204-594-9215.",
+        //"fb_description_2020_civic type r" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. $1000 Finance/Lease Bonus on most Civics. Call us at 204-594-9215.",
+        //"fb_description_2020_accord sedan" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 2% Loyalty Rate Reduction. Call us at 204-594-9215.",
+        //"fb_description_2020_cr-v" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 1.5% Loyalty Rate Reduction. $750 Finance/Lease Bonus on CR-V. Call us at 204-594-9215.",
+        //"fb_description_2020_pilot" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 1.5% Loyalty Rate Reduction on Honda Pilot. Call us at 204-594-9215.",
+        //"fb_description_2020_odyssey" => "[year] [make] [model] - MSRP [price]. Lease at [lease] bi-weekly for 48 months. 1.5% Loyalty Rate Reduction on Honda Odyssey. Call us at 204-594-9215.",
+        "fb_description_used" => "Buy this [year] [make] [model] for [price] or finance at [biweekly] bi-weekly for 60 months! Call us at 204-594-9215.",
+        "fb_alt_description_used" => "[year] [make] [model] - [price]. Are you still interested in this [year] [make] [model]? Call us at 204-594-9215.",
+        "g_alt_description_used" => "[year] [make] [model] - [price]. Are you still interested in this [year] [make] [model]?",
+        //"fb_lookalike_description"	=> "Check out this [year] [make] [model] today! Click for more information.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+),
+);

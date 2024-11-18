@@ -1,0 +1,17 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["boernedodgechryslerjeep"] = array(
+  'password'  => 'boernedodgechryslerjeep',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "boernedodgechryslerjeep",
+		'fb_description'    => 'Are you still interested in the [Year] [Make] [Model]? Click here to see our new price!',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

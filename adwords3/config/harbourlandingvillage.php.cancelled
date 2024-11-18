@@ -1,0 +1,15 @@
+<?php
+
+global $CronConfigs;
+
+ $CronConfigs["harbourlandingvillage"] = array( 
+    "name"     =>" harbourlandingvillage",
+    "email"    => "regan@smedia.ca",
+    "password" =>" harbourlandingvillage",
+    'customer_id' => '950-661-9921',
+    'max_cost'    => 0,
+    'cost_distribution' => [
+        'adwords' => 0,
+    ],
+    "no_adv" => true ,
+);

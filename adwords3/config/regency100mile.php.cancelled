@@ -1,0 +1,26 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["regency100mile"] = array(
+    "name" => "regency100mile",
+    "email" => "regan@smedia.ca",
+    "password" => "regency100mile",
+    "no_adv" => true,
+    "log" => true,
+     "banner" => array(
+        "template" => "regency100mile",
+        //'fb_description_new'	=> 'Test drive this [year] [make] [model] today! MSRP [msrp]. Sale price is [price]. Stock: [stock_number]. Amvic Licensed Dealership',
+        'fb_description' => 'Are you still interested in the [year] [make] [model]? Click below for more info!',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner"
+        ),
+        "font_color" => "#ffffff"
+    ),
+);

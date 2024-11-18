@@ -1,0 +1,21 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["braymotors"] = array(
+  'password'  => 'braymotors',
+    "email"         => "regan@smedia.ca",
+
+    "banner"        => array(
+        "template"          => "braymotors",
+			"flash_style"       => "default",
+			"border_color"    => "#282828",
+        
+         "fb_title"        => "[year] [make] [model]",
+        'fb_description'    => 'Why wait? Ride off in the [year] [make] [model] today.',
+	"font_color"        => "#ffffff"
+        ),
+       
+    );
+
+?>

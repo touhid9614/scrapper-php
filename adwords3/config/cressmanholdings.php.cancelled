@@ -1,0 +1,193 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["cressmanholdings"] = array(
+    'name' => 'Cressmans Holdings',
+    'max_cost' => 0,
+    'cost_distribution' => array(
+        'adwords' => 0,
+    ),
+    "customer_id" => "245-541-1719",
+    'password' => 'cressmanholdings',
+    "email" => "regan@smedia.ca",
+    'log' => true,
+    "create" => array(
+        "new_search" => no,
+        "used_search" => no,
+        "new_display" => yes,
+        "used_display" => no,
+        "new_retargeting" => yes,
+        "used_retargeting" => no,
+        "new_marketbuyers" => yes,
+        "new_combined" => yes,
+        "used_combined" => no,
+        "new_color" => no,
+        "used_color" => no,
+    ),
+    "new_descs" => array(
+        array(
+            "desc1" => "[model] [make]",
+            "desc2" => "only [Price]! Call Today",
+        ),
+    ),
+    "banner" => array(
+        "template" => "cressmanholdings",
+        'fb_description' => 'Check out this beautiful home today!',
+        'fb_lookalike_description' => 'Check out this home for rent!',
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "styels" => array(
+            "new_display" => "custom_banner",
+            "used_display" => "custom_banner",
+            "new_retargeting" => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers" => "custom_banner",
+            "used_marketbuyers" => "custom_banner",
+        ),
+        "fb_title" => "[model] [make]",
+        'fb_description' => 'Check out this beautiful home today!',
+        "font_color" => "#ffffff",
+    ),
+    'lead_to' => [
+        'office@cressmanholdings.com',
+    ],
+    'form_live' => false,
+    'buttons_live' => true,
+    'buttons' => [
+        'request-a-quote' => [
+            'url-match' => '/\\/portfolio-item\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.avia-builder-el-13 a',
+            'css-class' => 'div.avia-builder-el-13 a',
+            'css-hover' => 'div.avia-builder-el-13 a:hover',
+            // 'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-a-quote' => [
+                    'target' => 'div.avia-builder-el-13 a span.avia_iconbox_title',
+                    'values' => array(
+                        'Apply now',
+                        'Get started',
+                        'Inquire now',
+                        'Application',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+        'request-information' => [
+            'url-match' => '/\\/portfolio-item\\//i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'div.avia-builder-el-14 a',
+            'css-class' => 'div.avia-builder-el-14 a',
+            'css-hover' => 'div.avia-builder-el-14 a:hover',
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'div.avia-builder-el-14 a span.avia_iconbox_title',
+                    'values' => array(
+                        'Contact us',
+                        'More information',
+                        'Questions?',
+                        'Let us help',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#F06B20,#F06B20)',
+                        'border-color' => '#f06b20',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#E01212,#E01212)',
+                        'border-color' => '#e01212',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#54B740,#54B740)',
+                        'border-color' => '#54b740',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#1CA0D1,#1CA0D1)',
+                        'border-color' => '#1ca0d1',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#188BB7,#188BB7)',
+                        'border-color' => '#188bb7',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

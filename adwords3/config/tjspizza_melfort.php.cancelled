@@ -1,0 +1,16 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["tjspizza_melfort"] = array(
+    'max_cost'      => 125.00,
+    'log'           => false,
+    "customer_id"   => "783-384-6909",
+    'password'      => 'tjspizza_melfort',
+    "email"         => "regan@smedia.ca",
+    'no_adv'        => true,
+    'cost_distribution' => array(
+        'adwords'   => 125,        //Defines all adwords ads
+        
+    ),
+);

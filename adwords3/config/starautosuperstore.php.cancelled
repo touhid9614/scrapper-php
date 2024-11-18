@@ -1,0 +1,119 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["starautosuperstore"] = array(
+    'password' => 'starautosuperstore',
+    "email" => "regan@smedia.ca",
+    "log" => true,
+    "banner" => array(
+        "template" => "starautosuperstore",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#000000",
+    ),
+    'adf_to' => [
+        'webleads@1800starbuy.dsmessage.com ',
+    ],
+    'form_live' => false,
+    'buttons_live' => false,
+    'buttons' => [
+        'request-information' => [
+            'url-match' => '/\\/(?:new|used)-Wiggins-[0-9]{4}-/i',
+            'target' => null,
+            //Don't move button
+            'locations' => [
+                'default' => null,
+            ],
+            'action-target' => 'a.sms-button',
+            'css-class' => 'a.sms-button',
+            'css-hover' => 'a.sms-button:hover',
+            //'button_action' => ['form','e-price'],
+            'sizes' => [
+                '100' => [],
+            ],
+            'texts' => [
+                'request-information' => [
+                    'target' => 'a.sms-button',
+                    'values' => array(
+                        'Contact Us',
+                        'Get More Info',
+                        'Ask a Question',
+                        'Book Test Drive',
+                    ),
+                ],
+            ],
+            'styles' => array(
+                'orange' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#FF7B1A,#FF7B1A)',
+                        'border-color' => '#ff7b1a',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#CF540E,#CF540E)',
+                        'border-color' => '#cf540e',
+                    ),
+                ),
+                'red' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#D32100,#D32100)',
+                        'border-color' => '#d32100',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#C60C0D,#C60C0D)',
+                        'border-color' => '#c60c0d',
+                    ),
+                ),
+                'green' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#009B34,#009B34)',
+                        'border-color' => '#009b34',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#359D22,#359D22)',
+                        'border-color' => '#359d22',
+                    ),
+                ),
+                'blue' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#109E8F,#109E8F)',
+                        'border-color' => '#109e8f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0D7F73,#0D7F73)',
+                        'border-color' => '#0d7f73',
+                    ),
+                ),
+                'Platinum' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#B9B099,#B9B099)',
+                        'border-color' => '#109e8f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#ABA085,#ABA085)',
+                        'border-color' => '#0d7f73',
+                    ),
+                ),
+                'Black' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#333333,#333333)',
+                        'border-color' => '#109e8f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#000000,#000000)',
+                        'border-color' => '#0d7f73',
+                    ),
+                ),
+                'Cyan' => array(
+                    'normal' => array(
+                        'background' => 'linear-gradient(#00ABF1,#00ABF1)',
+                        'border-color' => '#109e8f',
+                    ),
+                    'hover' => array(
+                        'background' => 'linear-gradient(#0093CF,#0093CF)',
+                        'border-color' => '#0d7f73',
+                    ),
+                ),
+            ),
+        ],
+    ],
+);

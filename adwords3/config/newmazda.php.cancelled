@@ -1,0 +1,102 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["newmazda"] = array(
+
+    'password'  => 'newmazda',
+	
+   'bid'           => 3.0,
+    
+    'host_url'      => 'http://www.newmazda.ca',
+    'on15'          => true,
+    'post_code'     => 'v5k 5c4',
+    "email"         => "regan@smedia.ca",
+   
+   
+	
+	
+	
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        ),
+		array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[color] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model].",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [price]",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [price]. Only [kilometers]km ",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[model] starting at [biweekly] b/w",
+        ),
+        array(
+            "desc1" => "[make] [model] starting",
+            "desc2" => " at [biweekly] b/w. Only [kilometers]km ",
+        ),
+
+		
+		
+		
+    ),
+	
+	"options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+		),
+	
+    "banner"        => array(
+        "template"          => "newmazda",
+        "flash_style"       => "default",
+		"border_color"    => "#dfdfdf",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+            ),
+        "font_color"        => "#ffffff"
+        ),
+
+  
+ 
+
+    );
+
+?>

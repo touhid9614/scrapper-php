@@ -1,0 +1,122 @@
+/* 
+    Document   : budgetchecker
+    Created on : 12-Dec-2014, 02:32:47
+    Description: Decorates the budget checker
+*/
+
+/*
+.body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page
+{
+    width: 1170px;
+    margin: 0px auto;
+}
+ 
+.resp-tabs-list li
+{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 780px)
+{
+    .page
+    {
+        margin: 5%;
+        width: 90%;
+    }
+}
+
+.logo
+{
+    height:80px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}  */
+
+.loading-dialog-div
+{
+    background-color: #000;
+    filter: alpha(opacity = 40);
+    opacity: 0.4;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.loading-dialog-animation-div
+{
+    z-index: 10000;
+    width: 150px;
+    height: 60px;
+    padding: 15px 60px;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    background-image: url('../img/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    line-height: 60px;
+    display: none;
+    top:0px;
+    left: 0px;
+}
+
+.sort-by-container
+{
+    background-color: #fff;
+    position: fixed;
+    padding: 10px 20px;
+    top: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sort-by-container p
+{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.main-row
+{
+    cursor: default;
+}
+
+.accordion-body {
+    padding: 10px;
+    background-color: #ededed;
+    padding-top: 0px;
+}
+
+.accordion-body .table {
+    background: none;
+}
+
+.budget-modifier-input {
+    border: none;
+    background: none;
+    -moz-appearance: textfield;
+}
+
+.budget-modifier-input:focus {
+    background: #f5f5f5;
+}
+
+input.budget-modifier-input::-webkit-outer-spin-button,
+input.budget-modifier-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.table.on1st tbody tr td {
+    cursor: pointer;
+}

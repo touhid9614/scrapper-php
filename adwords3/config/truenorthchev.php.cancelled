@@ -1,0 +1,98 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["truenorthchev"] = array(
+  'password'  => 'truenorthchev',
+    'log'     => true,
+    /*
+     * No Adwords
+    
+    ),
+    "customer_id"   => "409-219-7289",
+     * 
+     */
+    "email"         => "regan@smedia.ca",
+    'post_code'     => 'P1B 9V6',
+    "create"     => array(
+          "new_search"        => yes,
+        "used_search"       => yes,
+        "new_display"       => no,
+        "used_display"      => no,
+        "new_retargeting"   => yes,
+        "used_retargeting"  => yes,
+        "new_marketbuyers"  => no,
+        "used_marketbuyers" => no,
+        "new_combined"    => yes,
+        "used_combined"   => yes
+    ),
+     "lead"  => array(
+        'live'                  => true,
+        'lead_type_'            => true,
+        'lead_type_new'         => true,
+        'lead_type_used'        => true,
+        'bg_color'              => "#efefef",
+        'text_color'            => "#404450",
+        'border_color'          => "#e5e5e5",
+        'button_color'          => array("#102454", "#102454"),
+        'button_color_hover'    => array("#bc2427", "#bc2427"),
+        'button_color_active'   => array("#102454", "#102454"),
+        'button_text_color'     => "#ffffff",
+        'response_email_subject'=> "Your offer from True Noth Chevrolet",
+        'response_email'        => "Hello [name],<p> Thank you for signing up for our offer! Please print this off or show your sales professional this email on your phone to claim.</p><br><img src=\"[image]\"/><p><br><br>True North Chevrolet Team",
+        'forward_to'            => array("jlanger@truenorthchev.com", "vendittit@truenorthchev.com", "saleslead@truenorthchev.com"),
+        'respond_from'          => "offers@mail.smedia.ca",
+        'forward_from'          => "offers@mail.smedia.ca",
+        'thank_you'             => "<h1 style=\"margin: 100px 27px; text-align: center;\">Thank you</h1>",
+     ),
+    "host_url"      => "http://www.truenorthchev.com",		//must start with http or https and end without /
+    "display_url"   => "www.truenorthchev.com",				//Max lenght 35 char
+    "new_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "used_descs"         => array(
+        array(
+            "desc1" => "Test Drive the [year]",
+            "desc2" => "[make] [model] today.",
+        ),
+        array(
+            "desc1" => "Call us today about the ",
+            "desc2" => "[year] [make] [model]",
+        ),
+    ),
+    "options_descs" => array(
+        array(
+            "desc1" => "Equipped with [option]",
+            "desc2" => "and [option]"
+        )
+    ),
+    "ymmcount_descs" => array(
+         array(
+            "desc1" => "We have [ymmcount] [make]",
+            "desc2" => "[model] in stock",
+        ),
+    ),
+    "email"         => "regan@smedia.ca",
+    "banner"        => array(
+        "template"          => "truenorthchev",
+        "flash_style"       => "default",
+        "border_color"    => "#101010",
+        "styels"            => array(
+            "new_display"   => "custom_banner",
+            "used_display"  => "custom_banner",
+            "new_retargeting"  => "custom_banner",
+            "used_retargeting" => "custom_banner",
+            "new_marketbuyers"   => "custom_banner",
+            "used_marketbuyers"  => "custom_banner"
+        ),
+        "font_color"        => "#ffffff",
+        "hst"               => yes
+    )
+);

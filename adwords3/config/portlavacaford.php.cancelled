@@ -1,0 +1,28 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["portlavacaford"] = array(
+  'password'  => 'portlavacaford',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+    'fb_brand'          => '[year] [make] [model] - [body_style]',  
+    "banner"        => array(
+        "template"          => "portlavacaford",
+		//"fb_description"	=> "Are you still interested in the [year] [make] [model]? Click below for more info! MSRP [msrp]",
+		"fb_description"	=> "Are you still interested in the [year] [make] [model]? Click below for more info!",
+		"fb_lookalike_description"	=> "Test drive the [year] [make] [model] today!",
+        "flash_style"       => "default",
+        "border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+    )
+);
+
+add_filter('filter_portlavacaford_fb_description', 'filter_portlavacaford_fb_description', 10, 2);
+
+function filter_portlavacaford_fb_description($description, $car) {
+    if(isset($car['msrp']) && $car['msrp']) {
+        $description .= " MSRP " . butifyPrice($car['msrp']) . " Now " . butifyPrice($car['price']) . ".";
+    }
+    return $description;
+}

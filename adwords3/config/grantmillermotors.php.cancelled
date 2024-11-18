@@ -1,0 +1,21 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["grantmillermotors"] = array(
+  'password'  => 'grantmillermotors',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+	
+      "banner" => array(
+        "template" => "grantmillermotors",
+			"fb_retargeting_description_new" => "Are you still interested in the [year] [make] [model]? MSRP [msrp]. Sale price is [price] Plus Applicable Tax. Stock #[stock_number].",
+			"fb_lookalike_description_new"	=> "Check out this [year] [make] [model] MSRP [msrp]. Sale price is [price] Plus Applicable Tax. Stock #[stock_number].",
+			"fb_retargeting_description_used" => "Are you still interested in the [year] [make] [model]? Click for more information.",
+			"fb_lookalike_description_used"	=> "Check out this [year] [make] [model] Click for more information.",
+			"fb_dynamiclead_description"	=> "Are you still interested in the [year] [make] [model]? Click below, fill in your info, and a product specialist will be in touch to answer any questions.",
+        "flash_style" => "default",
+        "border_color" => "#282828",
+        "font_color" => "#ffffff",
+	),
+);

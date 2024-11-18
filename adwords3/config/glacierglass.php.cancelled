@@ -1,0 +1,12 @@
+<?php
+global $CronConfigs;
+ $CronConfigs["glacierglass"] = array( 
+	"name"=>"glacierglass",
+	"password"=>"glacierglass",
+	"no_adv"=>true,
+        'customer_id' => '719-244-8231',
+        'max_cost' => 0,
+        'cost_distribution' => array(
+            'adwords' => 0,
+        ),
+);

@@ -1,0 +1,19 @@
+<?php
+
+global $CronConfigs;
+
+$CronConfigs["cartercdjr"] = array(
+  'password'  => 'cartercdjr',
+    "email"         => "regan@smedia.ca",
+    'log'           => true,
+
+    "banner"        => array(
+        "template"          => "cartercdjr",
+		'fb_description'	=> 'At Carter Dodge Chrysler - we make your vehicle purchase
+		as quick and hassle-free as possible with 99% Approval Rate! Easy & Secure!
+		GET APPROVED TODAY!',
+		"flash_style"       => "default",
+		"border_color"    => "#282828",
+        "font_color"        => "#ffffff"
+        )
+    );

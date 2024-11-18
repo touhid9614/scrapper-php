@@ -1,0 +1,47 @@
+<?php
+
+global $CronConfigs;
+$CronConfigs["KBheating"] = array(
+    'password' => 'KBheating',
+    'customer_id' => '868-332-5763',
+    'email' => 'regan@smedia.ca',
+    'max_cost' => 0.0,
+    'cost_distribution' => array(
+        'adwords' => 0,
+        'youtube' => 0,
+    ),
+    "email" => "regan@smedia.ca",
+    'no_adv' => true,
+    'lead' => array(
+        'live' => false,
+        'lead_type_' => true,
+        'lead_type_new' => true,
+        'lead_type_used' => true,
+        'bg_color' => '#EFEFEF',
+        'text_color' => '#404450',
+        'border_color' => '#E5E5E5',
+        'button_color' => array(
+            '#AE1E25',
+            '#AE1E25',
+        ),
+        'button_color_hover' => array(
+            '#6D1317',
+            '#6D1317',
+        ),
+        'button_color_active' => array(
+            '#6D1317',
+            '#6D1317',
+        ),
+        'button_text_color' => '#FFFFFF',
+        'response_email_subject' => '$200 off coupon from Ens Toyota',
+        'response_email' => 'Hello [name],<p> Thank you for signing up for our offer. Please print this off, or show your sales professional this email on your phone to claim.</p><br><img src="[image]"/><p><br><br>Ens Toyota Team',
+        'forward_to' => array(
+            'smedia@enstoyota.net',
+            ' marshal@smedia.ca',
+        ),
+        'special_to' => array(
+            '',
+        ),
+        'special_email' => '',
+    ),
+);
